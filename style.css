@@ -1,0 +1,142 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    scrollbar-width: 2.5px;
+    color: #fff;
+}
+body {
+    overflow-x: hidden;
+}
+body.no-scrollbar {
+    width: 100vw;
+}
+.imgmain {
+    background-image: url(images/bg.png);
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100vw, 100vh;
+    margin-left: -0.2vw;
+    margin-top: -10px;
+    max-width: 100vw;
+    margin-left: -20px;
+}
+
+.imgheader {
+    position: absolute;
+    top: 10vh;
+    left: 37vw;
+    font-size: 5vw;
+}
+
+.sep {
+    position: absolute;
+    width: 32.5vw;
+    top: 32.5vh;
+    left: -3.5vw;
+    margin-bottom: 50px;
+}
+
+.imgsub {
+    margin-top: 5px;
+    font-size: 1vw;
+    position: absolute;
+    width: 80vw;
+    top: 48.5vh;
+    left: 20vw;
+}
+
+.contentmain {
+    background: #202020;
+    width: 100vw;
+    height: auto;
+    margin-left: -10px;
+    max-width: 100vw;
+    overflow: hidden;
+}
+
+.favgamesheader {
+    margin-top: 2vh;
+    font-size: 2.5vw;
+    width: 100vw;
+    height: auto;
+    background: linear-gradient(45deg, violet, cyan);
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 20px auto;
+    transition: bottom 0.3s ease-in-out;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.image-slots, .fasub {
+    display: none;
+    margin-top: 20px;
+}
+
+.fghbtn:hover {
+    background-color: #151515;
+    opacity: 0.3;
+}
+
+.image-slot {
+    width: 185px;
+    height: 250px;
+    margin: 5px;
+    display: inline-block;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-slot img, .fasub img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.favgamesheader.expanded, .favanimesheader.expanded {
+    padding: 20px;
+}
+
+.favgamesheader.expanded .image-slots, .favanimesheader.expanded .fasub {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fgsub {
+    margin-top: -2vh;
+}
+
+.fgsub button {
+    background: none;
+    border: hidden;
+    cursor: pointer;
+    font-size: 1vw;
+    margin: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.aboutmesub {
+    font-size: 1.5vw;
+    margin-top: 1vh;
+    width: 90vw;
+}
+
+.aboutmeheader {
+    margin-top: -3.9vh;
+    font-size: 1.5vw;
+}
+
+
+.favanimesheader {
+    margin-top: 2vh;
+    font-size: 2.5vw;
+    width: 100vw;
+    height: auto;
+    background: linear-gradient(45deg, lime, yellow 55vw);
+    padding: 10px;
+    border: 1px solid #ccc;
+    max-width: 100%;
+}
