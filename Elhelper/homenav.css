@@ -1,0 +1,27 @@
+@media only screen and (max-width: 720px) {
+    nav ul {
+       display: inline; 
+    }
+}
+nav{
+    width: 100vw;
+    background: #282832;
+    text-align: center;
+    z-index: 50;
+}
+nav ul{
+    display:inline-flex;
+    margin: 0;
+}
+nav ul li{
+    width: 100px;
+    color: white;
+    text-align: center;
+    list-style-type: none;
+    transition: background-color 0.3s ease;
+    height: 35px;
+    padding-top: 15px;
+}
+nav ul li#spec{
+    width: 150px;
+}
