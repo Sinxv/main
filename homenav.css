@@ -1,0 +1,107 @@
+nav {
+    width: 100vw;
+    background: #282832;
+    text-align: center;
+    z-index: 50;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: relative;
+  }
+  
+  nav ul li {
+    width: 100px;
+    color: white;
+    text-align: center;
+    list-style-type: none;
+    transition: background-color 0.3s ease;
+    height: 35px;
+    padding-top: 15px;
+    font-weight: normal;
+  }
+  
+  nav ul li#spec {
+    width: 150px;
+  }
+  
+  nav ul a {
+    text-decoration: none;
+  }
+  
+  .nav-toggle {
+    display: none;
+    position: absolute;
+    left: 10px;
+    cursor: pointer;
+  }
+  
+  .settings-icon {
+    width: 32px;
+    height: 32px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  /* Responsive */
+  @media only screen and (max-width: 720px) {
+    nav ul {
+      display: block;
+      text-align: center;
+    }
+    nav ul a {
+      display: block;
+    }
+    .nav-toggle {
+      display: inline-block;
+    }
+    .settings-icon {
+      position: relative;
+      display: inline-block;
+      margin-top: 10px;
+    }
+  }
+  
+  /* Settings popup */
+  #settings-popup {
+    background: #333;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    z-index: 1000;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Light Mode */
+  body.light-mode {
+    background: white !important;
+    color: black !important;
+    font-weight: bold;
+  }
+  body.light-mode nav {
+    background: white;
+  }
+  body.light-mode nav ul li {
+    color: black;
+    font-weight: bold;
+  }
+  body.light-mode #settings-popup {
+    background: #eee;
+    color: black;
+  }
+  

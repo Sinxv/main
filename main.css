@@ -1,0 +1,1158 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Noto+Sans+JP:wght@400;700&family=Noto+Sans+SC:wght@400;700&family=Raleway:ital,wght@0,400;1,400&display=swap');
+
+*{
+    color: white;
+    background: none;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
+li:hover{
+    background-color: #404040;
+}
+body{
+    font-family: 'Raleway', 'Noto Sans KR', 'Noto Sans JP', 'Noto Sans SC', sans-serif;
+    margin: 0;
+    background: #353540;
+}
+.title{
+    margin-top: 27.5vh;
+}
+.subtitle{
+    width: 600px;
+}
+.disclaimer{
+    width: 600px;
+    color: red;
+}
+.guidedisclaimer{
+    color: red;
+}
+#guidenotice{
+    color: orange;
+}
+#charaimg{
+    top: 0px;
+    right: -175px;
+    height: 100vh;
+    z-index: -6;
+}
+@media only screen and (min-width: 720px) {
+    #charaimg {
+        position: absolute;
+    }
+}
+@media only screen and (min-width: 2500px) {
+    .title,.subtitle,.disclaimer{
+        font-size: 50px;
+        width: 40%;
+    }
+}
+@media only screen and (max-width: 720px) {
+    #charaimg{
+        opacity: 0;
+    }
+    .title,.subtitle,.disclaimer{
+        font-size: 25px;
+        width: 95%;
+    }
+    .collapsible .titleinfo{
+        margin-left: -20px;
+        margin-top: -10px;
+    }
+    .collapsible1{
+        background-image: linear-gradient(135deg, rgba(100, 255, 100, 1),rgba(40, 255, 40, 1) 30%,rgba(255, 255, 255, 0) 31%),url(images/RubenBanner.jpg);
+    }
+}
+@media only screen and (min-height: 1820px) {
+    #charaimg{
+        right: -400px;
+    }
+}
+
+/*---------------------------------------------------------- prog.html ------------------------------------- */
+
+.collapsibleprog {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 25px;
+    height: 75px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+#c1::before { background: url('images/RubenBanner.jpg') center/cover no-repeat, radial-gradient(circle, rgba(20, 255, 109, 0.8), rgba(20, 255, 20, 0.6)); }
+#c2::before { background: url('images/ForgottenElrianSanctumBanner.png') center/cover no-repeat, linear-gradient(135deg, rgb(100, 198, 255), rgba(40, 165, 255, 0.7)); }
+#c3::before { background: url('images/CrimsonCradleOfFlamesBanner.png') center/cover no-repeat, conic-gradient(from 0deg, rgba(255, 100, 134, 0.8), rgba(211, 114, 114, 0.6)); }
+#c4::before { background: url('images/ShrineOfTheTwoHeadedSerpentBanner.jpg') center/cover no-repeat, radial-gradient(circle, rgb(182, 230, 182), rgb(145, 156, 145)); }
+#c5::before { background: url('images/AltarOfInvocationBanner.png') center/cover no-repeat, linear-gradient(135deg, rgb(123, 100, 255), rgb(40, 173, 255)); }
+#c6::before { background: url('images/PlegasLabyrinthBanner.png') center/cover no-repeat, conic-gradient(from 90deg, rgb(123, 100, 255), rgb(244, 40, 255)); }
+#c7::before { background: url('images/BloomingMineralFIeldBanner.png') center/cover no-repeat, radial-gradient(circle, rgb(105, 255, 100), rgb(133, 40, 255)); }
+#c8::before { background: url('images/BirthOfOriginBanner.png') center/cover no-repeat, linear-gradient(135deg, rgb(255, 100, 190), rgb(135, 109, 170)); }
+#c9::before { background: url('images/MadameCoraeGardenBanner.png') center/cover no-repeat, conic-gradient(from 180deg, rgb(36,156,126), rgb(100,132,188)); }
+#c10::before { background: url('images/OrchestraHallBanner.png') center/cover no-repeat, radial-gradient(circle, rgb(255, 204, 0), rgb(255, 229, 158)); }
+#c11::before { background: url('images/WiltingTowerBanner.png') center/cover no-repeat, linear-gradient(135deg, rgb(255, 126, 100), rgb(133, 40, 255)); }
+
+.collapsibleprog::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.4s ease-in-out;
+    background: inherit;
+}
+
+.titleinfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out 0.5s;
+}
+
+.titleinfo .Stage {
+    text-align: left;
+    flex: 1;
+}
+
+.titleinfo p {
+    text-align: center;
+    flex: 2;
+}
+
+.collapsibleprog:hover::before {
+    opacity: 0.5;
+}
+
+.collapsibleprog:hover .titleinfo {
+    opacity: 1;
+    visibility: visible;
+}
+
+.collapsibleprog:hover {
+    transform: scale(1.02);
+}
+.titleinfo{
+    padding-left: 25px;
+}
+.lower{
+    margin-top: 15px;
+    bottom: 0;
+    margin-bottom: 0;
+    background: #282832;
+    width: 100vw;
+    height: 100px;
+}
+.lower .info{
+    text-align: center;
+    padding-top: 45px;
+}
+
+/*-------------------------- Doc ------------------------------------ */
+
+.guidetext, .guidetitle, .phaseheader, .RAID_DUNG_TITLE, 
+.RAID_DUNG_NUM, .guidenotice, .info, .back, 
+.guider, .trueguide, .collapsible-table, footer {
+    font-family: 'Noto Sans KR', 'Noto Sans JP', 'Noto Sans SC', sans-serif !important;
+}
+.tginfo{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.banner#s1{
+    width: 100vw;
+    height: 150px;
+    background-image: linear-gradient(180deg, rgba(20, 255, 109, 0),rgba(53, 53, 65, 1) 125px),url(images/RubenBanner.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.banner#s2{
+    width: 100vw;
+    height: 150px;
+    background-image: linear-gradient(180deg, rgba(20, 255, 109, 0),rgba(53, 53, 65, 1) 125px),url(images/ForgottenElrianSanctumBanner.png);
+    background-size: cover;
+    background-position: center;
+}
+.banner#s4{
+    width: 100vw;
+    height: 150px;
+    background-image: linear-gradient(180deg, rgba(20, 200, 109, 0),rgba(53, 53, 65, 1) 125px),url(images/ShrineOfTheTwoHeadedSerpentBanner.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.banner#s3{
+    width: 100vw;
+    height: 150px;
+    background-image: linear-gradient(180deg, rgba(20, 255, 109, 0),rgba(53, 53, 65, 1) 125px),url(images/CrimsonCradleOfFlamesBanner.png);
+    background-size: cover;
+    background-position: center;
+}
+.banner#s5{
+    width: 100vw;
+    height: 150px;
+    background-image: linear-gradient(180deg, rgba(20, 255, 109, 0),rgba(53, 53, 65, 1) 125px),url(images/SavageWhiteGhostCastleBanner.png);
+    background-size: cover;
+    background-position: center;
+}
+.banner#s6{
+    width: 100vw;
+    height: 150px;
+    background-image: linear-gradient(180deg, rgba(20, 255, 109, 0),rgba(53, 53, 65, 1) 125px),url(images/PlegasLabyrinthBanner.png);
+    background-size: cover;
+    background-position: center;
+}
+.banner#s7{
+    width: 100vw;
+    height: 150px;
+    background-image: linear-gradient(180deg, rgba(20, 255, 109, 0),rgba(53, 53, 65, 1) 125px),url(images/SunkenHolyGroundBanner.png);
+    background-size: cover;
+    background-position: center;
+}
+.guidetitle,.trueguide,.back{
+    margin-left: 15%;
+}
+.back{
+    cursor: pointer;
+    transition: 0.3s color;
+}
+.back:hover{
+    color: yellow;
+}
+.phaseheader{
+    margin-top: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background: #282024;
+}
+.phaseheader div{
+    display: inline;
+    position: absolute;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+.phaseheader img{
+    margin-left: 5px;
+    margin-top: 7px;
+    margin-bottom: 5px;
+}
+.titledivider{
+    margin-top: 0px;
+}
+.BTYPE{
+    float: right;
+    text-align: right;
+}
+.phaseheader .PHASENUM{
+    text-align: right;
+}
+.RAID_DUNG_NUM{
+    margin-bottom: 0;
+}
+.RAID_DUNG_TITLE{
+    margin-top: 0;
+}
+.RAID_DUNG_NUM, .RAID_DUNG_TITLE{
+    width: 100%;
+    text-align: center;
+    transform: skewX(-15deg);
+}
+.guider{
+    height: 300px;
+    width: 14.9%;
+    text-align: center;
+    display: inline-block;
+    border-left-color: black;
+}
+.trueguide{
+    margin-left: 0;
+    width: 80%;
+    display: inline-block;
+    height: fit-content;
+    background: #383848;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-bottom: 25px;
+}
+.guider{
+    float: left;
+}
+.guider ul li{
+    margin-left: -40px;
+    color: yellow;
+    text-align: center;
+}
+.guider ul li a{
+    text-align: center;
+}
+.trueguide .guidetext{
+    margin: 15px;
+}
+#gridtable{
+    width: 100%; 
+    text-align: left; 
+}
+.guideindex{
+    width: 15%;
+    height: 100%;
+    background-color: #373748;
+    border-right: 5px solid #424248;
+}
+.guideholder{
+    width: 85%;
+    height: 100%;
+}
+.indextext,.guidetext{
+    margin: 25px;
+}
+
+/* Info Trigger Styling */
+.info-trigger {
+    color: inherit;
+    cursor: help;
+    position: relative;
+    text-decoration: none;
+    border-bottom: 1px dashed #ff66a3;
+    transition: all 0.2s ease;
+}
+
+.info-trigger:hover {
+    color: #ff66a3;
+}
+
+body.light-mode .info-trigger {
+    border-bottom-color: #cc0066;
+}
+
+body.light-mode .info-trigger:hover {
+    color: #cc0066;
+}
+
+body.light-mode {
+    background: #f5f5f7;
+}
+
+body.light-mode * {
+    color: #333340; /* Darker text for better contrast */
+}
+
+body.light-mode .trueguide {
+    background: #e8e8f0;
+    border: 1px solid #d0d0d8;
+}
+
+body.light-mode .phaseheader {
+    background: #d8d8e0;
+}
+
+body.light-mode .banner {
+    background-image: linear-gradient(180deg, rgba(20, 20, 20, 0), rgba(255, 255, 255, 1) 125px) !important;
+}
+
+/* Banner gradient fix for light mode */
+body.light-mode .banner#s1 {
+    background-image: linear-gradient(180deg, rgba(20, 20, 20, 0), rgba(255, 255, 255, 1) 125px), url(images/RubenBanner.jpg) !important;
+}
+body.light-mode .banner#s2 {
+    background-image: linear-gradient(180deg, rgba(20, 20, 20, 0), rgba(255, 255, 255, 1) 125px), url(images/ForgottenElrianSanctumBanner.png) !important;
+}
+body.light-mode .banner#s3 {
+    background-image: linear-gradient(180deg, rgba(20, 20, 20, 0), rgba(255, 255, 255, 1) 125px), url(images/CrimsonCradleOfFlamesBanner.png) !important;
+}
+body.light-mode .banner#s4 {
+    background-image: linear-gradient(180deg, rgba(20, 20, 20, 0), rgba(255, 255, 255, 1) 125px), url(images/AltarOfInvocationBanner.png) !important;
+}
+body.light-mode .banner#s5 {
+    background-image: linear-gradient(180deg, rgba(20, 20, 20, 0), rgba(255, 255, 255, 1) 125px), url(images/BloomingMineralFIeldBanner.png) !important;
+}
+body.light-mode .banner#s6 {
+    background-image: linear-gradient(180deg, rgba(20, 20, 20, 0), rgba(255, 255, 255, 1) 125px), url(images/MadameCoraeGardenBanner.png) !important;
+}
+body.light-mode .banner#s7 {
+    background-image: linear-gradient(180deg, rgba(20, 20, 20, 0), rgba(255, 255, 255, 1) 125px), url(images/OrchestraHallBanner.png) !important;
+}
+body.light-mode .banner#s7 {
+    background-image: linear-gradient(180deg, rgba(20, 20, 20, 0), rgba(255, 255, 255, 1) 125px), url(images/WiltingTowerBanner.png) !important;
+}
+
+/* Table colors for light mode */
+body.light-mode #gridtable {
+    background-color: #f0f0f8;
+}
+
+body.light-mode #gridtable th {
+    background-color: #e0e0e8;
+}
+
+body.light-mode #gridtable tr:nth-child(even) {
+    background-color: #e8e8f0;
+}
+
+body.light-mode #gridtable tr:hover {
+    background-color: #d8d8e0;
+}
+
+/* Special text colors for light mode */
+body.light-mode #HIGHLIGHTEDTEXT {
+    color: #0066cc;
+}
+
+body.light-mode #ROSSOCOLOR {
+    color: #cc3333;
+    border-color: #cc3333;
+}
+
+body.light-mode .guidedisclaimer {
+    color: #cc0000;
+}
+
+body.light-mode #guidenotice {
+    color: #cc6600;
+}
+
+/* Dark Mode Table Styling */
+#gridtable {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#gridtable th {
+    background-color: #3a3a4a;
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: 500;
+    border-bottom: 2px solid #4a4a5a;
+}
+
+#gridtable td {
+    padding: 10px 15px;
+    border-bottom: 1px solid #4a4a5a;
+    transition: background-color 0.2s;
+}
+
+#gridtable tr:last-child td {
+    border-bottom: none;
+}
+
+#gridtable tr:nth-child(even) {
+    background-color: #383848;
+}
+
+#gridtable tr:hover {
+    background-color: #404050;
+}
+
+/* Settings Popup - Enhanced for both modes */
+#settings-popup {
+    position: fixed;
+    background: #3a3a4a;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    width: 200px;
+}
+
+body.light-mode #settings-popup {
+    background: #f0f0f8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#settings-popup label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+#settings-popup select, #settings-popup input {
+    margin-bottom: 15px;
+    width: 100%;
+    background: #4a4a5a;
+    color: white;
+    border: 1px solid #5a5a6a;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+body.light-mode #settings-popup select,
+body.light-mode #settings-popup input {
+    background: #ffffff;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+/* Toggle Switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+#gridtable tr.good-stat td:first-child {
+    position: relative;
+    background: 
+        linear-gradient(90deg, 
+            rgba(100, 255, 100, 1) 0%, 
+            rgba(100, 255, 100, 1) 5px,
+            /* fade from 80% to 0% */
+            rgba(149, 228, 149, 0.5) 5px,
+            rgba(100, 255, 100, 0) 100%
+        );
+    color: white;
+}
+
+#gridtable tr.niche-stat td:first-child {
+    position: relative;
+    background: 
+        linear-gradient(90deg, 
+            rgba(255, 255, 100, 1) 0%, 
+            rgba(255, 255, 100, 1) 5px,
+            /* fade from 80% to 0% */
+            rgba(249, 249, 140, 0.5) 5px,
+            rgba(255, 255, 100, 0) 100%
+        );
+    color: white;
+}
+
+/* Light mode adjustments */
+body.light-mode #gridtable tr.good-stat td:first-child {
+    background: 
+        linear-gradient(90deg, 
+            rgba(80, 200, 80, 1) 0%, 
+            rgba(80, 200, 80, 1) 5px,
+            rgba(80, 200, 80, 0.5) 5px,
+            rgba(80, 200, 80, 0) 100%
+        );
+    color: #333;
+}
+
+body.light-mode #gridtable tr.niche-stat td:first-child {
+    background: 
+        linear-gradient(90deg, 
+            rgba(220, 220, 80, 1) 0%, 
+            rgba(220, 220, 80, 1) 5px,
+            rgba(220, 220, 80, 0.5) 5px,
+            rgba(220, 220, 80, 0) 100%
+        );
+    color: #333;
+}
+
+/* Ensure text remains readable over solid color */
+#gridtable tr.good-stat td:first-child,
+#gridtable tr.niche-stat td:first-child {
+    text-shadow: 0 0 2px rgba(0,0,0,0.3);
+}
+
+body.light-mode #gridtable tr.good-stat td:first-child,
+body.light-mode #gridtable tr.niche-stat td:first-child {
+    text-shadow: none;
+}
+
+:root {
+    --table-header-bg: rgba(70, 70, 80, 1);
+    --table-border-color: rgba(90, 90, 100, 0.5);
+    --text-color: #ffffff; /* Explicit white text */
+    --arrow-color: #ffffff; /* Explicit arrow color */
+}
+
+body.light-mode {
+    --table-header-bg: rgba(230, 230, 240, 1);
+    --table-border-color: rgba(200, 200, 210, 0.7);
+    --text-color: #333333; /* Dark text for light mode */
+    --arrow-color: #666666; /* Darker arrow for light mode */
+}
+
+#gridtable {
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid var(--table-border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative; /* Needed for z-index */
+}
+
+#gridtable.collapsed {
+    border-color: transparent;
+}
+
+.table-title-collapser.collapsed {
+    border-bottom-color: transparent;
+    background: var(--table-header-bg); /* Solid color */
+}
+
+#gridtable td:first-child, 
+#gridtable th:first-child {
+    border-left: none;
+}
+
+/* Special handling for collapsed state */
+#gridtable.collapsed td,
+#gridtable.collapsed th {
+    border-color: transparent;
+}
+
+.table-title-collapser {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 35px 12px 15px; /* Right padding for arrow */
+    background-color: var(--table-header-bg);
+    color: var(--text-color);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom: 1px solid var(--table-border-color);
+}
+
+.table-title-collapser::after {
+    content: "▼";
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: var(--text-color);
+    transition: transform 0.3s ease;
+    opacity: 0.8;
+    pointer-events: none; /* Prevent interference with clicks */
+}
+
+.table-title-collapser.collapsed::after {
+    transform: translateY(-50%) rotate(-90deg);
+}
+
+/* Hover effects */
+.table-title-collapser:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
+.table-title-collapser:hover::after {
+    opacity: 1;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* Language Selector */
+#lang-select {
+    background: #3a3a4a;
+    color: white;
+    border: 1px solid #4a4a5a;
+    padding: 5px;
+    border-radius: 4px;
+    width: 100%;
+}
+
+/* Table Container */
+.collapsible-table {
+    overflow-x: auto;
+    width: 100%;
+    transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+    max-height: 5000px; /* Large enough for any table */
+    opacity: 1;
+}
+
+.collapsible-table.collapsed {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+
+#gridtable {
+    min-width: 100%;
+    white-space: nowrap;
+}
+
+#gridtable td, #gridtable th {
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+/* Tooltip styling */
+.custom-tooltip {
+    position: absolute;
+    background: #3a3a4a;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    z-index: 1000;
+    display: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    max-width: 300px;
+    pointer-events: none;
+}
+
+body.light-mode .custom-tooltip {
+    background: #f0f0f8;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.note-marker {
+    color: orange;
+    cursor: help;
+    font-weight: bold;
+}
+
+/* Info panel styling */
+.info-panel {
+    position: absolute;
+    background: #3a3a4a;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    z-index: 1001;
+    display: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    max-width: 400px;
+    border: 1px solid #4a4a5a;
+}
+
+.info-panel.visible {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+.info-content {
+    margin-bottom: 10px;
+}
+
+.info-close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #888;
+}
+
+body.light-mode .info-panel {
+    background: #f0f0f8;
+    color: #333;
+    border: 1px solid #d0d0d8;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ------------------ Chara.html ------------------------- */
+.middle{
+    margin-left: 5%;
+}
+.info#gc ul.CharacterIcons li{
+    display: inline-block;
+    text-align: center;
+    width: calc(95% / 15);
+}
+.info#gc ul.PathIcons li{
+    display: inline-block;
+    text-align: center;
+    width: calc(95%/4);
+}
+.info#gc ul{
+    text-align: center;
+    margin-left: -50px;
+}
+.CharacterInfo{
+    margin-left: 25px;
+}
+.Skills{
+    transform: skewX(-15deg);
+}
+.Skills#row1 img, .Skills#row2 img{
+    width: 52px;
+    height: 52px;
+}
+.Skills .Row1 div, .Skills .Row2 div{
+    border: 1px double;
+    height: 52px; 
+    width: 52px; 
+    background: #202028;
+    display: inline-block;
+    transform: skewX(15deg);
+}
+.Skills .Sets{
+    transform: skewX(15deg);
+}
+.Skills span#title{
+    transform: skewX(15deg);
+}
+#MSKILL, #HASKILL{
+    border-color: blueviolet;
+}
+#TSLOT1, #TSLOT2{
+    border-color: yellow;
+}
+.Start #ICON{
+    border: 1px double;
+    height: 64px; 
+    width: 64px; 
+    background: #202028;
+    display: inline-block; 
+}
+.Desc{
+    background: #222028;
+    width: 40%;
+    height: fit-content;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+.Desc #text{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+.Start,.HTU{
+    width: 40%;
+}
+/* Skill Sets */
+.Sets {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.Sets div {
+    padding: 5px 10px;
+    background-color: #333;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.Sets div:hover {
+    background-color: #444;
+}
+
+.Sets div.active {
+    background-color: #555;
+    border: 1px solid #777;
+}
+
+/* Mod Icon */
+.mod-icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+/* Skill Popup */
+.skill-popup {
+    z-index: 1000;
+    background-color: #1a1a1a;
+    border: 2px solid #444;
+    border-radius: 5px;
+    padding: 10px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.skill-popup-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    gap: 10px;
+}
+
+.skill-popup-header img {
+    width: 40px;
+    height: 40px;
+}
+
+.skill-tier {
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.skill-name {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.skill-popup-body {
+    margin-top: 5px;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+.skill-popup-body div {
+    margin-bottom: 3px;
+}
+
+/* Skill Icons */
+.Row1 div, .Row2 div {
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.Row1 div:hover, .Row2 div:hover {
+    transform: skewX(15deg) scale(1.1);
+}
+.Skills img{
+    object-fit: contain;
+    margin: 0;
+}
+.Skills .Row1,.Skills .Row2{
+    margin-left: -30px;
+    background: #101015;
+    width: fit-content;
+}
+#SKILL1,#SKILL5{
+    margin-left: 50px;
+    margin-top: 5px;
+}
+#HASKILL,#MSKILL{
+    margin-right: 17px;
+}
+.Skills .Sets{
+    margin-left: 10px;
+}
+.Skills .Sets div{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 50px;
+    background: #202432;
+    text-align: center;
+    margin-top: 5px;
+}
+.HTU img{
+    width: 32px;
+    height: 32px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    float: left;
+}
+.HTU{
+    width: 90%;
+}
+
+.HTU .header{
+    border-radius: 15px;
+    background: #202432;
+}
+
+#htutitle{
+    margin-left: 10px;
+    margin-top: 16px;
+    width: 50%;
+    float: left;
+}
+
+.CharacterIcons li{
+    cursor: pointer;
+}
+.Start,.Desc{
+    float: left;
+}
+.Skills,.BuffList{
+    margin-left: 45vw;
+}
+.BuffList{
+    margin-top: 25px;
+    background-color: #242432;
+    width: 40%;
+}
+#HEAL,#BUFF,#DEBUFF{
+    min-height: 64px;
+}
+#HEAL{
+    background-color: #208028;
+}
+#BUFF{
+    background-color: #204080;
+}
+#DEBUFF{
+    background-color: #801030;
+}
+
+@keyframes slide-left-out {
+    from { transform: translateX(0); opacity: 1; }
+    to { transform: translateX(-100%); opacity: 0; }
+}
+@keyframes slide-right-out {
+    from { transform: translateX(0); opacity: 1; }
+    to { transform: translateX(100%); opacity: 0; }
+}
+@keyframes slide-left-in {
+    from { transform: translateX(100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+@keyframes slide-right-in {
+    from { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+.slide-left-out { animation: slide-left-out 0.3s forwards; }
+.slide-right-out { animation: slide-right-out 0.3s forwards; }
+.slide-left-in { animation: slide-left-in 0.3s forwards; }
+.slide-right-in { animation: slide-right-in 0.3s forwards; }
+
+.CharacterInfo .Start .container {
+    max-height: 66px;
+    overflow: hidden;
+}
+#ICON img{
+    width: 64px;
+    height: 64px;
+}
+#pichp li img{
+    height: 32px;
+    width: 32px;
+}
+#cichp li img{
+    height: 32px;
+    width: 32px;
+}
+
+/* -------- cichp colors --------- */
+#cichp li:nth-child(1), #cichp li:nth-child(8) { background-color: #ff6666; } /* Red */
+#cichp li:nth-child(2), #cichp li:nth-child(9) { background-color: #9966cc; } /* Purple */
+#cichp li:nth-child(3), #cichp li:nth-child(12), #cichp li:nth-child(15) { background-color: #66cc66; } /* Green */
+#cichp li:nth-child(4) { background-color: #666666; } /* Gray */
+#cichp li:nth-child(6), #cichp li:nth-child(10), #cichp li:nth-child(14) { background-color: #6699ff; } /* Blue */
+#cichp li:nth-child(5), #cichp li:nth-child(13) { background-color: #ff99cc; } /* Pink */
+#cichp li:nth-child(11) { background-color: #ffcc66; } /* Yellow */
+#cichp li:nth-child(7) { background-color: #ff9e66; } /* Orange */
+
+/* -------- Design ----------- */
+#cichp li {
+    transform: skewX(-20deg);
+    transition: all 0.3s ease;
+    display: inline-block;
+    width: 60px;
+    height: 40px;
+    text-align: center;
+    line-height: 60px;
+    border: none;
+}
+#cichp li img {
+    margin-top: 3px;
+    transform: skewX(20deg);
+}
+
+/* -------- Highlight --------- */
+#cichp li.selected {
+    background-color: #ffffff;
+}
+
+#CNAME {
+    display: block;
+    font-size: 18px;
+    color: gray;
+    margin-right: 218px;
+    margin-bottom: -22px;
+}
+
+#PNAME {
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 24px;
+    margin-right: 116px;
+}
+
+/* -------------------------------- Color ----------------------------------------- */
+
+#HIGHLIGHTEDTEXT{
+    color: cyan;
+}
+
+#EXTRAINFO{
+    color: #808080;
+}
+
+#QUESTCOLOR{
+    color: lightblue;
+}
+#whatis{
+    color: #ffddec;
+    text-decoration: dashed;
+}
+#ROSSOCOLOR{
+    color: rgb(216, 112, 112);
+    border-color: rgb(216, 112, 112);;
+}
+#BERTHEPHASECOLOR{
+
+}
+#ABYSSPHASECOLOR{
+
+}
+#SERPENTIUMPHASECOLOR{
+
+}
+#APORIAPHASECOLOR{
+
+}
+.guidedisclaimer{
+    color: red;
+}
+#guidenotice{
+    color: orange;
+}
