@@ -1,128 +1,150 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <title>Elhelper</title>
+        <title data-translate="title">Elhelper</title>
         <link rel="stylesheet" href="../homenav.css">
         <link rel="stylesheet" href="../main.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital@0;1&display=swap" rel="stylesheet">
-        <meta name="viewport" 
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+        <meta charset="UTF-8">
     </head>
     <body>
         <div class="container">
-            <nav class="header">
-                <ul>
-                    <img style="margin-top: 5px; color: white;" height="32px" id="collapsible" src="../images/menu-bar-2.png">
-                    <a href="../index.html"><li>Home</li></a>
-                    <a href="../prog.html"><li id="spec">Game Progression</li></a>
-                    <a href="../guides.html"><li>Guides</li></a>
-                    <a href="../chara.html"><li>Characters</li></a>
-                </ul>
-            </nav>
             <div class="info" id="g">
-                <div class="banner" id="s3"></div>
+                <div class="banner" id="s4"></div>
                 <div class="back">
-                    <a onclick="location.href='../prog.html'" id="goback">&leftarrow; Game Progression</a> 
+                    <a onclick="location.href='../prog.html'" id="goback" data-translate="general.back">&leftarrow; Game Progression</a> 
                 </div>
                 <div class="guidetitle" id="s1">
-                    <p class="stage">Stage 4</p>
-                    4
+                    <p class="stage" data-translate="stage4.title">Stage 4</p>
+                    <span data-translate="stage4.stage4_title">Stage 4 Title</span>
                 </div><br>
                 <hr width="79.9%" style="margin-left: 15.1%; margin-top: 0px; margin-bottom: 0px;">
                 <div class="guider">
-                    <p>List of Content</p>
+                    <p data-translate="stage4.contents">List of Content</p>
                     <ul>
-                        <li href=".dis">-</li>
-                        <li href=".dis">-</li>
-                        <li href=".dis">-</li>
-                        <li href=".dis">-</li>
-                        <li href=".dis">-</li>
-                        <li href=".dis">-</li>
+                        <li><a href="#pruinaum" data-translate="stage4.content_pruinaum">New Region: Pruinaum</a></li>
+                        <li><a href="#berthe-raid" data-translate="stage4.content_berthe">Introduction to Berthe Raid</a></li>
+                        <li><a href="#vos" data-translate="stage4.content_vos">New Weapon: Vestige of Soul</a></li>
+                        <li><a href="#imprint" data-translate="stage4.content_imprint">System Explanation: Imprint</a></li>
                     </ul>
                 </div>
                 <div class="trueguide">
-                    <div class="guidetext">
-                        Till this point you should have:<br>
-                        Elrianode Armor, Apocalypse-Type Void Weapon (+9 or +10), DoSI Wings, Elrios Guardian Knights Accessories, Head Hunter (Elite), Eroding Energy (Elite), El Resonance System Unlocked. if you lack any of those, get it and come back.
+                    <div class="tginfo">
+                        <div class="guidetext" data-multiline="stage4.sections.intro">
+                            <!-- Content will be inserted here by translations.js -->
+                        </div>
                         
-                        <h2>New Region: Varnimyr</h2>
-                        Varnimyr is a region consisting of 5 Dungeons, and 3 Raid Dungeons (Widely known as Rosso Raid), here, your task will be to clear the first 4 dungeons to complete <span id="HIGHLIGHTEDTEXT">Dr. Pho's 2nd Guide, Lesson 3</span>. blablabla blebleble blublublu ill finish this after.
+                        <h2 id="pruinaum" data-translate="stage4.sections.pruinaum.title">New Region: Pruinaum</h2>
+                        <div class="guidetext" data-multiline="stage4.sections.pruinaum.content">
+                            <!-- Content will be inserted here by translations.js -->
+                        </div>
+                            
+                        <h2 id="berthe-raid" data-translate="stage4.sections.berthe_raid_intro.title">Introduction to Berthe Raid</h2>
+                        <div class="guidetext" data-multiline="stage4.sections.berthe_raid_intro">
+                            <!-- Content will be inserted here by translations.js -->
+                        </div>
                         
-                        <h2>Introduction to Rosso Raid</h2>
-                        This is the first raid of the game, raid parties consist of a maximum amount of 6 Players, and, contrary to normal dungeons, you require a party to enter.<br>
-                        All Raids have Mechanics (or Mechs for short), that are essential for clearing, even though this raid is old and all mechs can be neglected if you have a dps that deals enough damage, its still important to know the mechs if you ever find yourself in a party where you can't neglect them.
-                        <p id="guidenotice">Raid Parties can't get Party Assemble buff, meaning queue is pointless, just press "Start Now" button *</p>
-                        <p id="guidenotice">Bosses are freezable 3 times each 60 seconds (refreshed on phase clear) *</p>
-                        
-                        
-                        <h3>1st Dungeon: Savage White-Ghost Castle</h3>
-                        
+                        <p id="guidenotice" data-translate="stage3.notices.raid_party">Raid Parties can't get Party Assemble buff, meaning queue is pointless, just press "Start Now" button *</p>
+                        <p id="guidenotice" data-translate="stage4.notices.boss_freezing">Bosses are freezable 1 time each 60 seconds (refreshed on phase clear) *</p>
+                        <p id="guidenotice" data-translate="stage3.notices.mode"></p>
 
-                        <span id="BERTHECOLOR"> Phase 1:</span> Boss Type: Big<hr id="ROSSOCOLOR">
-                        
-                        4 bosses appear, which can cast flame breath, it's not much of a trouble though.<br> if all 4 bosses arent dead, after certain amount of time, they revive.<br>These bosses become unhittable for a certain amount of time, your cue, is that the heads get far from the platform.
-                        
-                        <br><br><span id="ROSSOCOLOR">Phase 2:</span> Boss Size: Small<hr id="ROSSOCOLOR">
-                        
-                        Boss Appears, can cast a line of flames that have certain chance of giving you a debuff that makes you heal the boss during the debuff duration.<br>Boss will become unhittable each 15 bars. (Skippable via Freeze)
-                        <br>Boss can teleport to a random player each certain amount of seconds.
-                        
-                        <br><br><span id="ROSSOCOLOR">Phase 3:</span> Boss Size: Big<hr id="ROSSOCOLOR">
-                        
-                        The 4 bosses from Phase 1 come back, with higher HP.<br> They also gain 2 new forms of attack: Summon the Phase 2 Boss & cast a crimson tornado, this attack oneshots you.<br> Essentially, the goal is the same as phase 1, kill all the bosses before they revive, usually done by leaving 1 boss at low HP and move to another one.
-                        
-                        
-                        <h3>2nd Dungeon: Altar of Invocation</h3>
-                        
-
-                        <div class="phaseheader" id="berthe">
+                        <h3 class="RAID_DUNG_NUM" data-translate="stage4.sections.savage_castle.num">1st Dungeon</h3>
+                        <h3 class="RAID_DUNG_TITLE" data-translate="stage4.sections.savage_castle.name">Savage White-Ghost Castle</h3>
+                        <div class="phaseheader" id="BERTHECOLOR">
                             <img height="24px" width="24px" src="../images/RSNB.png">
-                            <div id="BERTHECOLOR">Phase 1</div>
-                        </div><hr class="titledivider" id="BERTHECOLOR">
-                        
-                        Since 21/05/2025 Update, this phase now autoclears.
-                      
-                        <div class="phaseheader" id="abyss">
+                            <div id="BERTHECOLOR" data-translate="stage4.sections.savage_castle.phase1.title">Phase 1</div>
+                        </div>
+                        <hr class="titledivider" id="BERTHECOLOR">
+                        <div class="guidetext" data-multiline="stage4.sections.savage_castle.phase1.content">
+                            <!-- Content will be inserted here by translations.js -->
+                        </div>
+                        <div class="phaseheader" id="BERTHECOLOR">
                             <img height="24px" width="24px" src="../images/RSNB.png">
-                            <div id="ABYSSCOLOR">Phase 2 | Boss Size: Big</div>
-                        </div><hr class="titledivider" id="ABYSSCOLOR">
-                        
-                        Boss spawns with invencibility, summons 4 eyes and players need to kill at least 1 in order to make the boss lose its invencibility, then, boss will become targetable for certain amount of time, and in the meanwhile, he will target a player. after a few seconds, it will release a ray in the direction of the player he was looking at.<br>
-                        <br>After boss regains invencibility, it will become red and re-summon all the eyes that were previously killed, players need to kill all 4 eyes in order to make boss lose invincibility again, else, if they take too long to kill the eyes, boss will wipe the party. (all players will die)
-                        
-                        <div class="phaseheader">
+                            <div id="BERTHECOLOR" data-translate="stage4.sections.savage_castle.phase2.title">Phase 2</div>
+                        </div>
+                        <hr class="titledivider" id="BERTHECOLOR">
+                        <div class="guidetext" data-multiline="stage4.sections.savage_castle.phase2.content">
+                            <!-- Content will be inserted here by translations.js -->
+                        </div>
+                        <div class="phaseheader" id="BERTHECOLOR">
                             <img height="24px" width="24px" src="../images/RSNB.png">
-                            <div id="ROSSOCOLOR">Phase 3 | Boss Size: Big</div>
-                        </div><hr class="titledivider" id="ROSSOCOLOR">
+                            <div id="BERTHECOLOR" data-translate="stage4.sections.savage_castle.phase3.title">Phase 3</div>
+                        </div>
+                        <hr class="titledivider" id="BERTHECOLOR">
+                        <div class="guidetext" data-multiline="stage4.sections.savage_castle.phase3.content">
+                            <!-- Content will be inserted here by translations.js -->
+                        </div>
                         
-                        Boss will spawn in the lower part of the arena, after a few seconds (or after certain amount of mechs), it will teleport to the middle of the arena and spawn 3 thorns that will begin to move clockwise, you'll need to use the platforms in order to escape from the thorns, else if you're touched by one, you'll get oneshoted. (unless your defense is really high)
-                        <br><br>Boss can teleport to a random part of the room, and do 1 of 2 mechs.
-                        <br>1: 1 player will get targeted and after a few seconds, boss will cast a laser ray upon the player.
-                        <br>2: Boss will gain an armor, and start casting thorns (that oneshot you) on a random player, and will continue to cast until it gets hit by thorns 3 times, after getting hit 3 times, boss will go groggy (exhaustion/stun) for certain amount of time.
-                       
+                        <h3 class="RAID_DUNG_NUM" data-translate="stage4.sections.altar_invocation.num">2nd Dungeon</h3>
+                        <h3 class="RAID_DUNG_TITLE" data-translate="stage4.sections.altar_invocation.name">Altar of Invocation</h3>
+                        <div class="phaseheader" id="BERTHECOLOR">
+                            <img height="24px" width="24px" src="../images/RSNB.png">
+                            <div id="BERTHECOLOR" data-translate="stage4.sections.altar_invocation.phase1.title">Phase 1</div>
+                        </div>
+                        <hr class="titledivider" id="BERTHECOLOR">
+                        <div class="guidetext" data-multiline="stage4.sections.altar_invocation.phase1.content">
+                            <!-- Content will be inserted here by translations.js -->
+                        </div>
+                        <div class="phaseheader" id="BERTHECOLOR">
+                            <img height="24px" width="24px" src="../images/RSNB.png">
+                            <div id="BERTHECOLOR" data-translate="stage4.sections.altar_invocation.phase2.title">Phase 2 | Boss Size: Big</div>
+                        </div>
+                        <hr class="titledivider" id="BERTHECOLOR">
+                        <div class="guidetext" data-multiline="stage4.sections.altar_invocation.phase2.content">
+                            <!-- Content will be inserted here by translations.js -->
+                        </div>
+                        <div class="phaseheader" id="BERTHECOLOR">
+                            <img height="24px" width="24px" src="../images/RSNB.png">
+                            <div id="BERTHECOLOR" data-translate="stage4.sections.altar_invocation.phase3.title">Phase 3 | Boss Size: Big</div>
+                        </div>
+                        <hr class="titledivider" id="BERTHECOLOR">
+                        <div class="guidetext" data-multiline="stage4.sections.altar_invocation.phase3.content">
+                            <!-- Content will be inserted here by translations.js -->
+                        </div>
                         
-                        <h3>Berthe Farm</h3>
-                        <h2>New Weapon: Vestige of Soul (VoS)</h2>
-                        Clearing each phase of berthe raid (if you haven't cleared it yet) will increase your pity percentage to get VoS<br>
-                        <br>The higher your pity bar, the higher the chances you have to drop the weapon. Every time a player in the party drops weapon, every member will be rewarded with 1 crystal (can only get 1 even if 2 people drop), accumulate them, since you can exchange them for Raid Accessories (5 crystals each), or Weapon (20 crystals).
-                        <br>Though, like FoJ, Dr. Pho gives you a free +9 VoS for Clearing berthe raid for the first time, with fully socketed mystic slots.
-
-                        <br><br> The purpose of farming this raid, is to get 2 accessories: (Face Top) Soul Crown, and increase your pity slowly, to drop multiple VoS, to dismantle them for Crystals.
-                        Why do you want crystals? because they can be exchanged for berthe raid accessories, or mystic stones transfer tickets, in case you upgraded your mystic stones and don't want to spend on that again.
-                        <br> <span id="guidenotice">Since Dr. Pho gives you a +10 FoJ Amulet, Vestige of Soul will likely give you less CP/Damage than FoJ at first, but only at first. since +9 VoS is still better (explained afterwards) *</span>Vestige of Soul will likely give you less CP than FoJ at first
-                        <h2>System Explanation: Imprint</h2>
-                        Each time you clear pruinaum dungeons for the first time on a day or clear berthe raid while being below 100%, you can get Shining Colored Imprint Stones, divided into Red, Blue and Yellow.
-                        <br>Weapons (Except Void) have 3 imprint sockets with different RNG values.
-                        <p id="guidenotice">To access this system, go to Blacksmith &rightarrow; Mystic Enhancement, Each change costs 200,000 ED but even if you roll, as long as you dont apply it, you can keep your previous values. *</p>
-                        These are the possible stats you can get from Mystic Enhancement:<br><hr>
+                        <h3 data-translate="stage4.sections.berthe_farm.title">Berthe Farm</h3>
+                        <h2 id="vos" data-translate="stage4.sections.vos.title">New Weapon: Vestige of Soul (VoS)</h2>
+                        <div class="guidetext" data-multiline="stage4.sections.vos.content">
+                            <!-- Content will be inserted here by translations.js -->
+                        </div>
+                        <h2 id="imprint" data-translate="stage4.sections.imprint.title">System Explanation: Imprint</h2>
+                        <div class="guidetext" data-multiline="stage4.sections.imprint.content">
+                            <!-- Content will be inserted here by translations.js -->
+                        </div>
+                        <p id="guidenotice" data-translate="stage4.notices.imprint_access">To access this system, go to Asella (Camp: Aurora) or Vasili/Chief Betty (Magmelia) → Imprint, Each change costs 200,000 ED for Refined Stones, and 1,600,000 for Shining Stones, as other systems, if you roll, as long as you dont apply it, you can keep your previous values. *</p>
+                        <div data-translate="stage4.sections.imprint.table_intro">These are the possible stats you can get from Imprint:</div><br>
+                        <!-- You can add a table here as in s3.html if needed -->
+                        <!-- ... -->
+                        <h2 id="pruinaum-outskirts" data-translate="stage4.sections.pruiout.title">New Region: Pruinaum Outskirts</h2>
+                        <div class="guidetext" data-multiline="stage4.sections.pruiout.content">
+                            <!-- Content will be inserted here by translations.js -->
+                        </div>
+                        <h2 id="tirnog" data-translate="stage4.sections.tirnog.title">New Region: Tirnog</h2>
+                        <div class="guidetext" data-multiline="stage4.sections.tirnog.content">
+                            <!-- Content will be inserted here by translations.js -->
+                        </div>
+                        <h2 id="tenebrous" data-translate="stage4.sections.tenebrous.title">Equipment Guide: Tenebrous Armor</h2>
+                        <div class="guidetext" data-multiline="stage4.sections.tenebrous.content">
+                            <!-- Content will be inserted here by translations.js -->
+                        </div>
+                    </div>
+                </div>
+            </div>
             <footer class="lower">
                 <div class="info">
-                    If you have any information that you can contribute into, and would like to update, contact <a id="guidenotice" href="discord://-/users/644760616485257246">sinxaegh</a> on discord
+                    <span data-translate="general.footer">If you have any information that you can contribute into, and would like to update, contact </span>
+                    <a id="guidenotice" href="discord://-/users/644760616485257246">sinxaegh</a>
+                    <span data-translate="general.footer_discord"> on discord</span>
                 </div>
             </footer>
         </div>
-        <script src="../main.js"></script>
+        <script src="../nav.js"></script>
+        <script type="module" src="../main.js"></script>
+        <script type="module" src="../data.js"></script>
+        <script type="module" src="../translations.js"></script>
     </body>
 </html>

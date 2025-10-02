@@ -24,7 +24,102 @@ export const data = {
                 br: "no discord"
             }
         },
-
+        // ...existing code...
+        stage4: {
+            title: { en: "Stage 4", es: "Etapa 4", kr: "4단계", jp: "ステージ4", br: "Estágio 4" },
+            stage4_title: { en: "Pruinaum to Tirnog", es: "Pruinaum a Tirnog", kr: "프루이나움에서 티르노그까지", jp: "プルイナウムからティルノグへ", br: "Pruinaum a Tirnog" },
+            contents: { en: "List of Content", es: "Lista de Contenido", kr: "콘텐츠 목록", jp: "コンテンツ一覧", br: "Lista de Conteúdo" },
+            content_pruinaum: { en: "New Region: Pruinaum", es: "Nueva Región: Pruinaum", kr: "신규 지역: 프루이나움", jp: "新地域: プルイナウム", br: "Nova Região: Pruinaum" },
+            content_berthe: { en: "Introduction to Berthe Raid", es: "Introducción a la Incursión Berthe", kr: "베르테 레이드 소개", jp: "ベルテレイド紹介", br: "Introdução à Raide Berthe" },
+            content_vos: { en: "New Weapon: Vestige of Soul", es: "Nueva Arma: Vestigio del Alma", kr: "신규 무기: 영혼의 흔적", jp: "新武器: 魂の痕跡", br: "Nova Arma: Vestígio da Alma" },
+            content_imprint: { en: "System Explanation: Imprint", es: "Explicación del Sistema: Impronta", kr: "시스템 설명: 각인", jp: "システム説明: インプリント", br: "Explicação do Sistema: Impressão" },
+            content_tenebrous: { en: "Equipment Guide: Tenebrous Armor", es: "Guía de Equipamiento: Armadura Tenebrosa", kr: "장비 가이드: 텐브러스 아머", jp: "装備ガイド: テネブラスアーマー", br: "Guia de Equipamento: Armadura Tenebrosa" },
+            sections: {
+                intro: { en: ["After succesfully getting Master Class (even if below stage 4), your next goal lays here:"], es: ["Después de obtener con éxito la Clase Maestra (incluso si estás por debajo de la etapa 4), tu próximo objetivo se encuentra aquí:"], kr: ["마스터 클래스를 성공적으로 획득한 후(4단계 이하인 경우에도) 다음 목표는 여기 있습니다:"], jp: ["マスタークラスを無事に取得した後（ステージ4以下でも）、次の目標はここにあります:"], br: ["Após conseguir com sucesso a Classe Mestre (mesmo que abaixo do estágio 4), seu próximo objetivo está aqui:"] },
+                pruinaum: {
+                    title: { en: "New Region: Pruinaum", es: "Nueva Región: Pruinaum", kr: "신규 지역: 프루이나움", jp: "新地域: プルイナウム", br: "Nova Região: Pruinaum" },
+                    content: { en: ["Pruinaum is the next major region after Rigomor, house to the 2nd raid in the game, and useful rewards that can increase your power by quite a bit; you won't really do too much here in comparison to other regions, you'll only need to do 3 things:", "(Daily) 1x Sanctuary of the Soul for Baryon's Ornament Fur", "(Daily) 1x Capital-Bound Train for Engine Cooling System", "(Weekly) Berthe Raid for Accessories and Crystals for future usage."],
+                        es: ["Pruinaum es la siguiente región principal después de Rigomor, hogar de la segunda incursión en el juego y recompensas útiles que pueden aumentar tu poder considerablemente; realmente no harás mucho aquí en comparación con otras regiones, solo necesitarás hacer 3 cosas:", "(Diario) 1x Santuario del Alma para la Piel del Adorno de Baryon", "(Diario) 1x Tren con Destino a la Capital para el Sistema de Enfriamiento del Motor", "(Semanal) Incursión Berthe para Accesorios y Cristales para uso futuro."],
+                        kr: ["프루이나움은 리고모르 다음의 주요 지역으로, 게임에서 두 번째 레이드가 있으며, 상당한 힘을 증가시킬 수 있는 유용한 보상이 있습니다. 다른 지역에 비해 여기서 할 일이 많지 않으며, 다음 세 가지를 해야 합니다:", "(일일) 바리온의 장식 털을 위한 1x 영혼의 성소", "(일일) 엔진 냉각 시스템을 위한 1x 수도행 열차", "(주간) 향후 사용을 위한 액세서리 및 크리스탈을 위한 베르테 레이드."],
+                        jp: ["プルイナウムはリゴモアの次の主要な地域で、ゲーム内で2番目のレイドがあり、あなたの力をかなり増加させることができる有用な報酬があります。他の地域と比較してここでやることはあまり多くなく、次の3つのことを行う必要があります:", "(毎日) バリオンの装飾用毛皮のための1x 魂の聖域", "(毎日) エンジン冷却システムのための1x 首都行き列車", "(毎週) 将来の使用のためのアクセサリーとクリスタルのためのベルテレイド。"],
+                        br: ["Pruinaum é a próxima região principal após Rigomor, casa da segunda raide do jogo e recompensas úteis que podem aumentar seu poder consideravelmente; você realmente não fará muito aqui em comparação com outras regiões, você só precisará fazer 3 coisas:", "(Diário) 1x Santuário da Alma para a Pele do Adorno de Baryon", "(Diário) 1x Trem com Destino à Capital para o Sistema de Resfriamento do Motor", "(Semanal) Raide Berthe para Acessórios e Cristais para uso futuro." ]
+                     }
+                },
+                berthe_raid_intro: {
+                    title: { en: "Introduction to Berthe Raid", es: "Introducción a la Incursión Berthe", kr: "베르테 레이드 소개", jp: "ベルテレイド紹介", br: "Introdução à Raide Berthe"},
+                    en: ["As mentioned before, Pruinaum is the house to the next raid in the game, Berthe Raid is fairly harder than rosso, but still pretty simple to learn; in this introduction you will learn the basics of the raid, and some tips to make your life easier while doing it."],
+                    es: ["Como se mencionó antes, Pruinaum es el hogar de la siguiente incursión en el juego, la Incursión Berthe es bastante más difícil que Rosso, pero aún así es bastante simple de aprender; en esta introducción aprenderás los conceptos básicos de la incursión y algunos consejos para facilitarte la vida mientras la haces."],
+                    kr: ["앞서 언급했듯이 프루이나움은 게임에서 다음 레이드인 베르테 레이드의 집입니다. 베르테 레이드는 로소보다 상당히 어렵지만 여전히 배우기 매우 간단합니다. 이 소개에서는 레이드의 기본 사항과 레이드를 수행하는 동안 삶을 더 쉽게 만드는 몇 가지 팁을 배웁니다."],
+                    jp: ["前述のように、プルイナウムはゲーム内で次のレイドであるベルテレイドの家です。ベルテレイドはロッソよりもかなり難しいですが、それでも学ぶのは非常に簡単です。この紹介では、レイドの基本と、レイドを行う際に生活を楽にするためのいくつかのヒントを学びます。"],
+                    br: ["Como mencionado antes, Pruinaum é a casa da próxima raide no jogo, a Raide Berthe é bastante mais difícil que Rosso, mas ainda assim é bastante simples de aprender; nesta introdução você aprenderá o básico da raide e algumas dicas para facilitar sua vida enquanto a faz."]
+                },
+                savage_castle: {
+                    num: { en: "1st Dungeon", es: "1ra Mazmorra", kr: "첫 번째 던전", jp: "最初のダンジョン", br: "1ª Masmorra" },
+                    name: { en: "- Savage White-Ghost Castle -", es: "- Castillo Fantasma Salvaje -", kr: "- 야성 백귀성 -", jp: "- 野性の白幽城 -", br: "- Castelo Fantasma Selvagem -"},
+                    phase1: {
+                        title: { en: "Phase 1 | Boss Size: Small", es: "Fase 1 | Tamaño del Jefe: Pequeño", kr: "1단계 | 보스 크기: 작음", jp: "フェーズ1 | ボスサイズ: 小", br: "Fase 1 | Tamanho do Chefe: Pequeno" },
+                        content: { en: ["2 Bosses will appear, 1 in the left arena, and another in the right arena, Players need to go to the right arena, since that boss is easier to deal with.", "In this phase, you need to be cautious of the red texts that appear on screen since they can lead to wipe.*", "When the player gets highlighted by a orange aura, quickly roam around the right arena to find an orange floating orb and get close to it; if close enough, it will turn blue and link to the player, once it disappears you're safe, otherwise, if the player doesn't link after some time, it will trigger an explosion that wipes. (Seal of Time or Res. Title can survive this)", "Boss will spam 2 attacks, 1 will put bombs in your location that will explode over time and other that will trigger a big explosion, none deal fatal damage, but both knock up so using Super Armor is recommended.", "Red Text will appear and the boss on the left side will Teleport the player to the left side; after some seconds, boss will thrust towards the player. To avoid this, just use the Teleporter to go back to the right arena before the boss thrusts.", "Red Text will appear and the boss on the left side will start charging an attack, get in front of the boss quickly. After some time, it will trigger an attack that kills the player in any location if not in front of the boss.", "Red text will appear and the boss on the right side will start charging an attack, a safe zone spot will appear. Rush to the safe spot quickly. After some seconds boss will trigger an explosion that kills the player in any location if not in the safe zone."],
+                            es: ["Aparecerán 2 jefes, 1 en la arena izquierda y otro en la arena derecha, los jugadores deben ir a la arena derecha, ya que ese jefe es más fácil de manejar.", "En esta fase, debes tener cuidado con los textos rojos que aparecen en pantalla, ya que pueden llevar a una derrota.*", "Cuando el jugador sea resaltado por un aura naranja, recorra rápidamente la arena derecha para encontrar un orbe flotante naranja y acérquese a él; si está lo suficientemente cerca, se volverá azul y se vinculará al jugador. Una vez que desaparezca, estarás a salvo; de lo contrario, si el jugador no se vincula después de un tiempo, desencadenará una explosión que eliminará a todos. (El Sello del Tiempo o el Título de Res. pueden sobrevivir a esto)", "El jefe usará 2 ataques repetidamente, 1 pondrá bombas en tu ubicación que explotarán con el tiempo y otro que desencadenará una gran explosión. Ninguno causa daño fatal, pero ambos levantan, por lo que se recomienda usar Super Armadura.", "Aparecerá un texto rojo y el jefe del lado izquierdo teletransportará al jugador al lado izquierdo; después de unos segundos, el jefe se lanzará hacia el jugador. Para evitar esto, simplemente usa el teletransportador para volver a la arena derecha antes de que el jefe se lance.", "Aparecerá un texto rojo y el jefe del lado izquierdo comenzará a cargar un ataque; colócate rápidamente frente al jefe. Después de un tiempo, desencadenará un ataque que mata al jugador en cualquier ubicación si no está frente al jefe.", "Aparecerá un texto rojo y el jefe del lado derecho comenzará a cargar un ataque; aparecerá una zona segura. Corre rápidamente hacia el lugar seguro. Después de unos segundos, el jefe desencadenará una explosión que mata al jugador en cualquier ubicación si no está en la zona segura."],
+                            kr: ["2명의 보스가 나타납니다. 1명은 왼쪽 경기장에, 다른 1명은 오른쪽 경기장에 나타납니다. 플레이어는 오른쪽 경기장으로 가야 합니다. 그 보스가 다루기 더 쉽기 때문입니다.", "이 단계에서는 화면에 나타나는 빨간색 텍스트에 주의해야 합니다. 이는 전멸로 이어질 수 있습니다.*", "플레이어가 주황색 오라로 강조 표시되면 오른쪽 경기장을 빠르게 돌아다니며 주황색 떠 있는 구체를 찾아 가까이 가세요. 충분히 가까이 가면 파란색으로 변하고 플레이어와 연결됩니다. 사라지면 안전하지만, 그렇지 않으면 플레이어가 일정 시간 후에도 연결되지 않으면 폭발이 발생하여 전멸합니다. (시간의 인장 또는 레조넌스 칭호는 이를 견딜 수 있습니다)", "보스는 두 가지 공격을 반복적으로 사용합니다. 하나는 시간이 지남에 따라 폭발하는 위치에 폭탄을 설치하고 다른 하나는 큰 폭발을 일으킵니다. 둘 다 치명적인 피해를 입히지는 않지만 둘 다 넉백 효과가 있으므로 슈퍼 아머를 사용하는 것이 좋습니다.", "빨간색 텍스트가 나타나고 왼쪽 보스가 플레이어를 왼쪽으로 순간이동시킵니다. 몇 초 후 보스가 플레이어를 향해 돌진합니다. 이를 피하려면 보스가 돌진하기 전에 순간이동기를 사용하여 오른쪽 경기장으로 돌아가세요.", "빨간색 텍스트가 나타나고 왼쪽 보스가 공격을 충전하기 시작합니다. 보스 앞에 빠르게 서세요. 잠시 후, 보스 앞에 있지 않으면 플레이어를 죽이는 공격을 시작합니다.", "빨간색 텍스트가 나타나고 오른쪽 보스가 공격을 충전하기 시작합니다. 안전 지대가 나타납니다. 안전 지대로 빠르게 돌진하세요. 몇 초 후, 보스는 안전 지대에 있지 않으면 플레이어를 죽이는 폭발을 일으킵니다."],
+                            jp: ["2体のボスが出現します。1体は左のアリーナに、もう1体は右のアリーナにいます。プレイヤーは右のアリーナに行く必要があります。そのボスの方が対処しやすいからです。", "このフェーズでは、画面に表示される赤いテキストに注意する必要があります。これらは全滅につながる可能性があります。*", "プレイヤーがオレンジ色のオーラでハイライトされたら、右のアリーナを素早く移動してオレンジ色の浮遊オーブを見つけて近づいてください。十分に近づくと青色に変わり、プレイヤーとリンクします。消えると安全ですが、そうでない場合、プレイヤーがしばらくしてもリンクしない場合、爆発が発生して全滅します。（時間の印章またはレゾナンスタイトルはこれを生き延びることができます）", "ボスは2つの攻撃を繰り返し使用します。1つは時間の経過とともに爆発する位置に爆弾を設置し、もう1つは大きな爆発を引き起こします。どちらも致命的なダメージを与えませんが、両方ともノックアップ効果があるため、スーパーアーマーの使用をお勧めします。", "赤いテキストが表示され、左側のボスがプレイヤーを左側にテレポートします。数秒後、ボスはプレイヤーに向かって突進します。これを避けるには、ボスが突進する前にテレポーターを使用して右のアリーナに戻ってください。", "赤いテキストが表示され、左側のボスが攻撃のチャージを開始します。ボスの前に素早く立ってください。しばらくすると、ボスの前にいない場合、プレイヤーを殺す攻撃を開始します。", "赤いテキストが表示され、右側のボスが攻撃のチャージを開始します。安全地帯が現れます。安全地帯に素早く突進してください。数秒後、ボスは安全地帯にいない場合、プレイヤーを殺す爆発を引き起こします。"],
+                            br: ["Aparecerão 2 chefes, 1 na arena esquerda e outro na arena direita, os jogadores devem ir para a arena direita, pois esse chefe é mais fácil de lidar.", "Nesta fase, você deve ter cuidado com os textos vermelhos que aparecem na tela, pois eles podem levar a uma derrota.*", "Quando o jogador for destacado por uma aura laranja, percorra rapidamente a arena direita para encontrar um orbe flutuante laranja e se aproximar dele; se estiver perto o suficiente, ele ficará azul e se conectará ao jogador. Uma vez que desapareça, você estará seguro; caso contrário, se o jogador não se conectar após algum tempo, isso desencadeará uma explosão que eliminará todos. (O Selo do Tempo ou o Título de Res. podem sobreviver a isso)", "O chefe usará 2 ataques repetidamente, 1 colocará bombas em sua localização que explodirão com o tempo e outro que desencadeará uma grande explosão. Nenhum causa dano fatal, mas ambos levantam, por isso é recomendado usar Super Armadura.", "Um texto vermelho aparecerá e o chefe do lado esquerdo teletransportará o jogador para o lado esquerdo; após alguns segundos, o chefe avançará em direção ao jogador. Para evitar isso, basta usar o teletransportador para voltar à arena direita antes que o chefe avance.", "Um texto vermelho aparecerá e o chefe do lado esquerdo começará a carregar um ataque; coloque-se rapidamente na frente do chefe. Após algum tempo, ele desencadeará um ataque que mata o jogador em qualquer local se não estiver na frente do chefe.", "Um texto vermelho aparecerá e o chefe do lado direito começará a carregar um ataque; aparecerá uma zona segura. Corra rapidamente para o local seguro. Após alguns segundos, o chefe desencadeará uma explosão que mata o jogador em qualquer local se não estiver na zona segura."]
+                         }
+                    },
+                    phase2: {
+                        title: { en: "Phase 2 | Boss Size: Small", es: "Fase 2 | Tamaño del Jefe: Pequeño", kr: "2단계 | 보스 크기: 작음", jp: "フェーズ2 | ボスサイズ: 小", br: "Fase 2 | Tamanho do Chefe: Pequeno" },
+                        content: { en: ["wip"] }
+                    },
+                    phase3: {
+                        title: { en: "Phase 3 | Boss Size: Small", es: "Fase 3 | Tamaño del Jefe: Pequeño", kr: "3단계 | 보스 크기: 작음", jp: "フェーズ3 | ボスサイズ: 小", br: "Fase 3 | Tamanho do Chefe: Pequeno" },
+                        content: { en: ["wip"] }
+                    }
+                },
+                altar_invocation: {
+                    num: { en: "2nd Dungeon", es: "2da Mazmorra", kr: "두 번째 던전", jp: "2番目のダンジョン", br: "2ª Masmorra" },
+                    name: { en: "- Altar of Invocation -", es: "- Altar de Invocación -", kr: "- 소환의 제단 -", jp: "- 召喚の祭壇 -", br: "- Altar de Invocação -"},
+                    phase1: {
+                        title: { en: "Phase 1 | Boss Size: Medium", es: "Fase 1 | Tamaño del Jefe: Mediano", kr: "1단계 | 보스 크기: 중간", jp: "フェーズ1 | ボスサイズ: 中", br: "Fase 1 | Tamanho do Chefe: Médio" },
+                        content: { en: [""] }
+                    },
+                    phase2: {
+                        title: { en: "Phase 2 | Boss Size: Big", es: "Fase 2 | Tamaño del Jefe: Grande", kr: "2단계 | 보스 크기: 큼", jp: "フェーズ2 | ボスサイズ: 大", br: "Fase 2 | Tamanho do Chefe: Grande" },
+                        content: { en: [""] }
+                    },
+                    phase3: {
+                        title: { en: "Phase 3 | Boss Size: Small", es: "Fase 3 | Tamaño del Jefe: Pequeño", kr: "3단계 | 보스 크기: 작음", jp: "フェーズ3 | ボスサイズ: 小", br: "Fase 3 | Tamanho do Chefe: Pequeno" },
+                        content: { en: ["opo"] }
+                    }
+                },
+                berthe_farm: {
+                    title: { en: "Berthe Farm" }
+                },
+                vos: {
+                    title: { en: "New Weapon: Vestige of Soul", es: "Nueva Arma: Vestigio del Alma", kr: "신규 무기: 영혼의 흔적", jp: "新武器: 魂の痕跡", br: "Nova Arma: Vestígio da Alma" },
+                    content: { en: ["Vestige of Soul is the next weapon progression after Flame of Judgement. Farm Berthe Raid and related content to obtain and enhance it."], es: ["Vestigio del Alma es la siguiente progresión de arma después de Llama del Juicio. Participa en la Incursión Berthe y contenido relacionado para obtenerla y mejorarla."], kr: ["영혼의 흔적은 심판의 불꽃 다음의 무기 진화입니다. 베르테 레이드 및 관련 콘텐츠를 농사하여 획득하고 강화하세요."], jp: ["魂の痕跡は、審判の炎の次の武器進化です。ベルテレイドおよび関連コンテンツを農業して取得および強化します。"], br: ["Vestígio da Alma é a próxima progressão de arma após Chama do Julgamento. Participe da Raide Berthe e conteúdo relacionado para obtê-la e aprimorá-la."] }
+                },
+                imprint: {
+                    title: { en: "System Explanation: Imprint" },
+                    content: { en: ["Imprint allows you to further customize your equipment with powerful stats. Access it via Asella (Camp: Aurora) or Vasili/Chief Betty (Magmelia). Each change costs ED and materials. You can preview rolls before applying."] },
+                    table_intro: { en: "These are the possible stats you can get from Imprint:" }
+                },
+                pruiout: {
+                    title: { en: "New Region: Pruinaum Outskirts" },
+                    content: { en: ["Pruinaum Outskirts unlocks after progressing through Pruinaum. It offers new daily quests and materials for further upgrades."] }
+                },
+                tirnog: {
+                    title: { en: "New Region: Tirnog" },
+                    content: { en: ["This region."] }
+                },
+                tenebrous: {
+                    title: { en: "Equipment Guide: Tenebrous Armor" },
+                    content: { en: ["Tenebrous Armor is the next armor set after Rigomor. Obtain pieces from Tirnog dungeons and upgrade them for powerful set effects."] }
+                }
+            },
+            notices: {
+                boss_freezing: { en: "Bosses are freezable 1 time each 60 seconds (refreshed on phase clear) *", es: "Los jefes se pueden congelar 1 vez cada 60 segundos (se refresca al limpiar la fase) *", kr: "보스는 60초마다 1회 얼릴 수 있습니다(페이즈 클리어 시 갱신) *", jp: "ボスは60秒ごとに1回凍結可能（フェーズクリアでリフレッシュ）*", br: "Chefes podem ser congelados 1 vez a cada 60 segundos (recarregado ao limpar a fase) *" },
+                imprint_access: { en: "To access this system, go to Asella (Camp: Aurora) or Vasili/Chief Betty (Magmelia) → Imprint, Each change costs 200,000 ED for Refined Stones, and 1,600,000 for Shining Stones, as other systems, if you roll, as long as you dont apply it, you can keep your previous values. *", es: "Para acceder a este sistema, ve a Asella (Campamento: Aurora) o Vasili/Jefa Betty (Magmelia) → Impronta, cada cambio cuesta 200,000 ED por Piedras Refinadas y 1,600,000 por Piedras Brillantes, como otros sistemas, si tiras, mientras no lo apliques, puedes mantener tus valores anteriores. *", kr: "이 시스템에 액세스하려면 Asella(Camp: Aurora) 또는 Vasili/Chief Betty(Magmelia) → Imprint로 이동하세요. 변경할 때마다 정제된 돌은 200,000 ED, 빛나는 돌은 1,600,000 ED가 필요합니다. 다른 시스템과 마찬가지로 롤을 하면 적용하지 않는 한 이전 값을 유지할 수 있습니다. *", jp: "このシステムにアクセスするには、Asella（キャンプ：オーロラ）またはVasili/Chief Betty（Magmelia）→ Imprintに移動します。変更ごとに、精製石には200,000ED、輝く石には1,600,000EDが必要です。他のシステムと同様に、ロールすると、適用しない限り、以前の値を保持できます。*", br: "Para acessar este sistema, vá para Asella (Acampamento: Aurora) ou Vasili/Chefe Betty (Magmelia) → Impressão, Cada mudança custa 200.000 ED por Pedras Refinadas e 1.600.000 por Pedras Brilhantes, como outros sistemas, se você rolar, desde que não aplique, você pode manter seus valores anteriores. *" }
+            }
+        },
         // Stage 3 specific translations
         stage3: {
             title: {
@@ -202,7 +297,7 @@ export const data = {
                             "Completar cada fase de la incursión Rosso te permitirá obtener un porcentaje de lástima para obtener un arma nueva. La información de limpieza se actualiza en el reinicio semanal (miércoles a las 00:00 PST), o mediante boletos de reinicio, intercambiables por marcas (otorgadas por ayudar a personas que no han completado la incursión esta semana, mientras estás al 100%), u obtenibles mediante misiones semanales (3 por semana).",
                             "Cuanto más alta sea tu barra de lástima, mayores serán las posibilidades de que se te caiga el arma. Cada vez que un jugador del grupo suelta un arma, cada miembro será recompensado con 1 cristal (solo puedes obtener 1 incluso si 2 personas sueltan), acúmulelos, ya que puede intercambiarlos por accesorios de incursión (5 cristales cada uno) o por arma (20 cristales).",
                             "Tu tarea es cultivar esta incursión hasta que obtengas los 3 accesorios y aumentar tu lástima lentamente hasta que obtengas tu FoJ.",
-                            "El arma FoJ probablemente te dará menos CP que tu arma actual al principio, pero eso se debe a que las ranchas de mejora mística están vacías. Ah, cierto, aún no sabes qué son los místicos."
+                            "El arma FoJ probablemente te dará menos CP que tu arma atual al principio, pero eso se debe a que las ranchas de mejora mística están vacías. Ah, cierto, aún no sabes qué son los místicos."
                         ],
                         kr: [
                             "로소 레이드의 각 페이즈를 클리어하면 새로운 무기를 얻을 수 있는 확률이 증가합니다. 클리어 정보는 주간 초기화(수요일 00:00 PST) 시 갱신되거나, 리셋 티켓(이번 주 레이드를 클리어하지 못한 사람을 도울 때 100% 상태로 제공되는 마크로 교환 가능) 또는 주간 퀘스트(주당 3개)를 통해 얻을 수 있습니다.",
@@ -256,7 +351,7 @@ export const data = {
                     },
                     table_intro: {
                         en: "These are the possible stats you can get from Mystic Enhancement:",
-                        es: "Estas son las estadísticas posibles que puedes obtener de la Mejora Mística:",
+                        es: "Estas são as estatísticas possíveis que você pode obter de la Mejora Mística:",
                         kr: "신비한 강화로 얻을 수 있는 가능한 스탯은 다음과 같습니다:",
                         jp: "神秘の強化で得られる可能性のあるステータスは以下の通りです:",
                         br: "Estes são os status possíveis que você pode obter com o Aprimoramento Místico:"
@@ -639,6 +734,13 @@ export const data = {
                     kr: "",
                     jp: "",
                     br: ""
+                },
+                mode:{
+                    en: "The following guide is based on Solo mode, if you're in a party, some things might change. *",
+                    es: "La siguiente guía se basa en el modo Solo, si estás en un grupo, algunas cosas podrían cambiar. *",
+                    kr: "다음 가이드는 솔로 모드를 기반으로 합니다. 파티에 있는 경우 일부 사항이 변경될 수 있습니다. *",
+                    jp: "次のガイドはソロモードに基づいています。パーティーにいる場合、一部の事項が変更される可能性があります。*",
+                    br: "O seguinte guia é baseado no modo Solo, se você estiver em um grupo, algumas coisas podem mudar. *"
                 }
             },
             dungeons: {
@@ -839,7 +941,7 @@ export const data = {
                             ],
                             br: [
                                 "O chefe aparece com invencibilidade, invoca 4 olhos e os jogadores precisam matar pelo menos 1 para que o chefe perca sua invencibilidade, então, o chefe se tornará alvejável por certo tempo, e enquanto isso, ele mirará em um jogador. após alguns segundos, ele lançará um raio na direção do jogador que ele estava olhando.",
-                                "Depois que o chefe recupera a invencibilidade, ele ficará vermelho e invocará novamente todos os olhos que foram mortos anteriormente, os jogadores precisam matar todos os 4 olhos para que o chefe perca a invencibilidade novamente, caso contrário, se demorarem muito para matar os olhos, o chefe eliminará o grupo. (todos os jogadores morrerão)"
+                                "Depois que o chefe recupera a invencibilidade, ele ficará vermelho e invocará novamente todos os olhos que foram mortos anteriormente, os jogadores precisam matar todos os 4 olhos para que o chefe perca a invencibilidade novamente, caso contrário, se demoraram muito para matar os olhos, o chefe eliminará o grupo. (todos os jogadores morrerão)"
                             ]
                         }
                     },
@@ -859,7 +961,7 @@ export const data = {
                                 "2: Boss will gain an armor, and start casting thorns (that oneshot you) on a random player, and will continue to cast until it gets hit by thorns 3 times, after getting hit 3 times, boss will go groggy (exhaustion/stun) for certain amount of time."
                             ],
                             es: [
-                                "El jefe aparecerá en la parte inferior de la arena, después de unos segundos (o después de cierta cantidad de mecánicas), se teletransportará al medio de la arena e invocará 3 espinas que comenzarán a moverse en sentido horario, necesitarás usar las plataformas para escapar de las espinas, de lo contrario, si te toca una, te matará instantáneamente. (a menos que tu defensa sea muy alta)",
+                                "El jefe aparecerá en la parte inferior de la arena, después de unos segundos (o después de cierta cantidad de mecánicas), se teletransportará al medio de la arena e invocará 3 espinas que comenzarán a moverse en sentido horario, necesitarás usar las plataformas para escapar de las espinas, de lo contrario, si te toca una, te matará instantáneamente. (a menos que tu defensa seja muito alta)",
                                 "El jefe puede teletransportarse a una parte aleatoria de la habitación y hacer 1 de 2 mecánicas.",
                                 "1: 1 jugador será seleccionado y después de unos segundos, el jefe lanzará un rayo láser sobre el jugador.",
                                 "2: El jefe ganará una armadura y comenzará a lanzar espinas (que te matan instantáneamente) a un jugador aleatorio, y continuará lanzando hasta que sea golpeado por espinas 3 veces, después de ser golpeado 3 veces, el jefe se aturdirá (agotamiento/aturdimiento) durante cierto tiempo."
@@ -930,14 +1032,14 @@ export const data = {
                             jp: [
                                 "ボスは広いアリーナの中央に出現します。",
                                 "上を向いてアリーナ全体にレーザーレイを放つことができ、レーザーはiframe可能です（iframe：無敵フレーム、スキルキャスト時間中に達成可能）。iframeなしで当たると一定時間石化します。",
-                                "アリーナ全体にさまざまなサイズの深紅のオーブを召喚でき、それらに触れると致命的なダメージを与えたり殺したりします。",
+                                "アリーナ全体にさまざまなサイズの深紅のオーブを召喚でき、それに触れると致命的なダメージを与えたり殺したりします。",
                                 "腕でアリーナを打つことができ、それらから離れます（中央に行きます）。腕の近くにいると上に押し上げられ、ボスが全プレイヤーに棘を放ち、当たると死亡します。プレイヤーを中央に集め、棘の警告ゾーンが表示された後、端に分かれて死を避けることでこれを回避できます。"
                             ],
                             br: [
                                 "O chefe aparecerá no meio de uma arena ampla.",
                                 "Pode olhar para cima e lançar um raio laser sobre toda a arena, o laser pode ser iframeado (iframe: quadro de invencibilidade, alcançável durante o tempo de lançamento de uma habilidade), se for atingido sem iframe, você será petrificado por certo tempo.",
                                 "Pode invocar Orbes Carmesim de tamanhos diferentes por toda a arena, se tocados por eles, causarão dano letal ou matarão você.",
-                                "Pode atingir a arena com seus braços, afaste-se deles (vá para o centro), se estiver perto dos braços, você será empurrado para cima e o chefe lançará espinhos em todos os jogadores, resultando em morte se atingido. Isso pode ser evitado agrupando os jogadores no centro, e após o aparecimento da zona de alerta de espinhos, eles se dividem nas bordas para evitar morrer."
+                                "Pode atingir a arena com seus braços, afaste-se deles (vá para o centro), se estiver perto dos braços, você será empurrado para cima e o chefe lançará espinhos em todos os jogadores, resultando em morte se atingido. Isso pode ser evitado agrupando os jogadores no centro, e após o aparecimento da zona de alerta de espinhos, faça todos os jogadores irem para as bordas para evitar morrer."
                             ]
                         }
                     },
@@ -972,28 +1074,25 @@ export const data = {
                                 "보스는 넓은 경기장의 중앙 하단에 생성됩니다.",
                                 "무작위 플레이어 위치로 순간이동할 수 있습니다.",
                                 "낫으로 플레이어를 기절시킬 수 있으며, 세 번째 공격 시 가시를 소환합니다. 이에 맞은 플레이어는 넘어져 공격 방향으로 밀려납니다. (슈퍼 아머로 회피 가능).",
-                                "수평 또는 수직 화염 라인을 소환할 수 있으며, 이에 맞은 플레이어는 디버프를 얻어 지속 시간 동안 가한 모든 피해로 보스를 치유하게 됩니다.",
-                                "일정 시간 후 또는 20바마다 보스는 타겟팅할 수 없게 되며 2가지 메커니즘 중 하나를 수행합니다:",
-                                "1: 보스가 파괴된 바닥 부분을 모두 복원하고 1개를 제외한 모든 플랫폼에 레이저를 시전합니다. 이에 맞으면 치명적인 피해를 입거나 사망합니다.",
-                                "2: 보스가 근처의 모든 플레이어를 띄우고, 몇 초 후 모든 플레이어에게 진홍빛 토네이도를 시전합니다. 이는 그들이 있는 바닥(플랫폼 제외)을 파괴할 수 있습니다. 요령은 모든 플레이어를 가장자리로 보내고, 진홍빛 토네이도 경고 영역이 표시될 때마다 모든 플레이어를 중앙으로 돌아오게 하는 것입니다."
+                                "낫의 크기를 조절하고 끌 수 있으며, 이에 맞은 플레이어는 공격 방향으로 끌려갑니다. (슈퍼 아머로 회피 가능).",
+                                "일정 시간 후, 보스는 경기장 중앙으로 순간이동하여 무작위 플레이어에게 수직 가시 영역을 시전합니다. 가시가 보스와 같은 위치에 있지 않으면 가시에 맞은 바닥 부분이 파괴됩니다.",
+                                "수평 또는 수직 화염 라인을 소환할 수 있으며, 이에 맞은 플레이어는 디버프를 얻어 지속 시간 동안 가한 모든 피해로 보스를 치유하게 됩니다."
                             ],
                             jp: [
                                 "ボスは広いアリーナの中央下部に出現します。",
                                 "ランダムなプレイヤーの位置にテレポートできます。",
                                 "鎌でプレイヤーを気絶させることができ、3回目の攻撃で棘を召喚し、それに当たったプレイヤーはノックダウンされ、攻撃の方向に押し出されます。（スーパーアーマーで回避可能）",
-                                "水平または垂直の炎の線を召喚でき、それに当たったプレイヤーはデバフを得て、持続時間中に与えたダメージでボスを回復させます。",
-                                "一定時間後、または20バーごとに、ボスはターゲット不可になり、2つのメックのうち1つを実行します：",
-                                "1：ボスが壊れた床の部分をすべて復元し、1つを除くすべてのプラットフォームにレーザーを放ちます。当たった人は致命的なダメージを受けるか死亡します。",
-                                "2：ボスが近くの全プレイヤーをノックアップし、数秒後に全プレイヤーに深紅の竜巻を放ちます。これは彼らがいる床（プラットフォームではない）を破壊できます。コツは、全プレイヤーを端に行かせ、深紅の竜巻警告ゾーンが表示されるたびに、全プレイヤーを中央に戻すことです。"
+                                "鎌のサイズを変更して引きずることができ、それに当たったプレイヤーは攻撃の方向に引きずられます。（スーパーアーマーで回避可能）",
+                                "一定時間後、ボスはアリーナの中央部にテレポートし、ランダムなプレイヤーに垂直な棘ゾーンを放ちます。棘がボスと同じ場所にない場合、棘に当たった床の部分が破壊されます。",
+                                "水平または垂直の炎の線を召喚でき、それに当たったプレイヤーはデバフを得て、持続時間中に与えたダメージでボスを回復させます。"
                             ],
                             br: [
                                 "O chefe aparecerá na parte média inferior de uma arena ampla.",
                                 "Pode se teletransportar para a localização de um jogador aleatório.",
                                 "Pode atordoar jogadores com sua foice, e em seu 3º ataque, invocará espinhos, qualquer jogador atingido por eles será derrubado e empurrado na direção do ataque. (Evitável com Super Armadura).",
-                                "Pode invocar uma linha horizontal ou vertical de chamas, qualquer jogador atingido por elas pode obter uma desvantagem que curará o chefe por qualquer dano causado enquanto a duração expirar.",
-                                "após certo tempo, ou a cada 20 barras, o chefe se tornará inalvejável e realizará 1 de 2 mecânicas:",
-                                "1: o chefe restaurará todas as partes quebradas do chão e lançará lasers sobre todas as plataformas, exceto 1. Qualquer um atingido por eles sofrerá dano letal ou morrerá.",
-                                "2: o chefe derrubará todos os jogadores próximos a si, e após alguns segundos, lançará tornados carmesim em todos os jogadores, que podem destruir o chão (não as plataformas) em que estão. O truque é fazer com que todos os jogadores vão para a borda, e sempre que a zona de alerta de tornado carmesim for mostrada, faça todos os jogadores voltarem ao centro."
+                                "Pode redimensionar sua foice e arrastá-la, qualquer jogador atingido por ela será arrastado na direção do ataque. (Evitável com Super Armadura).",
+                                "Após certo tempo, o chefe se teletransportará para a parte do meio da arena e lançará uma zona de espinhos verticais em um jogador aleatório, se o espinho não estiver no mesmo local que o chefe, a parte do chão atingida pelo espinho será destruída.",
+                                "Pode invocar uma linha horizontal ou vertical de chamas, qualquer jogador atingido por elas pode obter uma desvantagem que curará o chefe por qualquer dano causado até que a duração expire."
                             ]
                         }
                     },
@@ -1551,7 +1650,7 @@ export const data = {
                 },
                 artifact_mspd: {
                     en: "Movement Speed Increase",
-                    es: "Incremento de Velocidad de Movimiento",
+                    es: "Incremento de Velocidade de Movimento",
                     kr: "",
                     jp: "",
                     br: ""
@@ -2027,7 +2126,7 @@ export const data = {
             },
             EXPNiche: {
                 en: "Stat used for the purpose of increasing Account ERP level, keep this stat away from the dps weapon, instead build a new one",
-                es: "Estadística utilizada para aumentar el nivel de ERP de la cuenta, mantén esta estadística alejada del arma de dps, en su lugar construye una nueva",
+                es: "Estadística utilizada para aumentar el nivel de ERP de la cuenta, mantén esta estadística alejada del arma de dps, en su lugar construye uma nova",
                 kr: "계정 ERP 레벨을 높이기 위해 사용되는 스탯, 이 스탯을 DPS 무기에서 멀리하고 대신 새 것을 제작하세요",
                 jp: "アカウントERPレベルを上げる目的で使用されるステータス、このステータスをDPS武器から遠ざけ、代わりに新しいものを作成してください",
                 br: "Status usado para aumentar o nível de ERP da conta, mantenha este status longe da arma de dps, em vez disso, construa uma nova"

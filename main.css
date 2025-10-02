@@ -240,11 +240,17 @@ body{
 .back:hover{
     color: yellow;
 }
-.phaseheader{
-    margin-top: 20px;
+.phaseheader#ROSSOCOLOR{
+    margin-top: 20px;   
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     background: #282024;
+}
+.phaseheader#BERTHECOLOR{
+    margin-top: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background: #282520;
 }
 .phaseheader div{
     display: inline;
@@ -1138,16 +1144,17 @@ body.light-mode .info-panel {
     color: rgb(216, 112, 112);
     border-color: rgb(216, 112, 112);;
 }
-#BERTHEPHASECOLOR{
+#BERTHECOLOR{
+    color: rgb(255, 217, 0);
+    border-color: rgb(255, 217, 0);
+}
+#ABYSSCOLOR{
 
 }
-#ABYSSPHASECOLOR{
+#SERPENTIUMCOLOR{
 
 }
-#SERPENTIUMPHASECOLOR{
-
-}
-#APORIAPHASECOLOR{
+#APORIACOLOR{
 
 }
 .guidedisclaimer{
