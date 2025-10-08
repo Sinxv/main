@@ -1,107 +1,251 @@
-nav {
-    width: 100vw;
-    background: #282832;
-    text-align: center;
-    z-index: 50;
+/* --- NAVIGATION --- */
+nav#main-nav-desktop {
+  width: 100vw;
+  height: 60px; /* Solo la barra, no toda la pantalla */
+  background: #282832;
+  text-align: center;
+  z-index: 50;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: auto; /* Asegura que el nav sea interactivo */
+}
+nav#main-nav-desktop ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: relative;
+  min-height: 60px;
+  background: inherit;
+  flex-wrap: wrap;
+}
+nav#main-nav-desktop ul li {
+  width: 100px;
+  color: white;
+  text-align: center;
+  list-style-type: none;
+  transition: background-color 0.3s, color 0.3s;
+  height: 35px;
+  padding-top: 15px;
+  font-weight: normal;
+  font-size: 1.08em;
+  letter-spacing: 0.5px;
+  min-width: 80px;
+  max-width: 160px;
+  word-break: break-word;
+}
+nav#main-nav-desktop ul li#spec {
+  width: 180px;
+  white-space: nowrap;
+}
+nav#main-nav-desktop ul a {
+  text-decoration: none;
+  margin: 0 8px;
+  transition: opacity 0.2s, background 0.2s;
+  border-radius: 8px;
+  min-width: 80px;
+  max-width: 160px;
+  word-break: break-word;
+}
+nav#main-nav-desktop ul a:hover li {
+  background: #444;
+  color: #ffd700;
+  font-weight: bold;
+}
+nav#main-nav-desktop .settings-icon {
+  width: 32px;
+  height: 32px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  z-index: 101;
+  transition: filter 0.2s;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.12));
+}
+
+/* --- HAMBURGER MENU --- */
+nav#main-nav-mobile {
+  display: none;
+}
+nav#main-nav-mobile .menu-bar {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #282832;
+  z-index: 1002;
+  height: 60px;
+  padding: 0 10px;
+}
+nav#main-nav-mobile .menu-icon {
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: static;
+  margin-left: 5px;
+  z-index: 1002;
+  background: #282832;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  pointer-events: auto;
+}
+nav#main-nav-mobile .settings-icon {
+  width: 32px;
+  height: 32px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: static;
+  margin-right: 5px;
+  z-index: 1002;
+  pointer-events: auto;
+}
+.hamburger-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 85vw;
+  max-width: 400px;
+  height: 100vh;
+  background: #282832;
+  box-shadow: 2px 0 16px rgba(0,0,0,0.25);
+  z-index: 1001;
+  transform: translateX(-100%);
+  transition: transform 0.35s cubic-bezier(.77,0,.175,1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 70px;
+  pointer-events: auto;
+}
+.hamburger-nav.open {
+  transform: translateX(0);
+}
+.hamburger-nav a {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 18px 32px;
+  font-size: 1.15em;
+  color: white;
+  border-bottom: 1px solid #333;
+  background: none;
+  text-align: left;
+  border-radius: 0;
+  opacity: 0;
+  animation: fadeInMenu 0.4s forwards;
+  animation-delay: var(--delay, 0s);
+}
+.hamburger-nav.open a {
+  opacity: 1;
+}
+.hamburger-nav a:hover {
+  background: #444;
+  color: #ffd700;
+  font-weight: bold;
+}
+.hamburger-nav li {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  background: none;
+  color: white;
+  font-size: 1.15em;
+  border-radius: 0;
+}
+.hamburger-nav {
+  padding-top: 70px;
+}
+@keyframes fadeInMenu {
+  to { opacity: 1; }
+}
+/* Overlay for darkening background */
+#nav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(30,30,30,0.65);
+  z-index: 1000;
+  pointer-events: auto;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+#nav-overlay.open {
+  opacity: 1;
+}
+
+@media (min-width: 901px) {
+  #nav-overlay {
+    display: none !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
   }
-  
-  nav ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    position: relative;
+}
+
+/* --- SETTINGS POPUP --- */
+#settings-popup {
+  background: #333;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  z-index: 1100;
+  position: fixed;
+  top: 70px;
+  left: 80px;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+}
+
+/* --- LIGHT MODE --- */
+body.light-mode nav#main-nav-desktop {
+  background: #fff;
+}
+body.light-mode nav#main-nav-desktop ul li {
+  color: black;
+  font-weight: bold;
+}
+body.light-mode nav#main-nav-desktop ul a:hover li {
+  background: #eee;
+  color: #ffd700;
+}
+body.light-mode nav#main-nav-mobile .hamburger-nav {
+  background: #fff;
+  box-shadow: 2px 0 16px rgba(0,0,0,0.10);
+}
+body.light-mode nav#main-nav-mobile .hamburger-nav a,
+body.light-mode nav#main-nav-mobile .hamburger-nav li {
+  color: black;
+}
+body.light-mode #settings-popup {
+  background: #eee;
+  color: black;
+}
+body.light-mode .menu-icon {
+  filter: none;
+  background: #fff;
+}
+body.light-mode .settings-icon {
+  filter: none;
+  background: #fff;
+}
+
+@media (min-width: 901px) {
+  .container, .info {
+    margin-top: 30px;
   }
-  
-  nav ul li {
-    width: 100px;
-    color: white;
-    text-align: center;
-    list-style-type: none;
-    transition: background-color 0.3s ease;
-    height: 35px;
-    padding-top: 15px;
-    font-weight: normal;
-  }
-  
-  nav ul li#spec {
-    width: 150px;
-  }
-  
-  nav ul a {
-    text-decoration: none;
-  }
-  
-  .nav-toggle {
-    display: none;
-    position: absolute;
-    left: 10px;
-    cursor: pointer;
-  }
-  
-  .settings-icon {
-    width: 32px;
-    height: 32px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: absolute;
-    right: 10px;
-    cursor: pointer;
-  }
-  
-  /* Responsive */
-  @media only screen and (max-width: 720px) {
-    nav ul {
-      display: block;
-      text-align: center;
-    }
-    nav ul a {
-      display: block;
-    }
-    .nav-toggle {
-      display: inline-block;
-    }
-    .settings-icon {
-      position: relative;
-      display: inline-block;
-      margin-top: 10px;
-    }
-  }
-  
-  /* Settings popup */
-  #settings-popup {
-    background: #333;
-    color: white;
-    padding: 15px;
-    border-radius: 10px;
-    z-index: 1000;
-    position: absolute;
-    top: 60px;
-    right: 10px;
-    width: 180px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  /* Light Mode */
-  body.light-mode {
-    background: white !important;
-    color: black !important;
-    font-weight: bold;
-  }
-  body.light-mode nav {
-    background: white;
-  }
-  body.light-mode nav ul li {
-    color: black;
-    font-weight: bold;
-  }
-  body.light-mode #settings-popup {
-    background: #eee;
-    color: black;
-  }
-  
+}

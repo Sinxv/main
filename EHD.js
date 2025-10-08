@@ -24,7 +24,470 @@ export const data = {
                 br: "no discord"
             }
         },
-        // ...existing code...
+        stage1: {
+            title: { en: "Stage 1", es: "Etapa 1", kr: "1단계", jp: "ステージ1", br: "Estágio 1" },
+            stage1_title: { en: "Level 1 to Level 99", es: "Nivel 1 a Nivel 99", kr: "레벨 1에서 레벨 99까지", jp: "レベル1からレベル99まで", br: "Nível 1 a Nível 99" },
+            contents: { en: "List of Content", es: "Lista de Contenido", kr: "콘텐츠 목록", jp: "コンテンツ一覧", br: "Lista de Conteúdo" },
+            content_first_dungeon: { en: "First Dungeon", es: "Primera Mazmorra", kr: "첫 번째 던전", jp: "最初のダンジョン", br: "1ª Masmorra"},
+            content_choose_path: { en: "Choosing a Path", es: "Elegir un Camino", kr: "경로 선택", jp: "道を選ぶ", br: "Escolhendo um Caminho" },
+            sections: {
+                intro: { en: ["This part of the game has a lot of cut content and is a mere shadow of what it was in the early days, so it should be doable in 4-5ish hours."], es: ["Esta parte del juego tiene mucho contenido recortado y es una mera sombra de lo que era en los primeros días, por lo que debería ser posible en unas 4-5 horas."], kr: ["게임의 이 부분에는 잘린 콘텐츠가 많으며 초기의 그림자에 불과하므로 약 4-5시간 만에 완료할 수 있습니다."], jp: ["ゲームのこの部分には多くのカットコンテンツがあり、初期の頃の影に過ぎないため、約4〜5時間で完了できるはずです。"], br: ["Esta parte do jogo tem muito conteúdo cortado e é uma mera sombra do que era nos primeiros dias, então deve ser possível em cerca de 4-5 horas."] },
+                first_dungeon: {
+                    title: { en: "First Dungeon", es: "Primera Mazmorra", kr: "첫 번째 던전", jp: "最初のダンジョン", br: "1ª Masmorra"},
+                    content: { en: [
+                        "Once you finish character creation and tutorial, Press F8 or click 'Start Dungeon' button, you'll be greeted by a list of regions.",
+                        "Your main task is to complete the first dungeon 'Tree of El' (Dungeon is different for Lithia, Noah and Laby) to recieve rewards: Growing Adventurer's Equipment Cube.",
+                        "This cube gives the following: Top Piece, Bottom Piece, Gloves, Shoes, Weapon. This is the equipment you will use for the entirety of the leveling up section."
+                    ],
+                    es: [
+                        "Una vez que termines la creación de personajes y el tutorial, presiona F8 o haz clic en el botón 'Iniciar Mazmorra', serás recibido por una lista de regiones.",
+                        "Tu tarea principal es completar la primera mazmorra 'Árbol de El' (la mazmorra es diferente para Lithia, Noah y Laby) para recibir recompensas: Cubo de Equipo de Aventurero en Crecimiento.",
+                        "Este cubo da lo siguiente: Parte Superior, Parte Inferior, Guantes, Zapatos, Arma. Este es el equipo que usarás durante toda la sección de nivelación."
+                    ],
+                    kr: [
+                        "캐릭터 생성과 튜토리얼을 마치면 F8을 누르거나 '던전 시작' 버튼을 클릭하면 지역 목록이 표시됩니다.",
+                        "당신의 주요 임무는 첫 번째 던전 '엘의 나무'(던전은 리시아, 노아, 라비마다 다름)를 완료하여 보상: 성장하는 모험가의 장비 큐브를 받는 것입니다.",
+                        "이 큐브는 다음을 제공합니다: 상의, 하의, 장갑, 신발, 무기. 이것이 레벨업 섹션 전체에서 사용할 장비입니다."
+                    ],
+                    jp: [
+                        "キャラクター作成とチュートリアルを終えたら、F8を押すか「ダンジョン開始」ボタンをクリックすると、地域のリストが表示されます。",
+                        "あなたの主な任務は、最初のダンジョン「エルの木」（リシア、ノア、ラビでダンジョンが異なる）をクリアして、報酬：成長する冒険者の装備キューブを受け取ることです。",
+                        "このキューブは次のものを提供します：トップピース、ボトムピース、手袋、靴、武器。これがレベリングセクション全体で使用する装備です。"
+                    ],
+                    br: [
+                        "Depois de terminar a criação do personagem e o tutorial, pressione F8 ou clique no botão 'Iniciar Masmorra', você será recebido por uma lista de regiões.",
+                        "Sua tarefa principal é completar a primeira masmorra 'Árvore de El' (a masmorra é diferente para Lithia, Noah e Laby) para receber recompensas: Cubo de Equipamento de Aventureiro em Crescimento.",
+                        "Este cubo dá o seguinte: Peça Superior, Peça Inferior, Luvas, Sapatos, Arma. Este é o equipamento que você usará durante toda a seção de nivelamento."
+                    ]}
+                },
+                choose_path: {
+                    title: { en: "Choosing a Path", es: "Elegir un Camino", kr: "경로 선택", jp: "道を選ぶ", br: "Escolhendo um Caminho" },
+                    content: { en: [
+                        "On level 15 you will get a pet called 'Phoru', this pet auto collects all drops, which is essential in order to get some headstart money.",
+                        "Also you will get the 'First class promotion quest' where you will be able to choose the path of a character.",
+                        "You can complete this just by following the main quests, as you will still enter all the dungeons that the promotion quest asks for.",
+                        "On level 40, and level 70 you will get promotions that will give passives and new skills to your character."
+                    ],
+                    es: [
+                        "En el nivel 15 obtendrás una mascota llamada 'Phoru', esta mascota recoge automáticamente todas las gotas, lo cual es esencial para obtener algo de dinero inicial.",
+                        "También obtendrás la 'misión de promoción de primera clase' donde podrás elegir el camino de un personaje.",
+                        "Puedes completar esto simplemente siguiendo las misiones principales, ya que aún ingresarás a todas las mazmorras que la misión de promoción solicita.",
+                        "En el nivel 40 y nivel 70 obtendrás promociones que darán pasivas y nuevas habilidades a tu personaje."
+                    ],
+                    kr: [
+                        "15레벨에서 '포루'라는 펫을 얻습니다. 이 펫은 모든 드롭을 자동으로 수집하며, 이는 약간의 시작 자금을 얻는 데 필수적입니다.",
+                        "'1차 전직 퀘스트'도 받게 되며, 여기서 캐릭터의 경로를 선택할 수 있습니다.",
+                        "메인 퀘스트를 따라가면 프로모션 퀘스트에서 요구하는 모든 던전에 여전히 입장하게 되므로 이를 완료할 수 있습니다.",
+                        "40레벨과 70레벨에서 캐릭터에게 패시브와 새로운 스킬을 부여하는 프로모션을 받게 됩니다."
+                    ],
+                    jp: [
+                        "レベル15で「ポル」というペットを手に入れます。このペットはすべてのドロップを自動的に収集し、いくつかのスタート資金を得るために不可欠です。",
+                        "また、「第一クラス昇進クエスト」を取得し、キャラクターの道を選択できるようになります。",
+                        "メインクエストに従うだけでこれを完了できます。昇進クエストが要求するすべてのダンジョンにまだ入ることになるからです。",
+                        "レベル40とレベル70で、キャラクターにパッシブと新しいスキルを与えるプロモーションを取得します。"
+                    ],
+                    br: [
+                        "No nível 15 você obterá um pet chamado 'Phoru', este pet coleta automaticamente todas as gotas, o que é essencial para obter algum dinheiro inicial.",
+                        "Você também receberá a 'missão de promoção de primeira classe', onde poderá escolher o caminho de um personagem.",
+                        "Você pode completar isso apenas seguindo as missões principais, pois ainda entrará em todas as masmorras que a missão de promoção pede.",
+                        "No nível 40 e nível 70 você receberá promoções que darão passivas e novas habilidades ao seu personagem."
+                    ]}
+                }
+            },
+            tables: {
+                starter_equipment: {
+                    headers: {en: "Item", es: "Artículo", kr: "아이템", jp: "アイテム", br: "Item" },
+                    rows: {
+                        top: {
+                            en: "Growing Adventurer's Top Piece",
+                            es: "Parte Superior de Aventurero en Crecimiento",
+                            kr: "성장하는 모험가의 상의",
+                            jp: "成長する冒険者のトップピース",
+                            br: "Peça Superior de Aventureiro em Crescimento"
+                        },
+                        bottom: {
+                            en: "Growing Adventurer's Bottom Piece",
+                            es: "Parte Inferior de Aventurero en Crecimiento",
+                            kr: "성장하는 모험가의 하의",
+                            jp: "成長する冒険者のボトムピース",
+                            br: "Peça Inferior de Aventureiro em Crescimento"
+                        },
+                        gloves: {
+                            en: "Growing Adventurer's Gloves",
+                            es: "Guantes de Aventurero en Crecimiento",
+                            kr: "성장하는 모험가의 장갑",
+                            jp: "成長する冒険者の手袋",
+                            br: "Luvas de Aventureiro em Crescimento"
+                        },
+                        shoes: {
+                            en: "Growing Adventurer's Shoes",
+                            es: "Zapatos de Aventurero en Crecimiento",
+                            kr: "성장하는 모험가의 신발",
+                            jp: "成長する冒険者の靴",
+                            br: "Sapatos de Aventureiro em Crescimento"
+                        },
+                        weapon: {
+                            en: "Growing Adventurer's Weapon",
+                            es: "Arma de Aventurero en Crecimiento",
+                            kr: "성장하는 모험가의 무기",
+                            jp: "成長する冒険者の武器",
+                            br: "Arma de Aventureiro em Crescimento"    
+                        }
+                    }
+                }
+            }
+        },
+        stage2: {
+            title: { en: "Stage 2", es: "Etapa 2", kr: "2단계", jp: "ステージ2", br: "Estágio 2" },
+            stage2_title: { en: "Road to 3rd Class & Dr.Pho's Guide", es: "Camino a la 3ª Clase y Guía del Dr. Pho", kr: "3차 직업 및 닥터 포의 가이드로 가는 길", jp: "3次クラスとドクター・ポーのガイドへの道", br: "Caminho para a 3ª Classe e Guia do Dr. Pho" },
+            contents: { en: "List of Content", es: "Lista de Contenido", kr: "콘텐츠 목록", jp: "コンテンツ一覧", br: "Lista de Conteúdo" },
+            content_elrianode_armor: { en: "Elrianode Armor", es: "Armadura de Elrianode", kr: "엘리아노드 갑옷", jp: "エルリアノードアーマー", br: "Armadura Elrianode" },
+            content_apocalypse_weapon: { en: "Apocalypse-Type Weapon", es: "Arma Tipo Apocalipsis", kr: "아포칼립스형 무기", jp: "アポカリプスタイプの武器", br: "Arma Tipo Apocalipse" },
+            content_socketing: { en: "Socketing", es: "Encajonado", kr: "소켓", jp: "ソケット", br: "Socketing" },
+            content_el_resonance: { en: "El Resonance", es: "Resonancia El", kr: "엘 공명", jp: "エルレゾナンス", br: "El Resonance" },
+            content_dosi_wings: { en: "Accessory: Dimension of Sinister Intent Wings", es: "Accesorio: Alas de la Dimensión de la Intención Siniestra", kr: "액세서리: 사악한 의도의 차원 날개", jp: "アクセサリー：邪悪な意図の次元の翼", br: "Acessório: Asas da Dimensão da Intenção Sinistra" },
+            content_third_class: { en: "3rd Class", es: "3ª Clase", kr: "3차 직업", jp: "3次クラス", br: "3ª Classe" },
+            content_henir: { en: "Henir's Time and Space", es: "Tiempo y Espacio de Henir", kr: "헤니르의 시간과 공간", jp: "ヘニルの時間と空間", br: "Tempo e Espaço de Henir" },
+            sections: {
+                intro: { en: ["Once you reach level 99, you will unlock 'Elrianode', and the 2nd guide of the 'Dr.Pho's Guide'. Your main objective on this stage is to fully complete the first 2 Dr.Pho's Guides."], es: ["Una vez que alcances el nivel 99, desbloquearás 'Elrianode' y la 2ª guía de la 'Guía del Dr. Pho'. Tu objetivo principal en esta etapa es completar completamente las primeras 2 Guías del Dr. Pho."], kr: ["레벨 99에 도달하면 '엘리아노드'와 '닥터 포의 가이드'의 두 번째 가이드가 잠금 해제됩니다. 이 단계에서의 주요 목표는 닥터 포의 첫 번째 가이드를 완전히 완료하는 것입니다."], jp: ["レベル99に到達すると、「エルリアノード」と「ドクター・ポーのガイド」の2番目のガイドがアンロックされます。このステージでの主な目的は、ドクター・ポーの最初の2つのガイドを完全に完了することです。"], br: ["Depois de atingir o nível 99, você desbloqueará 'Elrianode' e o 2º guia do 'Guia do Dr. Pho'. Seu objetivo principal nesta fase é completar totalmente os primeiros 2 Guias do Dr. Pho."], kr: ["레벨 99에 도달하면 '엘리아노드'와 '닥터 포의 가이드'의 두 번째 가이드가 잠금 해제됩니다. 이 단계에서의 주요 목표는 닥터 포의 첫 번째 가이드를 완전히 완료하는 것입니다."], jp: ["レベル99に到達すると、「エルリアノード」と「ドクター・ポーのガイド」の2番目のガイドがアンロックされます。このステージでの主な目的は、ドクター・ポーの最初の2つのガイドを完全に完了することです。"], br: ["Depois de atingir o nível 99, você desbloqueará 'Elrianode' e o 2º guia do 'Guia do Dr. Pho'. Seu objetivo principal nesta fase é completar totalmente os primeiros 2 Guias do Dr. Pho."]},
+                elrianode_armor: {
+                    title: { en: "Elrianode Armor", es: "Armadura de Elrianode", kr: "엘리아노드 갑옷", jp: "エルリアノードアーマー", br: "Armadura Elrianode"},
+                    content: { en: [
+                        "On Dr. Pho's 2nd Guide, Lesson 1, you'll notice that the first mission is to Clear 3 Elrianode Region Dungeons.",
+                        "Once you finish that, you will be able to claim the Restored Elrianode Armor and a 30 days Elrios Guardian Knights IB Accessories Set.",
+                        "Both armor and Ice Burners are really good for early game, since alongside your weapon, they're a main source of Combat Power."
+                    ],
+                    es: [
+                        "En la 2ª Guía del Dr. Pho, Lección 1, notarás que la primera misión es Limpiar 3 Mazmorras de la Región de Elrianode.",
+                        "Una vez que termines eso, podrás reclamar la Armadura de Elrianode Restaurada y un conjunto de accesorios IB de 30 días de los Guardianes Caballeros de Elrios.",
+                        "Tanto la armadura como los Quemadores de Hielo son realmente buenos para el juego temprano, ya que junto con tu arma, son una fuente principal de Poder de Combate."
+                    ],
+                    kr: [
+                        "닥터 포의 두 번째 가이드, 레슨 1에서 첫 번째 임무가 엘리아노드 지역 던전 3개를 클리어하는 것임을 알게 될 것입니다.",
+                        "그것을 끝내면 복원된 엘리아노드 갑옷과 30일 엘리오스 가디언 나이트 IB 액세서리 세트를 청구할 수 있습니다.",
+                        "갑옷과 아이스 버너는 모두 초기 게임에 정말 좋습니다. 무기와 함께 전투력의 주요 원천이기 때문입니다."
+                    ],
+                    jp: [
+                        "ドクター・ポーの2番目のガイド、レッスン1では、最初のミッションがエルリアノード地域のダンジョン3つをクリアすることだと気付くでしょう。",
+                        "それを終えると、修復されたエルリアノードアーマーと30日間のエルリオスガーディアンナイツIBアクセサリーセットを請求できます。",
+                        "アーマーとアイスバーナーはどちらも初期のゲームにとって本当に良いです。武器と一緒に戦闘力の主な源だからです。"
+                    ],
+                    br: [
+                        "No 2º Guia do Dr. Pho, Lição 1, você notará que a primeira missão é Limpar 3 Masmorras da Região de Elrianode.",
+                        "Depois de terminar isso, você poderá reivindicar a Armadura Elrianode Restaurada e um conjunto de acessórios IB de 30 dias dos Cavaleiros Guardiões de Elrios.",
+                        "Tanto a armadura quanto os Queimadores de Gelo são realmente bons para o início do jogo, pois, junto com sua arma, são uma fonte principal de Poder de Combate."
+                    ]}
+                },
+                apocalypse_weapon: {
+                    title: { en: "Apocalypse-Type Weapon", es: "Arma Tipo Apocalipsis", kr: "아포칼립스형 무기", jp: "アポカリプスタイプの武器", br: "Arma Tipo Apocalipse" },
+                    content: { en: [
+                        "Once you acquire the Restored Elrianode Armor you will notice that your weapon is not good anymore, since it's old by this point.",
+                        "You will need to spam 'Add's Energy Fusion Theory' until you get the Apocalypse-Type Weapon Cube.",
+                        "Using this cube will give you a new weapon, which will be way stronger than the one you had previously."
+                    ],
+                    es: [
+                        "Una vez que adquieras la Armadura de Elrianode Restaurada, notarás que tu arma ya no es buena, ya que es vieja en este punto.",
+                        "Necesitarás hacer spam de la mazmorra 'Teoría de la energía de fusión de Add' hasta que obtengas el Cubo de Arma Tipo Apocalipsis.",
+                        "Usar este cubo te dará una nueva arma, que será mucho más fuerte que la que tenías anteriormente."
+                    ],
+                    kr: [
+                        "복원된 엘리아노드 갑옷을 획득하면 이 시점에서 오래되었기 때문에 무기가 더 이상 좋지 않다는 것을 알게 될 것입니다.",
+                        "'애드의 에너지융합 이론'을 스팸하여 아포칼립스형 무기 큐브를 얻어야 합니다.",
+                        "이 큐브를 사용하면 이전에 가지고 있던 것보다 훨씬 강력한 새 무기를 얻을 수 있습니다."
+                    ],  
+                    jp: [
+                        "修復されたエルリアノードアーマーを手に入れると、この時点で古くなっているため、武器がもう良くないことに気付くでしょう。",
+                        "'エドのエネルギー融合理論'をスパムして、アポカリプスタイプの武器キューブを取得する必要があります。",
+                        "このキューブを使用すると、以前よりもはるかに強力な新しい武器が手に入ります。"
+                    ],
+                    br: [
+                        "Depois de adquirir a Armadura Elrianode Restaurada, você notará que sua arma não é mais boa, pois está velha neste ponto.",
+                        "Você precisará spammar a masmorra 'Teoria de Fusão de Energia de Add' até obter o Cubo de Arma Tipo Apocalipse.",
+                        "Usar este cubo lhe dará uma nova arma, que será muito mais forte do que a que você tinha anteriormente."
+                    ]}
+                },
+                socketing: {
+                    title: { en: "Socketing", es: "Encajonado", kr: "소켓", jp: "ソケット", br: "Socketing" },
+                    content: { en: [
+                        "Your Armor and Weapon has something called 'Sockets', which are empty when you get them.",
+                        "You can use Magic Stones for socket by pressing Inventory -> Magic Stone Enchant.",
+                        "The stats you should socket are Maximize and Critical."
+                    ],
+                    es: [
+                        "Tu Armadura y Arma tienen algo llamado 'Encajonado', que está vacío cuando los obtienes.",
+                        "Puedes usar Piedras Mágicas para encajonar presionando Inventario -> Encantamiento de Piedra Mágica.",
+                        "Las estadisticas que deberias encajonar son "
+                    ],
+                    kr: [
+                        "당신의 갑옷과 무기에는 '소켓'이라는 것이 있으며, 그것을 얻었을 때는 비어 있습니다.",
+                        "인벤토리 -> 마법석 인챈트를 눌러 소켓에 마법석을 사용할 수 있습니다.",
+                        
+                    ],
+                    jp: [
+                        "あなたのアーマーと武器には「ソケット」と呼ばれるものがあり、取得したときは空です。",
+                        "インベントリ -> マジックストーンエンチャントを押して、ソケットにマジックストーンを使用できます。",
+                        
+                    ],
+                    br: [
+                        "Sua Armadura e Arma têm algo chamado 'Socket', que está vazio quando você os obtém.",
+                        "Você pode usar Pedras Mágicas para socket pressionando Inventário -> Encantamento de Pedra Mágica.",
+                        
+                    ]}
+                },
+                el_resonance: {
+                    title: { en: "El Resonance", es: "Resonancia El", kr: "엘 공명", jp: "エルレゾナンス", br: "El Resonance" },
+                    content: { en: [
+                        "El Resonance is a leveling system that is shared account-wide, increasing its level will give you points, Also known as ERP, which you can exchange for various perks.",
+                        "This is a system unlocked via quest, after you complete 7 dungeons from elrianode and onwards."
+                    ], es: [
+                        "El Resonance es un sistema de nivelación que se comparte en toda la cuenta, aumentar su nivel te dará puntos, también conocidos como ERP, que puedes intercambiar por varias ventajas.",
+                        "Este es un sistema desbloqueado a través de una misión, después de completar 7 mazmorras de elrianode en adelante."
+                    ], kr: [
+                        "엘 레조넌스는 계정 전체에서 공유되는 레벨링 시스템으로, 레벨을 올리면 ERP라고도 하는 포인트를 얻을 수 있으며, 이를 다양한 특전으로 교환할 수 있습니다.",
+                        "엘리아노드 이후의 7개 던전을 완료한 후 퀘스트를 통해 잠금 해제되는 시스템입니다."
+                    ], jp: [
+                        "エルレゾナンスはアカウント全体で共有されるレベリングシステムで、そのレベルを上げると、ERPとも呼ばれるポイントが得られ、さまざまな特典と交換できます。",
+                        "これは、エルリアノード以降の7つのダンジョンをクリアした後、クエストを通じてアンロックされるシステムです。"
+                    ], br: [
+                        "El Resonance é um sistema de nivelamento compartilhado em toda a conta, aumentar seu nível lhe dará pontos, também conhecidos como ERP, que você pode trocar por várias vantagens.",
+                        "Este é um sistema desbloqueado por meio de uma missão, após completar 7 masmorras de elrianode em diante."
+                    ]}
+                },
+                dosi_wings: {
+                    title: { en: "Accessory: Dimension of Sinister Intent Wings", es: "Accesorio: Alas de la Dimensión de la Intención Siniestra", kr: "액세서리: 사악한 의도의 차원 날개", jp: "アクセサリー：邪悪な意図の次元の翼", br: "Acessório: Asas da Dimensão da Intenção Sinistra" },
+                    content: { en: [
+                        "On Dr. Pho's First Guide, you're asked to do 'Dimension of Sinister Intent', which is located on Dungeon List → Special.",
+                        "You'll use this accessory for a LONG amount of time, and as you do Gate of Darkness you'll get a material that will allow you to upgrade the Wings."
+                    ], es: [
+                        "En la Primera Guía del Dr. Pho, se te pide que hagas 'Dimensión de la Intención Siniestra', que se encuentra en Lista de Mazmorras → Especial.",
+                        "Usarás este accesorio durante una LARGA cantidad de tiempo, y a medida que hagas Puerta de la Oscuridad obtendrás un material que te permitirá mejorar las Alas."
+                    ], kr: [
+                        "닥터 포의 첫 번째 가이드에서는 던전 목록 → 특수에 있는 '사악한 의도의 차원'을 하도록 요청합니다.",
+                        "이 액세서리는 오랜 시간 동안 사용할 것이며, 어둠의 문을 만들면서 날개를 업그레이드할 수 있는 재료를 얻을 수 있습니다."
+                    ], jp: [
+                        "ドクター・ポーの最初のガイドでは、ダンジョンリスト→スペシャルにある「邪悪な意図の次元」を行うように求められます。",
+                        "このアクセサリーは長い間使用し、闇の門を作成すると、翼をアップグレードできる素材が手に入ります。"
+                    ], br: [
+                        "No 1º Guia do Dr. Pho, você é solicitado a fazer 'Dimensão da Intenção Sinistra', que está localizada em Lista de Masmorras → Especial.",
+                        "Você usará este acessório por um longo período de tempo, e à medida que fizer Portão das Trevas, obterá um material que permitirá atualizar as Asas."
+                    ]}
+                },
+                third_class: {
+                    title: { en: "Job Advancement: 3rd Class", es: "Avance de Trabajo: 3ª Clase", kr: "직업 승급: 3차 직업", jp: "ジョブアドバンスメント：3次クラス", br: "Avanço de Trabalho: 3ª Classe" },
+                    content: { en: [
+                        "Now that you have a new armor, new weapon and a couple of accessories, you should be able to easily advance to 3rd Class.",
+                        "After Completing Quest 5/5, you will advance to 3rd Class, which will unlock Force Skills."
+                    ], es: [
+                        "Ahora que tienes una nueva armadura, una nueva arma y un par de accesorios, deberías poder avanzar fácilmente a la 3ª Clase.",
+                        "Después de completar la misión 5/5, avanzarás a la 3ª Clase, lo que desbloqueará las Habilidades de Fuerza."
+                    ], kr: [
+                        "이제 새로운 갑옷, 새로운 무기, 몇 가지 액세서리가 생겼으므로 3차 직업으로 쉽게 전직할 수 있어야 합니다.",
+                        "퀘스트 5/5를 완료하면 3차 직업으로 전직하게 되며, 포스 스킬이 잠금 해제됩니다."
+                    ], jp: [
+                        "新しいアーマー、新しい武器、いくつかのアクセサリーがあれば、簡単に3次クラスに進むことができるはずです。",
+                        "クエスト5/5を完了すると、3次クラスに進み、フォーススキルがアンロックされます。"
+                    ], br: [
+                        "Agora que você tem uma nova armadura, uma nova arma e alguns acessórios, você deve ser capaz de avançar facilmente para a 3ª Classe.",
+                        "Depois de completar a missão 5/5, você avançará para a 3ª Classe, o que desbloqueará as Habilidades de Força."
+                    ]}
+                },
+                henir: {
+                    title: { en: "Henir's Time and Space", es: "Tiempo y Espacio de Henir", kr: "헤니르의 시간과 공간", jp: "ヘニルの時間と空間", br: "Tempo e Espaço de Henir" },
+                    content: { en: [
+                        "You can find this dungeon on: Dungeon List → Special, Henir's Time and Space is alike to a 'Boss Rush' with 2 difficulties, Normal Mode (20 Bosses) and Challenge Mode (6 Bosses, Higher HP than Normal Mode).",
+                        "Your task here is to Clear Henir's Time and Space Stage 20 (Normal Mode), this will let you complete 4 quests from Dr. Pho's Guide, rewarding you the Force Skills."
+                    ], es: [
+                        "Puedes encontrar esta mazmorra en: Lista de Mazmorras → Especial, el Tiempo y Espacio de Henir es similar a un 'Boss Rush' con 2 dificultades, Modo Normal (20 Jefes) y Modo Desafío (6 Jefes, más HP que el Modo Normal).",
+                        "Tu tarea aquí es Limpiar la Etapa 20 del Tiempo y Espacio de Henir (Modo Normal), esto te permitirá completar 4 misiones de la Guía del Dr. Pho, recompensándote con las Habilidades de Fuerza."
+                    ], kr: [
+                        "이 던전은 던전 목록 → 특수에서 찾을 수 있습니다. 헤니르의 시간과 공간은 2가지 난이도의「보스 러시」와 비슷합니다. 일반 모드(보스 20마리)와 챌린지 모드(보스 6마리, 일반 모드보다 HP가 높음)입니다.",
+                        "여기서 당신의 임무는 헤니르의 시간과 공간 스테이지 20(일반 모드)을 클리어하는 것입니다. 이렇게 하면 닥터 포의 가이드에서 4개의 퀘스트를 완료할 수 있으며, 포스 스킬을 보상으로 받을 수 있습니다."
+                    ], jp: [
+                        "このダンジョンは、ダンジョンリスト→スペシャルで見つけることができます。ヘニルの時間と空間は、2つの難易度、ノーマルモード（ボス20体）とチャレンジモード（ボス6体、ノーマルモードよりHPが高い）を備えた「ボスラッシュ」に似ています。",
+                        "ここでのあなたの任務は、ヘニルの時間と空間ステージ20（ノーマルモード）をクリアすることです。これにより、ドクター・ポーのガイドから4つのクエストを完了でき、フォーススキルが報酬として与えられます。"
+                    ], br: [
+                        "Você pode encontrar esta masmorra em: Lista de Masmorras → Especial, Tempo e Espaço de Henir é semelhante a um 'Boss Rush' com 2 dificuldades, Modo Normal (20 Chefes) e Modo Desafio (6 Chefes, mais HP do que o Modo Normal).",  
+                        "Sua tarefa aqui é Limpar a Etapa 20 do Tempo e Espaço de Henir (Modo Normal), isso permitirá que você complete 4 missões do Guia do Dr. Pho, recompensando você com as Habilidades de Força."
+                    ]}
+                }
+            },
+            tables: {
+                magic_stones: {
+                    title: {en: "Magic Stones", es: "Piedras Mágicas", kr: "마법석", jp: "魔法石", br: "Pedras Mágicas"},
+                    headers: ["", "", "", ""],
+                    images: [
+                        "../images/Items/MagStoneIcon.png",
+                        "../images/Items/AdvMagStoneIcon.png",
+                        "../images/Items/RefMagStoneIcon.png",
+                        "../images/Items/SagMagStoneIcon.png"
+                    ],
+                    rows: {
+                        t1: {en: "Tier 1: Magic Stone", es: "Nivel 1: Piedra Mágica", kr: "1단계: 마법석", jp: "ティア1: 魔法石", br: "Nível 1: Pedra Mágica"},
+                        t2: {es: "Tier 2: Advanced Magic Stone", es: "Nivel 2: Piedra Mágica Avanzada", kr: "2단계: 고급 마법석", jp: "ティア2: 高級魔法石", br: "Nível 2: Pedra Mágica Avançada"},
+                        t3: {en: "Tier 3: Refined Magic Stone", es: "Nivel 3: Piedra Mágica Refinada", kr: "3단계: 정제된 마법석", jp: "ティア3: 精製された魔法石", br: "Nível 3: Pedra Mágica Refinada"},
+                        t4: {en: "Tier 4: Sage Magic Stone", es: "Nivel 4: Piedra Mágica Sabia", kr: "4단계: 현자 마법석", jp: "ティア4: 賢者の魔法石", br: "Nível 4: Pedra Mágica Sábia"}
+                }
+                },
+                el_resonance: {
+                    title: {
+                        en: "El Resonance Effects",
+                        es: "Efectos de la Resonancia de El",
+                        kr: "엘 공명 효과",
+                        jp: "エルレゾナンス効果",
+                        br: "Efeitos de El Resonance"
+                    },
+                    headers: {
+                        h1: 
+                        {
+                            en: "Effect",
+                            es: "Efecto",
+                            kr: "효과",
+                            jp: "効果",
+                            br: "Efeito"
+                        },
+                        h2:
+                        {
+                            en: "Increase per point",
+                            es: "Incremento por punto",
+                            kr: "포인트당 증가",
+                            jp: "ポイントごとの増加",
+                            br: "Aumento por ponto"
+                        },
+                        h3:
+                        {
+                            en: "Max",
+                            en: "Maximo",
+                            kr: "최대",
+                            jp: "最大",
+                            br: "Máximo"
+                        },
+                    },
+                    rows: { 
+                        aap:
+                        {
+                            en: "All Attack Power",
+                            es: "Poder de Ataque Total",
+                            kr: "모든 공격력",
+                            jp: "全攻撃力",
+                            br: "Poder de Ataque Total"
+                        },
+                        ad:
+                        {
+                            en: "All Defense",
+                            es: "Defensa Total",
+                            kr: "모든 방어",
+                            jp: "全防御",
+                            br: "Defesa Total"
+                        },
+                        aer:
+                        {
+                            en: "All Elemental Resistance",
+                            es: "Resistencia Elemental Total",
+                            kr: "모든 속성 저항",
+                            jp: "全属性耐性",
+                            br: "Resistência Elemental Total"
+                        },
+                        mh:
+                        {
+                            en: "Max HP",
+                            es: "Max HP",
+                            kr: "최대 HP",
+                            jp: "最大HP",
+                            br: "Max HP"
+                        },
+                        mm:
+                        {
+                            en: "Max MP",
+                            es: "Max MP",
+                            kr: "최대 MP",
+                            jp: "最大MP",
+                            br: "Max MP"
+                        },
+                        asdi:
+                        {
+                            en: "Active, Tenacity, Strength, Bravery Skill Damage (All Skill Damage Increase)",
+                            es: "Daño de Habilidad Activa, Tenacidad, Fuerza, Valentía (Aumento de Daño de Habilidad Total)",
+                            kr: "액티브, 끈기, 스트렝스, 브레이브 스킬 데미지 (모든 스킬 데미지 증가)",
+                            jp: "アクティブ、タフネス、ストレングス、ブレイブスキルダメージ（全スキルダメージ増加）",
+                            br: "Dano de Habilidade Ativa, Tenacidade, Força, Coragem (Aumento de Dano de Habilidade Total)"
+                        },
+                        pol:
+                        {
+                            en: "Damage Dealt / Recieved Increase (Polarize)",
+                            es: "Aumento de Daño Infligido / Recibido (Polarizar)",
+                            kr: "주고받는 피해 증가 (극성화)",
+                            jp: "与える/受けるダメージ増加（極性化）",
+                            br: "Aumento de Dano Causado / Recebido (Polarizar)"
+                        },
+                        bdmg:
+                        {
+                            en: "Damage Increase to Boss Monsters",
+                            es: "Aumento de Daño a Monstruos Jefes",
+                            kr: "보스 몬스터에 대한 피해 증가",
+                            jp: "ボスモンスターへのダメージ増加",
+                            br: "Aumento de Dano a Monstros Chefes"
+                        },
+                        dfb:
+                        {
+                            en: "Damage Decrease from Boss Monsters",
+                            es: "Disminución de Daño de Monstruos Jefes",
+                            kr: "보스 몬스터로부터 받는 피해 감소",
+                            jp: "ボスモンスターからのダメージ減少",
+                            br: "Diminuição de Dano de Monstros Chefes"
+                        },
+                        adapt:
+                        {
+                            en: "Adaptation",
+                            es: "Adaptación",
+                            kr: "적응",
+                            jp: "適応",
+                            br: "Adaptação"
+                        },
+                        mpr:
+                        {
+                            en: "SKill MP Cost Decrease",
+                            es: "Disminución del Costo de MP de Habilidad",
+                            kr: "스킬 MP 소모 감소",
+                            jp: "スキルMPコスト減少",
+                            br: "Diminuição do Custo de MP de Habilidade"
+                        },
+                        cdr:
+                        {
+                            en: "Skill Cooldown Decrease",
+                            es: "Disminución del Enfriamiento de Habilidad",
+                            kr: "스킬 쿨타임 감소",
+                            jp: "スキルクールダウン減少",
+                            br: "Diminuição do Tempo de Recarga de Habilidade"
+                        },
+                        exp:
+                        {
+                            en: "EXP Gain",
+                            es: "Ganancia de EXP",
+                            kr: "경험치 획득",
+                            jp: "経験値獲得",
+                            br: "Ganho de EXP"
+                        },
+                        ed:
+                        {
+                            en: "ED Gain",
+                            es: "Ganancia de ED",
+                            kr: "ED 획득",
+                            jp: "ED獲得",
+                            br: "Ganho de ED"
+                        },
+                        idr:
+                        {
+                            es: "Item Drop Rate",
+                            es: "Tasa de Caída de Ítems",
+                            kr: "아이템 드롭률",
+                            jp: "アイテムドロップ率",
+                            br: "Taxa de Queda de Itens"
+                        },
+                    },
+                },
+            },
+        },
+
         stage4: {
             title: { en: "Stage 4", es: "Etapa 4", kr: "4단계", jp: "ステージ4", br: "Estágio 4" },
             stage4_title: { en: "Pruinaum to Tirnog", es: "Pruinaum a Tirnog", kr: "프루이나움에서 티르노그까지", jp: "プルイナウムからティルノグへ", br: "Pruinaum a Tirnog" },
@@ -67,11 +530,11 @@ export const data = {
                     },
                     phase2: {
                         title: { en: "Phase 2 | Boss Size: Small", es: "Fase 2 | Tamaño del Jefe: Pequeño", kr: "2단계 | 보스 크기: 작음", jp: "フェーズ2 | ボスサイズ: 小", br: "Fase 2 | Tamanho do Chefe: Pequeno" },
-                        content: { en: ["Boss will periodically cast a bubble-like attack that prevents players from casting skills. | After 240x, boss will change this attack and instead will become a coil-like attack that pushes people, Super Armor is recommended during this section.", "After some time, boss will jump out of the Player's Field of View, after some seconds, certain parts of the map will be marked, indicating the boss will dash through that zone after some seconds; if hit by any of the dashes, the player will become unable to run for some time.", "After 150x boss will dash out of Player's Field of View; certain amount of orbs will be summoned in the arena, the player needs to touch one in order to get pushed towards the higher arena. After some seconds boss will dash on all the lower arena, causing players who didn't go up to die. (Note: if you dont have Super Armor, the orb won't be able to push you upwards.", "Boss will periodically cast an Orb-like attack that will push the player off the arena if not in i-frame / Super Armor.", "After some time, boss will teleport to an edge of the arena several times and start casting wind slashes towards the middle of the arena, player can dodge them or tank them. | Following this pattern, after some time, boss will teleport to the middle of the arena, cover himself in a tornado and cast wind slashes towards the edges of the arena. If the player gets too close to the tornado it will lower a great portion of its health, and will knock him down."],
-                            es: ["El jefe lanzará periódicamente un ataque similar a una burbuja que impide a los jugadores lanzar habilidades. | Después de 240x, el jefe cambiará este ataque y en su lugar se convertirá en un ataque similar a una bobina que empuja a las personas, se recomienda Super Armadura durante esta sección.", "Después de un tiempo, el jefe saltará fuera del campo de visión del jugador; después de unos segundos, ciertas partes del mapa serán marcadas, indicando que el jefe se lanzará a través de esa zona después de unos segundos; si es golpeado por alguna de las embestidas, el jugador no podrá correr durante un tiempo.", "Después de 150x el jefe se lanzará fuera del campo de visión del jugador; se invocará cierta cantidad de orbes en la arena, el jugador necesita tocar uno para ser empujado hacia la arena superior. Después de unos segundos, el jefe se lanzará por toda la arena inferior, causando la muerte de los jugadores que no subieron. (Nota: si no tienes Super Armadura, el orbe no podrá empujarte hacia arriba).", "El jefe lanzará periódicamente un ataque similar a un orbe que empujará al jugador fuera de la arena si no está en i-frame / Super Armadura.", "Después de un tiempo, el jefe se teletransportará al borde de la arena varias veces y comenzará a lanzar cortes de viento hacia el centro de la arena; el jugador puede esquivarlos o resistirlos. | Siguiendo este patrón, después de un tiempo, el jefe se teletransportará al centro de la arena, se cubrirá con un tornado y lanzará cortes de viento hacia los bordes de la arena. Si el jugador se acerca demasiado al tornado, este reducirá gran parte de su salud y lo derribará."],
-                            kr: ["보스는 주기적으로 플레이어가 스킬을 시전하지 못하게 하는 거품 같은 공격을 시전합니다. | 240x 후, 보스는 이 공격을 변경하고 대신 사람들을 밀어내는 코일 같은 공격이 됩니다. 이 구간에서는 슈퍼 아머를 권장합니다.", "잠시 후, 보스가 플레이어의 시야에서 뛰어오릅니다. 몇 초 후, 맵의 특정 부분이 표시되어 보스가 몇 초 후에 해당 지역을 돌진할 것임을 나타냅니다. 돌진 중 하나에 맞으면 플레이어는 잠시 동안 달릴 수 없게 됩니다.", "150x 후 보스가 플레이어의 시야에서 돌진합니다. 경기장에 일정량의 오브가 소환되며, 플레이어는 위쪽 경기장으로 밀려나기 위해 하나를 터치해야 합니다. 몇 초 후, 보스는 모든 하단 경기장을 돌진하여 올라가지 않은 플레이어를 죽입니다. (참고: 슈퍼 아머가 없으면 오브가 당신을 위로 밀어 올릴 수 없습니다.)", "보스는 주기적으로 오브 같은 공격을 시전하여 i-프레임/슈퍼 아머에 있지 않으면 플레이어를 경기장 밖으로 밀어냅니다.", "잠시 후, 보스는 경기장의 가장자리로 여러 번 순간이동하고 경기장 중앙을 향해 바람 베기를 시전하기 시작합니다. 플레이어는 이를 피하거나 견딜 수 있습니다. | 이 패턴을 따라 잠시 후, 보스는 경기장 중앙으로 순간이동하여 토네이도로 자신을 덮고 경기장 가장자리를 향해 바람 베기를 시전합니다. 플레이어가 토네이도에 너무 가까이 가면 체력의 상당 부분이 감소하고 넘어집니다."],
-                            jp: ["ボスは定期的にバブルのような攻撃をキャストし、プレイヤーがスキルをキャストできないようにします。 | 240x後、ボスはこの攻撃を変更し、代わりに人々を押し出すコイルのような攻撃になります。このセクションではスーパーアーマーをお勧めします。", "しばらくすると、ボスがプレイヤーの視界からジャンプします。数秒後、マップの特定の部分がマークされ、そのゾーンを数秒後にダッシュすることを示します。ダッシュのいずれかに当たると、プレイヤーはしばらく走れなくなります。", "150x後、ボスがプレイヤーの視界からダッシュします。アリーナに一定量のオーブが召喚され、プレイヤーは上のアリーナに押し出されるために1つに触れる必要があります。数秒後、ボスは下のアリーナ全体をダッシュし、上がらなかったプレイヤーを殺します。（注：スーパーアーマーがない場合、オーブはあなたを上に押し上げることができません。）", "ボスは定期的にオーブのような攻撃をキャストし、iフレーム/スーパーアーマーにいない場合、プレイヤーをアリーナから押し出します。", "しばらくすると、ボスはアリーナの端に何度もテレポートし、アリーナの中央に向かって風斬りをキャストし始めます。プレイヤーはそれらを回避するか、それらをタンクできます。 | このパターンに従って、しばらくすると、ボスはアリーナの中央にテレポートし、自分自身を竜巻で覆い、アリーナの端に向かって風斬りをキャストします。プレイヤーが竜巻に近づきすぎると、その体力の大部分が低下し、ノックダウンされます。"],
-                            br: ["O chefe lançará periodicamente um ataque semelhante a uma bolha que impede os jogadores de lançar habilidades. | Após 240x, o chefe mudará esse ataque e, em vez disso, se tornará um ataque semelhante a uma bobina que empurra as pessoas; Super Armadura é recomendada durante esta seção.", "Após algum tempo, o chefe saltará para fora do campo de visão do jogador; após alguns segundos, certas partes do mapa serão marcadas, indicando que o chefe correrá por essa zona após alguns segundos; se for atingido por qualquer uma das investidas, o jogador ficará incapaz de correr por algum tempo.", "Após 150x o chefe correrá para fora do campo de visão do jogador; uma certa quantidade de orbes será invocada na arena, o jogador precisa tocar em um para ser empurrado para a arena superior. Após alguns segundos, o chefe correrá por toda a arena inferior, fazendo com que os jogadores que não subiram morram. (Nota: se você não tiver Super Armadura, o orbe não poderá empurrá-lo para cima).", "O chefe lançará periodicamente um ataque semelhante a um orbe que empurrará o jogador para fora da arena se não estiver em i-frame / Super Armadura.", "Após algum tempo, o chefe se teletransportará para uma borda da arena várias vezes e começará a lançar cortes de vento em direção ao meio da arena; o jogador pode desviar deles ou resistir a eles. | Seguindo esse padrão, após algum tempo, o chefe se teletransportará para o meio da arena, se cobrirá com um tornado e lançará cortes de vento em direção às bordas da arena. Se o jogador chegar muito perto do tornado, ele reduzirá grande parte de sua saúde e o derrubará."]
+                        content: { en: ["Boss will periodically cast a bubble-like attack that prevents players from casting skills. | After 240x, boss will change this attack and instead will become a coil-like attack that pushes people, Super Armor is recommended during this section.", "After some time, boss will jump out of the Player's Field of View, after some seconds, certain parts of the map will be marked, indicating the boss will dash through that zone after some seconds; if hit by any of the dashes, the player will become unable to run for some time.", "After 150x boss will dash out of Player's Field of View; certain amount of orbs will be summoned in the arena, the player needs to touch one in order to get pushed towards the higher arena. After some seconds boss will dash on all the lower arena, causing players who didn't go up to die. (Note: if you have Super Armor, the orb won't be able to push you upwards.", "Boss will periodically cast an Orb-like attack that will push the player off the arena if not in i-frame / Super Armor.", "After some time, boss will teleport to an edge of the arena several times and start casting wind slashes towards the middle of the arena, player can dodge them or tank them. | Following this pattern, after some time, boss will teleport to the middle of the arena, cover himself in a tornado and cast wind slashes towards the edges of the arena. If the player gets too close to the tornado it will lower a great portion of its health, and will knock him down."],
+                            es: ["El jefe lanzará periódicamente un ataque similar a una burbuja que impide a los jugadores lanzar habilidades. | Después de 240x, el jefe cambiará este ataque y en su lugar se convertirá en un ataque similar a una bobina que empuja a las personas; se recomienda Super Armadura durante esta sección.", "Después de un tiempo, el jefe saltará fuera del campo de visión del jugador; después de unos segundos, ciertas partes del mapa serán marcadas, indicando que el jefe se lanzará a través de esa zona después de unos segundos; si es golpeado por cualquiera de los ataques, el jugador no podrá correr durante un tiempo.", "Después de 150x, el jefe se lanzará fuera del campo de visión del jugador; se invocará una cierta cantidad de orbes en la arena; el jugador necesita tocar uno para ser empujado hacia la arena superior. Después de unos segundos, el jefe se lanzará por toda la arena inferior, causando la muerte de los jugadores que no subieron. (Nota: si tienes Super Armadura, el orbe no podrá empujarte hacia arriba).", "El jefe lanzará periódicamente un ataque similar a un orbe que empujará al jugador fuera de la arena si no está en i-frame / Super Armadura.", "Después de un tiempo, el jefe se teletransportará a un borde de la arena varias veces y comenzará a lanzar cortes de viento hacia el centro de la arena; el jugador puede esquivarlos o resistirlos. | Siguiendo este patrón, después de un tiempo, el jefe se teletransportará al centro de la arena, se cubrirá con un tornado y lanzará cortes de viento hacia los bordes de la arena. Si el jugador se acerca demasiado al tornado, este reducirá gran parte de su salud y lo derribará."],
+                            kr: ["보스는 주기적으로 플레이어가 스킬을 시전하지 못하게 하는 거품 같은 공격을 시전합니다. | 240x 후, 보스는 이 공격을 변경하고 대신 사람들을 밀어내는 코일 같은 공격이 됩니다. 이 구간에서는 슈퍼 아머를 권장합니다.", "잠시 후, 보스가 플레이어의 시야에서 벗어나 점프합니다. 몇 초 후, 맵의 특정 부분이 표시되어 보스가 몇 초 후에 해당 지역을 돌진할 것임을 나타냅니다. 돌진 중 하나에 맞으면 플레이어는 일정 시간 동안 달릴 수 없게 됩니다.", "150x 후, 보스가 플레이어의 시야에서 벗어나 돌진합니다. 경기장에 일정량의 오브가 소환됩니다. 플레이어는 위쪽 경기장으로 밀려나기 위해 하나를 터치해야 합니다. 몇 초 후, 보스는 하단 경기장 전체를 돌진하여 올라가지 않은 플레이어를 죽입니다. (참고: 슈퍼 아머가 있으면 오브가 당신을 위로 밀어 올릴 수 없습니다.)", "보스는 주기적으로 오브 같은 공격을 시전하여 i-프레임/슈퍼 아머에 있지 않으면 플레이어를 경기장 밖으로 밀어냅니다.", "잠시 후, 보스는 경기장의 가장자리로 여러 번 순간이동하고 경기장 중앙을 향해 바람 베기를 시전하기 시작합니다. 플레이어는 이를 피하거나 견딜 수 있습니다. | 이 패턴에 따라 잠시 후, 보스는 경기장 중앙으로 순간이동하고 토네이도로 자신을 덮고 경기장 가장자리를 향해 바람 베기를 시전합니다. 플레이어가 토네이도에 너무 가까이 가면 체력의 상당 부분이 감소하고 넉백됩니다."],
+                            jp: ["ボスは定期的にプレイヤーがスキルをキャストできないバブルのような攻撃をキャストします。| 240x後、ボスはこの攻撃を変更し、代わりに人々を押し出すコイルのような攻撃になります。このセクションではスーパーアーマーをお勧めします。", "しばらくすると、ボスはプレイヤーの視界からジャンプします。数秒後、マップの特定の部分がマークされ、数秒後にそのゾーンを突進することを示します。ダッシュのいずれかに当たると、プレイヤーはしばらく走れなくなります。", "150x後、ボスはプレイヤーの視界からダッシュします。アリーナに一定量のオーブが召喚されます。プレイヤーは上のアリーナに押し出されるために1つに触れる必要があります。数秒後、ボスは下のアリーナ全体をダッシュし、上がらなかったプレイヤーを殺します。（注：スーパーアーマーがある場合、オーブはあなたを上に押し上げることができません。）", "ボスは定期的にオーブのような攻撃をキャストし、iフレーム/スーパーアーマーにいない場合、プレイヤーをアリーナから押し出します。", "しばらくすると、ボスはアリーナの端に何度もテレポートし、アリーナの中央に向かって風斬りをキャストし始めます。プレイヤーはそれらを回避するか、それらをタンクできます。| このパターンに続いて、しばらくすると、ボスはアリーナの中央にテレポートし、自分自身を竜巻で覆い、アリーナの端に向かって風斬りをキャストします。プレイヤーが竜巻に近づきすぎると、その体力の大部分が減少し、ノックダウンされます。"],
+                            br: ["O chefe lançará periodicamente um ataque semelhante a uma bolha que impede os jogadores de lançar habilidades. | Após 240x, o chefe mudará esse ataque e, em vez disso, se tornará um ataque semelhante a uma bobina que empurra as pessoas; é recomendado Super Armadura durante esta seção.", "Após algum tempo, o chefe saltará para fora do campo de visão do jogador; após alguns segundos, certas partes do mapa serão marcadas, indicando que o chefe se lançará através dessa zona após alguns segundos; se for atingido por qualquer um dos ataques, o jogador não poderá correr por um tempo.", "Após 150x, o chefe se lançará para fora do campo de visão do jogador; uma certa quantidade de orbes será invocada na arena; o jogador precisa tocar em um para ser empurrado para a arena superior. Após alguns segundos, o chefe se lançará por toda a arena inferior, causando a morte dos jogadores que não subiram. (Nota: se você tiver Super Armadura, o orbe não poderá empurrá-lo para cima).", "O chefe lançará periodicamente um ataque semelhante a um orbe que empurrará o jogador para fora da arena se não estiver em i-frame / Super Armadura.", "Após algum tempo, o chefe se teletransportará para uma borda da arena várias vezes e começará a lançar cortes de vento em direção ao centro da arena; o jogador pode desviar deles ou resistir a eles. | Seguindo esse padrão, após algum tempo, o chefe se teletransportará para o meio da arena, cobrirá-se com um tornado e lançará cortes de vento em direção às bordas da arena. Se o jogador chegar muito perto do tornado, isso reduzirá grande parte de sua saúde e o derrubará."]    
                         }
                     },
                     phase3: {
@@ -4475,5 +4938,6 @@ export const data = {
                 blchpdebuff: [""],
                 htuchp: "-"
             },
-        }
+        
+    }
 }
