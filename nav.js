@@ -111,14 +111,14 @@ document.addEventListener("DOMContentLoaded", () => {
     function updateGearIcon() {
     const isLight = localStorage.getItem("elhelper-mode") === "light";
     // Settings icon: fondo igual al modo, PNG contrario
-    document.getElementById("settings-icon-desktop").style.backgroundImage = `url('../images/gear-${isLight ? 'black' : 'white'}.png')`;
+    document.getElementById("settings-icon-desktop").style.backgroundImage = `url('../main/images/gear-${isLight ? 'black' : 'white'}.png')`;
     document.getElementById("settings-icon-desktop").style.backgroundColor = isLight ? "#fff" : "#222";
-    document.getElementById("settings-icon-mobile").style.backgroundImage = `url('../images/gear-${isLight ? 'black' : 'white'}.png')`;
+    document.getElementById("settings-icon-mobile").style.backgroundImage = `url('../main/images/gear-${isLight ? 'black' : 'white'}.png')`;
     document.getElementById("settings-icon-mobile").style.backgroundColor = isLight ? "#fff" : "#222";
     }
     function updateMenuIcon() {
     const isLight = localStorage.getItem("elhelper-mode") === "light";
-    menuIcon.style.backgroundImage = `url('../images/menu-${isLight ? 'black' : 'white'}.png')`;
+    menuIcon.style.backgroundImage = `url('../main/images/menu-${isLight ? 'black' : 'white'}.png')`;
     menuIcon.style.width = "40px";
     menuIcon.style.height = "40px";
     menuIcon.style.backgroundSize = "contain";
@@ -327,3 +327,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+
