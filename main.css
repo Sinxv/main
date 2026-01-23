@@ -136,6 +136,7 @@ li:hover {
         }
         
         .features-grid {
+            overflow: hidden;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
@@ -1334,4 +1335,5 @@ html {
     nav#main-nav-desktop {
         background: var(--footer-bg);
     }
+
 }
