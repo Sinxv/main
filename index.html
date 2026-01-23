@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Hedgyhelper - Elsword Guides & Resources</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Noto+Sans+JP:wght@400;700&family=Noto+Sans+SC:wght@400;700&family=Raleway:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="homenav.css">
+    <link rel="stylesheet" href="main.css">
+    
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <!-- Navigation will be injected by nav.js -->
+    <div class="container">
+        <!-- Hero Banner -->
+        <div class="hero-banner">
+            <div class="hero-content">
+                <h1 class="hero-title" data-translate="homepage.hero_title"></h1>
+                <p class="hero-subtitle" data-translate="homepage.hero_subtitle"></p>
+            </div>
+        </div>
+
+        <!-- Features Section -->
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">📚</div>
+                <h3 class="feature-title" data-translate="homepage.feature1_title"></h3>
+                <p class="feature-desc" data-translate="homepage.feature1_desc"></p>
+                <a href="guides.html" class="feature-link">Explore Guides</a>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">📈</div>
+                <h3 class="feature-title" data-translate="homepage.feature2_title"></h3>
+                <p class="feature-desc" data-translate="homepage.feature2_desc"></p>
+                <a href="prog.html" class="feature-link">Start Progressing</a>
+            </div>
+        </div>
+
+        <!-- Latest Updates -->
+        <div class="update-notes">
+            <div class="update-header">
+                <h3 class="update-title" data-translate="homepage.update_title"></h3>
+                <span class="update-date" data-translate="homepage.update_date"></span>
+            </div>
+            <div class="update-content">
+                <p id="update-list" data-multiline="homepage.update_content">
+
+                </p>
+            </div>
+        </div>
+
+        <!-- Disclaimer -->
+
+        <div class="lower">
+                <div class="info">
+                    <span data-translate="general.footer">If you have any information that you can contribute into, and would like to update, contact </span>
+                    <a id="guidenotice" href="discord://-/users/644760616485257246">sinxaegh</a>
+                    <span data-translate="general.footer_discord"> on discord</span>
+                    <p class="disclaimer" data-translate="homepage.disclaimer"></p>
+                    <p><span data-translate="general.dev"></span>&nbsp;<span data-translate="general.contribuitors"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="nav.js"></script>
+    <script type="module" src="main.js"></script>
+    <script type="module" src="data.js"></script>
+    <script type="module" src="translations.js"></script>
+    <script type="module" src="EHD.js"></script>
+    
+    <script>
+        // Homepage specific JavaScript
+        document.addEventListener('DOMContentLoaded', function() {
+            // Load progression stages
+            if (typeof window.loadProgression === 'function') {
+                window.loadProgression();
+            }
+            
+            // Populate update list from translations
+            const updateList = document.getElementById('update-list');
+            if (updateList && window.translationData) {
+                const updates = window.translationData?.homepage?.update_content?.en || [];
+                updateList.innerHTML = updates.map(item => `• ${item}`).join('<br>');
+            }
+            
+            // Add fade-in animations
+            const elements = document.querySelectorAll('.feature-card, .hero-content, .update-notes');
+            elements.forEach((el, index) => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(20px)';
+                setTimeout(() => {
+                    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                    el.style.opacity = '1';
+                    el.style.transform = 'translateY(0)';
+                }, index * 100);
+            });
+            
+            // Update page title with dynamic greeting
+            const hour = new Date().getHours();
+            let greeting = '';
+            if (hour < 12) greeting = 'Good morning';
+            else if (hour < 18) greeting = 'Good afternoon';
+            else greeting = 'Good evening';
+            
+            document.title = `Hedgyhelper - ${greeting}, Elsword Adventurer!`;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,361 @@
+/* --- NAVIGATION --- */
+nav#main-nav-desktop {
+  width: 100vw;
+  height: 60px;
+  background: #282832;
+  text-align: center;
+  z-index: 50;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: auto;
+}
+nav#main-nav-desktop ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: relative;
+  min-height: 60px;
+  background: inherit;
+  flex-wrap: wrap;
+}
+nav#main-nav-desktop ul li {
+  width: 120px;
+  color: white;
+  text-align: center;
+  list-style-type: none;
+  transition: background-color 0.3s, color 0.3s;
+  height: 35px;
+  padding-top: 5px;
+  font-weight: normal;
+  font-size: 1.08em;
+  letter-spacing: 0.5px;
+  min-width: 80px;
+  max-width: 160px;
+  word-break: break-word;
+}
+nav#main-nav-desktop ul li#spec {
+  width: 180px;
+  white-space: nowrap;
+}
+nav#main-nav-desktop ul a {
+  text-decoration: none;
+  margin: 0 8px;
+  transition: opacity 0.2s, background 0.2s, border 0.2s, border-radius 0.2s;
+  border-radius: 5px;
+  min-width: 80px;
+  max-width: 160px;
+  word-break: break-word;
+}
+nav#main-nav-desktop ul a:hover li {
+  border: 1px solid yellow;
+  border-radius: 5px;
+  background: #444;
+  color: #ffd700;
+  font-weight: bold;
+}
+nav#main-nav-desktop .settings-icon {
+  width: 32px;
+  height: 32px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  z-index: 101;
+  transition: filter 0.2s;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.12));
+}
+
+/* --- HAMBURGER MENU --- */
+nav#main-nav-mobile {
+  display: none;
+}
+nav#main-nav-mobile .menu-bar {
+  width: 100vw;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: transparent;
+  z-index: 1002;
+  height: 60px;
+  padding: 0;
+}
+nav#main-nav-mobile .menu-icon {
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: fixed;
+  left: 15px;
+  top: 15px;
+  z-index: 1002;
+  background: #282832;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  pointer-events: auto;
+}
+nav#main-nav-mobile .settings-icon {
+  width: 32px;
+  height: 32px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  right: 25px;
+  top: 18px;
+  z-index: 1003;
+  pointer-events: auto;
+}
+.hamburger-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 85vw;
+  max-width: 400px;
+  height: 100vh;
+  background: #282832;
+  box-shadow: 2px 0 16px rgba(0,0,0,0.25);
+  z-index: 1001;
+  transform: translateX(-100%);
+  transition: transform 0.35s cubic-bezier(.77,0,.175,1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 0;
+  pointer-events: auto;
+}
+.hamburger-nav.open {
+  transform: translateX(0);
+}
+.hamburger-nav .settings-icon {
+  position: absolute;
+  right: 25px;
+  top: 18px;
+  z-index: 1003;
+}
+
+.hamburger-nav a {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 18px 32px;
+  font-size: 1.15em;
+  color: white;
+  border-bottom: 1px solid #333;
+  background: none;
+  text-align: left;
+  border-radius: 0;
+  opacity: 0;
+  animation: fadeInMenu 0.4s forwards;
+  animation-delay: var(--delay, 0s);
+}
+.hamburger-nav.open a {
+  opacity: 1;
+}
+.hamburger-nav a:hover {
+  background: #444;
+  color: #ffd700;
+  font-weight: bold;
+}
+.hamburger-nav li {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  background: none;
+  color: white;
+  font-size: 1.15em;
+  border-radius: 0;
+}
+.hamburger-nav {
+  padding-top: 70px;
+}
+/* Animated settings menu for mobile hamburger nav */
+/* Animación de salida para los elementos del menú hamburguesa */
+.hamburger-nav.menu-slide-out a,
+.hamburger-nav.menu-slide-out li {
+  animation: slideOutLeft 0.35s forwards;
+}
+@keyframes slideOutLeft {
+  to {
+    transform: translateX(-100vw);
+    opacity: 0;
+  }
+}
+.hamburger-nav.settings-open a,
+.hamburger-nav.settings-open li {
+  display: none !important;
+}
+.hamburger-nav.menu-slide-in a,
+.hamburger-nav.menu-slide-in li {
+  animation: slideInRight 0.35s forwards;
+}
+@keyframes slideInRight {
+  from {
+    transform: translateX(-100vw);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.hamburger-nav.settings-open .settings-menu {
+  display: flex !important;
+  flex-direction: column;
+  width: 100%;
+  padding: 24px 32px 0 32px;
+  animation: fadeInMenu 0.4s forwards;
+}
+.settings-menu {
+  background: #282832;
+  display: none;
+  overflow: visible;
+}
+.settings-menu label {
+  margin-bottom: 18px;
+  font-size: 1.18em;
+  color: white;
+  background: none;
+}
+.settings-menu select {
+  margin-bottom: 18px;
+  font-size: 1.1em;
+  color: white;
+  width: 50%;
+  min-width: 120px;
+  max-width: 180px;
+  box-sizing: border-box;
+  padding: 4px 8px;
+  border-radius: 8px;
+  background: #222;
+  border: 1px solid #444;
+}
+.settings-menu .switch {
+  margin-bottom: 18px;
+  width: 100%;
+  min-width: 120px;
+  max-width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: visible;
+}
+.settings-menu input[type="checkbox"] {
+  margin-right: 8px;
+}
+.settings-menu span.slider {
+  margin-left: 8px;
+  width: 64px;
+  height: 32px;
+}
+.hamburger-nav.settings-open .settings-icon {
+  position: absolute;
+  right: 25px;
+  top: 18px;
+  z-index: 1003;
+}
+.hamburger-nav.settings-open {
+  background: #282832;
+}
+@keyframes fadeInMenu {
+  to { opacity: 1; }
+}
+/* Overlay for darkening background */
+#nav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(30,30,30,0.65);
+  z-index: 1000;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+#nav-overlay.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+@media (min-width: 901px) {
+  #nav-overlay {
+    display: none !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
+}
+
+/* --- SETTINGS POPUP --- */
+#settings-popup {
+  background: #333;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  z-index: 1100;
+  position: fixed;
+  top: 70px;
+  left: 80px;
+  width: 100vw;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: transparent;
+  z-index: 1002;
+  height: 60px;
+  padding: 0;
+  pointer-events: auto;
+  transition: pointer-events 0.2s;
+}
+.menu-bar.no-pointer {
+  pointer-events: none !important;
+  background: #fff;
+}
+body.light-mode nav#main-nav-desktop ul li {
+  color: black;
+  font-weight: bold;
+}
+body.light-mode nav#main-nav-desktop ul a:hover li {
+  background: #eee;
+  color: #ffd700;
+}
+body.light-mode nav#main-nav-mobile .hamburger-nav {
+  background: #fff;
+  box-shadow: 2px 0 16px rgba(0,0,0,0.10);
+}
+body.light-mode nav#main-nav-mobile .hamburger-nav a,
+body.light-mode nav#main-nav-mobile .hamburger-nav li {
+  color: black;
+  font-size: 1.25em;
+  font-weight: 500;
+}
+body.light-mode .settings-menu select {
+  background: #fff !important;
+  color: #222 !important;
+  border: 1px solid #bbb !important;
+}
+body.light-mode #settings-popup {
+  background: #eee;
+  color: black;
+}
+body.light-mode .menu-icon {
+  filter: none;
+  background: #fff;
+}
+body.light-mode .settings-icon {
+  filter: none;
+  background: #fff;
+}
+
+@media (min-width: 901px) {
+  .container, .info {
+    margin-top: 30px;
+  }
+}
