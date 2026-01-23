@@ -9,9 +9,9 @@ document.addEventListener("DOMContentLoaded", () => {
     navDesktop.id = "main-nav-desktop";
     navDesktop.innerHTML = `
       <ul>
-        <a href="../index.html"><li>Home</li></a>
-        <a href="../prog.html"><li id="spec">Game Progression</li></a>
-        <a href="../guides.html"><li>Guides</li></a>
+        <a href="../main/index.html"><li>Home</li></a>
+        <a href="../main/prog.html"><li id="spec">Game Progression</li></a>
+        <a href="../main/guides.html"><li>Guides</li></a>
         <div class="settings-icon" id="settings-icon-desktop"></div>
       </ul>
     `;
@@ -26,9 +26,9 @@ document.addEventListener("DOMContentLoaded", () => {
     </div>
     <div class="hamburger-nav" id="hamburger-nav">
         <div class="settings-icon" id="settings-icon-mobile"></div>
-        <a href="../index.html"><li>Home</li></a>
-        <a href="../prog.html"><li id="spec">Game Progression</li></a>
-        <a href="../guides.html"><li>Guides</li></a>
+        <a href="../main/index.html"><li>Home</li></a>
+        <a href="../main/prog.html"><li id="spec">Game Progression</li></a>
+        <a href="../main/guides.html"><li>Guides</li></a>
     </div>
 `;
         document.body.prepend(navMobile);
@@ -325,4 +325,5 @@ document.addEventListener("DOMContentLoaded", () => {
             popup.remove();
         }
     });
+
 });
