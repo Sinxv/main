@@ -2833,7 +2833,7 @@ export const data = {
                                     gaseruption: {
                                         name: { en: "Gas Eruption", es: "Erupción de Gas", kr: "가스 분출", jp: "ガス噴出", br: "Erupção de Gás" },
                                         forcedat: { en: "@ 140 or 80 bars"},
-                                        description: { en: ["When Echidna's HP drops to 140 or 80 bars", "Gas will start to erupt from all trapdoors and holes except the ones in the middle (total of 6). Players need to find the safe gas looking at your debuffs, safe gas gives players a cloud debuff, others give a skull debuff. Players outside the safe zone receive lethal damage."]},
+                                        description: { en: ["When Echidna's HP drops to 140 or 80 bars", "Gas will start to erupt from all trapdoors and holes except the ones in the middle (total of 6). Players need to find the safe gas looking at their debuffs: when on safe gas, players get cloud debuff, other gases give a skull debuff. Players outside the safe zone receive lethal damage."]},
                                         note: { en: ["If 3 players are in the safe zone, the remaining players can stand and not recieve damage as long as they stay outside of Echidna's path"]}
                                     },
                                     laserguidance: {
@@ -3527,4 +3527,5 @@ export const data = {
             stage8_title: { en: "Atma'ram and Mirror Dell", es: "", kr: "", jp: "", br: "" },
         },
     },
+
 }
