@@ -94,18 +94,18 @@ export const data = {
                 br: "Última Atualização"
             },
             update_date: {
-                en: "January 2026",
-                es: "Enero de 2026",
-                kr: "2026년 1월",
-                jp: "2026年1月",
-                br: "Janeiro de 2026"
+                en: "May 2026",
+                es: "Mayo de 2026",
+                kr: "2026년 5월",
+                jp: "2026年5月",
+                br: "Maio de 2026"
             },
             update_content: {
                 en: [
-                    "Added comprehensive guide for the Doom Aporia Raid",
-                    "Improved mobile responsiveness across all guides",
-                    "Added color customization options (click the palette icon in navigation)",
-                    "Fixed various typos and outdated information"
+                    "Compressed the first 3 stages of the Progression Guide into a single stage since the content is too old and fast to go by, this is an attempt to make each stage of the guide pack more content and be more relevant to the current state of the game.",
+                    "The guide will now automatically hide useless information from tables and only show the relevant information for the character's current level and CP, this should make it easier to navigate through the guide and find the relevant information for your character.",
+                    "Finally fixed the setting pop-up",
+                    "Again, Fixed various typos and outdated information + Reworked the phrasing of some parts of the early guide to make them more clear and easier to understand."
                 ],
                 es: [
                     "Guía completa agregada para la raid de Doom Aporia",
@@ -157,7 +157,7 @@ export const data = {
         },
         stage1: {
             title: { en: "Stage 1", es: "Etapa 1", kr: "1단계", jp: "ステージ1", br: "Estágio 1" },
-            stage1_title: { en: "Level 1 to Level 99", es: "Nivel 1 a Nivel 99", kr: "레벨 1에서 레벨 99까지", jp: "レベル1からレベル99まで", br: "Nível 1 a Nível 99" },
+            stage1_title: { en: "Level 1 to Master Class", es: "Nivel 1 a Clase Maestra", kr: "레벨 1에서 마스터 클래스까지", jp: "レベル1からマスタークラスまで", br: "Nível 1 a Classe Mestra" },
             contents: { en: "List of Content", es: "Lista de Contenido", kr: "콘텐츠 목록", jp: "コンテンツ一覧", br: "Lista de Conteúdo" },
             content_first_dungeon: { en: "First Dungeon", es: "Primera Mazmorra", kr: "첫 번째 던전", jp: "最初のダンジョン", br: "1ª Masmorra"},
             content_choose_path: { en: "Choosing a Path", es: "Elegir un Camino", kr: "경로 선택", jp: "道を選ぶ", br: "Escolhendo um Caminho" },
@@ -166,41 +166,41 @@ export const data = {
                 first_dungeon: {
                     title: { en: "First Dungeon", es: "Primera Mazmorra", kr: "첫 번째 던전", jp: "最初のダンジョン", br: "1ª Masmorra"},
                     content: { en: [
-                        "Once you finish character creation and tutorial, Press F8 or click 'Start Dungeon' button, you'll be greeted by a list of regions.",
-                        "Your main task is to complete the first dungeon 'Tree of El' (Dungeon is different for Lithia, Noah and Laby) to receive rewards: Growing Adventurer's Equipment Cube.",
-                        "This cube gives the following: Top Piece, Bottom Piece, Gloves, Shoes, Weapon. This is the equipment you will use for the entirety of the leveling up section."
+                        "Once you finish deciding which character to create and complete the tutorial, you'll notice a couple of buttons. For now, only focus on the 'Dungeon' button. This will open a list of dungeons divided by region, you can only see the next region once you complete a quest that unlocks it, or after completing the last dungeon of the previous region, and entering the level range required to play in the next region. Click 'Start Dungeon' button to enter the dungeon your Main Quest asks you to do.",
+                        "After completing the first dungeon 'Tree of El' (Dungeon is different for Lithia, Noah and Laby) you will receive 'Growing Adventurer's Equipment Cube'.",
+                        "This cube gives the following: Top Piece, Bottom Piece, Gloves, Shoes, Weapon. This is the equipment you will use for the entirety of the leveling up (Lv. 1 to 99) section, This section will only revolve around following your Main Quest, so just do all the dungeons your main quest ask you to do until you're level 99.",
+                        "During the Leveling section, and in the 2nd region of the game (while you follow your main quest), you will get a pet called 'Phoru', this pet auto collects all drops, which is essential in order to get some headstart money. (Should be around 25M ED by the time you reach level 99)"
                     ],
                     es: [
-                        "Una vez que termines la creación de personajes y el tutorial, presiona F8 o haz clic en el botón 'Iniciar Mazmorra', serás recibido por una lista de regiones.",
-                        "Tu tarea principal es completar la primera mazmorra 'Árbol de El' (la mazmorra es diferente para Lithia, Noah y Laby) para recibir recompensas: Cubo de Equipo de Aventurero en Crecimiento.",
-                        "Este cubo da lo siguiente: Parte Superior, Parte Inferior, Guantes, Zapatos, Arma. Este es el equipo que usarás durante toda la sección de nivelación."
+                        "Una vez que termines de decidir qué personaje crear y completes el tutorial, verás un par de botones. Por ahora, céntrate solo en el botón 'Mazmorra'. Esto abrirá una lista de mazmorras divididas por región; solo podrás ver la siguiente región una vez que completes una misión que la desbloquea, o después de completar la última mazmorra de la región anterior y entrar en el rango de nivel requerido para jugar en la siguiente región. Haz clic en el botón 'Iniciar Mazmorra' para entrar en la mazmorra que tu Misión Principal te pide hacer.",
+                        "Después de completar la primera mazmorra 'Árbol de El' (la mazmorra es diferente para Lithia, Noah y Laby) recibirás el 'Cubo de Equipo de Aventurero en Crecimiento'.",
+                        "Este cubo da lo siguiente: Parte Superior, Parte Inferior, Guantes, Zapatos, Arma. Este es el equipo que usarás durante toda la sección de subida de nivel (Nv. 1 a 99). Esta sección solo girará en torno a seguir tu Misión Principal, así que haz todas las mazmorras que tu misión principal te pida hacer hasta que llegues al nivel 99."
                     ],
                     kr: [
-                        "캐릭터 생성과 튜토리얼을 마치면 F8을 누르거나 '던전 시작' 버튼을 클릭하면 지역 목록이 표시됩니다.",
-                        "당신의 주요 임무는 첫 번째 던전 '엘의 나무'(던전은 리시아, 노아, 라비마다 다름)를 완료하여 보상: 성장하는 모험가의 장비 큐브를 받는 것입니다.",
-                        "이 큐브는 다음을 제공합니다: 상의, 하의, 장갑, 신발, 무기. 이것이 레벨업 섹션 전체에서 사용할 장비입니다."
+                        "캐릭터 생성 결정과 튜토리얼을 마치면 몇 개의 버튼이 표시됩니다. 지금은 '던전' 버튼에만 집중하세요. 이 버튼을 클릭하면 지역별로 나뉜 던전 목록이 열립니다. 다음 지역은 해당 지역을 잠금 해제하는 퀘스트를 완료하거나 이전 지역의 마지막 던전을 완료하고 다음 지역에서 플레이할 수 있는 필수 레벨 범위에 들어간 후에야 볼 수 있습니다. '던전 시작' 버튼을 클릭하여 메인 퀘스트가 요구하는 던전에 입장하세요.",
+                        "첫 던전 '엘의 나무'를 완료하면(던전은 리시아, 노아, 라비마다 다름) '성장하는 모험가의 장비 큐브'를 받습니다.",
+                        "이 큐브는 다음을 제공합니다: 상의, 하의, 장갑, 신발, 무기. 이 장비는 레벨업 구간(Lv. 1부터 99까지) 전체에서 사용하게 될 장비입니다. 이 구간은 오로지 메인 퀘스트를 따라가는 것에만 집중하므로, 메인 퀘스트가 요구하는 모든 던전을 레벨 99가 될 때까지 완료하세요."
                     ],
                     jp: [
-                        "キャラクター作成とチュートリアルを終えたら、F8を押すか「ダンジョン開始」ボタンをクリックすると、地域のリストが表示されます。",
-                        "あなたの主な任務は、最初のダンジョン「エルの木」（リシア、ノア、ラビでダンジョンが異なる）をクリアして、報酬：成長する冒険者の装備キューブを受け取ることです。",
-                        "このキューブは次のものを提供します：トップピース、ボトムピース、手袋、靴、武器。これがレベリングセクション全体で使用する装備です。"
+                        "どのキャラクターを作成するか決めてチュートリアルを完了すると、いくつかのボタンが表示されます。今は「ダンジョン」ボタンだけに注目してください。これをクリックすると地域ごとに分かれたダンジョンのリストが開きます。次の地域は、それをアンロックするクエストを完了するか、前の地域の最後のダンジョンをクリアして次の地域でプレイするための必要なレベル範囲に入った後でしか見ることができません。「ダンジョン開始」ボタンをクリックして、メインクエストが要求するダンジョンに入ります。",
+                        "最初のダンジョン『エルの木』をクリアすると（ダンジョンはリシア、ノア、ラビで異なります）、『成長する冒険者の装備キューブ』を受け取ります。",
+                        "このキューブは次のものを提供します：トップピース、ボトムピース、手袋、靴、武器。これがレベリングセクション（Lv. 1から99まで）全体で使用する装備です。このセクションはメインクエストに従うことだけで進むので、メインクエストが要求するすべてのダンジョンをレベル99になるまでこなしてください。"
                     ],
                     br: [
-                        "Depois de terminar a criação do personagem e o tutorial, pressione F8 ou clique no botão 'Iniciar Masmorra', você será recebido por uma lista de regiões.",
-                        "Sua tarefa principal é completar a primeira masmorra 'Árvore de El' (a masmorra é diferente para Lithia, Noah e Laby) para receber recompensas: Cubo de Equipamento de Aventureiro em Crescimento.",
-                        "Este cubo dá o seguinte: Peça Superior, Peça Inferior, Luvas, Sapatos, Arma. Este é o equipamento que você usará durante toda a seção de nivelamento."
+                        "Depois de terminar de decidir qual personagem criar e completar o tutorial, você verá alguns botões. Por enquanto, foque apenas no botão 'Dungeon'. Isso abrirá uma lista de masmorras divididas por região; você só poderá ver a próxima região depois de completar uma missão que a desbloqueia, ou após completar a última masmorra da região anterior e entrar na faixa de nível necessária para jogar na região seguinte. Clique no botão 'Iniciar Masmorra' para entrar na masmorra que sua Missão Principal pede para você fazer.",
+                        "Após completar a primeira masmorra 'Árvore de El' (a masmorra é diferente para Lithia, Noah e Laby), você receberá o 'Cubo de Equipamento do Aventureiro em Crescimento'.",
+                        "Este cubo dá o seguinte: Peça Superior, Peça Inferior, Luvas, Sapatos, Arma. Este é o equipamento que você usará durante toda a seção de nivelamento (Nv. 1 a 99). Esta seção só girará em torno de seguir sua Missão Principal, então faça todas as masmorras que sua missão principal pedir até chegar ao nível 99."
                     ]}
                 },
                 choose_path: {
                     title: { en: "Choosing a Path", es: "Elegir un Camino", kr: "경로 선택", jp: "道を選ぶ", br: "Escolhendo um Caminho" },
                     content: { en: [
-                        "On level 15 you will get a pet called 'Phoru', this pet auto collects all drops, which is essential in order to get some headstart money.",
-                        "Also you will get the 'First class promotion quest' where you will be able to choose the path of a character.",
-                        "You can complete this just by following the main quests, as you will still enter all the dungeons that the promotion quest asks for.",
-                        "On level 40, and level 70 you will get promotions that will give passives and new skills to your character."
+                        "Upon reaching level 15, you will get the '1st Class Promotion Quest' where you will be able to choose between the 4 paths each character has.",
+                        "You can complete this just by following the main quest, as you will still enter all the dungeons that the promotion quest asks for.",
+                        "This is later repeated, since upon reaching level 40, and level 70 you will get further promotions that will grant passives, new skills and enhance previous skills of the path you chose back at Level 15."
                     ],
                     es: [
-                        "En el nivel 15 obtendrás una mascota llamada 'Phoru', esta mascota recoge automáticamente todas las gotas, lo cual es esencial para obtener algo de dinero inicial.",
+                        "En el nivel 15 obtendrás una mascota llamada 'Phoru', esta mascota recoge automáticamente todas las gotas, lo cual es esencial para obtener algo de dinero inicial. (Debería ser alrededor de 25M ED cuando alcances el nivel 99)",
                         "También obtendrás la 'misión de promoción de primera clase' donde podrás elegir el camino de un personaje.",
                         "Puedes completar esto simplemente siguiendo las misiones principales, ya que aún ingresarás a todas las mazmorras que la misión de promoción solicita.",
                         "En el nivel 40 y nivel 70 obtendrás promociones que darán pasivas y nuevas habilidades a tu personaje."
@@ -225,48 +225,6 @@ export const data = {
                     ]}
                 }
             },
-            tables: {
-                starter_equipment: {
-                    headers: {en: "Item", es: "Artículo", kr: "아이템", jp: "アイテム", br: "Item" },
-                    rows: {
-                        top: {
-                            en: "Growing Adventurer's Top Piece",
-                            es: "Parte Superior de Aventurero en Crecimiento",
-                            kr: "성장하는 모험가의 상의",
-                            jp: "成長する冒険者のトップピース",
-                            br: "Peça Superior de Aventureiro em Crescimento"
-                        },
-                        bottom: {
-                            en: "Growing Adventurer's Bottom Piece",
-                            es: "Parte Inferior de Aventurero en Crecimiento",
-                            kr: "성장하는 모험가의 하의",
-                            jp: "成長する冒険者のボトムピース",
-                            br: "Peça Inferior de Aventureiro em Crescimento"
-                        },
-                        gloves: {
-                            en: "Growing Adventurer's Gloves",
-                            es: "Guantes de Aventurero en Crecimiento",
-                            kr: "성장하는 모험가의 장갑",
-                            jp: "成長する冒険者の手袋",
-                            br: "Luvas de Aventureiro em Crescimento"
-                        },
-                        shoes: {
-                            en: "Growing Adventurer's Shoes",
-                            es: "Zapatos de Aventurero en Crecimiento",
-                            kr: "성장하는 모험가의 신발",
-                            jp: "成長する冒険者の靴",
-                            br: "Sapatos de Aventureiro em Crescimento"
-                        },
-                        weapon: {
-                            en: "Growing Adventurer's Weapon",
-                            es: "Arma de Aventurero en Crecimiento",
-                            kr: "성장하는 모험가의 무기",
-                            jp: "成長する冒険者の武器",
-                            br: "Arma de Aventureiro em Crescimento"    
-                        }
-                    }
-                }
-            }
         },
         stage2: {
             title: { en: "Stage 2", es: "Etapa 2", kr: "2단계", jp: "ステージ2", br: "Estágio 2" },
@@ -280,13 +238,13 @@ export const data = {
             content_third_class: { en: "3rd Class", es: "3ª Clase", kr: "3차 직업", jp: "3次クラス", br: "3ª Classe" },
             content_henir: { en: "Henir's Time and Space", es: "Tiempo y Espacio de Henir", kr: "헤니르의 시간과 공간", jp: "ヘニルの時間と空間", br: "Tempo e Espaço de Henir" },
             sections: {
-                intro: { en: ["Once you reach level 99, you will unlock 'Elrianode', and the 2nd guide of the 'Dr.Pho's Guide'. Your main objective on this stage is to fully complete the first 2 Dr.Pho's Guides."], es: ["Una vez que alcances el nivel 99, desbloquearás 'Elrianode' y la 2ª guía de la 'Guía del Dr. Pho'. Tu objetivo principal en esta etapa es completar completamente las primeras 2 Guías del Dr. Pho."], kr: ["레벨 99에 도달하면 '엘리아노드'와 '닥터 포의 가이드'의 두 번째 가이드가 잠금 해제됩니다. 이 단계에서의 주요 목표는 닥터 포의 첫 번째 가이드를 완전히 완료하는 것입니다."], jp: ["レベル99に到達すると、「エルリアノード」と「ドクター・ポーのガイド」の2番目のガイドがアンロックされます。このステージでの主な目的は、ドクター・ポーの最初の2つのガイドを完全に完了することです。"], br: ["Depois de atingir o nível 99, você desbloqueará 'Elrianode' e o 2º guia do 'Guia do Dr. Pho'. Seu objetivo principal nesta fase é completar totalmente os primeiros 2 Guias do Dr. Pho."], kr: ["레벨 99에 도달하면 '엘리아노드'와 '닥터 포의 가이드'의 두 번째 가이드가 잠금 해제됩니다. 이 단계에서의 주요 목표는 닥터 포의 첫 번째 가이드를 완전히 완료하는 것입니다."], jp: ["レベル99に到達すると、「エルリアノード」と「ドクター・ポーのガイド」の2番目のガイドがアンロックされます。このステージでの主な目的は、ドクター・ポーの最初の2つのガイドを完全に完了することです。"], br: ["Depois de atingir o nível 99, você desbloqueará 'Elrianode' e o 2º guia do 'Guia do Dr. Pho'. Seu objetivo principal nesta fase é completar totalmente os primeiros 2 Guias do Dr. Pho."]},
+                intro: { en: ["Once you reach level 99, you will unlock 'Elrianode'."], es: ["Una vez que alcances el nivel 99, desbloquearás 'Elrianode' y la 2ª guía de la 'Guía del Dr. Pho'. Tu objetivo principal en esta etapa es completar completamente las primeras 2 Guías del Dr. Pho."], kr: ["레벨 99에 도달하면 '엘리아노드'와 '닥터 포의 가이드'의 두 번째 가이드가 잠금 해제됩니다. 이 단계에서의 주요 목표는 닥터 포의 첫 번째 가이드를 완전히 완료하는 것입니다."], jp: ["レベル99に到達すると、「エルリアノード」と「ドクター・ポーのガイド」の2番目のガイドがアンロックされます。このステージでの主な目的は、ドクター・ポーの最初の2つのガイドを完全に完了することです。"], br: ["Depois de atingir o nível 99, você desbloqueará 'Elrianode' e o 2º guia do 'Guia do Dr. Pho'. Seu objetivo principal nesta fase é completar totalmente os primeiros 2 Guias do Dr. Pho."], kr: ["레벨 99에 도달하면 '엘리아노드'와 '닥터 포의 가이드'의 두 번째 가이드가 잠금 해제됩니다. 이 단계에서의 주요 목표는 닥터 포의 첫 번째 가이드를 완전히 완료하는 것입니다."], jp: ["レベル99に到達すると、「エルリアノード」と「ドクター・ポーのガイド」の2番目のガイドがアンロックされます。このステージでの主な目的は、ドクター・ポーの最初の2つのガイドを完全に完了することです。"], br: ["Depois de atingir o nível 99, você desbloqueará 'Elrianode' e o 2º guia do 'Guia do Dr. Pho'. Seu objetivo principal nesta fase é completar totalmente os primeiros 2 Guias do Dr. Pho."]},
                 elrianode_armor: {
-                    title: { en: "Elrianode Armor", es: "Armadura de Elrianode", kr: "엘리아노드 갑옷", jp: "エルリアノードアーマー", br: "Armadura Elrianode"},
+                    title: { en: "Post lv. 99 / Earlygame", es: "Armadura de Elrianode", kr: "엘리아노드 갑옷", jp: "エルリアノードアーマー", br: "Armadura Elrianode"},
                     content: { en: [
-                        "On Dr. Pho's 2nd Guide, Lesson 1, you'll notice that the first mission is to Clear 3 Elrianode Region Dungeons.",
-                        "Once you finish that, you will be able to claim the Restored Elrianode Armor and a 30 days Elrios Guardian Knights IB Accessories Set.",
-                        "Both armor and Ice Burners are really good for early game, since alongside your weapon, they're a main source of Combat Power."
+                        "Upon reaching Level 99 and alongside the unlock of Elrianode, There is a system that is crucial to your growth, called 'Dr. Pho's Guide'. This system is basically a set of quests that will teach you the basics of the game and reward you with really good items that will help you in your early game journey.",
+                        "Focus on the 'Elrianode' Region quests of the 'Dr. Pho's Guide' and you will be able to claim the Restored Elrianode Armor, +10 Apocalypse-Type Weapon, and a 30 days Elrios Guardian Knights IB Accessories Set.",
+                        "Those items are really good for early game, since both Armor and Ice Burners, alongside your weapon, are your main source of Combat Power (And damage output in general)"
                     ],
                     es: [
                         "En la 2ª Guía del Dr. Pho, Lección 1, notarás que la primera misión es Limpiar 3 Mazmorras de la Región de Elrianode.",
@@ -309,40 +267,13 @@ export const data = {
                         "Tanto a armadura quanto os Queimadores de Gelo são realmente bons para o início do jogo, pois, junto com sua arma, são uma fonte principal de Poder de Combate."
                     ]}
                 },
-                apocalypse_weapon: {
-                    title: { en: "Apocalypse-Type Weapon", es: "Arma Tipo Apocalipsis", kr: "아포칼립스형 무기", jp: "アポカリプスタイプの武器", br: "Arma Tipo Apocalipse" },
-                    content: { en: [
-                        "Once you acquire the Restored Elrianode Armor you will notice that your weapon is not good anymore, since it's old by this point.",
-                        "You will need to spam 'Add's Energy Fusion Theory' until you get the Apocalypse-Type Weapon Cube.",
-                        "Using this cube will give you a new weapon, which will be way stronger than the one you had previously."
-                    ],
-                    es: [
-                        "Una vez que adquieras la Armadura de Elrianode Restaurada, notarás que tu arma ya no es buena, ya que es vieja en este punto.",
-                        "Necesitarás hacer spam de la mazmorra 'Teoría de la energía de fusión de Add' hasta que obtengas el Cubo de Arma Tipo Apocalipsis.",
-                        "Usar este cubo te dará una nueva arma, que será mucho más fuerte que la que tenías anteriormente."
-                    ],
-                    kr: [
-                        "복원된 엘리아노드 갑옷을 획득하면 이 시점에서 오래되었기 때문에 무기가 더 이상 좋지 않다는 것을 알게 될 것입니다.",
-                        "'애드의 에너지융합 이론'을 스팸하여 아포칼립스형 무기 큐브를 얻어야 합니다.",
-                        "이 큐브를 사용하면 이전에 가지고 있던 것보다 훨씬 강력한 새 무기를 얻을 수 있습니다."
-                    ],  
-                    jp: [
-                        "修復されたエルリアノードアーマーを手に入れると、この時点で古くなっているため、武器がもう良くないことに気付くでしょう。",
-                        "'エドのエネルギー融合理論'をスパムして、アポカリプスタイプの武器キューブを取得する必要があります。",
-                        "このキューブを使用すると、以前よりもはるかに強力な新しい武器が手に入ります。"
-                    ],
-                    br: [
-                        "Depois de adquirir a Armadura Elrianode Restaurada, você notará que sua arma não é mais boa, pois está velha neste ponto.",
-                        "Você precisará spammar a masmorra 'Teoria de Fusão de Energia de Add' até obter o Cubo de Arma Tipo Apocalipse.",
-                        "Usar este cubo lhe dará uma nova arma, que será muito mais forte do que a que você tinha anteriormente."
-                    ]}
-                },
                 socketing: {
                     title: { en: "Socketing", es: "Encajonado", kr: "소켓", jp: "ソケット", br: "Socketing" },
                     content: { en: [
-                        "Your Armor and Weapon has something called 'Sockets', which are empty when you get them.",
-                        "You can use Magic Stones for socket by pressing Inventory -> Magic Stone Enchant.",
-                        "The stats you should socket are Maximize and Critical."
+                        "Both Armor and Weapons have Slots called 'Sockets', Dr. Pho's Guide provides weapons that are already socketed, but you might need to switch the Sockets to get better stat percentages, or to switch the stats, in order to match the recommended stats of your path.",
+                        "Socketing is performed by infusing Magic Stones into your Armor or Weapons by pressing the Inventory Key (I) -> Magic Stone Enchant. (PD: If you get a good stat, you can click the Square Icon on the Socket UI to lock the stat, otherwise you will spend a lot of Stones trying to get the stat you want.)",
+                        "The stats you should socket are Maximize and Critical, then Damage to Boss (Requires a Special Magic Stone called 'Dual Magic Stone of Pursuit' which is obtainable via purchase on Board, or by doing the Special Dungeon 'Heroic Dungeon' and crafting the stones via NPC Glave)",
+                        "Magic Stones (Normal ones, Special ones like Dual Magic Stone of Pursuit are different) are divided in 4 Tiers, shown in the table below, each tier has a different minimum and maximum stat value, T4 having the highest, it being 12% on weapon and 6% on Armor, since Armor socket values are divided by half."
                     ],
                     es: [
                         "Tu Armadura y Arma tienen algo llamado 'Encajonado', que está vacío cuando los obtienes.",
@@ -369,7 +300,7 @@ export const data = {
                     title: { en: "El Resonance", es: "Resonancia El", kr: "엘 공명", jp: "エルレゾナンス", br: "El Resonance" },
                     content: { en: [
                         "El Resonance is a leveling system that is shared account-wide, increasing its level will give you points, Also known as ERP, which you can exchange for various perks.",
-                        "This is a system unlocked via quest, after you complete 7 dungeons from elrianode and onwards."
+                        "This is a system unlocked via quest, after you complete 7 dungeons from elrianode and onwards. Quest requirement after unlock is to complete 100 dungeons in your current level range, which is a lot honestly but it's worth it for the passive stats it gives over time."
                     ], es: [
                         "El Resonance es un sistema de nivelación que se comparte en toda la cuenta, aumentar su nivel te dará puntos, también conocidos como ERP, que puedes intercambiar por varias ventajas.",
                         "Este es un sistema desbloqueado a través de una misión, después de completar 7 mazmorras de elrianode en adelante."
@@ -385,10 +316,10 @@ export const data = {
                     ]}
                 },
                 dosi_wings: {
-                    title: { en: "Accessory: Dimension of Sinister Intent Wings", es: "Accesorio: Alas de la Dimensión de la Intención Siniestra", kr: "액세서리: 사악한 의도의 차원 날개", jp: "アクセサリー：邪悪な意図の次元の翼", br: "Acessório: Asas da Dimensão da Intenção Sinistra" },
+                    title: { en: "Dimension of Sinister Intent Wings", es: "Accesorio: Alas de la Dimensión de la Intención Siniestra", kr: "액세서리: 사악한 의도의 차원 날개", jp: "アクセサリー：邪悪な意図の次元の翼", br: "Acessório: Asas da Dimensão da Intenção Sinistra" },
                     content: { en: [
-                        "On Dr. Pho's First Guide, you're asked to do 'Dimension of Sinister Intent', which is located on Dungeon List → Special.",
-                        "You'll use this accessory for a LONG amount of time, and as you do Gate of Darkness you'll get a material that will allow you to upgrade the Wings."
+                        "On Dr. Pho's Guide, you're asked to do 'Dimension of Sinister Intent', which is located on Dungeon List → Special.",
+                        "Upon completion, you will be given a cube with grants you the entire Corrupted Master set, but only the wings are good to use, you'll keep this accessory for a quite some time, and it's easy to get, so if you can, get it, it's not a life changing accessory though, so you can choose to skip it."
                     ], es: [
                         "En la Primera Guía del Dr. Pho, se te pide que hagas 'Dimensión de la Intención Siniestra', que se encuentra en Lista de Mazmorras → Especial.",
                         "Usarás este accesorio durante una LARGA cantidad de tiempo, y a medida que hagas Puerta de la Oscuridad obtendrás un material que te permitirá mejorar las Alas."
@@ -404,10 +335,10 @@ export const data = {
                     ]}
                 },
                 third_class: {
-                    title: { en: "Job Advancement: 3rd Class", es: "Avance de Trabajo: 3ª Clase", kr: "직업 승급: 3차 직업", jp: "ジョブアドバンスメント：3次クラス", br: "Avanço de Trabalho: 3ª Classe" },
+                    title: { en: "3rd Class", es: "Avance de Trabajo: 3ª Clase", kr: "직업 승급: 3차 직업", jp: "ジョブアドバンスメント：3次クラス", br: "Avanço de Trabalho: 3ª Classe" },
                     content: { en: [
-                        "Now that you have a new armor, new weapon and a couple of accessories, you should be able to easily advance to 3rd Class.",
-                        "After Completing Quest 5/5, you will advance to 3rd Class, which will unlock Force Skills."
+                        "After everything you got, you should be able to easily advance to 3rd Class.",
+                        "3rd Class is unlocked after completing 5 quests, which will unlock the last batch of passives and, will unlock Force Skills.","The requirements to complete all 5 quests are:"
                     ], es: [
                         "Ahora que tienes una nueva armadura, una nueva arma y un par de accesorios, deberías poder avanzar fácilmente a la 3ª Clase.",
                         "Después de completar la misión 5/5, avanzarás a la 3ª Clase, lo que desbloqueará las Habilidades de Fuerza."
@@ -425,8 +356,9 @@ export const data = {
                 henir: {
                     title: { en: "Henir's Time and Space", es: "Tiempo y Espacio de Henir", kr: "헤니르의 시간과 공간", jp: "ヘニルの時間と空間", br: "Tempo e Espaço de Henir" },
                     content: { en: [
-                        "You can find this dungeon on: Dungeon List → Special, Henir's Time and Space is alike to a 'Boss Rush' with 2 difficulties, Normal Mode (20 Bosses) and Challenge Mode (6 Bosses, Higher HP than Normal Mode).",
-                        "Your task here is to Clear Henir's Time and Space Stage 20 (Normal Mode), this will let you complete 4 quests from Dr. Pho's Guide, rewarding you the Force Skills."
+                        "You can find this dungeon on: Dungeon List → Henir, Henir's Time and Space is a Boss Rush-like dungeon with 2 difficulties, Normal Mode (20 Bosses) and Challenge Mode (6 Bosses, Higher HP than Normal Mode).",
+                        "Clearing Henir's Time and Space up to Stage 20 (Normal Mode) will let you complete the quests from Dr. Pho's Guide Henir Tab, rewarding you the Force Skills Eroding Energy and Head Hunter, those are very useful, since Eroding Energy provides Max MP, and Head Hunter provides Damage to Bosses. you will also be given materials to upgrade those Force Skills up to Elite (2nd Tier) with higher stats. Along with Illipia's Aura, which was given after 3rd class quest completion, on Rare (1st Tier) are the 3 most important Force Skills for early game.",
+                        "Table below shows the stats of these 3 Force Skills at each Tier, and the materials required to upgrade them."
                     ], es: [
                         "Puedes encontrar esta mazmorra en: Lista de Mazmorras → Especial, el Tiempo y Espacio de Henir es similar a un 'Boss Rush' con 2 dificultades, Modo Normal (20 Jefes) y Modo Desafío (6 Jefes, más HP que el Modo Normal).",
                         "Tu tarea aquí es Limpiar la Etapa 20 del Tiempo y Espacio de Henir (Modo Normal), esto te permitirá completar 4 misiones de la Guía del Dr. Pho, recompensándote con las Habilidades de Fuerza."
@@ -457,7 +389,38 @@ export const data = {
                         t2: {es: "Tier 2: Advanced Magic Stone", es: "Nivel 2: Piedra Mágica Avanzada", kr: "2단계: 고급 마법석", jp: "ティア2: 高級魔法石", br: "Nível 2: Pedra Mágica Avançada"},
                         t3: {en: "Tier 3: Refined Magic Stone", es: "Nivel 3: Piedra Mágica Refinada", kr: "3단계: 정제된 마법석", jp: "ティア3: 精製された魔法石", br: "Nível 3: Pedra Mágica Refinada"},
                         t4: {en: "Tier 4: Sage Magic Stone", es: "Nivel 4: Piedra Mágica Sabia", kr: "4단계: 현자 마법석", jp: "ティア4: 賢者の魔法石", br: "Nível 4: Pedra Mágica Sábia"}
-                }
+                    },
+                },
+                forces: {
+                    title: {en: "Force Skills", es: "Habilidades de Fuerza", kr: "포스 스킬", jp: "フォーススキル", br: "Habilidades de Força"},
+                    headers: {
+                        h1: {en: "Skill", es: "Habilidad", kr: "스킬", jp: "スキル", br: "Habilidade"},
+                        h2: {en: "Rare", es: "Raro", kr: "레어", jp: "レア", br: "Raro"},
+                        h3: {en: "Elite", es: "Élite", kr: "엘리트", jp: "エリート", br: "Elite"},
+                        h4: {en: "Unique", es: "Única", kr: "유니크", jp: "ユニーク", br: "Única"}
+                    },
+                    forcename: {
+                        ee: {en: "Eroding Energy", es: "Energía Erosiva", kr: "침식 에너지", jp: "エロージングエナジー", br: "Energia Erosiva"},
+                        hh: {en: "Head Hunter", es: "Cazador de Cabezas", kr: "헤드 헌터", jp: "ヘッドハンター", br: "Caçador de Cabeças"},
+                        ia: {en: "Illipia's Aura", es: "Aura de Illipia", kr: "일리피아의 오라", jp: "イリピアのオーラ", br: "Aura de Illipia"}
+                    },
+                    tiers: {
+                        t1effects: {
+                            hh: {en:["Damage to Bosses +40%","Physical/Magical Attack Power -18%"], es:["Daño a Jefes +40%","Poder de Ataque Físico/Mágico -18%"], kr:["보스에 대한 피해 +40%","물리/마법 공격력 -18%"], jp:["ボスへのダメージ +40%","物理/魔法攻撃力 -18%"], br:["Dano a Chefes +40%","Poder de Ataque Físico/Mágico -18%"]},
+                            ee: {en:["Max MP +50","MP Recovery +10/s after 3s out of combat","HP Decrease -3% after 3s out of combat"], es:["Max MP +50","Recuperación de MP +10/s después de 3s fuera de combate","Disminución de HP -3% después de 3s fuera de combate"], kr:["最大MP +50","戦闘から3秒後にMP回復 +10/s","戦闘から3秒後にHP減少 -3%"], jp:["最大MP +50","戦闘から3秒後にMP回復 +10/s","戦闘から3秒後にHP減少 -3%"], br:["Max MP +50","Recuperação de MP +10/s após 3s fora de combate","Diminuição de HP -3% após 3s fora de combate"]},
+                            ia: {en:["Max HP +40,000","HP Recovery +1.2%/s after 3s out of combat"], es:["Max HP +40,000","Recuperación de HP +1.2%/s después de 3s fuera de combate"], kr:["最大HP +40,000","戦闘から3秒後にHP回復 +1.2%/s"], jp:["最大HP +40,000","戦闘から3秒後にHP回復 +1.2%/s"], br:["Max HP +40,000","Recuperação de HP +1.2%/s após 3s fora de combate"]}
+                        },
+                        t2effects: {
+                            hh: {en:["Damage to Bosses +60%","Physical/Magical Attack Power -20%"], es:["Daño a Jefes +60%","Poder de Ataque Físico/Mágico -20%"], kr:["보스에 대한 피해 +60%","물리/마법 공격력 -20%"], jp:["ボスへのダメージ +60%","物理/魔法攻撃力 -20%"], br:["Dano a Chefes +60%","Poder de Ataque Físico/Mágico -20%"]},
+                            ee: {en:["Max MP +80","MP Recovery +15/s after 3s out of combat","HP Decrease -3% after 3s out of combat"], es:["Max MP +80","Recuperación de MP +15/s después de 3s fuera de combate","Disminución de HP -3% después de 3s fuera de combate"], kr:["最大MP +80","戦闘から3秒後にMP回復 +15/s","戦闘から3秒後にHP減少 -3%"], jp:["最大MP +80","戦闘から3秒後にMP回復 +15/s","戦闘から3秒後にHP減少 -3%"], br:["Max MP +80","Recuperação de MP +15/s após 3s fora de combate","Diminuição de HP -3% após 3s fora de combate"]},
+                            ia: {en:["Max HP +70,000","HP Recovery +2%/s after 3s out of combat"], es:["Max HP +70,000","Recuperación de HP +2%/s después de 3s fuera de combate"], kr:["最大HP +70,000","戦闘から3秒後にHP回復 +2%/s"], jp:["最大HP +70,000","戦闘から3秒後にHP回復 +2%/s"], br:["Max HP +70,000","Recuperação de HP +2%/s após 3s fora de combate"]}
+                        },
+                        t3effects: {
+                            hh: {en:["Damage to Bosses +80%","Physical/Magical Attack Power -24%"], es:["Daño a Jefes +80%","Poder de Ataque Físico/Mágico -24%"], kr:["보스에 대한 피해 +80%","물리/마법 공격력 -24%"], jp:["ボスへのダメージ +80%","物理/魔法攻撃力 -24%"], br:["Dano a Chefes +80%","Poder de Ataque Físico/Mágico -24%"]},
+                            ee: {en:["Max MP +100","MP Recovery +25/s after 3s out of combat","HP Decrease -3% after 3s out of combat"], es:["Max MP +100","Recuperación de MP +25/s después de 3s fuera de combate","Disminución de HP -3% después de 3s fuera de combate"], kr:["最大MP +100","戦闘から3秒後にMP回復 +25/s","戦闘から3秒後にHP減少 -3%"], jp:["最大MP +100","戦闘から3秒後にMP回復 +25/s","戦闘から3秒後にHP減少 -3%"], br:["Max MP +100","Recuperação de MP +25/s após 3s fora de combate","Diminuição de HP -3% após 3s fora de combate"]},
+                            ia: {en:["Max HP +100,000","HP Recovery +3%/s after 3s out of combat"], es:["Max HP +100,000","Recuperación de HP +3%/s después de 3s fuera de combate"], kr:["最大HP +100,000","戦闘から3秒後にHP回復 +3%/s"], jp:["最大HP +100,000","戦闘から3秒後にHP回復 +3%/s"], br:["Max HP +100,000","Recuperação de HP +3%/s após 3s fora de combate"]}
+                        }
+                    }
                 },
                 el_resonance: {
                     title: {
@@ -487,7 +450,7 @@ export const data = {
                         h3:
                         {
                             en: "Max",
-                            en: "Maximo",
+                            es: "Maximo",
                             kr: "최대",
                             jp: "最大",
                             br: "Máximo"
@@ -1202,6 +1165,201 @@ export const data = {
                         }
                     }
                 },
+                ctohf: {
+                    num: { en: "1st Dungeon", es: "1ra Mazmorra", kr: "첫 번째 던전", jp: "最初のダンジョン", br: "1ª Masmorra" },
+                    name: { en: "- Crimson Tower of Howling Flames -", es: "- Torre Carmín de los Lamentos -", kr: "- 울부짖는 불꽃의 붉은 탑 -", jp: "- 叫ぶ炎の紅い塔 -", br: "- Torre Carmim dos Uivos -"},
+                    content: {
+                        phase1: {
+                            phasenum: { en: "Phase 1", es: "Fase 1", kr: "1단계", jp: "フェーズ1", br: "Fase 1" },
+                            phasebname: { en: "Fragments of Prominence", es: "Fragmentos de Prominencia", kr: "", jp: "", br: "" },
+                            np: {
+                                headbutt: {
+                                    name: { en: "Headbutt", es: "Topetazo", kr: "박치기", jp: "ヘッドバット", br: "Cabeçada" },
+                                    description: { en: ["Fragment of Prominence pulls its head back and rushes forward at high speed. The damage is not high and the range is small, so it is very easy to dodge."], es: "El Fragmento de Prominencia echa la cabeza hacia atrás y se lanza hacia adelante a alta velocidad. El daño no es alto y el alcance es pequeño, por lo que es muy fácil de esquivar.", kr: "돌출의 조각은 머리를 뒤로 젖히고 고속으로 앞으로 돌진합니다. 피해는 높지 않고 범위도 작아서 피하기 매우 쉽습니다.", jp: "突出の断片は頭を後ろに引いて高速で前方に突進します。ダメージは高くなく、範囲も小さいため、非常に回避しやすいです。", br: "O Fragmento de Proeminência puxa a cabeça para trás e avança em alta velocidade. O dano não é alto e o alcance é pequeno, então é muito fácil de desviar."}
+                                 },
+                                headsweep: {
+                                    name: { en: "Head Sweep", es: "Varredura de Cabeça", kr: "헤드 스윕", jp: "ヘッドスイープ", br: "Varredura de Cabeça" },
+                                    description: { en: ["Fragment of Prominence sweeps its head horizontally in the direction they're facing at. Dodgeable with i-frames."], es: "El Fragmento de Prominencia barre su cabeza horizontalmente en la dirección que están mirando. Esquivable con i-frames.", kr: "돌출의 조각은向いている方向に頭を水平に掃きます。iフレームで回避可能です。", jp: "突出の断片は向いている方向に頭を水平に掃きます。iフレームで回避可能です。", br: "O Fragmento de Proeminência varre sua cabeça horizontalmente na direção que estão olhando. Desviável com i-frames."}
+                                },
+                                firethrow: {
+                                    name: { en: "Fireball Throw", es: "Lanzallamas", kr: "화염 투척", jp: "ファイヤースロー", br: "Lança-chamas" },
+                                    description: { en: ["Fragment of Prominence raises its head and shoots 3 fireballs into the sky. Then, the fireballs will fall at the player's location, creating a burning floor that stays for a period of time, standing in it burns HP per second, but the damage is neglible."], es: "El Fragmento de Prominencia levanta su cabeza y lanza 3 bolas de fuego al cielo. Luego, las bolas de fuego caerán en la ubicación del jugador, creando un suelo ardiente que permanece durante un período de tiempo, y al estar parado en él se quema HP por segundo, pero el daño es despreciable.", kr: "돌출의 조각은 머리를 떠올리고 하늘로 3개의 화염구를 발사합니다. 그런 다음, 화염구는 플레이어의 위치에 떨어져서 불타는 바닥을 생성합니다. 이 바닥은 일정 시간 동안 유지되며, 그 위에 서 있으면 초당 HP가 소모되지만 피해는 거의 없습니다.", jp: "突出の断片は頭を上げて空に3つのファイヤーボールを投げます。その後、ファイヤーボールはプレイヤーの位置に落下し、燃える床を作成します。この床は一定時間維持され、その上に立っていると1秒ごとにHPが減りますが、ダメージは無視できます。", br: "O Fragmento de Proeminência levanta sua cabeça e lança 3 bolas de fogo para o céu. Em seguida, as bolas de fogo cairão na localização do jogador, criando um chão em chamas que permanece por um período de tempo, ficar em cima dele faz com que o HP seja consumido a cada segundo, mas o dano é desprezível." }
+                                },
+                                flamefloor: {
+                                    name: { en: "Flame Floor", es: "Piso de Llamas", kr: "화염 바닥", jp: "炎の床", br: "Chão de Chamas" },
+                                    description: { en: ["Fragment of Prominence points their head to the ground and throws fire downwards. A long fire pit is laid on the bottom flor. Similarely to Fireball Throw, standing on the fire pit burns HP per second, but the damage is neglible."], es: "El Fragmento de Prominencia apunta su cabeza hacia el suelo y lanza fuego hacia abajo. Un largo pozo de fuego se coloca en el suelo. Similarmente al Lanzallamas, al estar de pie en el pozo de fuego se quema HP por segundo, pero el daño es despreciable.", kr: "돌출의 조각은 머리를 땅으로 향하게 하고 불을 아래로 발사합니다. 긴 화염 구덩이가 바닥에 놓입니다. 화염구를 발사하는 것과 유사하게, 화염 구덩이 위에 서 있으면 초당 HP가 소모되지만 피해는 거의 없습니다.", jp: "突出の断片は頭を地面に向けて火を下に投げます。長い火の穴が床に設置されます。ファイヤーボールを投げるのと似ています。火の穴の上に立っていると1秒ごとにHPが減りますが、ダメージは無視できます。", br: "O Fragmento de Proeminência aponta sua cabeça para o chão e lança fogo para baixo. Um longo poço de fogo é colocado no chão. Similarmente ao Lança-chamas, ficar em cima do poço de fogo faz com que o HP seja consumido a cada segundo, mas o dano é desprezível." }
+                                }
+                            },
+                            mechs: {
+                                pof: {
+                                    name: { en: "Pillar of Flame", es: "Pilar de Llamas", kr: "화염의 기둥", jp: "炎の柱", br: "Pilar de Chamas" },
+                                    description: { en: ["All Fragments of Prominence will retreat to the hole in the middle of the arena, and target the player to create a pillar of flame at the player's location, it ignores invincibility and resurrection effects and if you touch it, it will insta kill you, before the attack, the game will give you a warning zone where the pillar will appear, so just stay away from it."], es: "Todos los Fragmentos de Prominencia se retirarán al agujero en el centro del arena, y apuntarán al jugador para crear un pilar de llama en la ubicación del jugador, ignora los efectos de invulnerabilidad y resurrección y si tocas, te matará instantáneamente, antes del ataque, el juego te dará una zona de advertencia donde aparecerá el pilar, así que simplemente mantente alejado de él.", kr: "모든 돌출의 조각은 경기장 중앙의 구멍으로 후퇴하고 플레이어를 표적으로 삼아 플레이어의 위치에 화염 기둥을 생성합니다. 무적과 부활 효과를 무시하며 만지면 즉시 죽습니다. 공격 전 게임은 기둥이 나타날 경고 영역을 제공합니다. 따라서 그냥 그 영역에서 멀리 떠나세요.", jp: "すべての突出の断片はアリーナ中央の穴に後退り、プレイヤーを標的にしてプレイヤーの位置に炎の柱を作成します。無敵と復活効果を無視し、触れると即座に死にます。攻撃前、ゲームは柱が現れる警告ゾーンを提供します。したがって、ただそのゾーンから離れてください。", br: "Todos os Fragmentos de Proeminência se retirarão ao buraco no centro da arena e apontarão para o jogador para criar um pilar de chamas na localização do jogador, ignorando os efeitos de invulnerabilidade e ressurreição e se você tocar, irá morrer instantaneamente, antes do ataque, o jogo lhe dará uma zona de aviso onde o pilar aparecerá, então apenas fique longe dele." }
+                                }
+                            },
+                            forcedmechs: {
+                                resurrection: {
+                                    name: { en: "Resurrection", es: "Resurrección", kr: "부활", jp: "復活", br: "Ressurreição" },
+                                    forcedat: { en: "After 1 Fragment of Prominence is defeated" },
+                                    description: { en: ["If a Fragment of Prominence is defeated, it will resurrect with full HP after 30 seconds if at least one other Fragment is still alive."] }
+                                }
+                            }
+                        },
+                        phase2: {
+                            phasenum: { en: "Phase 2", es: "Fase 2", kr: "2단계", jp: "フェーズ2", br: "Fase 2" },
+                            concepts: {
+                                
+                            },
+                            phasebname: { en: "Soul of Crimson Flame", es: "Alma de la Llama Carmín", kr: "", jp: "", br: "" },
+                            np: {
+                                widecut: {
+                                    name: { en: "Wide Cut",},
+                                    description: { en: ["Soul of Crimson Flame performs a horizontal cut that releases flames, which burns HP per second and reduces your MP by 5% for 5s when in contact with the flames."], }
+                                },
+                                verticalcut: {
+                                    name: { en: "Vertical Cut",},
+                                    description: { en: ["Soul of Crimson Flame performs a vertical cut that releases flames, which burns HP per second and reduces your MP by 5% for 5s when in contact with the flames. (Basically the same as the Wide Cut, but vertical)"], }
+                                },
+                                scythepull: {
+                                    name: { en: "Scythe Pull",},
+                                    description: { en: ["Soul of Crimson Flame performs a scythe pull that deals damage and pulls the player towards it."], }
+                                },
+                            },
+                            forcedmechs: {
+                                flameexplosion: {
+                                    name: { en: "Flame Explosion",},
+                                    forcedat: { en: "Enabled @ 55 bars"},
+                                    description: { en: ["Soul of Crimson Flame teleports to the middle of the arena and casts a slash into the player, which will leave a vortex, the player should use this vortex to avoid the damage of the explosion that will follow. If the player is hit by the explosion, they will take lethal damage."], }
+                                },
+                                redflamememory:{
+                                    name: { en: "Red Flame Memory",},
+                                    forcedat: { en: "Enabled @ 35 bars"},
+                                    description: { en: ["Soul of Crimson Flame becomes invincible and summons 5 Marbles of Flames, the player needs to break the marbles within a timer, or the boss will heal 4 bars of HP per marble not destroyed."], }
+                                },
+                                strengthen:{
+                                    name: { en: "Strengthen",},
+                                    forcedat: { en: "Enabled @ 12 bars"},
+                                    description: { en: ["Soul of Crimson Flame adds a debuff to Vertical Cut and Wide Cut that decreases your Damage until you attack the boss."], }
+                                },
+                                continuouscut:{
+                                    name: { en: "Continuous Cut",},
+                                    forcedat: { en: "Enabled @ 12 bars"},
+                                    description: { en: ["Soul of Crimson Flame will spam Vertical Cut and Wide Cut, Making it harder to avoid the strengthened debuff of Vertical Cut and Wide Cut."], }
+                                }
+                                
+                            }
+                        },
+                        phase3: {
+                            phasenum: { en: "Phase 3", es: "Fase 3", kr: "3단계", jp: "フェーズ3", br: "Fase 3" },
+                            concepts: {
+                                
+                            },
+                            phasebname: { en: "Calamity Flare", es: "Llama de la Calamidad", kr: "", jp: "", br: "" },
+                            mechs: {
+                                crimsonsoul: {
+                                    name: { en: "Crimson Soul",},
+                                    description: { en: ["Calamity Flare will summon Crimson Soul, a clone of Soul of Crimson Flame, which will use Vertical Cut and Wide Cut."], }
+                                },
+                            },
+                            repeatedmechs: {
+                                description: { en: ["This Phase has the same attacks as Phase 1, but with more HP, and Fireball Throw casts 4 fireballs instead of 3, in addition with a singular new mech."]}
+                            },
+                        }
+                    }
+                },
+                ned: {
+                    num: { en: "2nd Dungeon", es: "2da Mazmorra", kr: "두 번째 던전", jp: "2番目のダンジョン", br: "2ª Masmorra" },
+                    name: { en: "- Never-Ending Darkness -", es: "- Oscuridad Infinita -", kr: "- 끝없는 어둠 -", jp: "- 終わらない闇 -", br: "- Escuridão Infinita -"},
+                    content: {
+                        phase1: {
+                            phasenum: { en: "Phase 1", es: "Fase 1", kr: "1단계", jp: "フェーズ1", br: "Fase 1" },
+                            phasebname: { en: "-", es: "-", kr: "-", jp: "-", br: "-" },
+                            description: { en: ["Since Summer 2025 Update, This phase is completed on phase start."]}
+                        },
+                        phase2: {
+                            phasenum: { en: "Phase 2", es: "Fase 2", kr: "2단계", jp: "フェーズ2", br: "Fase 2" },
+                            concepts: {
+                                
+                            },
+                            phasebname: { en: "Dark Watcher", es: "Vigía Oscuro", kr: "다크 워처", jp: "ダークウォッチャー", br: "Vigia Sombrio" },
+                            np: {
+                                
+                            },
+                            mechs: {
+                                
+                            },
+                            forcedmechs: {
+                                
+                            }
+                        },
+                        phase3: {
+                            phasenum: { en: "Phase 3", es: "Fase 3", kr: "3단계", jp: "フェーズ3", br: "Fase 3" },
+                            concepts: {
+                                
+                            },
+                            phasebname: { en: "Red Eyes", es: "Ojos Rojos", kr: "빨간 눈", jp: "赤い目", br: "Olhos Vermelhos" },
+                            np: {
+                                
+                            },
+                            mechs: {
+                                
+                            },
+                            forcedmechs: {
+                                
+                            }
+                        }
+                    }
+                },
+                ccof: {
+                    num: { en: "3rd Dungeon", es: "3ra Mazmorra", kr: "세 번째 던전", jp: "3番目のダンジョン", br: "3ª Masmorra" },
+                    name: { en: "- Crimson Cradle of Flames -", es: "- Cuna Carmín de Llamas -", kr: "- 진홍빛 불꽃의 요람 -", jp: "- 紅い炎の芽 -", br: "- Berço Escarlate de Chamas -"},
+                    content: {
+                        phase1: {
+                            phasenum: { en: "Phase 1", es: "Fase 1", kr: "1단계", jp: "フェーズ1", br: "Fase 1" },
+                            phasebname: { en: "Malice", es: "Malicia", kr: "증오", jp: "憎悪", br: "Ódio" },
+                            np: {
+                                
+                            },
+                            mechs: {
+                                
+                            },
+                            forcedmechs: {
+                                
+                            }
+                        },
+                        phase2: {
+                            phasenum: { en: "Phase 2", es: "Fase 2", kr: "2단계", jp: "フェーズ2", br: "Fase 2" },
+                            concepts: {
+                                
+                            },
+                            phasebname: { en: "Recluse", es: "Recluso", kr: "은둔자", jp: "隠者", br: "Recluso" },
+                            np: {
+                                
+                            },
+                            mechs: {
+                                
+                            },
+                            forcedmechs: {
+                                
+                            }
+                        },
+                        phase3: {
+                            phasenum: { en: "Phase 3", es: "Fase 3", kr: "3단계", jp: "フェーズ3", br: "Fase 3" },
+                            concepts: {
+                                
+                            },
+                            phasebname: { en: "Dark Recluse", es: "Recluso Oscuro", kr: "다크 은둔자", jp: "ダーク隠者", br: "Recluso Sombrio" },
+                            np: {
+                                
+                            },
+                            mechs: {
+                                
+                            },
+                            forcedmechs: {
+                                
+                            }
+                        }
+                    }
+                },
             },
             notices: {
                 raid_party: {
@@ -1238,412 +1396,6 @@ export const data = {
                     kr: "다음 가이드는 솔로 모드를 기반으로 합니다. 파티에 있는 경우 일부 사항이 변경될 수 있습니다. *",
                     jp: "次のガイドはソロモードに基づいています。パーティーにいる場合、一部の事項が変更される可能性があります。*",
                     br: "O seguinte guia é baseado no modo Solo, se você estiver em um grupo, algumas coisas podem mudar. *"
-                }
-            },
-            dungeons: {
-                tower: {
-                    num: {
-                        en: "1st Dungeon",
-                        es: "1ra Mazmorra",
-                        kr: "1번 던전",
-                        jp: "1番ダンジョン",
-                        br: "1ª Masmorra",
-                    },
-                    name: {
-                        en: "- Crimson Tower of Howling Flames -",
-                        es: "- Torre Carmesí de Llamas Aullantes -",
-                        kr: "- 붉은 불꽃의 탑 -",
-                        jp: "- 紅蓮の炎の塔 -",
-                        br: "- Torre Carmesim das Chamas Uivantes -",
-                    },
-                    phase1: {
-                        title: {
-                            en: "Phase 1 | Big Boss",
-                            es: "Fase 1 | Jefe Grande",
-                            kr: "1페이즈 | 대형 보스",
-                            jp: "フェーズ1 | 大型ボス",
-                            br: "Fase 1 | Chefe Grande"
-                        },
-                        content: {
-                            en: [
-                                "4 bosses appear, which can cast flame breath, it's not much of a trouble though.",
-                                "If all 4 bosses aren't dead, after certain amount of time, they revive.",
-                                "These bosses become unhittable for a certain amount of time, your cue, is that the heads get far from the platform."
-                            ],
-                            es: [
-                                "Aparecen 4 jefes, que pueden lanzar aliento de fuego, aunque no es gran problema.",
-                                "Si los 4 jefes no están muertos, después de cierto tiempo, reviven.",
-                                "Estos jefes se vuelven invulnerables por un tiempo, tu señal es que las cabezas se alejan de la plataforma."
-                            ],
-                            kr: [
-                                "4명의 보스가 나타나 화염 브레스를 시전할 수 있지만 큰 문제는 아닙니다.",
-                                "4명의 보스가 모두 죽지 않으면 일정 시간 후 부활합니다.",
-                                "이 보스들은 일정 시간 동안 공격할 수 없게 되며, 머리가 플랫폼에서 멀어지는 것이 신호입니다."
-                            ],
-                            jp: [
-                                "4体のボスが出現し、炎のブレスを放つことができますが、大した問題ではありません。",
-                                "4体のボスが全員倒れていない場合、一定時間後に復活します。",
-                                "これらのボスは一定時間攻撃不能になり、頭がプラットフォームから離れるのが合図です。"
-                            ],
-                            br: [
-                                "4 chefes aparecem, que podem lançar sopro de chamas, mas não é grande problema.",
-                                "Se os 4 chefes não estiverem mortos, após certo tempo, eles revivem.",
-                                "Esses chefes ficam invulneráveis por um tempo, seu sinal é que as cabeças se afastam da plataforma."
-                            ]
-                        }
-                    },
-                    phase2: {
-                        title: {
-                            en: "Phase 2 | Small Boss",
-                            es: "Fase 2 | Jefe Pequeño",
-                            kr: "2페이즈 | 소형 보스",
-                            jp: "フェーズ2 | 小型ボス",
-                            br: "Fase 2 | Chefe Pequeno"
-                        },
-                        content: {
-                            en: [
-                                "Boss Appears, can cast a line of flames that have certain chance of giving you a debuff that makes you heal the boss during the debuff duration.",
-                                "Boss will become unhittable each 15 bars. (Skippable via Freeze)",
-                                "Boss can teleport to a random player each certain amount of seconds.",
-                                "Boss can teleport to the middle of the arena and start casting an updraft, after certain time boss will wipe you if you aren't in a high position."
-                            ],
-                            es: [
-                                "Aparece el jefe, puede lanzar una línea de llamas que tiene cierta posibilidad de darte una desventaja que te hace curar al jefe durante la duración de la desventaja.",
-                                "El jefe se volverá invulnerable cada 15 barras. (Se puede omitir mediante Congelación)",
-                                "El jefe puede teletransportarse a un jugador aleatorio cada cierta cantidad de segundos.",
-                                "El jefe puede teletransportarse al medio de la arena y comenzar a lanzar una corriente ascendente, después de cierto tiempo jefe te eliminará si no estás en una posición alta."
-                            ],
-                            kr: [
-                                "보스가 나타나, 화염 라인을 시전할 수 있으며, 이는 일정 확률로 디버프를 부여하여 디버프 지속 시간 동안 보스를 치유하게 만듭니다.",
-                                "보스는 15바마다 공격할 수 없게 됩니다. (얼리기로 건너뛸 수 있음)",
-                                "보스는 일정 시간마다 무작위 플레이어에게 순간이동할 수 있습니다.",
-                                "보스는 경기장 중앙으로 순간이동하여 상승 기류를 시전하기 시작하며, 일정 시간 후 일정 보스는 높은 위치에 있지 않으면 당신을 제거할 것입니다."
-                            ],
-                            jp: [
-                                "ボスが出現し、炎の線を放つことができ、一定の確率でデバフを与え、デバフ持続時間中にボスを回復させます。",
-                                "ボスは15バーごとに攻撃不能になります。（凍結でスキップ可能）",
-                                "ボスは一定時間ごとにランダムなプレイヤーにテレポートできます。",
-                                "ボスはアリーナの中央にテレポートして上昇気流を詠唱し始め、一定時間後、高い位置にいないと特定のボスがワイプします。"
-                            ],
-                            br: [
-                                "Chefe Aparece, pode lançar uma linha de chamas que tem certa chance de dar a você uma desvantagem que faz você curar o chefe durante a duração da desvantagem.",
-                                "O chefe ficará invulnerável a cada 15 barras. (Pode ser pulado via Congelamento)",
-                                "O chefe pode se teletransportar para um jogador aleatório a cada certa quantidade de segundos.",
-                                "O chefe pode se teletransportar para o meio da arena e começar a lançar uma corrente ascendente, após certo tempo chefe irá eliminá-lo se você não estiver em uma posição alta."
-                            ]
-                        }
-                    },
-                    phase3: {
-                        title: {
-                            en: "Phase 3 | Big Boss",
-                            es: "Fase 3 | Jefe Grande",
-                            kr: "3페이즈 | 대형 보스",
-                            jp: "フェーズ3 | 大型ボス",
-                            br: "Fase 3 | Chefe Grande"
-                        },
-                        content: {
-                            en: [
-                                "The 4 bosses from Phase 1 come back, with higher HP.",
-                                "They also gain 2 new forms of attack: Summon the Phase 2 Boss & cast a crimson tornado, this attack oneshots you.",
-                                "Essentially, the goal is the same as phase 1, kill all the bosses before they revive, usually done by leaving 1 boss at low HP and move to another one."
-                            ],
-                            es: [
-                                "Los 4 jefes de la Fase 1 regresan, con más HP.",
-                                "También ganan 2 nuevas formas de ataque: Invocar al Jefe de la Fase 2 y lanzar un tornado carmesí, este ataque te mata instantáneamente.",
-                                "Esencialmente, el objetivo es el mismo que en la fase 1, matar a todos los jefes antes de que revivan, generalmente se hace dejando a 1 jefe con poca vida y pasando a otro."
-                            ],
-                            kr: [
-                                "1페이즈의 4명의 보스가 더 높은 HP로 돌아옵니다.",
-                                "그들은 또한 2가지 새로운 공격 형태를 얻습니다: 2페이즈 보스 소환 및 진홍빛 토네이도 시전, 이 공격은 원샷 킬입니다.",
-                                "본질적으로 목표는 1페이즈와 동일하며, 보스가 부활하기 전에 모두 죽이는 것입니다. 일반적으로 한 보스를 낮은 HP로 남겨두고 다른 보스로 이동하는 방식으로 수행됩니다."
-                            ],
-                            jp: [
-                                "フェーズ1の4体のボスがより高いHPで戻ってきます。",
-                                "また、2つの新しい攻撃形態を獲得します：フェーズ2のボスを召喚し、深紅の竜巻を放つ。この攻撃はワンヒットキルです。",
-                                "本質的に、目標はフェーズ1と同じで、ボスが復活する前にすべて倒すことです。通常、1体のボスを低HPのままにして別のボスに移動することで行われます。"
-                            ],
-                            br: [
-                                "Os 4 chefes da Fase 1 voltam, com mais HP.",
-                                "Eles também ganham 2 novas formas de ataque: Invocar o Chefe da Fase 2 e lançar um tornado carmesim, este ataque mata você instantaneamente.",
-                                "Essencialmente, o objetivo é o mesmo que na fase 1, matar todos os chefes antes que eles revivam, geralmente feito deixando 1 chefe com pouca vida e passando para outro."
-                            ]
-                        }
-                    }
-                },
-                darkness: {
-                    num: {
-                        en: "2nd Dungeon",
-                        es: "2da Mazmorra",
-                        kr: "2번 던전",
-                        jp: "2番ダンジョン",
-                        br: "2ª Masmorra",
-                    },
-                    name: {
-                        en: "- Never-Ending Darkness -",
-                        es: "- Oscuridad Sin Fin -",
-                        kr: "- 끝없는 어둠 -",
-                        jp: "- 終わりのない闇 -",
-                        br: "- Escuridão Sem Fim -",
-                    },
-                    phase1: {
-                        title: {
-                            en: "Phase 1",
-                            es: "Fase 1",
-                            kr: "1페이즈",
-                            jp: "フェーズ1",
-                            br: "Fase 1"
-                        },
-                        content: {
-                            en: [
-                                "Since 21/05/2025 Update, this phase now autoclears."
-                            ],
-                            es: [
-                                "Desde la actualización del 21/05/2025, esta fase ahora se autocompleta."
-                            ],
-                            kr: [
-                                "2025년 5월 21일 업데이트 이후, 이 페이즈는 자동으로 클리어됩니다."
-                            ],
-                            jp: [
-                                "2025年5月21日のアップデート以降、このフェーズは自動クリアされます。"
-                            ],
-                            br: [
-                                "Desde a atualização de 21/05/2025, esta fase agora se limpa automaticamente."
-                            ]
-                        }
-                    },
-                    phase2: {
-                        title: {
-                            en: "Phase 2 | Big Boss",
-                            es: "Fase 2 | Jefe Grande",
-                            kr: "2페이즈 | 대형 보스",
-                            jp: "フェーズ2 | 大型ボス",
-                            br: "Fase 2 | Chefe Grande"
-                        },
-                        content: {
-                            en: [
-                                "Boss spawns with invencibility, summons 4 eyes and players need to kill at least 1 in order to make the boss lose its invencibility, then, boss will become targetable for certain amount of time, and in the meanwhile, he will target a player. after a few seconds, it will release a ray in the direction of the player he was looking at.",
-                                "After boss regains invencibility, it will become red and re-summon all the eyes that were previously killed, players need to kill all 4 eyes in order to make boss lose invincibility again, else, if they take too long to kill the eyes, boss will wipe the party. (all players will die)"
-                            ],
-                            es: [
-                                "El jefe aparece con invencibilidad, invoca 4 ojos y los jugadores deben matar al menos 1 para que el jefe pierda su invencibilidad, luego, el jefe se volverá seleccionable durante cierto tiempo, y mientras tanto, apuntará a un jugador. después de unos segundos, lanzará un rayo en la dirección del jugador al que estaba mirando.",
-                                "Después de que el jefe recupere la invencibilidad, se volverá rojo y volverá a invocar todos los ojos que fueron asesinados previamente, los jugadores deben matar los 4 ojos para que el jefe pierda la invencibilidad nuevamente, de lo contrario, si tardan demasiado en matar los ojos, el jefe eliminará al grupo. (todos los jugadores morirán)"
-                            ],
-                            kr: [
-                                "보스는 무적 상태로 생성되며, 4개의 눈을 소환합니다. 플레이어는 보스가 무적 상태를 잃도록 하기 위해 적어도 1개의 눈을 죽여야 합니다. 그 후, 보스는 일정 시간 동안 타겟팅 가능해지며, 그 동안 플레이어를 타겟팅합니다. 몇 초 후, 보스는 보고 있던 플레이어 방향으로 광선을 발사합니다.",
-                                "보스가 무적 상태를 회복한 후, 빨간색으로 변하고 이전에 죽인 모든 눈을 다시 소환합니다. 플레이어는 보스가 다시 무적 상태를 잃도록 하기 위해 4개의 눈을 모두 죽여야 합니다. 그렇지 않으면, 눈을 죽이는데 너무 오래 걸리면 보스가 파티를 제거합니다. (모든 플레이어가 죽음)"
-                            ],
-                            jp: [
-                                "ボスは無敵状態で出現し、4つの目を召喚します。プレイヤーはボスの無敵状態を解除するために少なくとも1つの目を倒す必要があります。その後、ボスは一定時間ターゲット可能になり、その間プレイヤーをターゲットします。数秒後、見ていたプレイヤーの方向に光線を放ちます。",
-                                "ボスが無敵状態を回復した後、赤くなり、以前倒されたすべての目を再召喚します。プレイヤーはボスの無敵状態を再び解除するために4つの目をすべて倒す必要があります。そうしないと、目を倒すのに時間がかかりすぎると、ボスがパーティをワイプします。（全プレイヤー死亡）"
-                            ],
-                            br: [
-                                "O chefe aparece com invencibilidade, invoca 4 olhos e os jogadores precisam matar pelo menos 1 para que o chefe perca sua invencibilidade, então, o chefe se tornará alvejável por certo tempo, e enquanto isso, ele mirará em um jogador. após alguns segundos, ele lançará um raio na direção do jogador que ele estava olhando.",
-                                "Depois que o chefe recupera a invencibilidade, ele ficará vermelho e invocará novamente todos os olhos que foram mortos anteriormente, os jogadores precisam matar todos os 4 olhos para que o chefe perca a invencibilidade novamente, caso contrário, se demoraram muito para matar os olhos, o chefe eliminará o grupo. (todos os jogadores morrerão)"
-                            ]
-                        }
-                    },
-                    phase3: {
-                        title: {
-                            en: "Phase 3 | Big Boss",
-                            es: "Fase 3 | Jefe Grande",
-                            kr: "3페이즈 | 대형 보스",
-                            jp: "フェーズ3 | 大型ボス",
-                            br: "Fase 3 | Chefe Grande"
-                        },
-                        content: {
-                            en: [
-                                "Boss will spawn in the lower part of the arena, after a few seconds (or after certain amount of mechs), it will teleport to the middle of the arena and spawn 3 thorns that will begin to move clockwise, you'll need to use the platforms in order to escape from the thorns, else if you're touched by one, you'll get oneshoted. (unless your defense is really high)",
-                                "Boss can teleport to a random part of the room, and do 1 of 2 mechs.",
-                                "1: 1 player will get targeted and after a few seconds, boss will cast a laser ray upon the player.",
-                                "2: Boss will gain an armor, and start casting thorns (that oneshot you) on a random player, and will continue to cast until it gets hit by thorns 3 times, after getting hit 3 times, boss will go groggy (exhaustion/stun) for certain amount of time."
-                            ],
-                            es: [
-                                "El jefe aparecerá en la parte inferior de la arena, después de unos segundos (o después de cierta cantidad de mecánicas), se teletransportará al medio de la arena e invocará 3 espinas que comenzarán a moverse en sentido horario, necesitarás usar las plataformas para escapar de las espinas, de lo contrario, si te toca una, te matará instantáneamente. (a menos que tu defensa seja muito alta)",
-                                "El jefe puede teletransportarse a una parte aleatoria de la habitación y hacer 1 de 2 mecánicas.",
-                                "1: 1 jugador será seleccionado y después de unos segundos, el jefe lanzará un rayo láser sobre el jugador.",
-                                "2: El jefe ganará una armadura y comenzará a lanzar espinas (que te matan instantáneamente) a un jugador aleatorio, y continuará lanzando hasta que sea golpeado por espinas 3 veces, después de ser golpeado 3 veces, el jefe se aturdirá (agotamiento/aturdimiento) durante cierto tiempo."
-                            ],
-                            kr: [
-                                "보스는 경기장 하단에 생성되며, 몇 초 후(또는 일정 메커니즘 후) 경기장 중앙으로 순간이동하여 시계 방향으로 이동하는 3개의 가시를 소환합니다. 가시에서 벗어나려면 플랫폼을 사용해야 합니다. 그렇지 않으면 가시에 닿으면 원샷당합니다. (방어력이 매우 높지 않은 한)",
-                                "보스는 방의 무작위 위치로 순간이동할 수 있으며, 2가지 메커니즘 중 하나를 수행합니다.",
-                                "1: 1명의 플레이어가 타겟팅되며, 몇 초 후 보스가 해당 플레이어에게 레이저 광선을 시전합니다.",
-                                "2: 보스는 갑옷을 획득하고 무작위 플레이어에게 가시(원샷)를 시전하기 시작합니다. 가시에 3번 맞을 때까지 계속 시전하며, 3번 맞으면 보스는 일정 시간 동안 그로기 상태(피로/기절)에 빠집니다."
-                            ],
-                            jp: [
-                                "ボスはアリーナの下部に出現し、数秒後（または一定のメック後）にアリーナの中央にテレポートし、時計回りに移動し始める3本の棘を出現させます。棘から逃れるためにプラットフォームを使用する必要があります。そうでない場合、棘に触れるとワンヒットされます。（防御力が非常に高くない限り）",
-                                "ボスは部屋のランダムな場所にテレポートし、2つのメックのうち1つを実行できます。",
-                                "1：1人のプレイヤーがターゲットされ、数秒後にボスがそのプレイヤーにレーザーレイを放ちます。",
-                                "2：ボスは鎧を獲得し、ランダムなプレイヤーに棘（ワンヒット）を詠唱し始め、棘に3回当たるまで詠唱を続けます。3回当たると、ボスは一定時間ぐらつき状態（疲労/気絶）になります。"
-                            ],
-                            br: [
-                                "O chefe aparecerá na parte inferior da arena, após alguns segundos (ou após certa quantidade de mecânicas), ele se teletransportará para o meio da arena e invocará 3 espinhos que começarão a se mover no sentido horário, você precisará usar as plataformas para escapar dos espinhos, caso contrário, se você for tocado por um, será eliminado instantaneamente. (a menos que sua defesa seja muito alta)",
-                                "O chefe pode se teletransportar para uma parte aleatória da sala e fazer 1 de 2 mecânicas.",
-                                "1: 1 jogador será alvo e após alguns segundos, o chefe lançará um raio laser sobre o jogador.",
-                                "2: O chefe ganhará uma armadura e começará a lançar espinhos (que eliminam você instantaneamente) em um jogador aleatório, e continuará lançando até ser atingido por espinhos 3 vezes, após ser atingido 3 vezes, o chefe ficará grogue (exaustão/atordoamento) por certo tempo."
-                            ]
-                        }
-                    }
-                },
-                cradle: {
-                    num: {
-                        en: "3rd Dungeon",
-                        es: "3ra Mazmorra",
-                        kr: "3번 던전",
-                        jp: "3番ダンジョン",
-                        br: "3ª Masmorra",
-                    },
-                    name: {
-                        en: "- Crimson Cradle of Flames -",
-                        es: "- Cuna Carmesí de Llamas -",
-                        kr: "- 불꽃의 진홍색 요람 -",
-                        jp: "- 炎の紅の揺り籠 -",
-                        br: "- Berço Carmesim das Chamas -",
-                    },
-                    phase1: {
-                        title: {
-                            en: "Phase 1 | Giant Boss",
-                            es: "Fase 1 | Jefe Gigante",
-                            kr: "1페이즈 | 거대 보스",
-                            jp: "フェーズ1 | 巨大ボス",
-                            br: "Fase 1 | Chefe Gigante"
-                        },
-                        content: {
-                            en: [
-                                "Boss will spawn in the middle of a wide arena.",
-                                "Can look upwards, and cast a laser ray over the entire arena, laser is iframeable (iframe: invincibility frame, achievable during a skill cast time), if hit without iframe, you'll be petrified for certain amount of time.",
-                                "Can summon Crimson Orbs of different sizes over the entire arena, if touched by them, they'll deal lethal damage or kill you.",
-                                "Can hit the arena with its arms, get far from them (go to the center), if close to the arms, you will be pushed upwards and boss will cast thorns on all players, resulting in death if hit. This can be avoided by grouping players in the center, and after thorns alert zone appears, they split into the edges to avoid dying."
-                            ],
-                            es: [
-                                "El jefe aparecerá en el medio de una arena amplia.",
-                                "Puede mirar hacia arriba y lanzar un rayo láser sobre toda la arena, el láser se puede iframear (iframe: marco de invencibilidad, alcanzable durante el tiempo de lanzamiento de una habilidad), si te golpean sin iframe, serás petrificado durante cierto tiempo.",
-                                "Puede invocar Orbes Carmesí de diferentes tamaños en toda la arena, si los tocas, infligirán daño letal o te matarán.",
-                                "Puede golpear la arena con sus brazos, aléjate de ellos (ve al centro), si estás cerca de los brazos, serás empujado hacia arriba y el jefe lanzará espinas a todos los jugadores, lo que resultará en la muerte si te golpean. Esto se puede evitar agrupando a los jugadores en el centro, y después de que aparezca la zona de alerta de espinas, se separan hacia los bordes para evitar morir."
-                            ],
-                            kr: [
-                                "보스는 넓은 경기장 중앙에 생성됩니다.",
-                                "위를 바라보고 전체 경기장에 레이저 광선을 시전할 수 있습니다. 레이저는 아이프레임이 가능합니다(아이프레임: 무적 프레임, 스킬 시전 시간 중 달성 가능). 아이프레임 없이 맞으면 일정 시간 동안 석화됩니다.",
-                                "전체 경기장에 다양한 크기의 진홍빛 오브를 소환할 수 있습니다. 이에 닿으면 치명적인 피해를 입거나 죽을 수 있습니다.",
-                                "팔로 경기장을 때릴 수 있습니다. 팔에서 멀리 떨어지세요(중앙으로 이동). 팔 근처에 있으면 위로 밀려나고 보스가 모든 플레이어에게 가시를 시전하여 맞으면 사망합니다. 플레이어를 중앙에 모아두고 가시 경고 영역이 나타난 후 가장자리로 분산되어 죽음을 피할 수 있습니다."
-                            ],
-                            jp: [
-                                "ボスは広いアリーナの中央に出現します。",
-                                "上を向いてアリーナ全体にレーザーレイを放つことができ、レーザーはiframe可能です（iframe：無敵フレーム、スキルキャスト時間中に達成可能）。iframeなしで当たると一定時間石化します。",
-                                "アリーナ全体にさまざまなサイズの深紅のオーブを召喚でき、それに触れると致命的なダメージを与えたり殺したりします。",
-                                "腕でアリーナを打つことができ、それらから離れます（中央に行きます）。腕の近くにいると上に押し上げられ、ボスが全プレイヤーに棘を放ち、当たると死亡します。プレイヤーを中央に集め、棘の警告ゾーンが表示された後、端に分かれて死を避けることでこれを回避できます。"
-                            ],
-                            br: [
-                                "O chefe aparecerá no meio de uma arena ampla.",
-                                "Pode olhar para cima e lançar um raio laser sobre toda a arena, o laser pode ser iframeado (iframe: quadro de invencibilidade, alcançável durante o tempo de lançamento de uma habilidade), se for atingido sem iframe, você será petrificado por certo tempo.",
-                                "Pode invocar Orbes Carmesim de tamanhos diferentes por toda a arena, se tocados por eles, causarão dano letal ou matarão você.",
-                                "Pode atingir a arena com seus braços, afaste-se deles (vá para o centro), se estiver perto dos braços, você será empurrado para cima e o chefe lançará espinhos em todos os jogadores, resultando em morte se atingido. Isso pode ser evitado agrupando os jogadores no centro, e após o aparecimento da zona de alerta de espinhos, faça todos os jogadores irem para as bordas para evitar morrer."
-                            ]
-                        }
-                    },
-                    phase2: {
-                        title: {
-                            en: "Phase 2 | Small Boss",
-                            es: "Fase 2 | Jefe Pequeño",
-                            kr: "2페이즈 | 소형 보스",
-                            jp: "フェーズ2 | 小型ボス",
-                            br: "Fase 2 | Chefe Pequeno"
-                        },
-                        content: {
-                            en: [
-                                "Boss will spawn in the lower middle part of a wide arena.",
-                                "Can teleport to a random player's location.",
-                                "Can stun players with it's scythe, and on its 3rd attack, will summon thorns, any player hit by it will be knocked down and pushed in the direction of the attack. (Avoidable with Super Armor).",
-                                "Can summon a horizontal or vertical line of flames, any player hit by them, can get a debuff which will heal the boss by any damage dealt while the duration expires.",
-                                "after certain time, or each 20 bars, boss will become untargetable and deal 1 of 2 mechs:",
-                                "1: boss will restore all the broken floor parts, and cast lasers over all platforms except 1. anyone hit by them will take lethal damage or die.",
-                                "2: boss will knock up all players nearby to itself, and after a few seconds, will cast crimson tornados on all players, that can destroy the floor (not the platforms) they're in. The trick is to make all players go to the edge, and whenever the crimson tornado alert zone is shown, make all players go back to center."
-                            ],
-                            es: [
-                                "El jefe aparecerá en la parte media inferior de una arena amplia.",
-                                "Puede teletransportarse a la ubicación de un jugador aleatorio.",
-                                "Puede aturdir a los jugadores con su guadaña, y en su tercer ataque, invocará espinas, cualquier jugador golpeado por ellas será derribado y empujado en la dirección del ataque. (Evitable con Super Armadura).",
-                                "Puede invocar una línea horizontal o vertical de llamas, cualquier jugador golpeado por ellas puede obtener una desventaja que curará al jefe por cualquier daño infligido mientras dure la duración.",
-                                "después de cierto tiempo, o cada 20 barras, el jefe se volverá inalcanzable y realizará 1 de 2 mecánicas:",
-                                "1: el jefe restaurará todas las partes rotas del piso y lanzará láseres sobre todas las plataformas excepto 1. Cualquiera que sea golpeado por ellos recibirá daño letal o morirá.",
-                                "2: el jefe derribará a todos los jugadores cercanos a sí mismo, y después de unos segundos, lanzará tornados carmesí a todos los jugadores, que pueden destruir el piso (no las plataformas) en el que se encuentran. El truco es hacer que todos los jugadores vayan al borde, y cada vez que se muestre la zona de alerta de tornado carmesí, hacer que todos los jugadores regresen al centro."
-                            ],
-                            kr: [
-                                "보스는 넓은 경기장의 중앙 하단에 생성됩니다.",
-                                "무작위 플레이어 위치로 순간이동할 수 있습니다.",
-                                "낫으로 플레이어를 기절시킬 수 있으며, 세 번째 공격 시 가시를 소환합니다. 이에 맞은 플레이어는 넘어져 공격 방향으로 밀려납니다. (슈퍼 아머로 회피 가능).",
-                                "낫의 크기를 조절하고 끌 수 있으며, 이에 맞은 플레이어는 공격 방향으로 끌려갑니다. (슈퍼 아머로 회피 가능).",
-                                "일정 시간 후, 보스는 경기장 중앙으로 순간이동하여 무작위 플레이어에게 수직 가시 영역을 시전합니다. 가시가 보스와 같은 위치에 있지 않으면 가시에 맞은 바닥 부분이 파괴됩니다.",
-                                "수평 또는 수직 화염 라인을 소환할 수 있으며, 이에 맞은 플레이어는 디버프를 얻어 지속 시간 동안 가한 모든 피해로 보스를 치유하게 됩니다."
-                            ],
-                            jp: [
-                                "ボスは広いアリーナの中央下部に出現します。",
-                                "ランダムなプレイヤーの位置にテレポートできます。",
-                                "鎌でプレイヤーを気絶させることができ、3回目の攻撃で棘を召喚し、それに当たったプレイヤーはノックダウンされ、攻撃の方向に押し出されます。（スーパーアーマーで回避可能）",
-                                "鎌のサイズを変更して引きずることができ、それに当たったプレイヤーは攻撃の方向に引きずられます。（スーパーアーマーで回避可能）",
-                                "一定時間後、ボスはアリーナの中央部にテレポートし、ランダムなプレイヤーに垂直な棘ゾーンを放ちます。棘がボスと同じ場所にない場合、棘に当たった床の部分が破壊されます。",
-                                "水平または垂直の炎の線を召喚でき、それに当たったプレイヤーはデバフを得て、持続時間中に与えたダメージでボスを回復させます。"
-                            ],
-                            br: [
-                                "O chefe aparecerá na parte média inferior de uma arena ampla.",
-                                "Pode se teletransportar para a localização de um jogador aleatório.",
-                                "Pode atordoar jogadores com sua foice, e em seu 3º ataque, invocará espinhos, qualquer jogador atingido por eles será derrubado e empurrado na direção do ataque. (Evitável com Super Armadura).",
-                                "Pode redimensionar sua foice e arrastá-la, qualquer jogador atingido por ela será arrastado na direção do ataque. (Evitável com Super Armadura).",
-                                "Após certo tempo, o chefe se teletransportará para a parte do meio da arena e lançará uma zona de espinhos verticais em um jogador aleatório, se o espinho não estiver no mesmo local que o chefe, a parte do chão atingida pelo espinho será destruída.",
-                                "Pode invocar uma linha horizontal ou vertical de chamas, qualquer jogador atingido por elas pode obter uma desvantagem que curará o chefe por qualquer dano causado até que a duração expire."
-                            ]
-                        }
-                    },
-                    phase3: {
-                        title: {
-                            en: "Phase 3 | Small Boss",
-                            es: "Fase 3 | Jefe Pequeño",
-                            kr: "3페이즈 | 소형 보스",
-                            jp: "フェーズ3 | 小型ボス",
-                            br: "Fase 3 | Chefe Pequeno"
-                        },
-                        content: {
-                            en: [
-                                "Boss will spawn in the lower middle part of a wide arena.",
-                                "Can teleport to a random player's location.",
-                                "Can stun players with it's scythe, and on its 3rd attack, will summon thorns, any player hit by it will be knocked down and pushed in the direction of the attack. (Avoidable with Super Armor).",
-                                "Can resize it's scythe, and drag it, any player hit by it will be dragged in the direction of the attack. (Avoidable with Super Armor).",
-                                "After certain amount of time, boss will teleport to the middle part of the arena, and cast a vertical thorn zone on a random player, if the thorn isn't in the same location as boss, the floor part hit by the thorn will be destroyed.",
-                                "Can summon a horizontal or vertical line of flames, any player hit by them, can get a debuff which will heal the boss by any damage dealt until the duration expires."
-                            ],
-                            es: [
-                                "El jefe aparecerá en la parte media inferior de una arena amplia.",
-                                "Puede teletransportarse a la ubicación de un jugador aleatorio.",
-                                "Puede aturdir a los jugadores con su guadaña, y en su tercer ataque, invocará espinas, cualquier jugador golpeado por ellas será derribado y empujado en la dirección del ataque. (Evitable con Super Armadura).",
-                                "Puede cambiar el tamaño de su guadaña y arrastrarla, cualquier jugador golpeado por ella será arrastrado en la dirección del ataque. (Evitable con Super Armadura).",
-                                "Después de cierto tiempo, el jefe se teletransportará a la parte media de la arena y lanzará una zona de espinas vertical sobre un jugador aleatorio, si la espina no está en la misma ubicación que el jefe, la parte del piso golpeada por la espina será destruida.",
-                                "Puede invocar una línea horizontal o vertical de llamas, cualquier jugador golpeado por ellas puede obtener una desventaja que curará al jefe por cualquier daño infligido hasta que expire la duración."
-                            ],
-                            kr: [
-                                "보스는 넓은 경기장의 중앙 하단에 생성됩니다.",
-                                "무작위 플레이어 위치로 순간이동할 수 있습니다.",
-                                "낫으로 플레이어를 기절시킬 수 있으며, 세 번째 공격 시 가시를 소환합니다. 이에 맞은 플레이어는 넘어져 공격 방향으로 밀려납니다. (슈퍼 아머로 회피 가능).",
-                                "낫의 크기를 조절하고 끌 수 있으며, 이에 맞은 플레이어는 공격 방향으로 끌려갑니다. (슈퍼 아머로 회피 가능).",
-                                "일정 시간 후, 보스는 경기장 중앙으로 순간이동하여 무작위 플레이어에게 수직 가시 영역을 시전합니다. 가시가 보스와 같은 위치에 있지 않으면 가시에 맞은 바닥 부분이 파괴됩니다.",
-                                "수평 또는 수직 화염 라인을 소환할 수 있으며, 이에 맞은 플레이어는 디버프를 얻어 지속 시간 동안 가한 모든 피해로 보스를 치유하게 됩니다."
-                            ],
-                            jp: [
-                                "ボスは広いアリーナの中央下部に出現します。",
-                                "ランダムなプレイヤーの位置にテレポートできます。",
-                                "鎌でプレイヤーを気絶させることができ、3回目の攻撃で棘を召喚し、それに当たったプレイヤーはノックダウンされ、攻撃の方向に押し出されます。（スーパーアーマーで回避可能）",
-                                "鎌のサイズを変更して引きずることができ、それに当たったプレイヤーは攻撃の方向に引きずられます。（スーパーアーマーで回避可能）",
-                                "一定時間後、ボスはアリーナの中央部にテレポートし、ランダムなプレイヤーに垂直な棘ゾーンを放ちます。棘がボスと同じ場所にない場合、棘に当たった床の部分が破壊されます。",
-                                "水平または垂直の炎の線を召喚でき、それに当たったプレイヤーはデバフを得て、持続時間中に与えたダメージでボスを回復させます。"
-                            ],
-                            br: [
-                                "O chefe aparecerá na parte média inferior de uma arena ampla.",
-                                "Pode se teletransportar para a localização de um jogador aleatório.",
-                                "Pode atordoar jogadores com sua foice, e em seu 3º ataque, invocará espinhos, qualquer jogador atingido por eles será derrubado e empurrado na direção do ataque. (Evitável com Super Armadura).",
-                                "Pode redimensionar sua foice e arrastá-la, qualquer jogador atingido por ela será arrastado na direção do ataque. (Evitável com Super Armadura).",
-                                "Após certo tempo, o chefe se teletransportará para a parte do meio da arena e lançará uma zona de espinhos verticais em um jogador aleatório, se o espinho não estiver no mesmo local que o chefe, a parte do chão atingida pelo espinho será destruída.",
-                                "Pode invocar uma linha horizontal ou vertical de chamas, qualquer jogador atingido por elas pode obter uma desvantagem que curará o chefe por qualquer dano causado até que a duração expire."
-                            ]
-                        }
-                    }
                 }
             },
             table_headers: {

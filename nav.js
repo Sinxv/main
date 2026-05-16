@@ -111,9 +111,9 @@ document.addEventListener("DOMContentLoaded", () => {
     function updateGearIcon() {
     const isLight = localStorage.getItem("elhelper-mode") === "light";
     // Settings icon: fondo igual al modo, PNG contrario
-    document.getElementById("settings-icon-desktop").style.backgroundImage = `url('../main/images/gear-${isLight ? 'black' : 'white'}.png')`;
+    document.getElementById("settings-icon-desktop").style.backgroundImage = `url('/main/images/gear-${isLight ? 'black' : 'white'}.png')`;
     document.getElementById("settings-icon-desktop").style.backgroundColor = isLight ? "#fff" : "#222";
-    document.getElementById("settings-icon-mobile").style.backgroundImage = `url('../main/images/gear-${isLight ? 'black' : 'white'}.png')`;
+    document.getElementById("settings-icon-mobile").style.backgroundImage = `url('/main/images/gear-${isLight ? 'black' : 'white'}.png')`;
     document.getElementById("settings-icon-mobile").style.backgroundColor = isLight ? "#fff" : "#222";
     }
     function updateMenuIcon() {
@@ -139,9 +139,9 @@ document.addEventListener("DOMContentLoaded", () => {
         updateGearIcon();
     });
 
-    // --- SETTINGS POPUP PC ---
+    // SETTINGS POPUP PC ver.
     function showSettingsPopupPC() {
-        // Remove any existing popup
+        // Remove any existing popup function (toggleSettingsMenuMobile) to avoid duplicates
         const existing = document.getElementById("settings-popup");
         if (existing) {
             existing.remove();
@@ -164,24 +164,33 @@ document.addEventListener("DOMContentLoaded", () => {
                 <input type="checkbox" id="mode-switch">
                 <span class="slider"></span>
             </label>
+            <label for="full-info-switch">Show Full Info:</label>
+            <label class="switch">
+                <input type="checkbox" id="full-info-switch">
+                <span class="slider"></span>
+            </label>
         `;
         document.body.appendChild(popup);
-        // Position popup: move slightly more to the left to avoid scroller
+        // Position popup: use fixed positioning relative to viewport and window scroll
         const rect = desktopIcon.getBoundingClientRect();
-        const popupWidth = 200;
-        let left = rect.right - popupWidth - 16; // 16px extra to avoid scroller
+        const popupWidth = 280;
+        let left = rect.right - popupWidth - 8;  // Right-aligned, expand left
         let top = rect.bottom + 8;
         // Clamp left to viewport
         if (left < 8) left = 8;
-        if (left + popupWidth > window.innerWidth - 24) left = window.innerWidth - popupWidth - 24;
-        popup.style.position = "absolute";
+        if (left + popupWidth > window.innerWidth - 8) left = window.innerWidth - popupWidth - 8;
+        popup.style.position = "fixed";
         popup.style.left = `${left}px`;
         popup.style.top = `${top}px`;
+        popup.style.maxHeight = "calc(100vh - 100px)";
+        popup.style.overflowY = "auto";
         // Set current values
         const savedLang = localStorage.getItem("elhelper-lang") || "en";
         const isLight = localStorage.getItem("elhelper-mode") === "light";
+        const showFullInfo = window.isFullInfoEnabled?.() ?? false;
         popup.querySelector("#lang-select").value = savedLang;
         popup.querySelector("#mode-switch").checked = isLight;
+        popup.querySelector("#full-info-switch").checked = showFullInfo;
         popup.querySelector("#lang-select").addEventListener("change", (e) => {
             const lang = e.target.value;
             if (window.translationManager) {
@@ -201,9 +210,15 @@ document.addEventListener("DOMContentLoaded", () => {
                 updateGearIcon();
             }
         });
+        popup.querySelector("#full-info-switch").addEventListener("change", (e) => {
+            const showFull = e.target.checked;
+            if (window.toggleFullInfo) {
+                window.toggleFullInfo(showFull);
+            }
+        });
     }
 
-    // --- SETTINGS POPUP MOBILE ---
+    // SETTINGS POPUP MOBILE ver. (hamNav)
     function toggleSettingsMenuMobile() {
         try {
             const hamburgerNav = document.getElementById("hamburger-nav");
@@ -234,13 +249,20 @@ document.addEventListener("DOMContentLoaded", () => {
                                 <input type="checkbox" id="mode-switch">
                                 <span class="slider"></span>
                             </label>
+                            <label for="full-info-switch">Show Full Info:</label>
+                            <label class="switch">
+                                <input type="checkbox" id="full-info-switch">
+                                <span class="slider"></span>
+                            </label>
                         `;
                         hamburgerNav.appendChild(menu);
                         // Set current values
                         const savedLang = localStorage.getItem("elhelper-lang") || "en";
                         const isLight = localStorage.getItem("elhelper-mode") === "light";
+                        const showFullInfo = window.isFullInfoEnabled?.() ?? false;
                         menu.querySelector("#lang-select").value = savedLang;
                         menu.querySelector("#mode-switch").checked = isLight;
+                        menu.querySelector("#full-info-switch").checked = showFullInfo;
                         menu.querySelector("#lang-select").addEventListener("change", (e) => {
                             const lang = e.target.value;
                             if (window.translationManager) {
@@ -258,6 +280,12 @@ document.addEventListener("DOMContentLoaded", () => {
                                 document.body.classList.remove("light-mode");
                                 updateMenuIcon();
                                 updateGearIcon();
+                            }
+                        });
+                        menu.querySelector("#full-info-switch").addEventListener("change", (e) => {
+                            const showFull = e.target.checked;
+                            if (window.toggleFullInfo) {
+                                window.toggleFullInfo(showFull);
                             }
                         });
                     } else {
