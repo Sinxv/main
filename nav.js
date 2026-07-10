@@ -9,9 +9,9 @@ document.addEventListener("DOMContentLoaded", () => {
     navDesktop.id = "main-nav-desktop";
     navDesktop.innerHTML = `
       <ul>
-        <a href="/main/index.html"><li>Home</li></a>
-        <a href="/main/prog.html"><li id="spec">Game Progression</li></a>
-        <a href="/main/guides.html"><li>Guides</li></a>
+        <a href="/index.html"><li>Home</li></a>
+        <a href="/prog.html"><li id="spec">Game Progression</li></a>
+        <a href="/guides.html"><li>Guides</li></a>
         <div class="settings-icon" id="settings-icon-desktop"></div>
       </ul>
     `;
@@ -111,14 +111,15 @@ document.addEventListener("DOMContentLoaded", () => {
     function updateGearIcon() {
     const isLight = localStorage.getItem("elhelper-mode") === "light";
     // Settings icon: fondo igual al modo, PNG contrario
-    document.getElementById("settings-icon-desktop").style.backgroundImage = `url('/main/images/gear-${isLight ? 'black' : 'white'}.png')`;
+    document.getElementById("settings-icon-desktop").style.backgroundImage = `url('/images/gear-${isLight ? 'black' : 'white'}.png')`;
     document.getElementById("settings-icon-desktop").style.backgroundColor = isLight ? "#fff" : "#222";
-    document.getElementById("settings-icon-mobile").style.backgroundImage = `url('/main/images/gear-${isLight ? 'black' : 'white'}.png')`;
+    navDesktop.style.backgroundColor = isLight ? "#fff" : "#282832";
+    document.getElementById("settings-icon-mobile").style.backgroundImage = `url('/images/gear-${isLight ? 'black' : 'white'}.png')`;
     document.getElementById("settings-icon-mobile").style.backgroundColor = isLight ? "#fff" : "#222";
     }
     function updateMenuIcon() {
     const isLight = localStorage.getItem("elhelper-mode") === "light";
-    menuIcon.style.backgroundImage = `url('../main/images/menu-${isLight ? 'black' : 'white'}.png')`;
+    menuIcon.style.backgroundImage = `url('/images/menu-${isLight ? 'black' : 'white'}.png')`;
     menuIcon.style.width = "40px";
     menuIcon.style.height = "40px";
     menuIcon.style.backgroundSize = "contain";

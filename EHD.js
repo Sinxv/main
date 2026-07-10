@@ -230,8 +230,7 @@ export const data = {
             title: { en: "Stage 2", es: "Etapa 2", kr: "2단계", jp: "ステージ2", br: "Estágio 2" },
             stage2_title: { en: "Road to 3rd Class & Dr.Pho's Guide", es: "Camino a la 3ª Clase y Guía del Dr. Pho", kr: "3차 직업 및 닥터 포의 가이드로 가는 길", jp: "3次クラスとドクター・ポーのガイドへの道", br: "Caminho para a 3ª Classe e Guia do Dr. Pho" },
             contents: { en: "List of Content", es: "Lista de Contenido", kr: "콘텐츠 목록", jp: "コンテンツ一覧", br: "Lista de Conteúdo" },
-            content_elrianode_armor: { en: "Elrianode Armor", es: "Armadura de Elrianode", kr: "엘리아노드 갑옷", jp: "エルリアノードアーマー", br: "Armadura Elrianode" },
-            content_apocalypse_weapon: { en: "Apocalypse-Type Weapon", es: "Arma Tipo Apocalipsis", kr: "아포칼립스형 무기", jp: "アポカリプスタイプの武器", br: "Arma Tipo Apocalipse" },
+            content_elrianode_armor: { en: "Post lv. 99 / Earlygame", es: "", kr: "", jp: "", br: "" },
             content_socketing: { en: "Socketing", es: "Encajonado", kr: "소켓", jp: "ソケット", br: "Socketing" },
             content_el_resonance: { en: "El Resonance", es: "Resonancia El", kr: "엘 공명", jp: "エルレゾナンス", br: "El Resonance" },
             content_dosi_wings: { en: "Accessory: Dimension of Sinister Intent Wings", es: "Accesorio: Alas de la Dimensión de la Intención Siniestra", kr: "액세서리: 사악한 의도의 차원 날개", jp: "アクセサリー：邪悪な意図の次元の翼", br: "Acessório: Asas da Dimensão da Intenção Sinistra" },
@@ -748,34 +747,25 @@ export const data = {
                     },
                     content: {
                         en: [
-                            "Clearing each phase of the rosso raid will make you able to get pity percentage to get a new weapon, the clear information is refreshed on week reset (Wednesday at 00:00 PST), or via Reset Tickets, exchangable for marks (given for helping people who haven't cleared the raid in this week, while being 100%), or obtainable via Weekly Quests (3 per week).",
+                            "Clearing each phase of the Rosso raid will make you able to get pity percentage to get a new weapon, the clear information is refreshed on week reset (Wednesday at 00:00 PST), or via Reset Tickets, exchangable for marks (given for helping people who haven't cleared the raid in this week, while being 100%).",
                             "The higher your pity bar, the higher the chances you have to drop the weapon. Every time a player in the party drops weapon, every member will be rewarded with 1 crystal (can only get 1 even if 2 people drop), accumulate them, since you can exchange them for Raid Accessories (5 crystals each), or Weapon (20 crystals).",
-                            "Your task is to farm this raid until you get all 3 accessories, and increase your pity slowly, till you get your FoJ.",
-                            "FoJ weapon will probably give you less CP than your current one at first, but thats because the mystic enhancement slots are empty. oh, right you don't know what mystics are yet."
+                            "You could farm this raid until you get all 3 accessories, but if you're fast enough, the 30d temporary set Dr. Pho's Guide gives you should be enough, since a later raid gives replacements for these.",
+                            "Flame of Judgement Weapon is also given at +10 enhancement level in the Dr. Pho's guide, which also comes pre-socketed on both sockets and mystic enhancement (system which will be explained now), although the stats pre socketed aren't perfect, they are good enough to get you through the next raid, and you can always farm varnimyr dungeons for a better rolls on mystic enhancement."
                         ],
                         es: [
-                            "Completar cada fase de la incursión Rosso te permitirá obtener un porcentaje de lástima para obtener un arma nueva. La información de limpieza se actualiza en el reinicio semanal (miércoles a las 00:00 PST), o mediante boletos de reinicio, intercambiables por marcas (otorgadas por ayudar a personas que no han completado la incursión esta semana, mientras estás al 100%), u obtenibles mediante misiones semanales (3 por semana).",
-                            "Cuanto más alta sea tu barra de lástima, mayores serán las posibilidades de que se te caiga el arma. Cada vez que un jugador del grupo suelta un arma, cada miembro será recompensado con 1 cristal (solo puedes obtener 1 incluso si 2 personas sueltan), acúmulelos, ya que puede intercambiarlos por accesorios de incursión (5 cristales cada uno) o por arma (20 cristales).",
-                            "Tu tarea es cultivar esta incursión hasta que obtengas los 3 accesorios y aumentar tu lástima lentamente hasta que obtengas tu FoJ.",
-                            "El arma FoJ probablemente te dará menos CP que tu arma atual al principio, pero eso se debe a que las ranchas de mejora mística están vacías. Ah, cierto, aún no sabes qué son los místicos."
+                            "Pasar cada fase de la incursión de Rosso te permitirá obtener un porcentaje de pena para obtener una nueva arma, la información de limpieza se actualiza en el reinicio semanal (miércoles a las 00:00 PST), o a través de Tickets de Reinicio, intercambiables por marcas (dadas por ayudar a personas que no han limpiado la incursión esta semana, mientras estás al 100%).",
+                            "Cuanto mayor sea tu barra de garantizado, mayores serán las posibilidades de que te caiga el arma. Cada vez que un jugador en el grupo suelta el arma, cada miembro será recompensado con 1 cristal (puedes obtener solo 1 incluso si 2 personas sueltan), acumúlalos, ya que puedes intercambiarlos por Accesorios de Incursión (5 cristales cada uno) o Arma (20 cristales).",
+                            "Podrías farmear esta incursión hasta obtener los 3 accesorios, pero si eres lo suficientemente rápido, el set temporal de 30 días que te da la Guía del Dr. Pho debería ser suficiente, ya que una incursión posterior da reemplazos para estos.",
+                            "El arma Llama del Juicio también se da en el nivel de mejora +10 en la guía del Dr. Pho, que también viene pre-socketed en ambos sockets y mejora mística (sistema que se explicará ahora), aunque las estadísticas pre-socketed no son perfectas, son lo suficientemente buenas para ayudarte a pasar la próxima incursión, y siempre puedes farmear las mazmorras de varnimyr para obtener mejores tiradas en la mejora mística."
                         ],
                         kr: [
-                            "로소 레이드의 각 페이즈를 클리어하면 새로운 무기를 얻을 수 있는 확률이 증가합니다. 클리어 정보는 주간 초기화(수요일 00:00 PST) 시 갱신되거나, 리셋 티켓(이번 주 레이드를 클리어하지 못한 사람을 도울 때 100% 상태로 제공되는 마크로 교환 가능) 또는 주간 퀘스트(주당 3개)를 통해 얻을 수 있습니다.",
-                            "연민 바가 높을수록 무기 드롭 확률이 높아집니다. 파티 내 플레이어가 무기를 드롭할 때마다 모든 멤버는 1개의 크리스탈을 보상으로 받습니다(2명이 드롭해도 1개만 받을 수 있음). 레이드 액세서리(크리스탈 5개) 또는 무기(크리스탈 20개)로 교환할 수 있으므로 모아두세요.",
-                            "당신의 임무는 3개의 액세서리를 모두 얻을 때까지 이 레이드를 파밍하고, FoJ를 얻을 때까지 서서히 연민 바를 높이는 것입니다.",
-                            "FoJ 무기는 처음에는 현재 무기보다 CP가 낮을 수 있지만, 이는 신비한 강화 슬롯이 비어 있기 때문입니다. 아, 맞아요. 아직 신비한 강화가 무엇인지 모르시겠군요."
+                            
                         ],
                         jp: [
-                            "ロッソレイドの各フェーズをクリアすると、新しい武器を入手できる確率が上昇します。クリア情報は週間リセット（水曜日00:00 PST）で更新されるか、リセットチケット（今週レイドをクリアしていない人を100%の状態で支援した際に提供されるマークで交換可能）、または週間クエスト（週3回）で入手できます。",
-                            "ピティバーが高いほど、武器ドロップの確率が高くなります。パーティーメンバーが武器をドロップするたびに、全メンバーが1つのクリスタルを報酬として受け取ります（2人がドロップしても1つしか受け取れません）。レイドアクセサリー（クリスタル5個）または武器（クリスタル20個）と交換できるため、貯めておきましょう。",
-                            "3つのアクセサリーをすべて入手するまでこのレイドをファームし、FoJを入手するまでゆっくりとピティバーを上げることがあなたの任務です。",
-                            "FoJ武器は最初、現在の武器よりもCPが低いかもしれませんが、それは神秘の強化スロットが空いているためです。ああ、そうですね。まだミスティックが何か知らないのですね。"
+                            
                         ],
                         br: [
-                            "Completar cada fase da raide Rosso permitirá que você obtenha um percentual de pena para obter uma nova arma. As informações de limpeza são atualizadas no reinício semanal (quarta-feira às 00:00 PST), ou via Tickets de Reinício, trocáveis por marcas (dadas por ajudar pessoas que não limparam a raide nesta semana, estando 100%), ou obtidas via Missões Semanais (3 por semana).",
-                            "Quanto maior sua barra de pena, maiores são as chances de você soltar a arma. Cada vez que um jogador do grupo solta a arma, cada membro será recompensado com 1 cristal (só pode obter 1 mesmo que 2 pessoas soltem), acumule-os, pois você pode trocá-los por Acessórios de Raide (5 cristais cada) ou Arma (20 cristais).",
-                            "Sua tarefa é farmear esta raide até obter todos os 3 acessórios e aumentar sua pena lentamente até obter seu FoJ.",
-                            "A arma FoJ provavelmente lhe dará menos CP do que sua arma atual inicialmente, mas isso porque os slots de aprimoramento místico estão vazios. ah, certo você ainda não sabe o que são místicos."
+                            
                         ]
                     }
                 },
@@ -818,14 +808,14 @@ export const data = {
                     },
                     conclusion: {
                         en: [
-                            "Essentially, you want to socket Physical / Magical Attack Power, since it straight up increases your weapon's attack power, LV+ increases the item scalling (raw stat), and % increases percentually your final damage, thats why they're the best option DPS-Wise, they give a great amount of CP, but on Yellow Line, Critical Damage manages to give more, that's not recommended for DPS though, since even though it gives more CP, it diminishes your damage.",
-                            "For Farm, you can build a different weapon fully socketed with EXP or Item Drop Rate, since its gonna come handy whenever you farm for something, accessory, item, etc.",
+                            "Essentially, you want to socket Physical / Magical Attack Power, since it straight up increases your weapon's attack power, LV+ increases the item scalling (raw stat), and % increases percentually your final damage.",
+                            "For Farm, you can build a different weapon fully socketed with EXP, it's gonna come handy whenever you farm ERP.",
                             "And, in case of being a support, since you're usually not asked to do damage, even if its little, you can use a HP weapon to boost your survivability.",
                             "Your weapon should end up having Attack Level on Red slots, Attack % on Blue and Yellow Slots, and 2 Attack % and 1 Attack Lv, or 2 Attack Lv and 1 Attack % on Giant Slot."
                         ],
                         es: [
-                            "Esencialmente, deseas enchufar Poder de Ataque Físico / Mágico, ya que aumenta directamente el poder de ataque de tu arma, LV+ aumenta la escala del objeto (estadística bruta) y % aumenta porcentualmente tu daño final, por eso son la mejor opción en términos de DPS, dan una gran cantidad de CP, pero en la Línea Amarilla, el Daño Crítico logra dar más, aunque no se recomienda para DPS, ya que aunque da más CP, disminuye tu daño.",
-                            "Para Farmear, puedes construir un arma diferente completamente enchufada con EXP o Tasa de Caída de Objetos, ya que será útil cada vez que farmees algo, accesorio, objeto, etc.",
+                            "Esencialmente, deseas enchufar Poder de Ataque Físico / Mágico, ya que aumenta directamente el poder de ataque de tu arma, LV+ aumenta la escala del objeto (estadística bruta) y % aumenta porcentualmente tu daño final.",
+                            "Para Farmear, puedes construir un arma diferente completamente incrustada con EXP, será útil cada vez que farmees ERP.",
                             "Y, en caso de ser soporte, como generalmente no se te pide que hagas daño, incluso si es poco, puedes usar un arma de HP para aumentar tu supervivencia.",
                             "Tu arma debería terminar teniendo Nivel de Ataque en las ranuras Rojas, % de Ataque en las ranuras Azules y Amarillas, y 2 % de Ataque y 1 Lv de Ataque, o 2 Lv de Ataque y 1 % de Ataque en la Ranura Gigante."
                         ],
@@ -859,24 +849,7 @@ export const data = {
                     },
                     intro: {
                         en: [
-                            "Welcome to the region where you might or you might not be trapped for a considerable amount of time, Rigomor is a Region consisting of 4 dungeons and 1 boss dungeon (Titan's Grotto), here you actually have a lot of tasks, since a couple of things accumulate here, first of all, you'll notice that once you unlocked the region, you unlocked the quest to master class, this requires you to do certain things but we will go through them while we do the other things, so for now, accept the quest and start doing the 3rd guide of dr. pho, where you'll need to:"
-                        ],
-                        es: [
-                            "Bienvenido a la región donde podrías o no quedar atrapado durante un tiempo considerable, Rigomor es una Región que consta de 4 mazmorras y 1 mazmorra de jefe (Gruta del Titán), aquí realmente tienes muchas tareas, ya que un par de cosas se acumulan aquí"
-                        ],
-                        kr: [
-                            "상당한 시간 동안 갇힐 수도 있고 아닐 수도 있는 지역에 오신 것을 환영합니다. 리고모르는 4개의 던전과 1개의 보스 던전(타이탄의 동굴)으로 구성된 지역입니다. 여기에는 실제로 많은 작업이 있습니다. 몇 가지 일들이 여기에 축적되기 때문입니다."
-                        ],
-                        jp: [
-                            "かなりの時間閉じ込められるかもしれない地域へようこそ。リゴモアは4つのダンジョンと1つのボスダンジョン（タイタンの洞窟）で構成される地域です。ここでは実際に多くのタスクがあります。いくつかのことがここに蓄積されるからです。"
-                        ],
-                        br: [
-                            "Bem-vindo à região onde você pode ou não ficar preso por um tempo considerável, Rigomor é uma Região composta por 4 masmorras e 1 masmorra de chefe (Gruta do Titã), aqui você realmente tem muitas tarefas, já que algumas coisas se acumulam aqui"
-                        ]
-                    },
-                    quest_list: {
-                        en: [
-                            "Clear Sea of Ruin 3 times","Attempt Amethystime Prophecy Armor Reforge 2 times","Get 'Raid Party's Resolve' Buff (Obtainable by staying 6 minutes in any Camp, or Magmelia)", "Clear Trosh's Nest 1 time", "Clear Abandoned Icerite Plant 1 time","Clear Titan's Grotto 2 times."
+                            "In this region there are a couple of things you can do, first of all is to get the Amethystine Prophecy Armor, which should be given to you once you clear Sea of Ruin 1 time, on Dr. Pho's Rigomor Lesson, 2nd is trying to get Complete Conversion Ring for DPS by farming on Abandoned Deep-Sea Tunnel.","The hard part about the progression of this region is the fact that you'll have to do Master Class Advancement Quests, which make you clear 25 rigomor dungeons (5 + 20 for 1/5 and 2/5) and 16 master road dungeons (1 + 10 + 5 for 3/5, 4/5 and 5/5)"
                         ],
                         es: [
                             ""
@@ -893,7 +866,7 @@ export const data = {
                     },
                     content: {
                         en: [
-                            "Once you have everything done, you should be around Master Class 2/5, with your progress being 3/20, the current task would, of course, be to use all the things you gained from the quests from dr. pho to spam quests till you complete your 2nd quest, if you manage to find a party to go through those dungeons, the fastest rigomor dungeons are Trosh's Nest and Titan's Grotto (limited to 5 Entries per day), otherwise, if you're planning to go solo and your damage isnt enough to solo clear Trosh's Nest fast enough, your second option would be Abandoned Icerite Plant, and your third option would be Sea of Ruin.","After you finish your 2/5 Quest, you'll be ready to hop to the next region."
+                            "the current task would, of course, to spam quests till you complete your 2nd quest. If you manage to find a party to go through those dungeons, the fastest rigomor dungeon is Trosh's Nest if you have a party or enough damage to oneshot all enemies, otherwise your second option would be Abandoned Icerite Plant, and your third option would be Sea of Ruin.","After finishing the 2/5 quest you'll be ready to start doing Master Road."
                         ],
                         es: [
                             ""
@@ -919,24 +892,7 @@ export const data = {
                     },
                     intro: {
                         en: [
-                            "This region consists of multiple boss spars, divided by both normal mode and hell mode; you won't stay long in this region, as you'll only need it to complete Master Class Quest, as mentioned before, all enemies are boss type, so use of Head Hunter is recommended. The fastest dungeon of the region would be Shrine of the Two-Headed Serpent, since its adapted for solo play, you'll need to complete the next tasks:"
-                        ],
-                        es: [
-                            ""
-                        ],
-                        kr: [
-                            ""
-                        ],
-                        jp: [
-                            ""
-                        ],
-                        br: [
-                            ""
-                        ]
-                    },
-                    quest_list: {
-                        en: [
-                            "Clear Master Road in Normal mode 15 times (to complete Master Road 3/5 + 4/5 and Dr. Phos Guide 3 Lesson 4 Task 1 and 2)", "Clear Master Road in Hell mode 1 time (to complete Master Road 5/5 and Dr. Pho's Guide 3 Lesson 4 Lesson 4 Task 3 and 4)"
+                            "This region consists of multiple boss spars, divided by both normal mode and hell mode; you won't stay long in this region, as you'll only need it to complete Master Class Quest, all enemies are boss type, so use of Head Hunter is recommended. The fastest dungeon of the region would be Shrine of the Two-Headed Serpent, since its adapted for solo play, you'll need to do this 16 times on normal mode, although it's recommended to do 1 hell mode to complete the Dr. Pho's Master Road Assignment, but you can do that later since it's harder when you lack gear."
                         ],
                         es: [
                             ""
@@ -953,7 +909,7 @@ export const data = {
                     },
                     content: {
                         en: [
-                            "After doing those tasks, you'll be able to advance your character to Master Class, which unlocks the Master Artifact System and the first stage of your master skill."
+                            "After doing all 16 runs, you'll be able to advance your character to Master Class, which unlocks the Master Artifact System and the first stage of your master skill.","Most important of all, you'll finally be free from the job advancement hell..."
                         ],
                         es: [
                             ""
@@ -979,7 +935,7 @@ export const data = {
                     },
                     intro: {
                         en: [
-                            "Master Artifact is another really important system that can highly improve both your CP and Damage, it consists of 3 Elements:"
+                            "Master Artifact is another really important system that can highly improve your Damage Output, it consists of 3 Elements:"
                         ],
                         es: [
                             ""
@@ -1193,14 +1149,14 @@ export const data = {
                             mechs: {
                                 pof: {
                                     name: { en: "Pillar of Flame", es: "Pilar de Llamas", kr: "화염의 기둥", jp: "炎の柱", br: "Pilar de Chamas" },
-                                    description: { en: ["All Fragments of Prominence will retreat to the hole in the middle of the arena, and target the player to create a pillar of flame at the player's location, it ignores invincibility and resurrection effects and if you touch it, it will insta kill you, before the attack, the game will give you a warning zone where the pillar will appear, so just stay away from it."], es: "Todos los Fragmentos de Prominencia se retirarán al agujero en el centro del arena, y apuntarán al jugador para crear un pilar de llama en la ubicación del jugador, ignora los efectos de invulnerabilidad y resurrección y si tocas, te matará instantáneamente, antes del ataque, el juego te dará una zona de advertencia donde aparecerá el pilar, así que simplemente mantente alejado de él.", kr: "모든 돌출의 조각은 경기장 중앙의 구멍으로 후퇴하고 플레이어를 표적으로 삼아 플레이어의 위치에 화염 기둥을 생성합니다. 무적과 부활 효과를 무시하며 만지면 즉시 죽습니다. 공격 전 게임은 기둥이 나타날 경고 영역을 제공합니다. 따라서 그냥 그 영역에서 멀리 떠나세요.", jp: "すべての突出の断片はアリーナ中央の穴に後退り、プレイヤーを標的にしてプレイヤーの位置に炎の柱を作成します。無敵と復活効果を無視し、触れると即座に死にます。攻撃前、ゲームは柱が現れる警告ゾーンを提供します。したがって、ただそのゾーンから離れてください。", br: "Todos os Fragmentos de Proeminência se retirarão ao buraco no centro da arena e apontarão para o jogador para criar um pilar de chamas na localização do jogador, ignorando os efeitos de invulnerabilidade e ressurreição e se você tocar, irá morrer instantaneamente, antes do ataque, o jogo lhe dará uma zona de aviso onde o pilar aparecerá, então apenas fique longe dele." }
+                                    description: { en: ["All Fragments of Prominence will retreat to the hole in the middle of the arena, and target the player to create a pillar of flame at the player's location, it ignores iframes and resurrection effects and if you touch it, it will insta kill you, before the attack, the game will give you a warning zone where the pillar will appear, so just stay away from it."], es: "Todos los Fragmentos de Prominencia se retirarán al agujero en el centro del arena, y apuntarán al jugador para crear un pilar de llama en la ubicación del jugador, ignora los efectos de invulnerabilidad y resurrección y si tocas, te matará instantáneamente, antes del ataque, el juego te dará una zona de advertencia donde aparecerá el pilar, así que simplemente mantente alejado de él.", kr: "모든 돌출의 조각은 경기장 중앙의 구멍으로 후퇴하고 플레이어를 표적으로 삼아 플레이어의 위치에 화염 기둥을 생성합니다. 무적과 부활 효과를 무시하며 만지면 즉시 죽습니다. 공격 전 게임은 기둥이 나타날 경고 영역을 제공합니다. 따라서 그냥 그 영역에서 멀리 떠나세요.", jp: "すべての突出の断片はアリーナ中央の穴に後退り、プレイヤーを標的にしてプレイヤーの位置に炎の柱を作成します。無敵と復活効果を無視し、触れると即座に死にます。攻撃前、ゲームは柱が現れる警告ゾーンを提供します。したがって、ただそのゾーンから離れてください。", br: "Todos os Fragmentos de Proeminência se retirarão ao buraco no centro da arena e apontarão para o jogador para criar um pilar de chamas na localização do jogador, ignorando os efeitos de invulnerabilidade e ressurreição e se você tocar, irá morrer instantaneamente, antes do ataque, o jogo lhe dará uma zona de aviso onde o pilar aparecerá, então apenas fique longe dele." }
                                 }
                             },
                             forcedmechs: {
-                                resurrection: {
-                                    name: { en: "Resurrection", es: "Resurrección", kr: "부활", jp: "復活", br: "Ressurreição" },
+                                revive: {
+                                    name: { en: "Revive", es: "Revivir", kr: "", jp: "", br: "" },
                                     forcedat: { en: "After 1 Fragment of Prominence is defeated" },
-                                    description: { en: ["If a Fragment of Prominence is defeated, it will resurrect with full HP after 30 seconds if at least one other Fragment is still alive."] }
+                                    description: { en: ["If a Fragment of Prominence is defeated, it will revive with full HP after 30 seconds if at least one other Fragment is still alive."] }
                                 }
                             }
                         },
@@ -1261,7 +1217,7 @@ export const data = {
                                 },
                             },
                             repeatedmechs: {
-                                description: { en: ["This Phase has the same attacks as Phase 1, but with more HP, and Fireball Throw casts 4 fireballs instead of 3, in addition with a singular new mech."]}
+                                description: { en: ["This Phase has the same attacks as Phase 1, but with more HP, and Fireball Throw casts 4 fireballs instead of 3, in addition with the Crimson Soul mech."]}
                             },
                         }
                     }
@@ -1273,7 +1229,7 @@ export const data = {
                         phase1: {
                             phasenum: { en: "Phase 1", es: "Fase 1", kr: "1단계", jp: "フェーズ1", br: "Fase 1" },
                             phasebname: { en: "-", es: "-", kr: "-", jp: "-", br: "-" },
-                            description: { en: ["Since Summer 2025 Update, This phase is completed on phase start."]}
+                            description: { en: ["Since Summer 2025 Update, This phase is completed on phase start.","Although, it still gives you a debuff that decreases your attack power by 5% for the entirety of the dungeon, be for real kog..."]}
                         },
                         phase2: {
                             phasenum: { en: "Phase 2", es: "Fase 2", kr: "2단계", jp: "フェーズ2", br: "Fase 2" },
@@ -1282,29 +1238,83 @@ export const data = {
                             },
                             phasebname: { en: "Dark Watcher", es: "Vigía Oscuro", kr: "다크 워처", jp: "ダークウォッチャー", br: "Vigia Sombrio" },
                             np: {
-                                
+                                silentwatcher: {
+                                    name: { en: "Silent Watcher", es: "Vigía Silencioso", kr: "조용한 감시자", jp: "静かな監視者", br: "Vigia Silencioso" },
+                                    description: { en: ["There are 4 Silent Watchers around the Dark Watcher (top left, top right, bottom left and bottom right), and they'll perform their own version of Dark Watcher's mechs (explained later)"]}
+                                },
+                                shield: {
+                                    name: { en: "Shield", es: "Escudo", kr: "방패", jp: "シールド", br: "Escudo" },
+                                    description: { en: ["On phase start, Dark Watcher will form a protective shield which effectively makes him immortal. killing 1 of the 4 silent watchers will dispel this shield."]}
+                                },
+                                thorns: {
+                                    name: { en: "Thorns", es: "Espinas", kr: "가시", jp: "トゲ", br: "Espinhos" },
+                                    description: { en: ["Dark Watcher covers his body with thorns, which will retract after a couple seconds, the damage is not high."]},
+                                    alt: {
+                                        silentwatcher: {
+                                            ctitle: { en: "<Silent Watcher's Version>"},
+                                            description: { en: ["Silent Watcher puts a thorn around his body inflicting wounds debuff for 5 seconds."]}
+                                        }   
+                                    }
+                                },
+                                laser: {
+                                    name: { en: "Laser", es: "Láser", kr: "레이저", jp: "レーザー", br: "Laser" },
+                                    description: { en: ["After charging energy for a while, Dark Watcher fires a laser upward and moving 360 degrees, the damage is not high but does a lot of hits, so it can be dangerous without super armor."]}
+                                }
                             },
                             mechs: {
-                                
+                                gbte: {
+                                    name: { en: "Gazed by the Eye", es: "Mirada del Ojo", kr: "눈의 시선", jp: "目の視線", br: "O Olhar do Olho" },
+                                    description: { en: ["Dark Watcher gazes upon a player and fires a laser after a delay, this ignores i-frames and can be lethal if not dodged quick. Almost guaranteed death without super armor."] },
+                                    alt: {
+                                        silentwatcher: {
+                                            ctitle: { en: "<Silent Watcher's Version>"},
+                                            description: { en: ["All the Silent Watchers gaze upon players and fire lasers after a delay, these also ignore i-frames, but are thiner, they still are lethal if not dodged quick."]}
+                                        }
+                                    }
+                                },
+                                recovery: {
+                                    name: { en: "Recovery", es: "Recuperación", kr: "회복", jp: "回復", br: "Recuperação" },
+                                    description: { en: ["Random Silent Watchers will gain a pink aura, if they're not killed after a certain amount of time, they'll recover part of Dark Watcher's HP."]}
+                                }
                             },
                             forcedmechs: {
-                                
+                                annihilate: {
+                                    name: { en: "Annihilate", es: "Aniquilar", kr: "전멸", jp: "全滅", br: "Aniquilar" },
+                                    description: { en: ["Dark Watcher and all Silent Watchers are surrounded by a red aura. Silent Watchers HP will halve, and all dead Silent Watchers will be resurrected, if all Silent Watchers are not killed in 40 seconds after the red aura appears, Dark Watcher will unleash a powerful attack that oneshots the player and negates resurrection effects.","Once all 4 Silent Watchers are killed they will resurrect and Dark Watcher will enter groggy state for a short period of time."]}
+                                }
                             }
                         },
                         phase3: {
                             phasenum: { en: "Phase 3", es: "Fase 3", kr: "3단계", jp: "フェーズ3", br: "Fase 3" },
                             concepts: {
-                                
+                                recovery: {
+                                    name: { en: "<Recovery>", es: "<Recuperación>", kr: "<회복>", jp: "<回復>", br: "<Recuperação>" },
+                                    description: { en: ["Different from Dark Watcher's Recovery in Phase 2, Red Eyes will instead regain 2% of their max HP whenever a player dies."]}
+                                }
                             },
                             phasebname: { en: "Red Eyes", es: "Ojos Rojos", kr: "빨간 눈", jp: "赤い目", br: "Olhos Vermelhos" },
                             np: {
-                                
+                                thorns: {
+                                    name: { en: "Thorns", es: "Espinas", kr: "가시", jp: "トゲ", br: "Espinhos" },
+                                    description: { en: ["Same as the Dark Watcher's Thorns in Phase 2, but with more damage and a bigger hitbox."]},
+                                }
                             },
                             mechs: {
-                                
+                                gbte: {
+                                    name: { en: "Gazed by the Eye", es: "Mirada del Ojo", kr: "눈의 시선", jp: "目の視線", br: "O Olhar do Olho" },
+                                    description: { en: ["Same as the Dark Watcher's mechanism in phase 2, except the hitting speed and damage is higher. In compensation, the turning speed of Red Eye is slower."] },
+                                },
+                                windmillofthorns: {
+                                    name: { en: "Windmill of Thorns", es: "Molino de Espinas", kr: "가시의 풍차", jp: "トゲの風車", br: "Moinho de Espinhos" },
+                                    description: { en: ["Red Eye teleports to the middle of the arena, and increase 3 of it's body thorns length, then it will spin around. Thorns ignore i-frames and deal lethal damage on contact.","If Red Eye is below 70 bars, it will gain the capacity to reverse the direction it spins in mid-rotation."]}
+                                }
                             },
                             forcedmechs: {
-                                
+                                pillarofthorns:{
+                                    name: { en: "Pillar of Thorns", es: "Pilar de Espinas", kr: "가시의 기둥", jp: "トゲの柱", br: "Pilar de Espinhos" },
+                                    forcedat: { en: "Enabled @ 60 bars"},
+                                    description: {en: ["Red Eye gains a shield and summons a Pillar of Thorns in the player position, when the thorns begin eroding, they will be indicated by a red danger zone and will start growing vertically insanely fast after a short period of time, these thorns does lethal damage. Players need to use these thorns to hit Red Eye's shield 3 times in order to break it. Thorns will appear infinitely until the shield is broken. After it breaks, Red Eye will go groggy for 10 seconds."]}
+                                }
                             }
                         }
                     }
@@ -1317,46 +1327,98 @@ export const data = {
                             phasenum: { en: "Phase 1", es: "Fase 1", kr: "1단계", jp: "フェーズ1", br: "Fase 1" },
                             phasebname: { en: "Malice", es: "Malicia", kr: "증오", jp: "憎悪", br: "Ódio" },
                             np: {
-                                
+                                bloodyfury:{
+                                    name: { en: "Bloody Fury", es: "Furia Sangrienta", kr: "피의 분노", jp: "血の怒り", br: "Fúria Sangrenta" },
+                                    description: { en: ["Malice summons 2 Bloody Furies which will stand near the arms of Malice, those can do 2 attacks:"]},
+                                    bfattacks: {
+                                        takedown: {
+                                            ctitle: { en: "<Takedown>", es: "<Derribo>", kr: "<테이크다운>", jp: "<テイクダウン>", br: "<Derrubar>" },
+                                            description: { en: ["Bloody Fury will strike the ground and make a circular shockwave, which will deal moderate damage and knock the player down. It's i-frameable."]}
+                                        },
+                                        roll: {
+                                            ctitle: { en: "<Roll>", es: "<Rodar>", kr: "<롤링>", jp: "<ローリング>", br: "<Rolagem>" },
+                                            description: { en: ["Bloody Fury will lie on the ground and roll, dealing damage with the thorns in it's body. it's hard to get hit by it but if you get hit too much it can be lethal."]}
+                                        }
+                                    }
+                                },
+                                petrificationlaser:{
+                                    name: { en: "Petrification Laser", es: "Láser de Petrificación", kr: "석화 레이저", jp: "石化レーザー", br: "Laser de Petrificação" },
+                                    description: { en: ["Malice raises it's head and fires a laser in a downwards arc from left to right or viceversa. If a player is hit by the laser, they will be petrified for 8 seconds."]}
+                                }
                             },
                             mechs: {
-                                
-                            },
-                            forcedmechs: {
-                                
+                                energyvolley:{
+                                    name: { en: "Energy Volley", es: "Descarga de Energía", kr: "에너지 연발", jp: "エネルギーボレー", br: "Rajada de Energia" },
+                                    description: { en: ["Malice will laugh, and after a short period of time, becomes invincible, afterwards balls of energy will start spawning from the bottom of the arena, and slowly make their way up, getting hit by the balls will deal lethal damage. After a certain time balls will start to dissapear."]}
+                                },
+                                pillarofthorns:{
+                                    name: { en: "Pillar of Thorns", es: "Pilar de Espinas", kr: "가시의 기둥", jp: "トゲの柱", br: "Pilar de Espinhos" },
+                                    description: { en: ["Similar to Red Eye's Pillar of thorns, but Malice will only summon 1 pillar, and it will erode faster the lower the HP of Malice is."]}
+                                }
                             }
                         },
                         phase2: {
                             phasenum: { en: "Phase 2", es: "Fase 2", kr: "2단계", jp: "フェーズ2", br: "Fase 2" },
-                            concepts: {
-                                
-                            },
                             phasebname: { en: "Recluse", es: "Recluso", kr: "은둔자", jp: "隠者", br: "Recluso" },
                             np: {
-                                
-                            },
-                            mechs: {
-                                
+                                spawnthorns: {
+                                    name: { en: "Spawn Thorns", es: "Generar Espinas", kr: "가시 생성", jp: "トゲの生成", br: "Gerar Espinhos" },
+                                    description: { en: ["Recluse will spawn thorns below the player, which don't deal much damage but they will knock up the player."]}
+                                },
+                                transversecut: {
+                                    name: { en: "Transverse Cut", es: "Corte Transversal", kr: "횡단 절단", jp: "横断カット", br: "Corte Transversal" },
+                                    description: { en: ["It's the same attack as Soul of Crimson Flame's Horizontal Cut, there is no difference in the damage, but it inflicts no debuff."]}
+                                },
+                                verticalcut: {
+                                    name: { en: "Vertical Cut", es: "Corte Vertical", kr: "수직 절단", jp: "垂直カット", br: "Corte Vertical" },
+                                    description: { en: ["It's the same attack as Soul of Crimson Flame's Vertical Cut, there is no difference in the damage, but it inflicts no debuff."]}
+                                },
+                                consecutivestrike: {
+                                    name: { en: "Consecutive Strike", es: "Golpe Consecutivo", kr: "연속 타격", jp: "連続攻撃", br: "Golpe Consecutivo" },
+                                    description: { en: ["Recluse will perform 3 normal attacks, these don't do much damage but knock up the player, which can fling you out of the arena if you're too near the edges."] }
+                                },
+                                scythepull: {
+                                    name: { en: "Scythe Pull", es: "Tirar de la Guadaña", kr: "낫 당기기", jp: "鎌の引き寄せ", br: "Puxar a Foice" },
+                                    description: { en: ["Same as Soul of Crimson Flame's Scythe Pull, but it has a bigger hitbox."] }
+                                }
                             },
                             forcedmechs: {
-                                
+                                pillaroffire: {
+                                    name: { en: "Pillar of Fire", es: "Pilar de Fuego", kr: "불의 기둥", jp: "炎の柱", br: "Pilar de Fogo" },
+                                    forcedat: { en: "When Recluse is on Fire Mode After dealing 80 bars of HP"},
+                                    description: { en: ["A cutscene will play where Recluse goes to the middle of the arena, after it ends, Recluse will be surrounded by a pink aura, after a while, the pink aura erodes, knocking up players nearby, afterwards the aura will return in the form of a pillar of fire, which will fall in the players position. This means that if you get knocked up by the erosion you will die to the pillar, since there's not enough time for you to recover before it falls. To deal with this, just stay away from Recluse (likely in the edge of the arena), and once the pillar of fire begins to fall, go back to the middle.","Once mech ends, Recluse will change to Demon Mode."]}
+                                },
+                                horizontallaser: { 
+                                    name: { en: "Horizontal laser"},
+                                    forcedat: {en: "When Recluse is on Demon Mode After dealing 80 bars of HP"},
+                                    description: {en: ["A cutscene will play, after it ends, Recluse will spawn Silent Watchers at the edges of the arena, which will cast horizontal lasers on all platforms except one, the Player needs to position itself on the single platform not targeted by Silent Watchers for a total of 4 times.","After the mech ends, Recluse will change to Fire Mode."]},
+                                }
                             }
                         },
                         phase3: {
                             phasenum: { en: "Phase 3", es: "Fase 3", kr: "3단계", jp: "フェーズ3", br: "Fase 3" },
                             concepts: {
-                                
+                                recovery: {
+                                    name: {en: "<Recovery>"},
+                                    description: {en: ["Similar to Red Eye's recovery, except Dark Recluse recovery will increase the lower it's HP is."]}
+                                }
                             },
                             phasebname: { en: "Dark Recluse", es: "Recluso Oscuro", kr: "다크 은둔자", jp: "ダーク隠者", br: "Recluso Sombrio" },
                             np: {
-                                
+                                same: {
+                                    description: {en: ["Transverse Cut, Vertical Cut, Consecutive Strike and Scythe Pull still happen on this phase and are the exact same as before."]}
+                                }
                             },
                             mechs: {
-                                
+                                pillarofthorns: {
+                                    name: { en: "Pillar of Thorns"},
+                                    description: { en: ["Same as Malice's Pillar of Thorns, except the thorns are capable of breaking the floor, Once Dark Recluse teleports to the upper middle part of the arena, position below it, since the very middle of the arena is immune to being broke by the pillar of thorns."]}
+                                },
+                                fireballs: {
+                                    name: { en: "Fireballs"},
+                                    description: { en: ["Dark Recluse spreads it's arms forward and shoots fireballs into the sky, they will later fall down 5 times and explode once they contact with a platform (which means they wont touch you if you're in the middle of the arena), being hit by fireballs burn hp fast, so they should be avoided."]}
+                                }
                             },
-                            forcedmechs: {
-                                
-                            }
                         }
                     }
                 },
@@ -2336,14 +2398,30 @@ export const data = {
             },
         },
         concepts: {
-                SuperArmor: {
-                    en: "State granted to the player via Items, Buffs or other sources, that prevent the player from getting stunned in any way.",
-                    es: "Estado concedido al jugador mediante objetos, beneficios u otras fuentes, que evita que el jugador sea aturdido de cualquier manera.",
-                    kr: "아이템, 버프 또는 기타 소스를 통해 플레이어에게 부여되는 상태로, 어떤 식으로든 플레이어가 기절하는 것을 방지합니다.",
-                    jp: "アイテム、バフ、その他のソースを通じてプレイヤーに付与される状態で、どのような方法でもプレイヤーが気絶するのを防ぎます。",
-                    br: "Estado concedido ao jogador através de itens, buffs ou outras fontes, que impede o jogador de ser atordoado de qualquer forma."
-                }
+            SuperArmor: {
+                en: "State granted to the player via Items, Buffs or other sources, that prevent the player from getting stunned in any way.",
+                es: "Estado concedido al jugador mediante objetos, beneficios u otras fuentes, que evita que el jugador sea aturdido de cualquier manera.",
+                kr: "아이템, 버프 또는 기타 소스를 통해 플레이어에게 부여되는 상태로, 어떤 식으로든 플레이어가 기절하는 것을 방지합니다.",
+                jp: "アイテム、バフ、その他のソースを通じてプレイヤーに付与される状態で、どのような方法でもプレイヤーが気絶するのを防ぎます。",
+                br: "Estado concedido ao jogador através de itens, buffs ou outras fontes, que impede o jogador de ser atordoado de qualquer forma."
             },
+            IFrames: {
+                en: "Using certain skills grants you temporal invincibility to avoid or pass through damage until the skill cast time ends.",
+                es: "",
+                kr: "",
+                jp: "",
+                br: ""
+            },
+            LastHope: {
+                en: "Increases attack power by 50% and cooldown acceleration by 1.5x",
+            },
+            Groggy: {
+                en: "State where a boss/enemy is completely stopped in place and takes increased damage."
+            },
+            resurrection: {
+                en: ["Effect featured in certain type of titles/buffs that, whenever applied, allow the player to survive an attack that would kill.","Resurrection buffs such as Seal of Time will only protect you from 1 attack, meaning multi-hit attacks that ignore iframes will still kill you.","Resurrection titles give you total immunity to damage for 3 seconds after protecting you from dying."]
+            }
+        },
         tableNotes: {
             NotRecommended: {
                 en: "This stat is not recommended for optimal DPS",
@@ -2417,7 +2495,7 @@ export const data = {
                 },
                 berthe_raid_intro: {
                     title: { en: "Introduction to Berthe Raid", es: "Introducción a la Incursión Berthe", kr: "베르테 레이드 소개", jp: "ベルテレイド紹介", br: "Introdução à Raide Berthe"},
-                    en: ["As mentioned before, Pruinaum is the house to the next raid in the game, Berthe Raid is fairly harder than rosso, but still pretty simple to learn; in this introduction you will learn the basics of the raid, and some tips to make your life easier while doing it."],
+                    en: ["As mentioned before, Pruinaum is house to the next raid in the game, Berthe Raid is fairly harder than rosso, but still pretty simple to learn; in this introduction you will learn the basics of the raid, and some tips to make your life easier while doing it."],
                     es: ["Como se mencionó antes, Pruinaum es el hogar de la siguiente incursión en el juego, la Incursión Berthe es bastante más difícil que Rosso, pero aún así es bastante simple de aprender; en esta introducción aprenderás los conceptos básicos de la incursión y algunos consejos para facilitarte la vida mientras la haces."],
                     kr: ["앞서 언급했듯이 프루이나움은 게임에서 다음 레이드인 베르테 레이드의 집입니다. 베르테 레이드는 로소보다 상당히 어렵지만 여전히 배우기 매우 간단합니다. 이 소개에서는 레이드의 기본 사항과 레이드를 수행하는 동안 삶을 더 쉽게 만드는 몇 가지 팁을 배웁니다."],
                     jp: ["前述のように、プルイナウムはゲーム内で次のレイドであるベルテレイドの家です。ベルテレイドはロッソよりもかなり難しいですが、それでも学ぶのは非常に簡単です。この紹介では、レイドの基本と、レイドを行う際に生活を楽にするためのいくつかのヒントを学びます。"],
@@ -2429,29 +2507,20 @@ export const data = {
                     phase1: {
                         title: { en: "Phase 1 | Boss Size: Small", es: "Fase 1 | Tamaño del Jefe: Pequeño", kr: "1단계 | 보스 크기: 작음", jp: "フェーズ1 | ボスサイズ: 小", br: "Fase 1 | Tamanho do Chefe: Pequeno" },
                         content: { en: ["2 Bosses will appear, 1 in the left arena, and another in the right arena, Players need to go to the right arena, since that boss is easier to deal with.", "In this phase, you need to be cautious of the red texts that appear on screen since they can lead to wipe.*", "When the player gets highlighted by a orange aura, quickly roam around the right arena to find an orange floating orb and get close to it; if close enough, it will turn blue and link to the player, once it disappears you're safe, otherwise, if the player doesn't link after some time, it will trigger an explosion that wipes. (Seal of Time or Res. Title can survive this)", "Boss will spam 2 attacks, 1 will put bombs in your location that will explode over time and other that will trigger a big explosion, none deal fatal damage, but both knock up so using Super Armor is recommended.", "Red Text will appear and the boss on the left side will Teleport the player to the left side; after some seconds, boss will thrust towards the player. To avoid this, just use the Teleporter to go back to the right arena before the boss thrusts.", "Red Text will appear and the boss on the left side will start charging an attack, get in front of the boss quickly. After some time, it will trigger an attack that kills the player in any location if not in front of the boss.", "Red text will appear and the boss on the right side will start charging an attack, a safe zone spot will appear. Rush to the safe spot quickly. After some seconds boss will trigger an explosion that kills the player in any location if not in the safe zone."],
-                            es: ["Aparecerán 2 jefes, 1 en la arena izquierda y otro en la arena derecha, los jugadores deben ir a la arena derecha, ya que ese jefe es más fácil de manejar.", "En esta fase, debes tener cuidado con los textos rojos que aparecen en pantalla, ya que pueden llevar a una derrota.*", "Cuando el jugador sea resaltado por un aura naranja, recorra rápidamente la arena derecha para encontrar un orbe flotante naranja y acérquese a él; si está lo suficientemente cerca, se volverá azul y se vinculará al jugador. Una vez que desaparezca, estarás a salvo; de lo contrario, si el jugador no se vincula después de un tiempo, desencadenará una explosión que eliminará a todos. (El Sello del Tiempo o el Título de Res. pueden sobrevivir a esto)", "El jefe usará 2 ataques repetidamente, 1 pondrá bombas en tu ubicación que explotarán con el tiempo y otro que desencadenará una gran explosión. Ninguno causa daño fatal, pero ambos levantan, por lo que se recomienda usar Super Armadura.", "Aparecerá un texto rojo y el jefe del lado izquierdo teletransportará al jugador al lado izquierdo; después de unos segundos, el jefe se lanzará hacia el jugador. Para evitar esto, simplemente usa el teletransportador para volver a la arena derecha antes de que el jefe se lance.", "Aparecerá un texto rojo y el jefe del lado izquierdo comenzará a cargar un ataque; colócate rápidamente frente al jefe. Después de un tiempo, desencadenará un ataque que mata al jugador en cualquier ubicación si no está frente al jefe.", "Aparecerá un texto rojo y el jefe del lado derecho comenzará a cargar un ataque; aparecerá una zona segura. Corre rápidamente hacia el lugar seguro. Después de unos segundos, el jefe desencadenará una explosión que mata al jugador en cualquier ubicación si no está en la zona segura."],
-                            kr: ["2명의 보스가 나타납니다. 1명은 왼쪽 경기장에, 다른 1명은 오른쪽 경기장에 나타납니다. 플레이어는 오른쪽 경기장으로 가야 합니다. 그 보스가 다루기 더 쉽기 때문입니다.", "이 단계에서는 화면에 나타나는 빨간색 텍스트에 주의해야 합니다. 이는 전멸로 이어질 수 있습니다.*", "플레이어가 주황색 오라로 강조 표시되면 오른쪽 경기장을 빠르게 돌아다니며 주황색 떠 있는 구체를 찾아 가까이 가세요. 충분히 가까이 가면 파란색으로 변하고 플레이어와 연결됩니다. 사라지면 안전하지만, 그렇지 않으면 플레이어가 일정 시간 후에도 연결되지 않으면 폭발이 발생하여 전멸합니다. (시간의 인장 또는 레조넌스 칭호는 이를 견딜 수 있습니다)", "보스는 두 가지 공격을 반복적으로 사용합니다. 하나는 시간이 지남에 따라 폭발하는 위치에 폭탄을 설치하고 다른 하나는 큰 폭발을 일으킵니다. 둘 다 치명적인 피해를 입히지는 않지만 둘 다 넉백 효과가 있으므로 슈퍼 아머를 사용하는 것이 좋습니다.", "빨간색 텍스트가 나타나고 왼쪽 보스가 플레이어를 왼쪽으로 순간이동시킵니다. 몇 초 후 보스가 플레이어를 향해 돌진합니다. 이를 피하려면 보스가 돌진하기 전에 순간이동기를 사용하여 오른쪽 경기장으로 돌아가세요.", "빨간색 텍스트가 나타나고 왼쪽 보스가 공격을 충전하기 시작합니다. 보스 앞에 빠르게 서세요. 잠시 후, 보스 앞에 있지 않으면 플레이어를 죽이는 공격을 시작합니다.", "빨간색 텍스트가 나타나고 오른쪽 보스가 공격을 충전하기 시작합니다. 안전 지대가 나타납니다. 안전 지대로 빠르게 돌진하세요. 몇 초 후, 보스는 안전 지대에 있지 않으면 플레이어를 죽이는 폭발을 일으킵니다."],
-                            jp: ["2体のボスが出現します。1体は左のアリーナに、もう1体は右のアリーナにいます。プレイヤーは右のアリーナに行く必要があります。そのボスの方が対処しやすいからです。", "このフェーズでは、画面に表示される赤いテキストに注意する必要があります。これらは全滅につながる可能性があります。*", "プレイヤーがオレンジ色のオーラでハイライトされたら、右のアリーナを素早く移動してオレンジ色の浮遊オーブを見つけて近づいてください。十分に近づくと青色に変わり、プレイヤーとリンクします。消えると安全ですが、そうでない場合、プレイヤーがしばらくしてもリンクしない場合、爆発が発生して全滅します。（時間の印章またはレゾナンスタイトルはこれを生き延びることができます）", "ボスは2つの攻撃を繰り返し使用します。1つは時間の経過とともに爆発する位置に爆弾を設置し、もう1つは大きな爆発を引き起こします。どちらも致命的なダメージを与えませんが、両方ともノックアップ効果があるため、スーパーアーマーの使用をお勧めします。", "赤いテキストが表示され、左側のボスがプレイヤーを左側にテレポートします。数秒後、ボスはプレイヤーに向かって突進します。これを避けるには、ボスが突進する前にテレポーターを使用して右のアリーナに戻ってください。", "赤いテキストが表示され、左側のボスが攻撃のチャージを開始します。ボスの前に素早く立ってください。しばらくすると、ボスの前にいない場合、プレイヤーを殺す攻撃を開始します。", "赤いテキストが表示され、右側のボスが攻撃のチャージを開始します。安全地帯が現れます。安全地帯に素早く突進してください。数秒後、ボスは安全地帯にいない場合、プレイヤーを殺す爆発を引き起こします。"],
-                            br: ["Aparecerão 2 chefes, 1 na arena esquerda e outro na arena direita, os jogadores devem ir para a arena direita, pois esse chefe é mais fácil de lidar.", "Nesta fase, você deve ter cuidado com os textos vermelhos que aparecem na tela, pois eles podem levar a uma derrota.*", "Quando o jogador for destacado por uma aura laranja, percorra rapidamente a arena direita para encontrar um orbe flutuante laranja e se aproximar dele; se estiver perto o suficiente, ele ficará azul e se conectará ao jogador. Uma vez que desapareça, você estará seguro; caso contrário, se o jogador não se conectar após algum tempo, isso desencadeará uma explosão que eliminará todos. (O Selo do Tempo ou o Título de Res. podem sobreviver a isso)", "O chefe usará 2 ataques repetidamente, 1 colocará bombas em sua localização que explodirão com o tempo e outro que desencadeará uma grande explosão. Nenhum causa dano fatal, mas ambos levantam, por isso é recomendado usar Super Armadura.", "Um texto vermelho aparecerá e o chefe do lado esquerdo teletransportará o jogador para o lado esquerdo; após alguns segundos, o chefe avançará em direção ao jogador. Para evitar isso, basta usar o teletransportador para voltar à arena direita antes que o chefe avance.", "Um texto vermelho aparecerá e o chefe do lado esquerdo começará a carregar um ataque; coloque-se rapidamente na frente do chefe. Após algum tempo, ele desencadeará um ataque que mata o jogador em qualquer local se não estiver na frente do chefe.", "Um texto vermelho aparecerá e o chefe do lado direito começará a carregar um ataque; aparecerá uma zona segura. Corra rapidamente para o local seguro. Após alguns segundos, o chefe desencadeará uma explosão que mata o jogador em qualquer local se não estiver na zona segura."]
-                         }
+                            
+                        }
                     },
                     phase2: {
                         title: { en: "Phase 2 | Boss Size: Small", es: "Fase 2 | Tamaño del Jefe: Pequeño", kr: "2단계 | 보스 크기: 작음", jp: "フェーズ2 | ボスサイズ: 小", br: "Fase 2 | Tamanho do Chefe: Pequeno" },
                         content: { en: ["Boss will periodically cast a bubble-like attack that prevents players from casting skills. | After 240x, boss will change this attack and instead will become a coil-like attack that pushes people, Super Armor is recommended during this section.", "After some time, boss will jump out of the Player's Field of View, after some seconds, certain parts of the map will be marked, indicating the boss will dash through that zone after some seconds; if hit by any of the dashes, the player will become unable to run for some time.", "After 150x boss will dash out of Player's Field of View; certain amount of orbs will be summoned in the arena, the player needs to touch one in order to get pushed towards the higher arena. After some seconds boss will dash on all the lower arena, causing players who didn't go up to die. (Note: if you have Super Armor, the orb won't be able to push you upwards.", "Boss will periodically cast an Orb-like attack that will push the player off the arena if not in i-frame / Super Armor.", "After some time, boss will teleport to an edge of the arena several times and start casting wind slashes towards the middle of the arena, player can dodge them or tank them. | Following this pattern, after some time, boss will teleport to the middle of the arena, cover himself in a tornado and cast wind slashes towards the edges of the arena. If the player gets too close to the tornado it will lower a great portion of its health, and will knock him down."],
-                            es: ["El jefe lanzará periódicamente un ataque similar a una burbuja que impide a los jugadores lanzar habilidades. | Después de 240x, el jefe cambiará este ataque y en su lugar se convertirá en un ataque similar a una bobina que empuja a las personas; se recomienda Super Armadura durante esta sección.", "Después de un tiempo, el jefe saltará fuera del campo de visión del jugador; después de unos segundos, ciertas partes del mapa serán marcadas, indicando que el jefe se lanzará a través de esa zona después de unos segundos; si es golpeado por cualquiera de los ataques, el jugador no podrá correr durante un tiempo.", "Después de 150x, el jefe se lanzará fuera del campo de visión del jugador; se invocará una cierta cantidad de orbes en la arena; el jugador necesita tocar uno para ser empujado hacia la arena superior. Después de unos segundos, el jefe se lanzará por toda la arena inferior, causando la muerte de los jugadores que no subieron. (Nota: si tienes Super Armadura, el orbe no podrá empujarte hacia arriba).", "El jefe lanzará periódicamente un ataque similar a un orbe que empujará al jugador fuera de la arena si no está en i-frame / Super Armadura.", "Después de un tiempo, el jefe se teletransportará a un borde de la arena varias veces y comenzará a lanzar cortes de viento hacia el centro de la arena; el jugador puede esquivarlos o resistirlos. | Siguiendo este patrón, después de un tiempo, el jefe se teletransportará al centro de la arena, se cubrirá con un tornado y lanzará cortes de viento hacia los bordes de la arena. Si el jugador se acerca demasiado al tornado, este reducirá gran parte de su salud y lo derribará."],
-                            kr: ["보스는 주기적으로 플레이어가 스킬을 시전하지 못하게 하는 거품 같은 공격을 시전합니다. | 240x 후, 보스는 이 공격을 변경하고 대신 사람들을 밀어내는 코일 같은 공격이 됩니다. 이 구간에서는 슈퍼 아머를 권장합니다.", "잠시 후, 보스가 플레이어의 시야에서 벗어나 점프합니다. 몇 초 후, 맵의 특정 부분이 표시되어 보스가 몇 초 후에 해당 지역을 돌진할 것임을 나타냅니다. 돌진 중 하나에 맞으면 플레이어는 일정 시간 동안 달릴 수 없게 됩니다.", "150x 후, 보스가 플레이어의 시야에서 벗어나 돌진합니다. 경기장에 일정량의 오브가 소환됩니다. 플레이어는 위쪽 경기장으로 밀려나기 위해 하나를 터치해야 합니다. 몇 초 후, 보스는 하단 경기장 전체를 돌진하여 올라가지 않은 플레이어를 죽입니다. (참고: 슈퍼 아머가 있으면 오브가 당신을 위로 밀어 올릴 수 없습니다.)", "보스는 주기적으로 오브 같은 공격을 시전하여 i-프레임/슈퍼 아머에 있지 않으면 플레이어를 경기장 밖으로 밀어냅니다.", "잠시 후, 보스는 경기장의 가장자리로 여러 번 순간이동하고 경기장 중앙을 향해 바람 베기를 시전하기 시작합니다. 플레이어는 이를 피하거나 견딜 수 있습니다. | 이 패턴에 따라 잠시 후, 보스는 경기장 중앙으로 순간이동하고 토네이도로 자신을 덮고 경기장 가장자리를 향해 바람 베기를 시전합니다. 플레이어가 토네이도에 너무 가까이 가면 체력의 상당 부분이 감소하고 넉백됩니다."],
-                            jp: ["ボスは定期的にプレイヤーがスキルをキャストできないバブルのような攻撃をキャストします。| 240x後、ボスはこの攻撃を変更し、代わりに人々を押し出すコイルのような攻撃になります。このセクションではスーパーアーマーをお勧めします。", "しばらくすると、ボスはプレイヤーの視界からジャンプします。数秒後、マップの特定の部分がマークされ、数秒後にそのゾーンを突進することを示します。ダッシュのいずれかに当たると、プレイヤーはしばらく走れなくなります。", "150x後、ボスはプレイヤーの視界からダッシュします。アリーナに一定量のオーブが召喚されます。プレイヤーは上のアリーナに押し出されるために1つに触れる必要があります。数秒後、ボスは下のアリーナ全体をダッシュし、上がらなかったプレイヤーを殺します。（注：スーパーアーマーがある場合、オーブはあなたを上に押し上げることができません。）", "ボスは定期的にオーブのような攻撃をキャストし、iフレーム/スーパーアーマーにいない場合、プレイヤーをアリーナから押し出します。", "しばらくすると、ボスはアリーナの端に何度もテレポートし、アリーナの中央に向かって風斬りをキャストし始めます。プレイヤーはそれらを回避するか、それらをタンクできます。| このパターンに続いて、しばらくすると、ボスはアリーナの中央にテレポートし、自分自身を竜巻で覆い、アリーナの端に向かって風斬りをキャストします。プレイヤーが竜巻に近づきすぎると、その体力の大部分が減少し、ノックダウンされます。"],
-                            br: ["O chefe lançará periodicamente um ataque semelhante a uma bolha que impede os jogadores de lançar habilidades. | Após 240x, o chefe mudará esse ataque e, em vez disso, se tornará um ataque semelhante a uma bobina que empurra as pessoas; é recomendado Super Armadura durante esta seção.", "Após algum tempo, o chefe saltará para fora do campo de visão do jogador; após alguns segundos, certas partes do mapa serão marcadas, indicando que o chefe se lançará através dessa zona após alguns segundos; se for atingido por qualquer um dos ataques, o jogador não poderá correr por um tempo.", "Após 150x, o chefe se lançará para fora do campo de visão do jogador; uma certa quantidade de orbes será invocada na arena; o jogador precisa tocar em um para ser empurrado para a arena superior. Após alguns segundos, o chefe se lançará por toda a arena inferior, causando a morte dos jogadores que não subiram. (Nota: se você tiver Super Armadura, o orbe não poderá empurrá-lo para cima).", "O chefe lançará periodicamente um ataque semelhante a um orbe que empurrará o jogador para fora da arena se não estiver em i-frame / Super Armadura.", "Após algum tempo, o chefe se teletransportará para uma borda da arena várias vezes e começará a lançar cortes de vento em direção ao centro da arena; o jogador pode desviar deles ou resistir a eles. | Seguindo esse padrão, após algum tempo, o chefe se teletransportará para o meio da arena, cobrirá-se com um tornado e lançará cortes de vento em direção às bordas da arena. Se o jogador chegar muito perto do tornado, isso reduzirá grande parte de sua saúde e o derrubará."]    
+                        
                         }
                     },
                     phase3: {
                         title: { en: "Phase 3 | Boss Size: Small", es: "Fase 3 | Tamaño del Jefe: Pequeño", kr: "3단계 | 보스 크기: 작음", jp: "フェーズ3 | ボスサイズ: 小", br: "Fase 3 | Tamanho do Chefe: Pequeno" },
                         content: { en: ["Boss' turrets will constantly drop bombs in locations close to the player, these will knock up the player if it doesn't have Super Armor.","Boss will periodically target and mark the player, after some time, the boss will launch a barrage of misiles on direction to the player (the misiles can't point higher than boss' height. so just go to high ground.","After some time, boss will go slightly off bounds to 1 of the 2 edges of the arena, and cast a arena-wide laser (Can be tanked, Boss can be hit during this pattern.) | After this pattern, boss will fly off bounds, become untargetable and mark the whole map except 1 safe zone multiple times, after some time, missiles will explode in the marked zones, one shotting players outside of the safe zones."],
-                            es: ["Las torretas del jefe soltarán constantemente bombas en ubicaciones cercanas al jugador; estas levantarán al jugador si no tiene Super Armadura.", "El jefe marcará y apuntará periódicamente al jugador; después de un tiempo, el jefe lanzará una lluvia de misiles en dirección al jugador (los misiles no pueden apuntar más alto que la altura del jefe, así que simplemente vá para um terreno mais alto).", "Después de un tiempo, el jefe se saldrá ligeramente de los límites hacia 1 de los 2 bordes de la arena y lanzará un láser en toda la arena (puede ser resistido, el jefe puede ser golpeado durante este patrón). | Después de este patrón, el jefe volará fuera dos límites, se volverá inobjetable y marcará todo el mapa excepto 1 zona segura varias veces; después de un tiempo, los misiles explotarán en las zonas marcadas, eliminando a los jugadores fuera de las zonas seguras."],
-                            kr: ["보스의 포탑은 플레이어 근처의 위치에 지속적으로 폭탄을 떨어뜨립니다. 슈퍼 아머가 없으면 플레이어를 넉백시킵니다.", "보스는 주기적으로 플레이어를 표적하고 표시합니다. 잠시 후, 보스는 플레이어를 향해 미사일을 퍼붓습니다(미사일은 보스의 높이보다 높게 조준할 수 없습니다. 따라서 높은 지대로 이동하기만 하면 됩니다).", "잠시 후, 보스는 경기장의 2개 가장자리 중 1개로 약간 벗어나 경기장 전체에 레이저를 시전합니다(탱킹 가능, 이 패턴 동안 보스를 공격할 수 있음). | 이 패턴 후, 보스는 경계를 벗어나 비대상화되고 1개의 안전 지대를 제외한 전체 맵을 여러 번 표시합니다. 잠시 후, 표시된 영역에서 미사일이 폭발하여 안전 지대 밖의 플레이어를 일격에 죽입니다."],
-                            jp: ["ボスのタレットは、プレイヤーの近くの位置に絶えず爆弾を落とします。これらは、プレイヤーがスーパーアーマーを持っていない場合、プレイヤーをノックアップします。", "ボスは定期的にプレイヤーをターゲットにしてマークします。しばらくすると、ボスはプレイヤーの方向にミサイルの猛攻撃を開始します（ミサイルはボスの高さより高く指向できないため、高地に行くだけです）。", "しばらくすると、ボスはアリーナの2つの端の1つにわずかに境界外に移動し、アリーナ全体のレーザーをキャストします（タンク可能、このパターン中にボスを攻撃できます）。 | このパターンの後、ボスは境界外に飛び出し、ターゲット不可になり、1つの安全地帯を除くマップ全体を複数回マークします。しばらくすると、マークされたゾーンでミサイルが爆発し、安全地帯の外にいるプレイヤーを一撃で倒します。"],
-                            br: ["As torres do chefe constantemente soltarão bombas em locais próximos ao jogador; essas levantarão o jogador se ele não tiver Super Armadura.", "O chefe marcará e mirará periodicamente no jogador; após algum tempo, o chefe lançará uma chuva de mísseis na direção do jogador (os mísseis não podem mirar mais alto que a altura do chefe, então basta ir para um terreno mais alto).", "Após algum tempo, o chefe sairá ligeiramente dos limites para 1 das 2 bordas da arena e lançará um laser em toda a arena (pode ser resistido, o chefe pode ser atingido durante esse padrão). | Após esse padrão, o chefe voará para fora dos limites, se tornará intocável e marcará todo o mapa, exceto 1 zona segura, várias vezes; após algum tempo, os mísseis explodirão nas zonas marcadas, eliminando os jogadores fora das zonas seguras."]
-                         }
+                        
+                        }
                     }
                 },
                 altar_invocation: {
@@ -2503,6 +2572,488 @@ export const data = {
         stage5: {
             title: { en: "Stage 5", es: "Etapa 5", kr: "5단계", jp: "ステージ5", br: "Estágio 5" },
             stage5_title: { en: "Abyss and Monaterra", es: "El Abismo y Monaterra", kr: "", jp: "", br: "" },
+            contents: { en: "List of Content", es: "Lista de Contenido", kr: "콘텐츠 목록", jp: "コンテンツ一覧", br: "Lista de Conteúdo" },
+            content_sunken: { en: "Sunken Holy Ground", es: "Terreno Sagrado Hundido", kr: "가라앉은 성스러운 땅", jp: "沈んだ聖地", br: "Terreno Sagrado Afundado" },
+            sections: {
+                shg: {
+                    num: { en: "1st Dungeon", es: "1ra Mazmorra", kr: "", jp: "1番目のダンジョン", br: "1ª Masmorra" },
+                    name: { en: "- Sunken Holy Ground -", es: "- Tierra Santa Hundida -", kr: "- 가라앉은 성지 -", jp: "- 沈んだ聖地 -", br: "- Terra Santa Afundada -" },
+                    content: {
+                        phase1: {
+                            phasenum: { en: "Phase 1", es: "Fase 1", kr: "1단계", jp: "フェーズ1", br: "Fase 1" },
+                            phasebname: { en: "Abyss Worshipper", es: "Adorador del Abismo", kr: "", jp: "", br: "" },
+                            concepts: {
+                                altars: {
+                                    name: { en: "Altars", es: "Altares", kr: "제단", jp: "祭壇", br: "Altares" },
+                                    description: { en: ["As the gimmick for Phase 1, a total of 4 altars are installed: one each at the top-left, bottom-left, top-right, and bottom-right. When an altar is activated, its corresponding mark on the screen lights up, and it begins casting various disruptive spells. Hitting an inactive/active altar with a normal attack will activate/deactivate it. Periodically, the gauge of an inactive altar fills up by 2%. When the gauge reaches 100%, a message appears saying, \"[Direction]'s altar is going berserk,\" and the altar goes berserk, increasing the frequency of its disruptions. When an altar is activated or goes berserk, its gauge decreases by 4% periodically. The berserk state is canceled when the jump rope pattern is executed or when the altar's gauge reaches 0%. The debuffs applied by each altar are undispellable."], es: "", kr: "", jp: "", br: "" },
+                                    altaroffear: {
+                                        name: { en: "Altar of Fear", es: "Altar del Miedo", kr: "공포의 제단", jp: "恐怖の祭壇", br: "Altar do Medo" },
+                                        description: { en: ["Located at the top-left. Periodically applies a debuff that reduces Physical/Magical Attack Power. This is the most important altar because if its debuff stacks up high, the damage dealt to the boss decreases significantly. As it directly affects DPS, managing this altar well is key to clear the phase. Debuff duration is 30 seconds."], es: "", kr: "", jp: "", br: "" }
+                                    },
+                                    altarofdespair: {
+                                        name: { en: "Altar of Despair", es: "Altar de la Desesperación", kr: "절망의 제단", jp: "絶望の祭壇", br: "Altar do Desespero" },
+                                        description: { en: ["Located at the bottom-left. Applies a debuff that reduces Max HP and creates fan-shaped projectiles that deal damage on contact. This is the next most important altar after the Altar of Fear, and similarly, it must never be allowed to go berserk. Generally, the safe limit is around 20-25 stacks. Debuff duration is 30 seconds."], es: "", kr: "", jp: "", br: "" }
+                                    },
+                                    altarofdestruction: {
+                                        name: { en: "Altar of Destruction", es: "Altar de la Destrucción", kr: "파괴의 제단", jp: "破壊の祭壇", br: "Altar da Destruição" },
+                                        description: { en: ["Located at the top-right. Applies debuffs that reduce damage dealt and lower Physical/Magical Defense. Debuff duration is 30 seconds."], es: "", kr: "", jp: "", br: "" }
+                                    },
+                                    altarofoblivion: {
+                                        name: { en: "Altar of Oblivion", es: "Altar del Olvido", kr: "망각의 제단", jp: "忘却の祭壇", br: "Altar do Oblívio" },
+                                        description: { en: ["Located at the bottom-right. Applies a debuff that reduces Max MP and creates fan-shaped projectiles that deal damage on contact. Debuff duration is 5 seconds. At low stacks, it's hardly noticeable, but if it goes berserk and stacks become high, it can prevent the use of certain skills, making it one of the main culprits that causes trouble for learning parties."], es: "", kr: "", jp: "", br: "" }
+                                    }
+                                }
+                            },
+                            np: {
+                                swingincenseburner: {
+                                    name: { en: "Swing Incense Burner", es: "Balanceo del Incensario", kr: "향로 휘두르기", jp: "香炉振り回し", br: "Balançar o Incensário" },
+                                    description: { en: ["The Abyss Worshipper swings the incense burner it's holding twice. This is a basic attack pattern that ignores iframes but doesn't deal significant damage. However, it ignores Super Armor and pushes back slightly."], es: "", kr: "", jp: "", br: "" }
+                                }
+                            },
+                            mechs: {
+                                altarconnection: {
+                                    name: { en: "Altar Connection", es: "Conexión del Altar", kr: "제단 연결", jp: "祭壇接続", br: "Conexão do Altar" },
+                                    description: { en: ["The Abyss Worshipper randomly targets one altar and fires a laser at it. If the laser hits the altar, the altar's gauge fills up rapidly. Players can block the laser by taking the hit instead. The laser ignores iframes and deals moderate damage. If one person blocks the laser for too long, the stacks of the <Light of Fanaticism> debuff, which increases damage taken, will accumulate. When the boss's HP gets low, it will target two altars simultaneously. The <Light of Fanaticism> debuff lasts for 2 seconds."], es: "", kr: "", jp: "", br: "" }
+                                },
+                                placeincenseburner: {
+                                    name: { en: "Place Incense Burner", es: "Colocar Incensario", kr: "향로 설치", jp: "香炉設置", br: "Colocar Incensário" },
+                                    description: { en: ["The Abyss Worshipper places an incense burner near the player. If you attack the boss while facing the burner, your HP and MP will decrease rapidly, ignoring iframes. You are not affected if your back is turned to the burner."], es: "", kr: "", jp: "", br: "" }
+                                },
+                                createvortex: {
+                                    name: { en: "Create Vortex", es: "Crear Vórtice", kr: "소용돌이 생성", jp: "渦生成", br: "Criar Vórtice" },
+                                    description: { en: ["The Abyss Worshipper shoots something into the air, and a dark purple vortex appears on the ground at a random location. If the Abyss Worshipper stands in the vortex, it recovers HP. Touching the vortex ignores iframes but doesn't deal high damage. If a player stands in the vortex, it gradually shrinks and disappears; otherwise, it continues to grow. If you have any skills on cooldown while inside the vortex, their cooldown time increases. This can overlap with patterns like the laser; other synergy dealers might step on it as needed. However, the higher the DPS, the more likely it is to ignore it unless it's summoned directly next to the boss. Additionally, if it spawns near an altar, it will rapidly fill the altar's gauge, so it's best to step on and remove it quickly."], es: "", kr: "", jp: "", br: "" }
+                                },
+                                jumprope: {
+                                    name: { en: "Jump Rope", es: "Saltar la Cuerda", kr: "줄넘기", jp: "縄跳び", br: "Pular Corda" },
+                                    description: { en: ["The Abyss Worshipper forcibly moves all players to the center, Fixes MP to 0 and makes them jump rope. The damage is proportional to HP and ignores iframes. To prevent players from using tricks like staying in the air for too long, jumping too high or going too low will result in being forcibly summoned back to the center. Recovering HP or MP with potions is impossible during this pattern, and all resurrection effects are ignored. However, HP recovery itself is not blocked, so using effects like Honey Honey Waffles, Light Orbs, or Fever Effect to recover HP can make it a bit easier. Without such means, a player with 100% HP can survive up to 2 hits and will die on the 3rd hit."], es: "", kr: "", jp: "", br: "" }
+                                }
+                            }
+                        },
+                        phase2: {
+                            phasenum: { en: "Phase 2", es: "Fase 2", kr: "2단계", jp: "フェーズ2", br: "Fase 2" },
+                            phasebname: { en: "Abyss Follower", es: "Seguidor del Abismo", kr: "", jp: "", br: "" },
+                            mechs: {
+                                spiderwebmark: {
+                                    name: { en: "Spider Web Mark", es: "Marca de Telaraña", kr: "거미줄 표식", jp: "蜘蛛の巣マーク", br: "Marca de Teia de Aranha" },
+                                    description: { en: ["The Abyss Follower marks the player with a sword-shaped mark. After a certain time, a spider web spreads around that character. If the Abyss Follower touches the spread web, it recovers HP and gains significant damage reduction for a certain period. If a player touches it, they receive a debuff for 7 seconds that reduces all movement speed and increases the MP cost of skills."], es: "", kr: "", jp: "", br: "" }
+                                },
+                                markofsilence: {
+                                    name: { en: "Mark of Silence", es: "Marca del Silencio", kr: "침묵의 표식", jp: "沈黙のマーク", br: "Marca do Silêncio" },
+                                    description: { en: ["The Abyss Follower marks the player with a diamond-shaped mark and creates a diamond-shaped projectile that tracks down his position. Its size is similar to the Spider Web Mark, which can be confusing, but the mark itself is larger, so it becomes easier to distinguish with practice. Getting hit deals fatal damage to the marked target, ignoring iframes. If they survive, they are silenced. If the marked target looks in the direction of projectile for about 4-5 seconds, it disappears."], es: "", kr: "", jp: "", br: "" }
+                                },
+                                abyssgate: {
+                                    name: { en: "Abyss Gate", es: "Puerta del Abismo", kr: "심연의 문", jp: "深淵の門", br: "Portão do Abismo" },
+                                    description: { en: ["A message appears: \"The Abyss Gate has opened. (or something like that)\" A portal is created on the map that leads to another space. There are two types: blue and purple."], es: "", kr: "", jp: "", br: "" },
+                                    bluegate: {
+                                        name: { en: "Blue Gate", es: "Puerta Azul", kr: "푸른 문", jp: "青い門", br: "Portão Azul" },
+                                        description: { en: ["Requires using HP recovery skills to fully restore the health of an altar."], es: "", kr: "", jp: "", br: "" }
+                                    },
+                                    purplegate: {
+                                        name: { en: "Purple Gate", es: "Puerta Púrpura", kr: "보라색 문", jp: "紫の門", br: "Portão Roxo" },
+                                        description: { en: ["Requires destroying 3 altars that fire projectiles applying an HP reduction debuff."], es: "", kr: "", jp: "", br: "" }
+                                    },
+                                    additionalinfo: { en: ["After a certain time or upon completing the altar gimmick, a message appears saying, \"The Abyss Gate will collapse in 5 seconds.\" (or something like that) Players who fail to exit the gate within the time limit will die. If the altar gimmick is not performed correctly, a message appears saying, \"The Abyss Follower accepts the abyssal energy and recovers its strength,\" (something like that) and the Abyss Follower recovers about 16 lines of HP. If the player successes, the Purple Gate success prevents the +2 explosions increase effect in the next Spider Web Explosion pattern (explained afterwards). When the boss's HP drops below 150 lines, two portals are created simultaneously. In this case, only one needs to be solved to prevent the boss from recovering, depending on the class, just pick the fastest one to deal with."] }
+                                },
+                                blackout: {
+                                    name: { en: "Blackout", es: "Oscurecimiento", kr: "암전", jp: "暗転", br: "Blecaute" },
+                                    description: { en: ["The boss room turns dark, 1 incense burner is placed around the area and it must be destroyed using command attacks or active skills. Using any other skill results in a stun, after which the Abyss Follower approaches and instantly kills the player, ignoring all resurrection effects and iframes. If the incense burner isn't destroyed within the time limit, the area around the character also turns dark, leading to an instant kill that ignores resurrection and iframes. Usually, normal attacks or active skills are used, but the instant kill condition only applies to skills used during the blackout; skills cast before it are safe. Therefore, using long duration skills before the blackout can instantly destroy the burner when it spawns."], es: "", kr: "", jp: "", br: "" }
+                                },
+                                spiderwebexplosion: {
+                                    name: { en: "Spider Web Explosion", es: "Explosión de Telaraña", kr: "거미줄 폭발", jp: "蜘蛛の巣爆発", br: "Explosão de Teia de Aranha" },
+                                    description: { en: ["The Abyss Follower moves to the center of the room and deploys a massive spider web. It shows several warnings where one of the four directions (up (w), down(s), left(a), right(d)) lights up sequentially. After the warnings, explosions occur in that order. Touching an explosion deals fatal damage that ignores iframes but not resurrection effects. Areas that did not light up are safe, so players must move there. The pattern starts with 4 explosions, but the number increases by 2 each time it's cast, up to a maximum of 8. Type the safe directions in chat (e.g., wasd (up then left then down then right)). Unlike other major patterns, there's no resurrection restriction here, so if reaching the safe zone seems impossible, using resurrection effects to survive is an option."], es: "", kr: "", jp: "", br: "" }
+                                }
+                            },
+                            np: {
+                                slamdown: {
+                                    name: { en: "Slam Down", es: "Azote", kr: "내려찍기", jp: "叩きつけ", br: "Esmagar" },
+                                    description: { en: ["The Abyss Follower raises its front legs, slams them down, and then lifts and pushes players away. This is a basic attack pattern that ignores iframes and Super Armor. It deals surprisingly high damage. The action of raising the front legs and the slam are separate and occasionally it might turn around and slam, so don't be careless just because you're behind the boss."], es: "", kr: "", jp: "", br: "" }
+                                },
+                                jumpanddrop: {
+                                    name: { en: "Jump and Drop", es: "Salto y Caída", kr: "점프 후 낙하", jp: "ジャンプ＆ドロップ", br: "Pular e Cair" },
+                                    description: { en: ["The Abyss Follower jumps very high and then drops down onto a random party member. The damage is high for a basic attack and ignores iframes, so if your HP is low or you've just returned from the purple room of the Abyss Gate, you might die. This pattern triggers when the player is far from the Abyss Follower for an extended period and has almost no internal cooldown, so sticking close to the boss while DPS-ing will prevent it."], es: "", kr: "", jp: "", br: "" }
+                                }
+                            }
+                        }
+                    }
+                },
+                bmf: {
+                    num: { en: "2nd Dungeon", es: "2da Mazmorra", kr: "", jp: "2番目のダンジョン", br: "2ª Masmorra" },
+                    name: { en: "- Blooming Mineral Field -", es: "- Campo Mineral Floreciente -", kr: "- 개화하는 광물 지대 -", jp: "- 開花する鉱物地帯 -", br: "- Campo Mineral Florescente -" },
+                    content: {
+                        phase1: {
+                            phasenum: { en: "Phase 1", es: "Fase 1", kr: "1단계", jp: "フェーズ1", br: "Fase 1" },
+                            phasebname: { en: "Dreaming Hatchling", es: "Cría Soñadora", kr: "", jp: "", br: "" },
+                            concepts: {
+                                shield: {
+                                    name: { en: "Shield", es: "Escudo", kr: "실드", jp: "シールド", br: "Escudo" },
+                                    description: { en: ["This is the gimmick for Phase 1. It's a pink gauge displayed below the Dreaming Hatchling's HP. The Dreaming Hatchling is permanently invincible. Reducing this gauge to zero disables the iframes for a certain period, allowing attacks. The gauge is reduced by destroying minerals that spawn randomly throughout the map. Once fully depleted, the gauge starts recovering, and upon full recovery, the Dreaming Hatchling re-enters its invincible state along with its ultimate pattern (Explained Afterwards). Additionally, getting hit by the Dreaming Hatchling's laser patterns recovers the shield gauge."], es: "", kr: "", jp: "", br: "" }
+                                }
+                            },
+                            np: {
+                                directionallaser: {
+                                    name: { en: "Directional Laser", es: "Láser Direccional", kr: "방향성 레이저", jp: "方向性レーザー", br: "Laser Direcional" },
+                                    description: { en: ["This laser pattern is similar to Dark Watcher's Laser. It fires a laser that sweeps either the left or right side and rotates 180 degrees slowly, centered on the Dreaming Hatchling. It ignores iframes and deals high damage, but with enough adaptation and damage reduction, you can survive. However, it's best to keep your finger on the potion button if you can't avoid it immediately. Sticking close to the boss usually avoids it, but depending on the skill animation, you might get hit even while close, so stay alert even during DPS time."], es: "", kr: "", jp: "", br: "" }
+                                },
+                                targetedlaser: {
+                                    name: { en: "Targeted Laser", es: "Láser Dirigido", kr: "지정 레이저", jp: "指定レーザー", br: "Laser Direcionado" },
+                                    description: { en: ["Targets a location near a party member and fires a continuous laser at that spot for an extended time. The damage is similar to the left/right laser, but due to its focused nature, it's easier to get hit for longer, so moving away quickly is advisable."], es: "", kr: "", jp: "", br: "" }
+                                },
+                                smokeexplosion: {
+                                    name: { en: "Smoke Explosion", es: "Explosión de Humo", kr: "연기 폭발", jp: "煙爆発", br: "Explosão de Fumaça" },
+                                    description: { en: ["Smoke, resembling a mix of blue and purple, appears at random locations on the map, followed by small explosions in those areas. It ignores iframes but is a basic attack pattern, so the damage isn't high and it's not very threatening."], es: "", kr: "", jp: "", br: "" }
+                                },
+                                targetedsmokeexplosion: {
+                                    name: { en: "Targeted Smoke Explosion", es: "Explosión de Humo Dirigida", kr: "지정 연기 폭발", jp: "指定煙爆発", br: "Explosão de Fumaça Direcionada" },
+                                    description: { en: ["Causes small smoke explosions under the player. An effect appears, and it explodes after a short delay. It ignores iframes but, like the regular smoke explosion, the damage isn't very high."], es: "", kr: "", jp: "", br: "" }
+                                },
+                                auraemission: {
+                                    name: { en: "Aura Emission", es: "Emisión de Aura", kr: "오라 방출", jp: "オーラ放出", br: "Emissão de Aura" },
+                                    description: { en: ["Emits an aura in a small circular area centered on the Dreaming Hatchling. The damage is significant, and getting hit applies a removable debuff that reduces attack power by 10% for 5 seconds. There's no tell, making it a bit hard to react to."], es: "", kr: "", jp: "", br: "" }
+                                }
+                            },
+                            mechs: {
+                                targeting: {
+                                    name: { en: "Targeting", es: "Marcado", kr: "타게팅", jp: "ターゲティング", br: "Marcação" },
+                                    description: { en: ["The player is targeted and marked with a circle. If the player doesn't stay within the circle it results in lethal damage, ignoring iframes."], es: "", kr: "", jp: "", br: "" }
+                                }
+                            },
+                            forcedmechs: {
+                                widearealaser: {
+                                    name: { en: "Wide Area Laser", es: "Láser de Área Amplia", kr: "광역 레이저", jp: "広域レーザー", br: "Laser de Área Ampla" },
+                                    forcedat: { en: "When 5+ minerals are not destroyed upon a period of time" },
+                                    description: { en: ["Fires a laser that attacks the entire left or right half of the map, centered on the Dreaming Hatchling. This pattern is dangerous because its range covers the entire map, ignores iframes, and deals high damage. Just destroy minerals while DPSing to avoid this."], es: "", kr: "", jp: "", br: "" }
+                                },
+                                instantkilllaser: {
+                                    name: { en: "Instant Kill Laser", es: "Láser de Muerte Instantánea", kr: "즉사 레이저", jp: "即死レーザー", br: "Laser de Morte Instantânea" },
+                                    forcedat: { en: "When the shield gauge refills" },
+                                    description: { en: ["After it triggers, it shows the trajectories of lasers that will sweep the entire map before firing. A safe zone always exists symmetrically on one side. Players can resolve it by quickly moving to that safe zone. The lasers ignore resurrection effects, so they must be avoided cleanly. The hitbox detection is very strict, so moving around can cause a hand or foot to touch the hitbox and result in instant death. It's best to stay still once in the safe zone."], es: "", kr: "", jp: "", br: "" }
+                                }
+                            }
+                        },
+                        phase2: {
+                            phasenum: { en: "Phase 2", es: "Fase 2", kr: "2단계", jp: "フェーズ2", br: "Fase 2" },
+                            phasebname: { en: "Awakened Myuriconus", es: "Myuriconus Despertado", kr: "", jp: "", br: "" },
+                            concepts: {
+                                currentadaptation: {
+                                    name: { en: "Current Adaptation", es: "Adaptación Actual", kr: "커런트 적응", jp: "カレント適応", br: "Adaptação Atual" },
+                                    description: { en: ["This is the gimmick for Phase 2. Water droplet flowers that grant the 'Current Adaptation' buff spawn randomly across the map. Obtaining one grants 5 stacks of 'Current Adaptation', increasing attack power for a short period. A maximum of 5 stacks can be accumulated. When the buff duration expires, stacks decrease by one at a time. Without this buff, damage dealt is significantly reduced, so it's best to make sure to always have 5 stacks."], es: "", kr: "", jp: "", br: "" }
+                                }
+                            },
+                            np: {
+                                smokeexplosion: {
+                                    name: { en: "Smoke Explosion", es: "Explosión de Humo", kr: "연기 폭발", jp: "煙爆発", br: "Explosão de Fumaça" },
+                                    description: { en: ["Identical to Phase 1's Dreaming Hatchling pattern. Small explosions occur at random locations across the map. Ignores iframes but damage is not high."], es: "", kr: "", jp: "", br: "" }
+                                },
+                                targetedsmokeexplosion: {
+                                    name: { en: "Targeted Smoke Explosion", es: "Explosión de Humo Dirigida", kr: "지정 연기 폭발", jp: "指定煙爆発", br: "Explosão de Fumaça Direcionada" },
+                                    description: { en: ["Identical to Phase 1's pattern. Causes small explosions under the player. Damage is not high."], es: "", kr: "", jp: "", br: "" }
+                                },
+                                spray: {
+                                    name: { en: "Spray", es: "Rociado", kr: "분사", jp: "噴射", br: "Spray" },
+                                    description: { en: ["Awakened Myuriconus sprays purple smoke in a diagonal downward direction in front of itself. The smoke travels a bit and then explodes. Although a basic pattern, it ignores iframes and deals surprisingly high damage. Getting hit directly can be fatal. To avoid it, either stick very close to Awakened Myuriconus to take less damage or move completely behind it."], es: "", kr: "", jp: "", br: "" }
+                                }
+                            },
+                            mechs: {
+                                targetedlaser: {
+                                    name: { en: "Targeted Laser", es: "Láser Dirigido", kr: "지정 레이저", jp: "指定レーザー", br: "Laser Direcionado" },
+                                    description: { en: ["This pattern fires lasers targeting all the Water Droplet Flowers. The laser firing directions are \"Up-Left,\" \"Up-Right,\" \"Down-Left,\" or \"Down-Right.\" Players must move to a location where they can't get hit by the lasers. They can deal lethal damage if damaged by 2 or more."], es: "", kr: "", jp: "", br: "" }
+                                },
+                                redtarget: {
+                                    name: { en: "Red Target", es: "Objetivo Rojo", kr: "빨간 표적", jp: "赤い標的", br: "Alvo Vermelho" },
+                                    description: { en: ["Identical to the Targeting pattern from Phase 1's Dreaming Hatchling. Resolved when the player is within the target circle. Being outside the circle when it explodes results in lethal damage ignoring iframes."], es: "", kr: "", jp: "", br: "" }
+                                },
+                                bluetarget: {
+                                    name: { en: "Blue Target", es: "Objetivo Azul", kr: "파란 표적", jp: "青い標的", br: "Alvo Azul" },
+                                    description: { en: ["The opposite of the Red Target. Resolved when the player stays away from the target circle. Getting hit by it results in lethal damage ignoring iframes."], es: "", kr: "", jp: "", br: "" }
+                                },
+                                createcurrent: {
+                                    name: { en: "Create Current", es: "Crear Corriente", kr: "커런트 생성", jp: "カレント生成", br: "Criar Corrente" },
+                                    description: { en: ["Awakened Myuriconus moves to the bottom left or bottom right of the map and starts gathering energy. It then rapidly rises upward and quickly drops down to the opposite side of the map. The rising and falling actions ignore iframes but don't deal high damage. However, after the pattern ends, a current that increases jump power appears where it rose, and a current that decreases jump power appears where it landed. If left unattended, this altered jump physics can cause problems with movement and lead to deaths when performing other patterns. The resolution is to use 'Command' attacks while it's gathering energy. Successfully dealing enough hits (damage doesn't matter, only hit counts) will prevent the rise and fall, leaving Myuriconus in a groggy state for a while."], es: "", kr: "", jp: "", br: "" }
+                                },
+                                starlightexplosion: {
+                                    name: { en: "Starlight Explosion", es: "Explosión de Luz Estelar", kr: "별빛 폭발", jp: "星明かり爆発", br: "Explosão de Luz Estelar" },
+                                    description: { en: ["Awakened Myuriconus moves to the center of the map, scatters starlight everywhere, and then detonates it. Being caught in the explosion results in instant death, ignoring all resurrection effects and iframes. Resolving this pattern requires the 'Current Adaptation' buff. The safe zone becomes visible to the player only if it has Current Adaptation stacks. The player must move to the revealed safe spot to avoid getting caught in the explosion."], es: "", kr: "", jp: "", br: "" }
+                                }
+                            }
+                        }
+                    }
+                },
+                nc: {
+                    num: { en: "3rd Dungeon (Optional)", es: "3ra Mazmorra (Opcional)", kr: "", jp: "", br: "" },
+                    name: { en: "- Nightmare's Crib -", es: "- Cuna de la Pesadilla -", kr: "- 악몽의 요람 -", jp: "- 悪夢の揺り籠 -", br: "- Berço do Pesadelo -" },
+                    description: { en: "This dungeon is optional, since it's not required to clear it in order to enter Birth of Origin, you can choose to do this instead of Blooming Mineral Field since clearing any of those 2 grants access to the next dungeon." },
+                    content: {
+                        phase1: {
+                            phasenum: { en: "Phase 1", es: "Fase 1", kr: "1단계", jp: "フェーズ1", br: "Fase 1" },
+                            phasebname: { en: "Dream Eater", es: "Devorador de Sueños", kr: "", jp: "", br: "" },
+                            concepts: {
+                                confusion: {
+                                    name: { en: "Confusion", es: "Confusión", kr: "혼란", jp: "混乱", br: "Confusão" },
+                                    description: { en: ["This is the gimmick of the Nightmare's Nest, lasting from Phase 1 through Phase 2. Each time you are hit by an attack from Phase 1 boss Dream Eater or Phase 2 boss Nightmare Keeper, you gain 1 stack of a debuff. Upon reaching 10 stacks, it transforms into the 'Confusion' debuff for 15 seconds, which causes your attacks to heal the bosses'. The Confusion debuff itself cannot be removed by any means. However, during the stacking phase before Confusion (1-9 stacks), using a consumable item reduces the stack by 1. Stacks can still accumulate while Confusion is active, so focus on dodging."], es: "", kr: "", jp: "", br: "" }
+                                }
+                            },
+                            np: {
+                                threehitcombocharge: {
+                                    name: { en: "3-Hit Combo Charge", es: "Carga de Combo de 3 Golpes", kr: "3타 콤보 차지", jp: "3ヒットコンボチャージ", br: "Carga de Combo de 3 Golpes" },
+                                    description: { en: ["Dream Eater charges forward and then performs a 3-hit claw attack. It ignores iframes. Getting hit by the final claw attack applies the 'Ankle Break' debuff for 5 seconds. The Ankle Break debuff can be removed with debuff removal skills. Sometimes it only does a 2-hit combo."], es: "", kr: "", jp: "", br: "" }
+                                },
+                                chargingswipe: {
+                                    name: { en: "Charging Swipe", es: "Carga con Zarpazo", kr: "돌진 스와이프", jp: "突進スワイプ", br: "Investida com Golpe" },
+                                    description: { en: ["Dream Eater charges forward while swiping. This attack is like a flash step, leaving multiple hit instances in its wake. It ignores iframes, each hit deals high damage, and the execution is very fast, making it a pattern that can easily kill when low HP. Due to the high hit count, getting caught in it can instantly take you from 0 Confusion stacks to 10 stacks."], es: "", kr: "", jp: "", br: "" }
+                                },
+                                teleport: {
+                                    name: { en: "Teleport", es: "Teleportación", kr: "텔레포트", jp: "テレポート", br: "Teleporte" },
+                                    description: { en: ["Dream Eater teleports and then swipes in front of itself. This is a simple teleport often linked with other basic patterns. It deals minor damage (ignoring iframes) in the area it teleports from and to. Teleports alternate between targeting near the player and teleporting to the center for specific patterns."], es: "", kr: "", jp: "", br: "" }
+                                },
+                                upperlowerswipe: {
+                                    name: { en: "Upper/Lower Swipe", es: "Zarpazo Superior/Inferior", kr: "상/하단 스와이프", jp: "上下スワイプ", br: "Golpe Superior/Inferior" },
+                                    description: { en: ["Dream Eater swipes a large area, either the upper platform or the lower ground. The hitbox is in three lines, matching the visual effect. Getting hit by all three swipes can be fatal, so quick evasion is necessary."], es: "", kr: "", jp: "", br: "" }
+                                }
+                            },
+                            mechs: {
+                                shadowclones: {
+                                    name: { en: "Shadow Clones", es: "Clones de Sombra", kr: "그림자 분신", jp: "影分身", br: "Clones das Sombras" },
+                                    description: { en: ["Dream Eater summons shadow clones on either the left or right side of the map. Each clone targets the player and charges towards them. If a player successfully lures their clone into the boss's position, the boss becomes groggy for a short time. The clones ignore iframes. Getting hit by multiple clones simultaneously can deal very high damage and potentially kill you. Standing too close to the boss might result in getting hit by the exploding clones, so keep some distance if possible."], es: "", kr: "", jp: "", br: "" }
+                                },
+                                darkvortex: {
+                                    name: { en: "Dark Vortex", es: "Vórtice Oscuro", kr: "어둠의 소용돌이", jp: "闇の渦", br: "Vórtice Escuro" },
+                                    description: { en: ["Dream Eater moves to the center of the map, shows a warning for vortices on the outskirts and center, and then generates vortices in the order of outskirts -> center. The best approach is to wait in the center, then move outwards after the outskirts vortices have finished. Getting hit directly by a vortex deals extremely high damage (near certain death) that ignores iframes, so clean avoidance is best. If it's too difficult, try to only get hit by one outskirts vortex or have a resurrection title ready."], es: "", kr: "", jp: "", br: "" }
+                                },
+                                darknessswipe: {
+                                    name: { en: "Darkness Swipe", es: "Zarpazo de Oscuridad", kr: "어둠의 스와이프", jp: "闇のスワイプ", br: "Golpe das Trevas" },
+                                    description: { en: ["Dream Eater disappears, shows a warning for where it will swipe, and then swipes that area. The damage per individual swipe zone is not high, but they ignore iframes, and getting hit by overlapping zones deals significant damage. Being hit also drastically reduces your field of vision for a short time, hindering subsequent dodges, so clean avoidance is best. If unavoidable, try to position so you only get hit by one swipe zone. By default, it swipes once, but when its HP drops below 150 lines, it swipes twice."], es: "", kr: "", jp: "", br: "" }
+                                },
+                                shapelink: {
+                                    name: { en: "Shape Link", es: "Enlace de Forma", kr: "모양 링크", jp: "形状リンク", br: "Link de Forma" },
+                                    description: { en: ["Similar to Hadron's Copy (Magician), Dream Eater marks the player with either a square or a circle and links them to a random part of the map. If marked with a square the player must stay apart from the mark, while if marked with a circle the player must stay close to the mark. A visible line appears between the player and the mark when the condition is met. After a certain time with the line active, the link automatically disappears. Failure to maintain the correct distance results in lethal damage, ignoring iframes."], es: "", kr: "", jp: "", br: "" }
+                                }
+                            }
+                        },
+                        phase2: {
+                            phasenum: { en: "Phase 2", es: "Fase 2", kr: "2단계", jp: "フェーズ2", br: "Fase 2" },
+                            phasebname: { en: "Nightmare Keeper", es: "Guardián de la Pesadilla", kr: "", jp: "", br: "" },
+                            concepts: {
+                                confusion: {
+                                    name: { en: "Confusion", es: "Confusión", kr: "혼란", jp: "混乱", br: "Confusão" },
+                                    description: { en: ["(Same as Phase 1) This is the gimmick of the Nightmare's Nest, lasting from Phase 1 through Phase 2. Each time you are hit by an attack from Phase 1 boss Dream Eater or Phase 2 boss Nightmare Keeper, you gain 1 stack of a debuff. Upon reaching 10 stacks, it transforms into the 'Confusion' debuff for 15 seconds, which causes your attacks to heal the bosses'. The Confusion debuff itself cannot be removed by any means. However, during the stacking phase before Confusion (1-9 stacks), using a consumable item reduces the stack by 1. Stacks can still accumulate while Confusion is active, so focus on dodging."], es: "", kr: "", jp: "", br: "" }
+                                }
+                            },
+                            np: {
+                                fallingorbs: {
+                                    name: { en: "Falling Orbs", es: "Caída de Orbes", kr: "오브 낙하", jp: "オーブ落下", br: "Queda de Orbes" },
+                                    description: { en: ["Nightmare Keeper scatters orbs into the air, which then fall down. Ignores iframes. The damage per orb isn't extremely high, but because so many are scattered, they can significantly build up Confusion debuff stacks."], es: "", kr: "", jp: "", br: "" }
+                                },
+                                spikegeneration: {
+                                    name: { en: "Spike Generation", es: "Generación de Púas", kr: "가시 생성", jp: "スパイク生成", br: "Geração de Espinhos" },
+                                    description: { en: ["Nightmare Keeper surrounds its body with spikes, dealing damage to nearby players. Ignores iframes, but the damage is low, so it's not a major concern. Getting hit applies a Bleed debuff, dealing minor damage over time for 5 seconds."], es: "", kr: "", jp: "", br: "" }
+                                },
+                                tentaclegeneration: {
+                                    name: { en: "Tentacle Generation", es: "Generación de Tentáculos", kr: "촉수 생성", jp: "触手生成", br: "Geração de Tentáculos" },
+                                    description: { en: ["When Nightmare Keeper's tentacles pierce the ground, a warning appears under the player, and after a short delay, small tentacles emerge. Ignores iframes. The damage is surprisingly high. Getting hit applies a debuff that significantly reduces all speed for 3 seconds, so avoidance is recommended."], es: "", kr: "", jp: "", br: "" }
+                                }
+                            },
+                            forcedmechs: {
+                                lifestealingblackhole: {
+                                    name: { en: "Life-Stealing Black Hole", es: "Agujero Negro Roba-Vida", kr: "생명력 흡수 블랙홀", jp: "生命吸収ブラックホール", br: "Buraco Negro Sugador de Vida" },
+                                    forcedat: { en: "Every 45 seconds" },
+                                    description: { en: ["This pattern shows a warning for a giant circular black hole and then sucks in all targets within the range. Nightmare Keeper recovers 5 lines of HP if the player is sucked in. The black hole itself deals significant damage and ignores iframes, so be careful not to get pulled in. The synergy with the slow debuff from Tentacle Generation or the Ankle Break debuff from Dream Eater is particularly dangerous."], es: "", kr: "", jp: "", br: "" }
+                                },
+                                nightmareprison: {
+                                    name: { en: "Nightmare Prison", es: "Prisión de Pesadilla", kr: "악몽의 감옥", jp: "悪夢の牢獄", br: "Prisão do Pesadelo" },
+                                    forcedat: { en: "@ 150x" },
+                                    description: { en: ["When activated, Nightmare Keeper becomes immune to all damage, and the Confusion debuff is cleansed. However, players' actions are also restricted; they can only walk and use potions. Players are imprisoned in the Nightmare Prison, and to break the prison, the player needs to use a consumable."], es: "", kr: "", jp: "", br: "" }
+                                },
+                                nightmareorb: {
+                                    name: { en: "Nightmare Orb", es: "Orbe de Pesadilla", kr: "악몽의 오브", jp: "悪夢のオーブ", br: "Orbe do Pesadelo" },
+                                    forcedat: { en: "Enabled @ 150x" },
+                                    description: { en: ["A maximum of 2 orbs spawn simultaneously. The orbs themselves don't do much, but touching them deals multi-hit damage (ignoring iframes) and builds up the Confusion debuff. So, it's best to avoid touching them. The orbs take damage from players but become invincible for 0.5 seconds when hit. They can be destroyed, but they respawn after a certain time, so focusing on destruction isn't necessary. However, since they flinch and knock back when hit, their position can be manipulated."], es: "", kr: "", jp: "", br: "" }
+                                },
+                                dreameater: {
+                                    name: { en: "Dream Eater", es: "Devorador de Sueños", kr: "드림 이터", jp: "ドリームイーター", br: "Devorador de Sonhos" },
+                                    forcedat: { en: "Enabled @ 150x" },
+                                    description: { en: ["The Nightmare Keeper awakens Dream Eater from his slumber, to fight alongside it. Dream Eater uses almost the same patterns as in Phase 1, but it cannot climb onto the upper platforms, and its durability is significantly lower. If Dream Eater dies, it will go back inside Nightmare Keeper and eventually regenerate after some time, recovering all its HP. Furthermore, while Dream Eater is alive, Nightmare Keeper recovers 1.5 lines of HP every 3 seconds and cannot be killed. Also, the areas for Dream Eater and Nightmare Keeper are separated by abyssal mist: players on the upper platform can only damage Nightmare Keeper, and players on the lower ground can only damage Dream Eater. Attempting to go down before Dream Eater appears deals heavy damage. To clear the dungeon, players must defeat Dream Eater first, then defeat Nightmare Keeper. Since Dream Eater cannot go to the upper platforms, unlike Phase 1, it does not use the Upper Swipe or Shadow Clone patterns, and its Darkness Swipe pattern is limited to a maximum of one swipe."], es: "", kr: "", jp: "", br: "" }
+                                }
+                            }
+                        }
+                    }
+                },
+                boo: {
+                    num: { en: "4th Dungeon", es: "4ta Mazmorra", kr: "", jp: "4番目のダンジョン", br: "4ª Masmorra" },
+                    name: { en: "- Birth of Origin -", es: "- Nacimiento del Origen -", kr: "- 기원의 탄생 -", jp: "- 起源の誕生 -", br: "- Nascimento da Origem -" },
+                    content: {
+                        phase1: {
+                            phasenum: { en: "Phase 1", es: "Fase 1", kr: "1단계", jp: "フェーズ1", br: "Fase 1" },
+                            phasebname: { en: "Ran, the Count of Abyss", es: "Ran, el Conde del Abismo", kr: "", jp: "", br: "" },
+                            concepts: {
+                                redgem: {
+                                    name: { en: "Red Gem", es: "Gema Roja", kr: "붉은 보석", jp: "赤い宝石", br: "Gema Vermelha" },
+                                    description: { en: ["Red gems spawn at random locations on the map during the fight. Being near them causes minor damage (ignoring iframes) and a black hole effect. They are indestructible normally but can be destroyed using the 'Connection of Strong Power'. (explained later)"], es: "", kr: "", jp: "", br: "" }
+                                }
+                            },
+                            np: {
+                                continuousattack: {
+                                    name: { en: "Continuous Attack", es: "Ataque Continuo", kr: "연속 공격", jp: "連続攻撃", br: "Ataque Contínuo" },
+                                    description: { en: ["Ran slashes forward once, then charges with his shoulder, slams the ground, summons a magic gauntlet to launch the player high into the air, and finally summons spikes from the ground to launch them far away. Sometimes parts of this sequence are skipped. However, if you lack Super Armor, getting launched can disrupt pattern resolution. The launching attack ignores Super Armor."], es: "", kr: "", jp: "", br: "" }
+                                },
+                                teleport: {
+                                    name: { en: "Teleport", es: "Teleportación", kr: "텔레포트", jp: "テレポート", br: "Teleporte" },
+                                    description: { en: ["Ran teleports near a player. If a player is near his landing spot, it creates a minor black hole effect, pulling them in and dealing minor damage."], es: "", kr: "", jp: "", br: "" }
+                                },
+                                reversegravity: {
+                                    name: { en: "Reverse Gravity", es: "Gravedad Inversa", kr: "역중력", jp: "逆重力", br: "Gravidade Reversa" },
+                                    description: { en: ["Ran creates random red zones on the map. If a party member approaches one, Ran's clone appears, pulls nearby players in, levitates them, and then explodes."], es: "", kr: "", jp: "", br: "" }
+                                },
+                                charge: {
+                                    name: { en: "Charge", es: "Carga", kr: "돌진", jp: "突進", br: "Investida" },
+                                    description: { en: ["Ran, the Count of Abyss charges quickly once or twice. Flames of Abyss remain in his path. Getting hit by these flames apply the 'Inferno' debuff for 5 seconds, which cause damage absorption. The debuff can be removed with debuff removal skills. The charge itself ignores iframes. Taking a direct hit deals high damage, potentially causing unexplained death in parties without damage reduction."], es: "", kr: "", jp: "", br: "" }
+                                }
+                            },
+                            mechs: {
+                                infusionofstrongpower: {
+                                    name: { en: "Infusion of Strong Power", es: "Infusión de Poder Fuerte", kr: "강력한 힘의 주입", jp: "強力な力の注入", br: "Infusão de Poder Forte" },
+                                    description: { en: ["Ran infuses strong power into the player. After a short delay, a spherical black hole zone forms at the player's location, continuously dealing damage. Getting hit by this black hole zone causes a holding effect and applies a Silence debuff. If the black hole zone spawns overlapping a Red Gem, an additional permanent black hole is created at the gem's location, lasting indefinitely until the gem is destroyed. The infusing is indicated by a debuff icon and a small sphere effect above the player. Place the black hole in a space away from Red Gems or Ran, if too many permanent black holes stack, it can make the run way more tedious."], es: "", kr: "", jp: "", br: "" }
+                                },
+                                connectionofstrongpower: {
+                                    name: { en: "Connection of Strong Power", es: "Conexión de Poder Fuerte", kr: "강력한 힘의 연결", jp: "強力な力の接続", br: "Conexão de Poder Forte" },
+                                    description: { en: ["Ran infuses strong power into the player. Ran and the infused player become connected by a red line. If a Red Gem is touched by the line, it will drain the gem's HP, eventually destroying it. The connected players themselves are unaffected by the line, so you can either stick in a corner to DPS, or can move around to break gems using the line."], es: "", kr: "", jp: "", br: "" }
+                                },
+                                findthespace: {
+                                    name: { en: "Find the Space", es: "Encontrar el Espacio", kr: "공간 찾기", jp: "空間探し", br: "Encontre o Espaço" },
+                                    description: { en: ["Ran moves to the top of the map and creates 16 spaces. Only 4 of these spaces are real and safe. There are three variations of this pattern."], es: "", kr: "", jp: "", br: "" },
+                                    firstvariation: {
+                                        name: { en: "First Variation", es: "Primera Variación", kr: "첫 번째 변형", jp: "第一変化", br: "Primeira Variação" },
+                                        description: { en: ["After a certain time, all safe spaces are marked, and players simply need to move into them. Initially, safe spaces are not indicated, so all party members must scatter and wait until the markers appear, then move."], es: "", kr: "", jp: "", br: "" }
+                                    },
+                                    secondvariation: {
+                                        name: { en: "Second Variation", es: "Segunda Variación", kr: "두 번째 변형", jp: "第二変化", br: "Segunda Variação" },
+                                        forcedat: { en: "Enabled @ 175x" },
+                                        description: { en: ["Players can determine if a space is real by partially entering it. If the space turns white upon contact, it is safe. Players must enter and wait inside."], es: "", kr: "", jp: "", br: "" }
+                                    },
+                                    thirdvariation: {
+                                        name: { en: "Third Variation", es: "Tercera Variación", kr: "세 번째 변형", jp: "第三変化", br: "Terceira Variação" },
+                                        forcedat: { en: "Enabled @ 75x" },
+                                        description: { en: ["Like the second, but upon contacting a space, it reveals the status of its symmetrical counterpart (ej. Top 2nd Space reveals Top 7th Space), not itself."], es: "", kr: "", jp: "", br: "" }
+                                    }
+                                }
+                            }
+                        },
+                        phase2: {
+                            phasenum: { en: "Phase 2", es: "Fase 2", kr: "2단계", jp: "フェーズ2", br: "Fase 2" },
+                            phasebname: { en: "Shadow of Greed", es: "Sombra de la Codicia", kr: "", jp: "", br: "" },
+                            np: {
+                                continuousattack: {
+                                    name: { en: "Continuous Attack", es: "Ataque Continuo", kr: "연속 공격", jp: "連続攻撃", br: "Ataque Contínuo" },
+                                    description: { en: ["The pattern is very similar to Phase 1's Ran, but the part where he slams the ground and launches with a magic gauntlet is removed. Instead, the final knockback attack has significantly more hits and a wider range. All attacks ignore iframes. The final knockback attack deals surprisingly high damage, so be careful of unexpected deaths. Since both ends of the map are instant-death pits, getting hit by the final knockback can send you flying very far, potentially to your death. Maintain Super Armor carefully."], es: "", kr: "", jp: "", br: "" }
+                                },
+                                flamesofabyss: {
+                                    name: { en: "Flames of Abyss", es: "Llamas del Abismo", kr: "심연의 불꽃", jp: "深淵の炎", br: "Chamas do Abismo" },
+                                    description: { en: ["Shadow of Greed slams the ground, creating very long flame zones horizontally to the left and right. They ignore iframes but deal very low damage. Getting hit applies an undispellable 'Inferno' debuff for 3 seconds, plus a separate dispellable 'Inferno' debuff for 5 seconds, those burn MP per second."], es: "", kr: "", jp: "", br: "" }
+                                },
+                                gravityfield: {
+                                    name: { en: "Gravity Field", es: "Campo de Gravedad", kr: "중력장", jp: "重力場", br: "Campo Gravitacional" },
+                                    description: { en: ["Shadow of Greed deploys a massive rectangular gravity field centered on itself. While inside the field, players take minor damage and accumulate a debuff that significantly reduces all speed. Maximum 4 stacks. Upon reaching the 5th stack, you enter a 'Press' state, and the stacks reset. Usually, when the gravity field appears, players exit it, move to the opposite side, and then lure the Shadow of Greed to a location without the field to DPS. Note that exiting the field with 5 stacks (entering the Press state) removes the speed reduction debuff, allowing you to move freely afterward."], es: "", kr: "", jp: "", br: "" }
+                                }
+                            },
+                            mechs: {
+                                abyssalenergy: {
+                                    name: { en: "Abyssal Energy", es: "Energía Abisal", kr: "심연의 에너지", jp: "深淵のエネルギー", br: "Energia Abissal" },
+                                    description: { en: ["Shadow of Greed creates orbs of Abyssal Energy at random locations on the map. After a certain time, these orbs explode with immense range. If a player is caught in the explosion, it suffers massive knockback. If Shadow of Greed is caught in the explosion, it recovers 60 lines of HP and increases its attack power, Players can grab the Abyssal Energy orb and move it far from the boss, as it will still explode after a set time. The explosion's Y-axis range is unlimited, and its X-axis range is slightly less than one screen width."], es: "", kr: "", jp: "", br: "" }
+                                },
+                                spaceconnection: {
+                                    name: { en: "Space Connection", es: "Conexión Espacial", kr: "공간 연결", jp: "空間接続", br: "Conexão Espacial" },
+                                    description: { en: ["A message appears, saying that a space connection is forming (or something like that) giving the player a mark debuff, when the debuff expires 1 portal appears at a random location and a 2nd one appears below the player. The two installed portals become linked, allowing instant teleportation between them."], es: "", kr: "", jp: "", br: "" }
+                                }
+                            },
+                            forcedmechs: {
+                                pierce: {
+                                    name: { en: "Pierce", es: "Perforar", kr: "꿰뚫기", jp: "貫通", br: "Perfurar" },
+                                    forcedat: { en: "After <Space Connection> happens 3 times" },
+                                    description: { en: ["Shadow of Greed moves to either the far left or far right end of the map and begins gathering energy. After some time, it will pierce across the center of the map. While it's gathering energy, 1 crystal is summoned at random locations, and the player should look for the crystal, this will create a link between them as long as they're close enough. The goal is for the player to position the line connecting them to the crystal so that it passes through the center of the map. If Shadow of Greed goes through the link line, the mech is cleared successfully. Failure bans consumables for 45 seconds, silences players for 10s (makes them unable to cast skills) and deals 33% of their max HP."], es: "", kr: "", jp: "", br: "" }
+                                },
+                                energyconcentration: {
+                                    name: { en: "Energy Concentration", es: "Concentración de Energía", kr: "에너지 집중", jp: "エネルギー集中", br: "Concentração de Energia" },
+                                    forcedat: { en: "After <Space Connection> happens 5 times (First time), Afterwards, every 4 times." },
+                                    description: { en: ["A message appears, warning of the concentration of energy, then Shadow of Greed teleports near the player to cast a massive explosion (explosion range is shown as a pink warning zone), the explosion occurs a few moments after. Normal mobility is usually insufficient to escape the blast radius, so players must use the portals created via <Space Connection> to move to the other side of the arena, worry not, because the portals positions themselves in a helpful manner during this mech. Shadow of Greed will repeat this various times, making the mech essentially Explosion Warn -> Teleport -> Explosion Warn -> Teleport -> Explosion Warn, and so on."], es: "", kr: "", jp: "", br: "" }
+                                }
+                            }
+                        },
+                        phase3: {
+                            phasenum: { en: "Phase 3", es: "Fase 3", kr: "3단계", jp: "フェーズ3", br: "Fase 3" },
+                            phasebname: { en: "King of Abyss", es: "Rey del Abismo", kr: "", jp: "", br: "" },
+                            concepts: {
+                                shadowabyssattribute: {
+                                    name: { en: "Shadow/Abyss Attribute", es: "Atributo Sombra/Abismo", kr: "그림자/심연 속성", jp: "影/深淵属性", br: "Atributo Sombra/Abismo" },
+                                    description: { en: ["This is a concept used for King of Abyss. Players must choose one of two attributes: Shadow (blue) or Abyss (red). They can toggle their attribute by pressing the F1 key. The King of Abyss also possesses one of these two attributes at any given time, and his attribute changes when he moves. If a player has the same attribute as the King of Abyss, they won't damage him. Other patterns are also affected by attributes. Players should switch attributes as needed."], es: "", kr: "", jp: "", br: "" }
+                                }
+                            },
+                            np: {
+                                armsweep: {
+                                    name: { en: "Arm Sweep", es: "Barrido de Brazo", kr: "팔 휘두르기", jp: "腕振り回し", br: "Varredura de Braço" },
+                                    description: { en: ["The King of Abyss sweeps his arms across either the upper or lower part of the map, dealing area damage. Ignores iframes, but damage is manageable with damage reduction."], es: "", kr: "", jp: "", br: "" }
+                                },
+                                orbbarrage: {
+                                    name: { en: "Orb Barrage", es: "Aluvión de Orbes", kr: "오브 탄막", jp: "オーブ弾幕", br: "Barragem de Orbes" },
+                                    description: { en: ["The King of Abyss extends his arms forward, and from that point, Shadow orbs and Abyss orbs scatter in all directions. This pattern deals significant damage (ignoring iframes), You can avoid being hit by orbs matching your current <attribute> with the orbs you come into contact with. Furthermore, the Orb Barrage follows a fixed pattern, so there are safe spots where, by being in a specific location with a specific <attribute>, you take no damage at all. During this pattern, the boss's arms are extended forward, widening the hitbox, so it's best to treat it as a DPS window."], es: "", kr: "", jp: "", br: "" }
+                                }
+                            },
+                            mechs: {
+                                absorb: {
+                                    name: { en: "Absorb", es: "Absorber", kr: "오브", jp: "", br: "Absorver" },
+                                    description: { en: ["A message appears: \"The King of Abyss begins to absorb the surrounding power.\" (or something like that) The King of Abyss raises his head and spreads his arms. Then, an Abyss-<attribute> orb is generated from the opposite end and moves towards the King of Abyss. If a player with the same <attribute> as an orb touches it, they take minor damage and the orb disappears following with an orb of the opposite <attribute> reappearing near its place. The next orb will always be of the opposite trait and each time a new orb is generated, its movement speed increases. If players successfully process up to the final blue orb, the orb transforms into an Orb of Light. If the Orb of Light reaches the King of Abyss, the damage he takes increases by 10%. However, if the pattern fails and a Shadow/Abyss orb reaches the King of Abyss, he recovers HP and gains damage reduction. The Orb of Light's effect can stack up to 10 times."], es: "", kr: "", jp: "", br: "" }
+                                },
+                                releaseofunstablepower: {
+                                    name: { en: "Release of Unstable Power", es: "Liberación de Poder Inestable", kr: "불안정한 힘의 해방", jp: "不安定な力の解放", br: "Liberação de Poder Instável" },
+                                    description: { en: ["The King of Abyss performs a motion of lowering both arms. Then, 3 platforms appear at random locations on the map, marked with either a red circle, red triangle, blue circle, or blue triangle symbol, along them 3 symbols that match the platforms shape appear in random parts of the arena. Player must match both the color and shape of the symbol they pick with the corresponding platform. For example, if you pick up a red circle symbol, you must step on the red circle platform. If the player fails to match correctly, the pattern deals massive damage (ignoring iframes) to almost the entire map. Once the symbols timer expire, they will explode. It can occur alone but often overlaps with the <Meteor> pattern and/or the <Orb Barrage> pattern. It can be neglected if you have resurrection title."], es: "", kr: "", jp: "", br: "" }
+                                },
+                                meteor: {
+                                    name: { en: "Meteor", es: "Meteoro", kr: "메테오", jp: "メテオ", br: "Meteoro" },
+                                    description: { en: ["King of Abyss drops a massive meteor from the sky. This meteor can be destroyed. If not destroyed by the time it lands, it explodes, dealing fatal damage (ignoring iframes) to party members, applying a debuff that drastically reduces potion effectiveness, and recovering a part of boss's HP. Fortunately, the meteor is susceptible to debuffs and has no immunity to freezing, so it can be frozen indefinitely and pummeled to destruction. It's considered a normal monster. High duration skills with a lot of multi-hits can also slow its descent speed. The meteor shrinks in size as its HP decreases. This pattern very frequently overlaps with the Orb pattern and the 'Release of Unstable Power' pattern. The Meteor has collision, so it can significantly interfere with the <Absorb> pattern. An important point about the Meteor pattern is that while it's active, <Space Shift> and <Devour> patterns do not occur. (Meaning if you freeze a meteor infinitely, you won't need to deal with those 2 mechs)"], es: "", kr: "", jp: "", br: "" }
+                                },
+                                devour: {
+                                    name: { en: "Devour", es: "Devorar", kr: "삼키기", jp: "貪る", br: "Devorar" },
+                                    description: { en: ["The King of Abyss crouches and stands repeatedly, the screen gradually darkens, and then an explosion occurs. Red or blue platforms spawn randomly on the map. Players can only see platforms matching their current <attribute>, so they must use F1 to switch <attribute>s and check the platforms for a glow matching their color. Standing on a glowing platform creates a shield effect, allowing survival within it. Player must remain inside the shield until the pattern completely ends. Failing to enter a shield results in instant death, ignoring all resurrection effects and iframes. Both colors of platforms always spawn, so the distribution will be either 1 Red / 3 Blue, 2 Red / 2 Blue, or 3 Red / 1 Blue."], es: "", kr: "", jp: "", br: "" }
+                                }
+                            },
+                            forcedmechs: {
+                                spaceshift: {
+                                    name: { en: "Space Shift", es: "Cambio Espacial", kr: "공간 전환", jp: "空間転移", br: "Mudança Espacial" },
+                                    forcedat: { en: "After all <Meteor>s are destroyed" },
+                                    description: { en: ["The King of Abyss acts as if letting out a huge roar. After a moment, the screen darkens, and the area shifts to the back part of the map. Then, it randomly uses one of the ultimate patterns seen from previous raid bosses (Dungeons 1~3). All these patterns ignore iframes and all resurrection effects."], es: "", kr: "", jp: "", br: "" },
+                                    jumprope: {
+                                        name: { en: "Abyss Worshipper's <Jump Rope>", es: "Saltar la Cuerda del Adorador del Abismo", kr: "심연 숭배자의 줄넘기", jp: "深淵崇拝者の縄跳び", br: "Pular Corda do Adorador do Abismo" },
+                                        description: { en: ["The jump rope pattern from Sunken Holy Ground Phase 1. The speed and timing are somewhat different, and there's a hole in the center."], es: "", kr: "", jp: "", br: "" }
+                                    },
+                                    spiderwebexplosion: {
+                                        name: { en: "Abyss Follower's <Spider Web Explosion>", es: "Explosión de Telaraña del Seguidor del Abismo", kr: "심연 추종자의 거미줄 폭발", jp: "深淵の追従者の蜘蛛の巣爆発", br: "Explosão de Teia de Aranha do Seguidor do Abismo" },
+                                        description: { en: ["The spider web explosion pattern from Sunken Holy Ground Phase 2. It shows a total of 8 positions before the explosion pattern occurs. The safe zones are narrower than the original, and the upper platform is particularly difficult, making it hard for low-mobility characters."], es: "", kr: "", jp: "", br: "" }
+                                    },
+                                    instantkilllaser: {
+                                        name: { en: "Dreaming Hatchling's <Instant Kill Laser>", es: "Láser de Muerte Instantánea de la Cría Soñadora", kr: "꿈꾸는 새끼의 즉사 레이저", jp: "夢見る幼生の即死レーザー", br: "Laser de Morte Instantânea do Filhote Sonhador" },
+                                        description: { en: ["The laser pattern from Blooming Mineral Field Phase 1. Used once. As in the original, it first shows the laser trajectories, then fires, so quickly move to the safe zone."], es: "", kr: "", jp: "", br: "" }
+                                    },
+                                    starlightexplosion: {
+                                        name: { en: "Awakened Myuriconus' <Starlight Explosion>", es: "Explosión de Luz Estelar de Myuriconus Despertado", kr: "각성한 뮤리코누스의 별빛 폭발", jp: "覚醒したミュリコヌスの星明かり爆発", br: "Explosão de Luz Estelar do Myuriconus Despertado" },
+                                        description: { en: ["The starlight explosion pattern from Blooming Mineral Field Phase 2."], es: "", kr: "", jp: "", br: "" }
+                                    },
+                                    darknessswipe: {
+                                        name: { en: "Dream Eater's <Darkness Swipe>", es: "Zarpazo de Oscuridad del Devorador de Sueños", kr: "드림 이터의 어둠의 스와이프", jp: "ドリームイーターの闇のスワイプ", br: "Golpe das Trevas do Devorador de Sonhos" },
+                                        description: { en: ["The darkness swipe pattern from Nightmare's Crib Phase 1. As in the original, it shows the trajectory of the swipes before executing. The number of swipes increases from 1-2 to 4."], es: "", kr: "", jp: "", br: "" }
+                                    },
+                                    fallingorbs: {
+                                        name: { en: "Nightmare Keeper's <Falling Orbs>", es: "Caída de Orbes del Guardián de la Pesadilla", kr: "악몽의 수호자의 낙하 오브", jp: "悪夢の守護者の落下オーブ", br: "Queda de Orbes do Guardião do Pesadelo" },
+                                        description: { en: ["The pattern from Nightmare's Crib Phase 2. It drops orbs as in the original. The number of orbs is significantly increased; it occurs 3 times, each dropping 5 lines of orbs."], es: "", kr: "", jp: "", br: "" }
+                                    }
+                                },
+                                berserk: {
+                                    name: { en: "Berserk", es: "Berserker", kr: "광폭화", jp: "ベルセルク", br: "Berserk" },
+                                    forcedat: { en: "At 5 lines" },
+                                    description: { en: ["A message appears: \"The King of Abyss destroys everything.\" (or something like that)","King of Abyss recovers 115 lines of HP, and the player receives the Last Hope buff. Upon entering Berserk, King of Abyss becomes immune to debuffs and casts <Meteor>, <Orb Barrage> and <Dark Vortex> on random parts of the arena. Successfully landing the <Absorb> pattern (regardless of whether it results in Orb of Shadow or Orb of Light) cancels the Berserk state and returns King of Abyss to his normal state, making him go groggy for a short period."], es: "", kr: "", jp: "", br: "" }
+                                }
+                            }
+                        }
+                    }
+                },
+            }
         },
         stage6: {
             title: { en: "Stage 6", es: "Etapa 6", kr: "6단계", jp: "ステージ6", br: "Estágio 6" },
@@ -2545,11 +3096,11 @@ export const data = {
                                     },
                                     approachingwave:{
                                         name: { en: "Approaching Wave", es: "Ola Acercándose", kr: "다가오는 파도", jp: "接近する波", br: "Onda se Aproximando" },
-                                        description: { en: ["Concentric circular waves that close in. Players must use an skill with invincibility frames to avoid damage."]}
+                                        description: { en: ["Concentric circular waves that close in. Use iframes to avoid damage."]}
                                     },
                                     eightdirectionlaser:{
                                         name: { en: "8-Direction Laser", es: "Láser de 8 Direcciones", kr: "8방향 레이저", jp: "8方向レーザー", br: "Laser de 8 Direções" },
-                                        description: {en: ["Shoots lasers in 8 directions from Echidna's position. Players can either stay close to Echidna or use an skill with invincibility frames to avoid damage, not recommended to stay far away since this attack is mildly hard to i-frame."]}
+                                        description: {en: ["Shoots lasers in 8 directions from Echidna's position. Players can either stay close to Echidna or use an skill with iframes to avoid damage, not recommended to stay far away since this attack is mildly hard to i-frame."]}
                                     }
                                  },          
                                  mechs: {
@@ -3279,5 +3830,4 @@ export const data = {
             stage8_title: { en: "Atma'ram and Mirror Dell", es: "", kr: "", jp: "", br: "" },
         },
     },
-
 }

@@ -138,7 +138,6 @@ class InfoSystem {
         this.currentPanel.style.left = `${rect.left + window.scrollX}px`;
         this.currentPanel.style.top = `${rect.bottom + window.scrollY + 5}px`;
         
-        // Animate based on drag distance
         const maxDistance = 100;
         const progress = Math.min(distance / maxDistance, 1);
         this.currentPanel.style.opacity = progress;

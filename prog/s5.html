@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title data-translate="title">Elhelper</title>
+        <title data-translate="title">Hedgyhelper</title>
         <link rel="stylesheet" href="../homenav.css">
         <link rel="stylesheet" href="../main.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +16,7 @@
             <div class="info" id="g">
                 <div class="banner" id="s5"></div>
                 <div class="back">
-                    <a onclick="location.href='../prog.html'" id="goback" data-translate="general.back">Game Progression</a> 
+                    <a onclick="location.href='../prog.html'" id="goback" data-translate="general.back">Game Progression</a>
                 </div>
                 <div class="guidetitle" id="s5">
                     <p class="stage" data-translate="stage5.title">Stage 5</p>
@@ -25,21 +25,804 @@
                 <hr class="q2q4divider">
                 <div class="trueguide">
                     <div class="guider">
-                        <!-- 
-                            List of Content
-                        -->
                         <p data-translate="stage5.contents">List of Content</p>
                         <ul>
+                            <li><a href="#sunken-holy-ground" data-translate="stage5.content_sunken">Sunken Holy Ground</a></li>
+                            <li><a href="#blooming-mineral-field" data-translate="stage5.content_blooming">Blooming Mineral Field</a></li>
+                            <li><a href="#nightmares-crib" data-translate="stage5.content_nightmare">Nightmare's Crib</a></li>
+                            <li><a href="#birth-of-origin" data-translate="stage5.content_origin">Birth of Origin</a></li>
                         </ul>
                     </div>
                     <div class="tginfo">
-                        <!-- 
-                            Guide Content
-                        -->
-                            <div class="wipsection">
-                                <img src="../images/Hedgy.webp" alt="Under Construction" class="wipimg">
-                                <h3 class="wiptext" data-translate="general.wip">This section is still under construction!</h3>
+                        <div class="guidetext" data-multiline="stage5.sections.intro.content"></div>
+
+                        <!-- Sunken Holy Ground -->
+                        <div class="guidetext" data-multiline="stage5.sections.shg.intro"></div>
+                        <p id="guidenotice" data-translate="stage5.notices.raid_party"></p>
+                        <p id="guidenotice" data-translate="stage5.notices.boss_freezing"></p>
+
+                        <h3 class="RAID_DUNG_NUM" data-translate="stage5.sections.shg.num">2nd Dungeon</h3>
+                        <h2 class="RAID_DUNG_TITLE" data-translate="stage5.sections.shg.name">- Sunken Holy Ground -</h2>
+
+                        <div class="IMGPHASEHEADER" id="shg1">
+                            <div class="phaseheader" id="ABYSSCOLOR">
+                                <div class="PHASENUM" id="ABYSSCOLOR" data-translate="stage5.sections.shg.content.phase1.phasenum">Phase Number</div>
+                                <div class="PHASEBNAME" id="ABYSSCOLOR" data-translate="stage5.sections.shg.content.phase1.phasebname">Phase Boss Name</div>
                             </div>
+                        </div>
+                        <hr class="titledivider" id="ABYSSCOLOR">
+
+                        <div class="concepts">
+                            <div class="ctitle" data-translate="stage5.sections.shg.content.phase1.concepts.altars.name"></div>
+                            <div class="guidetext" data-multiline="stage5.sections.shg.content.phase1.concepts.altars.description"></div>
+                            <div class="concepts">
+                                <div class="ctitle" data-translate="stage5.sections.shg.content.phase1.concepts.altars.altaroffear.name"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.shg.content.phase1.concepts.altars.altaroffear.description"></div>
+                            </div>
+                            <div class="concepts">
+                                <div class="ctitle" data-translate="stage5.sections.shg.content.phase1.concepts.altars.altarofdespair.name"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.shg.content.phase1.concepts.altars.altarofdespair.description"></div>
+                            </div>
+                            <div class="concepts">
+                                <div class="ctitle" data-translate="stage5.sections.shg.content.phase1.concepts.altars.altarofdestruction.name"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.shg.content.phase1.concepts.altars.altarofdestruction.description"></div>
+                            </div>
+                            <div class="concepts">
+                                <div class="ctitle" data-translate="stage5.sections.shg.content.phase1.concepts.altars.altarofoblivion.name"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.shg.content.phase1.concepts.altars.altarofoblivion.description"></div>
+                            </div>
+                        </div>
+
+                        <div class="np">
+                            <div class="nptitle" data-translate="stage7.titles.nptitle"></div>
+                            <div class="mech">
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.shg.content.phase1.np.swingincenseburner.name"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.shg.content.phase1.np.swingincenseburner.description"></div>
+                            </div>
+                        </div>
+
+                        <div class="mechs">
+                            <div class="mtitle" data-translate="stage7.titles.mtitle"></div>
+                            <div class="mech">
+                                <div class="section-anchor" id="altar-connection"></div>
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.shg.content.phase1.mechs.altarconnection.name"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.shg.content.phase1.mechs.altarconnection.description"></div>
+                            </div>
+                            <div class="mech">
+                                <div class="section-anchor" id="place-incense-burner"></div>
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.shg.content.phase1.mechs.placeincenseburner.name"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.shg.content.phase1.mechs.placeincenseburner.description"></div>
+                            </div>
+                            <div class="mech">
+                                <div class="section-anchor" id="create-vortex"></div>
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.shg.content.phase1.mechs.createvortex.name"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.shg.content.phase1.mechs.createvortex.description"></div>
+                            </div>
+                            <div class="mech">
+                                <div class="section-anchor" id="jump-rope"></div>
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.shg.content.phase1.mechs.jumprope.name"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.shg.content.phase1.mechs.jumprope.description"></div>
+                            </div>
+                        </div>
+
+                        <div class="IMGPHASEHEADER" id="shg2">
+                            <div class="phaseheader" id="ABYSSCOLOR">
+                                <div class="PHASENUM" id="ABYSSCOLOR" data-translate="stage5.sections.shg.content.phase2.phasenum">Phase Number</div>
+                                <div class="PHASEBNAME" id="ABYSSCOLOR" data-translate="stage5.sections.shg.content.phase2.phasebname">Phase Boss Name</div>
+                            </div>
+                        </div>
+                        <hr class="titledivider" id="ABYSSCOLOR">
+
+                        <div class="np">
+                            <div class="nptitle" data-translate="stage7.titles.nptitle"></div>
+                            <div class="mech">
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.shg.content.phase2.np.slamdown.name"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.shg.content.phase2.np.slamdown.description"></div>
+                            </div>
+                            <div class="mech">
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.shg.content.phase2.np.jumpanddrop.name"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.shg.content.phase2.np.jumpanddrop.description"></div>
+                            </div>
+                        </div>
+
+                        <div class="mechs">
+                            <div class="mtitle" data-translate="stage7.titles.mtitle"></div>
+                            <div class="mech">
+                                <div class="section-anchor" id="spider-web-mark"></div>
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.shg.content.phase2.mechs.spiderwebmark.name"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.shg.content.phase2.mechs.spiderwebmark.description"></div>
+                            </div>
+                            <div class="mech">
+                                <div class="section-anchor" id="mark-of-silence"></div>
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.shg.content.phase2.mechs.markofsilence.name"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.shg.content.phase2.mechs.markofsilence.description"></div>
+                            </div>
+                            <div class="mech">
+                                <div class="section-anchor" id="abyss-gate"></div>
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.shg.content.phase2.mechs.abyssgate.name"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.shg.content.phase2.mechs.abyssgate.description"></div>
+                                <div class="concepts">
+                                    <div class="ctitle" data-translate="stage5.sections.shg.content.phase2.mechs.abyssgate.bluegate.name"></div>
+                                    <div class="guidetext" data-multiline="stage5.sections.shg.content.phase2.mechs.abyssgate.bluegate.description"></div>
+                                </div>
+                                <div class="concepts">
+                                    <div class="ctitle" data-translate="stage5.sections.shg.content.phase2.mechs.abyssgate.purplegate.name"></div>
+                                    <div class="guidetext" data-multiline="stage5.sections.shg.content.phase2.mechs.abyssgate.purplegate.description"></div>
+                                </div>
+                                <div class="guidetext" data-multiline="stage5.sections.shg.content.phase2.mechs.abyssgate.additionalinfo"></div>
+                            </div>
+                            <div class="mech">
+                                <div class="section-anchor" id="blackout"></div>
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.shg.content.phase2.mechs.blackout.name"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.shg.content.phase2.mechs.blackout.description"></div>
+                            </div>
+                            <div class="mech">
+                                <div class="section-anchor" id="spider-web-explosion"></div>
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.shg.content.phase2.mechs.spiderwebexplosion.name"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.shg.content.phase2.mechs.spiderwebexplosion.description"></div>
+                            </div>
+                        </div>
+
+                        <!-- Blooming Mineral Field -->
+                        <h3 class="RAID_DUNG_NUM" data-translate="stage5.sections.bmf.num">2nd Dungeon</h3>
+                        <h2 class="RAID_DUNG_TITLE" data-translate="stage5.sections.bmf.name">- Blooming Mineral Field -</h2>
+
+                        <div class="IMGPHASEHEADER" id="bmf1">
+                            <div class="phaseheader" id="ABYSSCOLOR">
+                                <div class="PHASENUM" id="ABYSSCOLOR" data-translate="stage5.sections.bmf.content.phase1.phasenum">Phase Number</div>
+                                <div class="PHASEBNAME" id="ABYSSCOLOR" data-translate="stage5.sections.bmf.content.phase1.phasebname">Phase Boss Name</div>
+                            </div>
+                        </div>
+                        <hr class="titledivider" id="ABYSSCOLOR">
+
+                        <div class="concepts">
+                            <div class="ctitle" data-translate="stage5.sections.bmf.content.phase1.concepts.shield.name"></div>
+                            <div class="guidetext" data-multiline="stage5.sections.bmf.content.phase1.concepts.shield.description"></div>
+                        </div>
+
+                        <div class="np">
+                            <div class="nptitle" data-translate="stage7.titles.nptitle"></div>
+                            <div class="mech">
+                                <div class="section-anchor" id="directional-laser"></div>
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.bmf.content.phase1.np.directionallaser.name"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.bmf.content.phase1.np.directionallaser.description"></div>
+                            </div>
+                            <div class="mech">
+                                <div class="section-anchor" id="abyyss-targeted-laser"></div>
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.bmf.content.phase1.np.targetedlaser.name"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.bmf.content.phase1.np.targetedlaser.description"></div>
+                            </div>
+                            <div class="mech">
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.bmf.content.phase1.np.smokeexplosion.name"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.bmf.content.phase1.np.smokeexplosion.description"></div>
+                            </div>
+                            <div class="mech">
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.bmf.content.phase1.np.targetedsmokeexplosion.name"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.bmf.content.phase1.np.targetedsmokeexplosion.description"></div>
+                            </div>
+                            <div class="mech">
+                                <div class="section-anchor" id="aura-emission"></div>
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.bmf.content.phase1.np.auraemission.name"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.bmf.content.phase1.np.auraemission.description"></div>
+                            </div>
+                        </div>
+
+                        <div class="mechs">
+                            <div class="mtitle" data-translate="stage7.titles.mtitle"></div>
+                            <div class="mech">
+                                <div class="section-anchor" id="targeting"></div>
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.bmf.content.phase1.mechs.targeting.name"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.bmf.content.phase1.mechs.targeting.description"></div>
+                            </div>
+                        </div>
+
+                        <div class="forcedmechs">
+                            <div class="fmtitle" data-translate="stage7.titles.fmtitle"></div>
+                            <div class="mech">
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.bmf.content.phase1.forcedmechs.widearealaser.name"></div>
+                                <div class="forcedat" data-translate="stage5.sections.bmf.content.phase1.forcedmechs.widearealaser.forcedat"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.bmf.content.phase1.forcedmechs.widearealaser.description"></div>
+                            </div>
+                            <div class="mech">
+                                <div class="section-anchor" id="instant-kill-laser"></div>
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.bmf.content.phase1.forcedmechs.instantkilllaser.name"></div>
+                                <div class="forcedat" data-translate="stage5.sections.bmf.content.phase1.forcedmechs.instantkilllaser.forcedat"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.bmf.content.phase1.forcedmechs.instantkilllaser.description"></div>
+                            </div>
+                        </div>
+
+                        <div class="IMGPHASEHEADER" id="bmf2">
+                            <div class="phaseheader" id="ABYSSCOLOR">
+                                <div class="PHASENUM" id="ABYSSCOLOR" data-translate="stage5.sections.bmf.content.phase2.phasenum">Phase Number</div>
+                                <div class="PHASEBNAME" id="ABYSSCOLOR" data-translate="stage5.sections.bmf.content.phase2.phasebname">Phase Boss Name</div>
+                            </div>
+                        </div>
+                        <hr class="titledivider" id="ABYSSCOLOR">
+
+                        <div class="concepts">
+                            <div class="section-anchor" id="current-adaptation"></div>
+                            <div class="ctitle" data-translate="stage5.sections.bmf.content.phase2.concepts.currentadaptation.name"></div>
+                            <div class="guidetext" data-multiline="stage5.sections.bmf.content.phase2.concepts.currentadaptation.description"></div>
+                        </div>
+
+                        <div class="np">
+                            <div class="nptitle" data-translate="stage7.titles.nptitle"></div>
+                            <div class="mech">
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.bmf.content.phase2.np.smokeexplosion.name"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.bmf.content.phase2.np.smokeexplosion.description"></div>
+                            </div>
+                            <div class="mech">
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.bmf.content.phase2.np.targetedsmokeexplosion.name"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.bmf.content.phase2.np.targetedsmokeexplosion.description"></div>
+                            </div>
+                            <div class="mech">
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.bmf.content.phase2.np.spray.name"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.bmf.content.phase2.np.spray.description"></div>
+                            </div>
+                        </div>
+
+                        <div class="mechs">
+                            <div class="mtitle" data-translate="stage5.titles.mtitle"></div>
+                            <div class="mech">
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.bmf.content.phase2.mechs.targetedlaser.name"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.bmf.content.phase2.mechs.targetedlaser.description"></div>
+                            </div>
+                            <div class="mech">
+                                <div class="section-anchor" id="red-target"></div>
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.bmf.content.phase2.mechs.redtarget.name"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.bmf.content.phase2.mechs.redtarget.description"></div>
+                            </div>
+                            <div class="mech">
+                                <div class="section-anchor" id="blue-target"></div>
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.bmf.content.phase2.mechs.bluetarget.name"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.bmf.content.phase2.mechs.bluetarget.description"></div>
+                            </div>
+                            <div class="mech">
+                                <div class="section-anchor" id="create-current"></div>
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.bmf.content.phase2.mechs.createcurrent.name"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.bmf.content.phase2.mechs.createcurrent.description"></div>
+                            </div>
+                            <div class="mech">
+                                <div class="section-anchor" id="starlight-explosion"></div>
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.bmf.content.phase2.mechs.starlightexplosion.name"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.bmf.content.phase2.mechs.starlightexplosion.description"></div>
+                            </div>
+                        </div>
+
+                        <!-- Nightmare's Crib -->
+                        <h3 class="RAID_DUNG_NUM" data-translate="stage5.sections.nc.num">asdfghjklñ</h3>
+                        <h2 class="RAID_DUNG_TITLE" data-translate="stage5.sections.nc.name">- Nightmare's Crib -</h2>
+                        <div class="guidetext" data-translate="stage5.sections.nc.description"></div>
+                        <div class="IMGPHASEHEADER" id="nc1">
+                            <div class="phaseheader" id="ABYSSCOLOR">
+                                <div class="PHASENUM" id="ABYSSCOLOR" data-translate="stage5.sections.nc.content.phase1.phasenum">Phase Number</div>
+                                <div class="PHASEBNAME" id="ABYSSCOLOR" data-translate="stage5.sections.nc.content.phase1.phasebname">Phase Boss Name</div>
+                            </div>
+                        </div>
+                        <hr class="titledivider" id="ABYSSCOLOR">
+
+                        <div class="concepts">
+                            <div class="ctitle" data-translate="stage5.sections.nc.content.phase1.concepts.confusion.name"></div>
+                            <div class="guidetext" data-multiline="stage5.sections.nc.content.phase1.concepts.confusion.description"></div>
+                        </div>
+
+                        <div class="np">
+                            <div class="nptitle" data-translate="stage7.titles.nptitle"></div>
+                            <div class="mech">
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.nc.content.phase1.np.threehitcombocharge.name"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.nc.content.phase1.np.threehitcombocharge.description"></div>
+                            </div>
+                            <div class="mech">
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.nc.content.phase1.np.chargingswipe.name"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.nc.content.phase1.np.chargingswipe.description"></div>
+                            </div>
+                            <div class="mech">
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.nc.content.phase1.np.teleport.name"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.nc.content.phase1.np.teleport.description"></div>
+                            </div>
+                            <div class="mech">
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.nc.content.phase1.np.upperlowerswipe.name"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.nc.content.phase1.np.upperlowerswipe.description"></div>
+                            </div>
+                        </div>
+
+                        <div class="mechs">
+                            <div class="mtitle" data-translate="stage7.titles.mtitle"></div>
+                            <div class="mech">
+                                <div class="section-anchor" id="shadow-clones"></div>
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.nc.content.phase1.mechs.shadowclones.name"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.nc.content.phase1.mechs.shadowclones.description"></div>
+                            </div>
+                            <div class="mech">
+                                <div class="section-anchor" id="dark-vortex"></div>
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.nc.content.phase1.mechs.darkvortex.name"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.nc.content.phase1.mechs.darkvortex.description"></div>
+                            </div>
+                            <div class="mech">
+                                <div class="section-anchor" id="darkness-swipe"></div>
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.nc.content.phase1.mechs.darknessswipe.name"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.nc.content.phase1.mechs.darknessswipe.description"></div>
+                            </div>
+                            <div class="mech">
+                                <div class="section-anchor" id="shape-link"></div>
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.nc.content.phase1.mechs.shapelink.name"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.nc.content.phase1.mechs.shapelink.description"></div>
+                            </div>
+                        </div>
+
+                        <div class="IMGPHASEHEADER" id="nc2">
+                            <div class="phaseheader" id="ABYSSCOLOR">
+                                <div class="PHASENUM" id="ABYSSCOLOR" data-translate="stage5.sections.nc.content.phase2.phasenum">Phase Number</div>
+                                <div class="PHASEBNAME" id="ABYSSCOLOR" data-translate="stage5.sections.nc.content.phase2.phasebname">Phase Boss Name</div>
+                            </div>
+                        </div>
+                        <hr class="titledivider" id="ABYSSCOLOR">
+
+                        <div class="concepts">
+                            <div class="ctitle" data-translate="stage5.sections.nc.content.phase2.concepts.confusion.name"></div>
+                            <div class="guidetext" data-multiline="stage5.sections.nc.content.phase2.concepts.confusion.description"></div>
+                        </div>
+
+                        <div class="np">
+                            <div class="nptitle" data-translate="stage7.titles.nptitle"></div>
+                            <div class="mech">
+                                <div class="section-anchor" id="falling-orbs"></div>
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.nc.content.phase2.np.fallingorbs.name"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.nc.content.phase2.np.fallingorbs.description"></div>
+                            </div>
+                            <div class="mech">
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.nc.content.phase2.np.spikegeneration.name"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.nc.content.phase2.np.spikegeneration.description"></div>
+                            </div>
+                            <div class="mech">
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.nc.content.phase2.np.tentaclegeneration.name"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.nc.content.phase2.np.tentaclegeneration.description"></div>
+                            </div>
+                        </div>
+
+                        <div class="forcedmechs">
+                            <div class="fmtitle" data-translate="stage7.titles.fmtitle"></div>
+                            <div class="mech">
+                                <div class="section-anchor" id="life-stealing-black-hole"></div>
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.nc.content.phase2.forcedmechs.lifestealingblackhole.name"></div>
+                                <div class="mechforcedat" data-translate="stage5.sections.nc.content.phase2.forcedmechs.lifestealingblackhole.forcedat"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.nc.content.phase2.forcedmechs.lifestealingblackhole.description"></div>
+                            </div>
+                            <div class="mech">
+                                <div class="section-anchor" id="nightmare-prison"></div>
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.nc.content.phase2.forcedmechs.nightmareprison.name"></div>
+                                <div class="mechforcedat" data-translate="stage5.sections.nc.content.phase2.forcedmechs.nightmareprison.forcedat"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.nc.content.phase2.forcedmechs.nightmareprison.description"></div>
+                            </div>
+                            <div class="mech">
+                                <div class="section-anchor" id="nightmare-orb"></div>
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.nc.content.phase2.forcedmechs.nightmareorb.name"></div>
+                                <div class="mechforcedat" data-translate="stage5.sections.nc.content.phase2.forcedmechs.nightmareorb.forcedat"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.nc.content.phase2.forcedmechs.nightmareorb.description"></div>
+                            </div>
+                            <div class="mech">
+                                <div class="section-anchor" id="dream-eater"></div>
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.nc.content.phase2.forcedmechs.dreameater.name"></div>
+                                <div class="mechforcedat" data-translate="stage5.sections.nc.content.phase2.forcedmechs.dreameater.forcedat"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.nc.content.phase2.forcedmechs.dreameater.description"></div>
+                            </div>
+                        </div>
+
+                        <!-- Birth of Origin -->
+                        <h3 class="RAID_DUNG_NUM" data-translate="stage5.sections.boo.num">3rd Dungeon</h3>
+                        <h2 class="RAID_DUNG_TITLE" data-translate="stage5.sections.boo.name">- Birth of Origin -</h2>
+
+                        <div class="IMGPHASEHEADER" id="boo1">
+                            <div class="phaseheader" id="ABYSSCOLOR">
+                                <div class="PHASENUM" id="ABYSSCOLOR" data-translate="stage5.sections.boo.content.phase1.phasenum">Phase Number</div>
+                                <div class="PHASEBNAME" id="ABYSSCOLOR" data-translate="stage5.sections.boo.content.phase1.phasebname">Phase Boss Name</div>
+                            </div>
+                        </div>
+                        <hr class="titledivider" id="ABYSSCOLOR">
+
+                        <div class="concepts">
+                            <div class="ctitle" data-translate="stage5.sections.boo.content.phase1.concepts.redgem.name"></div>
+                            <div class="guidetext" data-multiline="stage5.sections.boo.content.phase1.concepts.redgem.description"></div>
+                        </div>
+
+                        <div class="np">
+                            <div class="nptitle" data-translate="stage7.titles.nptitle"></div>
+                            <div class="mech">
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.boo.content.phase1.np.continuousattack.name"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.boo.content.phase1.np.continuousattack.description"></div>
+                            </div>
+                            <div class="mech">
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.boo.content.phase1.np.teleport.name"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.boo.content.phase1.np.teleport.description"></div>
+                            </div>
+                            <div class="mech">
+                                <div class="section-anchor" id="reverse-gravity"></div>
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.boo.content.phase1.np.reversegravity.name"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.boo.content.phase1.np.reversegravity.description"></div>
+                            </div>
+                            <div class="mech">
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.boo.content.phase1.np.charge.name"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.boo.content.phase1.np.charge.description"></div>
+                            </div>
+                        </div>
+
+                        <div class="mechs">
+                            <div class="mtitle" data-translate="stage7.titles.mtitle"></div>
+                            <div class="mech">
+                                <div class="section-anchor" id="infusion-of-strong-power"></div>
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.boo.content.phase1.mechs.infusionofstrongpower.name"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.boo.content.phase1.mechs.infusionofstrongpower.description"></div>
+                            </div>
+                            <div class="mech">
+                                <div class="section-anchor" id="connection-of-strong-power"></div>
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.boo.content.phase1.mechs.connectionofstrongpower.name"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.boo.content.phase1.mechs.connectionofstrongpower.description"></div>
+                            </div>
+                            <div class="mech">
+                                <div class="section-anchor" id="find-the-space"></div>
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.boo.content.phase1.mechs.findthespace.name"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.boo.content.phase1.mechs.findthespace.description"></div>
+                                <div class="concepts">
+                                    <div class="ctitle" data-translate="stage5.sections.boo.content.phase1.mechs.findthespace.firstvariation.name"></div>
+                                    <div class="guidetext" data-multiline="stage5.sections.boo.content.phase1.mechs.findthespace.firstvariation.description"></div>
+                                </div>
+                                <div class="concepts">
+                                    <div class="ctpcfa">
+                                        <div class="ctitle" data-translate="stage5.sections.boo.content.phase1.mechs.findthespace.secondvariation.name"></div>
+                                        <div class="cforcedat" data-translate="stage5.sections.boo.content.phase1.mechs.findthespace.secondvariation.forcedat"></div>
+                                    </div>
+                                    <div class="guidetext" data-multiline="stage5.sections.boo.content.phase1.mechs.findthespace.secondvariation.description"></div>
+                                </div>
+                                <div class="concepts">
+                                    <div class="ctpcfa">
+                                        <div class="ctitle" data-translate="stage5.sections.boo.content.phase1.mechs.findthespace.thirdvariation.name"></div>
+                                        <div class="cforcedat" data-translate="stage5.sections.boo.content.phase1.mechs.findthespace.thirdvariation.forcedat"></div>
+                                    </div>
+                                    <div class="guidetext" data-multiline="stage5.sections.boo.content.phase1.mechs.findthespace.thirdvariation.description"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="IMGPHASEHEADER" id="boo2">
+                            <div class="phaseheader" id="ABYSSCOLOR">
+                                <div class="PHASENUM" id="ABYSSCOLOR" data-translate="stage5.sections.boo.content.phase2.phasenum">Phase Number</div>
+                                <div class="PHASEBNAME" id="ABYSSCOLOR" data-translate="stage5.sections.boo.content.phase2.phasebname">Phase Boss Name</div>
+                            </div>
+                        </div>
+                        <hr class="titledivider" id="ABYSSCOLOR">
+
+                        <div class="np">
+                            <div class="nptitle" data-translate="stage7.titles.nptitle"></div>
+                            <div class="mech">
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.boo.content.phase2.np.continuousattack.name"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.boo.content.phase2.np.continuousattack.description"></div>
+                            </div>
+                            <div class="mech">
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.boo.content.phase2.np.flamesofabyss.name"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.boo.content.phase2.np.flamesofabyss.description"></div>
+                            </div>
+                            <div class="mech">
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.boo.content.phase2.np.gravityfield.name"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.boo.content.phase2.np.gravityfield.description"></div>
+                            </div>
+                        </div>
+
+                        <div class="mechs">
+                            <div class="mtitle" data-translate="stage7.titles.mtitle"></div>
+                            <div class="mech">
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.boo.content.phase2.mechs.abyssalenergy.name"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.boo.content.phase2.mechs.abyssalenergy.description"></div>
+                            </div>
+                            <div class="mech">
+                                <div class="section-anchor" id="space-connection"></div>
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.boo.content.phase2.mechs.spaceconnection.name"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.boo.content.phase2.mechs.spaceconnection.description"></div>
+                            </div>
+                        </div>
+
+                        <div class="forcedmechs">
+                            <div class="fmtitle" data-translate="stage7.titles.fmtitle"></div>
+                            <div class="mech">
+                                <div class="section-anchor" id="pierce"></div>
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.boo.content.phase2.forcedmechs.pierce.name"></div>
+                                <div class="mechforcedat" data-translate="stage5.sections.boo.content.phase2.forcedmechs.pierce.forcedat"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.boo.content.phase2.forcedmechs.pierce.description"></div>
+                            </div>
+                            <div class="mech">
+                                <div class="section-anchor" id="energy-concentration"></div>
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.boo.content.phase2.forcedmechs.energyconcentration.name"></div>
+                                <div class="mechforcedat" data-translate="stage5.sections.boo.content.phase2.forcedmechs.energyconcentration.forcedat"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.boo.content.phase2.forcedmechs.energyconcentration.description"></div>
+                            </div>
+                        </div>
+
+                        <div class="IMGPHASEHEADER" id="boo3">
+                            <div class="phaseheader" id="ABYSSCOLOR">
+                                <div class="PHASENUM" id="ABYSSCOLOR" data-translate="stage5.sections.boo.content.phase3.phasenum">Phase Number</div>
+                                <div class="PHASEBNAME" id="ABYSSCOLOR" data-translate="stage5.sections.boo.content.phase3.phasebname">Phase Boss Name</div>
+                            </div>
+                        </div>
+                        <hr class="titledivider" id="ABYSSCOLOR">
+
+                        <div class="concepts">
+                            <div class="section-anchor" id="shadow-abyss-attribute"></div>
+                            <div>
+                                <img src="/images/mechs/" class="mechgif">
+                            </div>
+                            <div class="ctitle" data-translate="stage5.sections.boo.content.phase3.concepts.shadowabyssattribute.name"></div>
+                            <div class="guidetext" data-multiline="stage5.sections.boo.content.phase3.concepts.shadowabyssattribute.description"></div>
+                        </div>
+
+                        <div class="np">
+                            <div class="nptitle" data-translate="stage7.titles.nptitle"></div>
+                            <div class="mech">
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.boo.content.phase3.np.armsweep.name"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.boo.content.phase3.np.armsweep.description"></div>
+                            </div>
+                            <div class="mech">
+                                <div class="section-anchor" id="orb-barrage"></div>
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.boo.content.phase3.np.orbbarrage.name"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.boo.content.phase3.np.orbbarrage.description"></div>
+                            </div>
+                        </div>
+
+                        <div class="mechs">
+                            <div class="mtitle" data-translate="stage7.titles.mtitle"></div>
+                            <div class="mech">
+                                <div class="section-anchor" id="abyss-absorb"></div>
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.boo.content.phase3.mechs.absorb.name"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.boo.content.phase3.mechs.absorb.description"></div>
+                            </div>
+                            <div class="mech">
+                                <div class="section-anchor" id="release-of-unstable-power"></div>
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.boo.content.phase3.mechs.releaseofunstablepower.name"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.boo.content.phase3.mechs.releaseofunstablepower.description"></div>
+                            </div>
+                            <div class="mech">
+                                <div class="section-anchor" id="meteor"></div>
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.boo.content.phase3.mechs.meteor.name"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.boo.content.phase3.mechs.meteor.description"></div>
+                            </div>
+                            <div class="mech">
+                                <div class="section-anchor" id="devour"></div>
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.boo.content.phase3.mechs.devour.name"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.boo.content.phase3.mechs.devour.description"></div>
+                            </div>
+                        </div>
+
+                        <div class="forcedmechs">
+                            <div class="fmtitle" data-translate="stage7.titles.fmtitle"></div>
+                            <div class="mech">
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.boo.content.phase3.forcedmechs.spaceshift.name"></div>
+                                <div class="mechforcedat" data-translate="stage5.sections.boo.content.phase3.forcedmechs.spaceshift.forcedat"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.boo.content.phase3.forcedmechs.spaceshift.description"></div>
+                                <div class="concepts">
+                                    <div class="ctitle" data-translate="stage5.sections.boo.content.phase3.forcedmechs.spaceshift.jumprope.name"></div>
+                                    <div class="guidetext" data-multiline="stage5.sections.boo.content.phase3.forcedmechs.spaceshift.jumprope.description"></div>
+                                </div>
+                                <div class="concepts">
+                                    <div class="ctitle" data-translate="stage5.sections.boo.content.phase3.forcedmechs.spaceshift.spiderwebexplosion.name"></div>
+                                    <div class="guidetext" data-multiline="stage5.sections.boo.content.phase3.forcedmechs.spaceshift.spiderwebexplosion.description"></div>
+                                </div>
+                                <div class="concepts">
+                                    <div class="ctitle" data-translate="stage5.sections.boo.content.phase3.forcedmechs.spaceshift.instantkilllaser.name"></div>
+                                    <div class="guidetext" data-multiline="stage5.sections.boo.content.phase3.forcedmechs.spaceshift.instantkilllaser.description"></div>
+                                </div>
+                                <div class="concepts">
+                                    <div class="ctitle" data-translate="stage5.sections.boo.content.phase3.forcedmechs.spaceshift.starlightexplosion.name"></div>
+                                    <div class="guidetext" data-multiline="stage5.sections.boo.content.phase3.forcedmechs.spaceshift.starlightexplosion.description"></div>
+                                </div>
+                                <div class="concepts">
+                                    <div class="ctitle" data-translate="stage5.sections.boo.content.phase3.forcedmechs.spaceshift.darknessswipe.name"></div>
+                                    <div class="guidetext" data-multiline="stage5.sections.boo.content.phase3.forcedmechs.spaceshift.darknessswipe.description"></div>
+                                </div>
+                                <div class="concepts">
+                                    <div class="ctitle" data-translate="stage5.sections.boo.content.phase3.forcedmechs.spaceshift.fallingorbs.name"></div>
+                                    <div class="guidetext" data-multiline="stage5.sections.boo.content.phase3.forcedmechs.spaceshift.fallingorbs.description"></div>
+                                </div>
+                            </div>
+                            <div class="mech">
+                                <div class="section-anchor" id="abyss-berserk"></div>
+                                <div>
+                                    <img src="/images/mechs/" class="mechgif">
+                                </div>
+                                <div class="mechname" data-translate="stage5.sections.boo.content.phase3.forcedmechs.berserk.name"></div>
+                                <div class="mechforcedat" data-translate="stage5.sections.boo.content.phase3.forcedmechs.berserk.forcedat"></div>
+                                <div class="guidetext" data-multiline="stage5.sections.boo.content.phase3.forcedmechs.berserk.description"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -51,9 +834,9 @@
                 </div>
             </footer>
         </div>
-        <script src="../nav.js"></script>
-        <script type="module" src="../main.js"></script>
-        <script type="module" src="../data.js"></script>
-        <script type="module" src="../translations.js"></script>
+        <script src="/nav.js"></script>
+        <script type="module" src="/main.js"></script>
+        <script type="module" src="/data.js"></script>
+        <script type="module" src="/translations.js"></script>
     </body>
 </html>
