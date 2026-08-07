@@ -157,38 +157,3 @@ class InfoSystem {
         }
     }
 }
-
-// Initialize all collapsible table titles
-document.querySelectorAll('.table-title-collapser').forEach(title => {
-    title.addEventListener('click', function() {
-        const table = this.closest('table');
-        const isCollapsing = !this.classList.contains('collapsed');
-        
-        // Toggle all rows except header
-        table.querySelectorAll('tr:not(:first-child)').forEach(row => {
-            if (isCollapsing) {
-                row.style.display = 'none';
-            } else {
-                row.style.display = '';
-            }
-        });
-        
-        // Toggle collapsed state
-        this.classList.toggle('collapsed');
-        
-        // Dispatch custom event
-        table.dispatchEvent(new CustomEvent('tableCollapse', {
-            detail: { collapsed: isCollapsing }
-        }));
-    });
-    
-    // Initialize state if table should start collapsed
-    if (title.closest('.collapsible-table.collapsed')) {
-        title.classList.add('collapsed');
-    }
-    
-    // Apply translations if manager is available
-    if (window.translationManager) {
-        window.translationManager.applyTranslations();
-    }
-});

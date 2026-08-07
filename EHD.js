@@ -32,6 +32,90 @@ export const data = {
             wipguide: {
                 en: "Guide sections is under heavy reworking and is unavailable for the moment."
             },
+            open_guide: {
+                en: "Open full guide",
+                es: "Abrir guía completa",
+                kr: "전체 가이드 열기",
+                jp: "完全なガイドを開く",
+                br: "Abrir guia completo"
+            },
+            guide_page_description: {
+                en: "Click a guide card below to open the full raid or system guide.",
+                es: "Haz clic en una tarjeta de guía a continuación para abrir la guía completa de la incursión o sistema.",
+                kr: "아래 가이드 카드를 클릭하여 전체 레이드 또는 시스템 가이드를 엽니다.",
+                jp: "以下のガイドカードをクリックして、レイドまたはシステムの完全なガイドを開きます。",
+                br: "Clique em um cartão de guia abaixo para abrir o guia completo de raid ou sistema."
+            },
+            guidedisclaimer: {
+                title: {
+                    en: "Guides relevant to the following section:" 
+                },
+                varnimyr: {
+                    link1: {
+                        en: "Crimson Tower of Howling Flames"
+                    },
+                    link2: {
+                        en: "Never Ending Darkness"
+                    },
+                    link3: {
+                        en: "Crimson Cradle of Flames"
+                    },
+                    link4: {
+                        en: "Mystic Enhancement"
+                    },
+                },
+                masterroad: {
+                    link1: {
+                        en: "Master Artifact"
+                    }
+                },
+                pruinaum: {
+                    link1: {
+                        en: "Imprint"
+                    },
+                    link2: {
+                        en: "Weapon Advancement System"
+                    },
+                    link3: {
+                        en: "Savage White-Ghost Castle"
+                    },
+                    link4: {
+                        en: "Altar of Invocation"
+                    },
+                },
+                midgame: {
+                    link1: {
+                        en: "Shadow Effect"
+                    },
+                    link2: {
+                        en: "Reforge"
+                    },
+                    link3: {
+                        en: "How to build my character"
+                    },
+                    link4: {
+                        en: "How to DPS correctly"
+                    },
+                    link5: {
+                        en: "Sunken Holy Ground"
+                    },
+                    link6: {
+                        en: "Blooming Mineral Field"
+                    },
+                    link7: {
+                        en: "Nightmare's Crib"
+                    },
+                    link8: {
+                        en: "Birth of Origin"
+                    },
+                    link9: {
+                        en: "Harconium"
+                    },
+                },
+                lower: {
+                    en: "Click a link to open the guide, you can always access guides in the <Guides> section."
+                }
+            },
             wip: {
                 en: "This section is still under construction!",
                 es: "¡Esta sección aún está en construcción!",
@@ -41,6 +125,11 @@ export const data = {
             },
             contents: { 
                 en: "List of Content", es: "Lista de Contenido", kr: "콘텐츠 목록", jp: "コンテンツ一覧", br: "Lista de Conteúdo" 
+            },
+            guide_sections: {
+                system: { en: "System Explanation", es: "Explicación del Sistema", kr: "시스템 설명", jp: "システム説明", br: "Explicação do Sistema" },
+                raid: { en: "Raid Guides", es: "Guías de Incursión", kr: "레이드 가이드", jp: "レイドガイド", br: "Guias de Raid" },
+                misc: { en: "Miscellaneous", es: "Misceláneo", kr: "기타", jp: "その他", br: "Diversos" }
             }
         },
         homepage: {
@@ -159,12 +248,10 @@ export const data = {
             title: { en: "Stage 1", es: "Etapa 1", kr: "1단계", jp: "ステージ1", br: "Estágio 1" },
             stage1_title: { en: "Level 1 to Master Class", es: "Nivel 1 a Clase Maestra", kr: "레벨 1에서 마스터 클래스까지", jp: "レベル1からマスタークラスまで", br: "Nível 1 a Classe Mestra" },
             contents: { en: "List of Content", es: "Lista de Contenido", kr: "콘텐츠 목록", jp: "コンテンツ一覧", br: "Lista de Conteúdo" },
-            content_first_dungeon: { en: "First Dungeon", es: "Primera Mazmorra", kr: "첫 번째 던전", jp: "最初のダンジョン", br: "1ª Masmorra"},
-            content_choose_path: { en: "Choosing a Path", es: "Elegir un Camino", kr: "경로 선택", jp: "道を選ぶ", br: "Escolhendo um Caminho" },
             sections: {
                 intro: { en: ["This part of the game has a lot of cut content and is a mere shadow of what it was in the early days, so it should be doable in 4-5ish hours."], es: ["Esta parte del juego tiene mucho contenido recortado y es una mera sombra de lo que era en los primeros días, por lo que debería ser posible en unas 4-5 horas."], kr: ["게임의 이 부분에는 잘린 콘텐츠가 많으며 초기의 그림자에 불과하므로 약 4-5시간 만에 완료할 수 있습니다."], jp: ["ゲームのこの部分には多くのカットコンテンツがあり、初期の頃の影に過ぎないため、約4〜5時間で完了できるはずです。"], br: ["Esta parte do jogo tem muito conteúdo cortado e é uma mera sombra do que era nos primeiros dias, então deve ser possível em cerca de 4-5 horas."] },
                 first_dungeon: {
-                    title: { en: "First Dungeon", es: "Primera Mazmorra", kr: "첫 번째 던전", jp: "最初のダンジョン", br: "1ª Masmorra"},
+                    title: { en: "Leveling", es: "", kr: "", jp: "", br: ""},
                     content: { en: [
                         "Once you finish deciding which character to create and complete the tutorial, you'll notice a couple of buttons. For now, only focus on the 'Dungeon' button. This will open a list of dungeons divided by region, you can only see the next region once you complete a quest that unlocks it, or after completing the last dungeon of the previous region, and entering the level range required to play in the next region. Click 'Start Dungeon' button to enter the dungeon your Main Quest asks you to do.",
                         "After completing the first dungeon 'Tree of El' (Dungeon is different for Lithia, Noah and Laby) you will receive 'Growing Adventurer's Equipment Cube'.",
@@ -312,7 +399,32 @@ export const data = {
                     ], br: [
                         "El Resonance é um sistema de nivelamento compartilhado em toda a conta, aumentar seu nível lhe dará pontos, também conhecidos como ERP, que você pode trocar por várias vantagens.",
                         "Este é um sistema desbloqueado por meio de uma missão, após completar 7 masmorras de elrianode em diante."
-                    ]}
+                    ]},
+                    table: {
+                        title: 'El Resonance Effects',
+                        columns: [
+                            { key: 'effect',    label: 'Effect' },
+                            { key: 'perPoint',  label: 'Increase per point' },
+                            { key: 'max',       label: 'Max' }
+                        ],
+                        rows: [
+                            { effect: 'All Attack Power', perPoint: '+10', max: 'N/A' },
+                            { effect: 'All Defense', perPoint: '+10', max: 'N/A' },
+                            { effect: 'All Elemental Resistance', perPoint: '+10', max: '500' },
+                            { effect: 'Max HP', perPoint: '+0.5%', max: '25%' },
+                            { effect: 'Max MP', perPoint: '+2', max: '100' },
+                            { effect: 'Active, Tenacity, Strength, Bravery Skill Damage (All Skill Damage Increase)', perPoint: '+0.35%', max: '35%' },
+                            { effect: 'Damage Dealt / Received Increase (Polarize)', perPoint: '+0.15%', max: '7.5%' },
+                            { effect: 'Damage Increase to Boss Monsters', perPoint: '+0.3%', max: '15%' },
+                            { effect: 'Damage Decrease from Boss Monsters', perPoint: '-0.4%', max: '20%' },
+                            { effect: 'Adaptation', perPoint: '+0.07%', max: '7%' },
+                            { effect: 'Skill MP Cost Decrease', perPoint: '+0.2%', max: '20%' },
+                            { effect: 'Skill Cooldown Decrease', perPoint: '+0.2%', max: '20%' },
+                            { effect: 'EXP Gain', perPoint: '+2%', max: '200%' },
+                            { effect: 'ED Gain', perPoint: '+2%', max: '200%' },
+                            { effect: 'Item Drop Rate', perPoint: '+2%', max: '200%' }
+                        ]
+                    }
                 },
                 dosi_wings: {
                     title: { en: "Dimension of Sinister Intent Wings", es: "Accesorio: Alas de la Dimensión de la Intención Siniestra", kr: "액세서리: 사악한 의도의 차원 날개", jp: "アクセサリー：邪悪な意図の次元の翼", br: "Acessório: Asas da Dimensão da Intenção Sinistra" },
@@ -421,163 +533,6 @@ export const data = {
                         }
                     }
                 },
-                el_resonance: {
-                    title: {
-                        en: "El Resonance Effects",
-                        es: "Efectos de la Resonancia de El",
-                        kr: "엘 공명 효과",
-                        jp: "エルレゾナンス効果",
-                        br: "Efeitos de El Resonance"
-                    },
-                    headers: {
-                        h1: 
-                        {
-                            en: "Effect",
-                            es: "Efecto",
-                            kr: "효과",
-                            jp: "効果",
-                            br: "Efeito"
-                        },
-                        h2:
-                        {
-                            en: "Increase per point",
-                            es: "Incremento por punto",
-                            kr: "포인트당 증가",
-                            jp: "ポイントごとの増加",
-                            br: "Aumento por ponto"
-                        },
-                        h3:
-                        {
-                            en: "Max",
-                            es: "Maximo",
-                            kr: "최대",
-                            jp: "最大",
-                            br: "Máximo"
-                        },
-                    },
-                    rows: { 
-                        aap:
-                        {
-                            en: "All Attack Power",
-                            es: "Poder de Ataque Total",
-                            kr: "모든 공격력",
-                            jp: "全攻撃力",
-                            br: "Poder de Ataque Total"
-                        },
-                        ad:
-                        {
-                            en: "All Defense",
-                            es: "Defensa Total",
-                            kr: "모든 방어",
-                            jp: "全防御",
-                            br: "Defesa Total"
-                        },
-                        aer:
-                        {
-                            en: "All Elemental Resistance",
-                            es: "Resistencia Elemental Total",
-                            kr: "모든 속성 저항",
-                            jp: "全属性耐性",
-                            br: "Resistência Elemental Total"
-                        },
-                        mh:
-                        {
-                            en: "Max HP",
-                            es: "Max HP",
-                            kr: "최대 HP",
-                            jp: "最大HP",
-                            br: "Max HP"
-                        },
-                        mm:
-                        {
-                            en: "Max MP",
-                            es: "Max MP",
-                            kr: "최대 MP",
-                            jp: "最大MP",
-                            br: "Max MP"
-                        },
-                        asdi:
-                        {
-                            en: "Active, Tenacity, Strength, Bravery Skill Damage (All Skill Damage Increase)",
-                            es: "Daño de Habilidad Activa, Tenacidad, Fuerza, Valentía (Aumento de Daño de Habilidad Total)",
-                            kr: "액티브, 끈기, 스트렝스, 브레이브 스킬 데미지 (모든 스킬 데미지 증가)",
-                            jp: "アクティブ、タフネス、ストレングス、ブレイブスキルダメージ（全スキルダメージ増加）",
-                            br: "Dano de Habilidade Ativa, Tenacidade, Força, Coragem (Aumento de Dano de Habilidade Total)"
-                        },
-                        pol:
-                        {
-                            en: "Damage Dealt / Received Increase (Polarize)",
-                            es: "Aumento de Daño Infligido / Recibido (Polarizar)",
-                            kr: "주고받는 피해 증가 (극성화)",
-                            jp: "与える/受けるダメージ増加（極性化）",
-                            br: "Aumento de Dano Causado / Recebido (Polarizar)"
-                        },
-                        bdmg:
-                        {
-                            en: "Damage Increase to Boss Monsters",
-                            es: "Aumento de Daño a Monstruos Jefes",
-                            kr: "보스 몬스터에 대한 피해 증가",
-                            jp: "ボスモンスターへのダメージ増加",
-                            br: "Aumento de Dano a Monstros Chefes"
-                        },
-                        dfb:
-                        {
-                            en: "Damage Decrease from Boss Monsters",
-                            es: "Disminución de Daño de Monstruos Jefes",
-                            kr: "보스 몬스터로부터 받는 피해 감소",
-                            jp: "ボスモンスターからのダメージ減少",
-                            br: "Diminuição de Dano de Monstros Chefes"
-                        },
-                        adapt:
-                        {
-                            en: "Adaptation",
-                            es: "Adaptación",
-                            kr: "적응",
-                            jp: "適応",
-                            br: "Adaptação"
-                        },
-                        mpr:
-                        {
-                            en: "SKill MP Cost Decrease",
-                            es: "Disminución del Costo de MP de Habilidad",
-                            kr: "스킬 MP 소모 감소",
-                            jp: "スキルMPコスト減少",
-                            br: "Diminuição do Custo de MP de Habilidade"
-                        },
-                        cdr:
-                        {
-                            en: "Skill Cooldown Decrease",
-                            es: "Disminución del Enfriamiento de Habilidad",
-                            kr: "스킬 쿨타임 감소",
-                            jp: "スキルクールダウン減少",
-                            br: "Diminuição do Tempo de Recarga de Habilidade"
-                        },
-                        exp:
-                        {
-                            en: "EXP Gain",
-                            es: "Ganancia de EXP",
-                            kr: "경험치 획득",
-                            jp: "経験値獲得",
-                            br: "Ganho de EXP"
-                        },
-                        ed:
-                        {
-                            en: "ED Gain",
-                            es: "Ganancia de ED",
-                            kr: "ED 획득",
-                            jp: "ED獲得",
-                            br: "Ganho de ED"
-                        },
-                        idr:
-                        {
-                            es: "Item Drop Rate",
-                            es: "Tasa de Caída de Ítems",
-                            kr: "아이템 드롭률",
-                            jp: "アイテムドロップ率",
-                            br: "Taxa de Queda de Itens"
-                        },
-                    },
-                },
             },
         },
         stage3: {
@@ -603,25 +558,11 @@ export const data = {
                 br: "Lista de Conteúdo"
             },
             content_varnimyr: {
-                en: "New Region: Varnimyr",
-                es: "Nueva Región: Varnimyr",
-                kr: "신규 지역: 바르니미르",
-                jp: "新地域: ヴァルニミル",
-                br: "Nova Região: Varnimyr"
-            },
-            content_rosso: {
-                en: "Introduction to Rosso Raid",
-                es: "Introducción a la Incursión Rosso",
-                kr: "로소 레이드 소개",
-                jp: "ロッソレイド紹介",
-                br: "Introdução à Raide Rosso"
-            },
-            content_foj: {
-                en: "New Weapon: Flame of Judgement",
-                es: "Nueva Arma: Llama del Juicio",
-                kr: "신규 무기: 심판의 불꽃",
-                jp: "新武器: 審判の炎",
-                br: "Nova Arma: Chama do Julgamento"
+                en: "Varnimyr",
+                es: "Varnimyr",
+                kr: "바르니미르",
+                jp: "ヴァルニミル",
+                br: "Varnimyr"
             },
             content_mystic: {
                 en: "Mystic Enhancement",
@@ -631,11 +572,11 @@ export const data = {
                 br: "Aprimoramento Místico"
             },
             content_rigomor: {
-                en: "New Region: Rigomor",
-                es: "Nueva Región: Rigomor",
-                kr: "신규 지역: 리고모르",
-                jp: "新地域: リゴモア",
-                br: "Nova Região: Rigomor"
+                en: "Rigomor",
+                es: "Rigomor",
+                kr: "리고모르",
+                jp: "リゴモア",
+                br: "Rigomor"
             },
             sections: {
                 varnimyr_intro: {
@@ -677,80 +618,30 @@ export const data = {
                 },
                 varnimyr: {
                     title: {
-                        en: "New Region: Varnimyr",
-                        es: "Nueva Región: Varnimyr",
-                        kr: "신규 지역: 바르니미르",
-                        jp: "新地域: ヴァルニミル",
-                        br: "Nova Região: Varnimyr"
+                        en: "Varnimyr",
+                        es: "Varnimyr",
+                        kr: "바르니미르",
+                        jp: "ヴァルニミル",
+                        br: "Varnimyr"
                     },
                     content: {
                         en: [
-                            "Varnimyr is a region consisting of 5 Dungeons, and 3 Raid Dungeons (Widely known as Rosso Raid), here, your task will be to clear the first 4 dungeons to complete Dr. Pho's 2nd Guide, Lesson 3 and Lesson 4. This, primarily consists of Clearing Labyrinth of Ruin, Clearing Guardian's Forest, Clearing Dark Elves' Outpost, Clearing Forsaken Spirit Asylum, Clearing Gate of Darkness, Clearing Crimson Tower of Howling Flames on Any Mode, Clearing Never-Ending Darkness on Any Mode, Clearing Crimson Cradle of Flames on Any Mode.",
-                            "The purpose of doing all dungeons is to get the 16/16 reward, Flame of Judgement. (Introduced Later)"
+                            "Varnimyr is a region consisting of 5 Dungeons, and 3 Raid Dungeons. The only mandatory task of this region is to clear Crimson Cradle of Flames to complete the 5th quest of Dr. Pho's Varnimyr guide. To access Crimson Cradle of Flames you have to clear the previous 2 dungeons first (Crimson Tower of Flames and Never-Ending Darkness).",
+                            "The purpose of doing so is to get the reward cube that gives you the Flame of Judgement Weapon, alternatively:"
                         ],
-                        es: [
-                            "Varnimyr es una región que consta de 5 mazmorras y 3 mazmorras de incursión (conocidas como Incursión Rosso), aquí, tu tarea será limpiar las primeras 4 mazmorras para completar la Guía 2 del Dr. Pho, Lección 3 y Lección 4. Esto consiste principalmente en Limpiar el Laberinto de Ruina, Limpiar el Bosque del Guardián, Limpiar el Puesto de Avanzada de los Elfos Oscuros, Limpiar el Asilo de Espíritus Abandonados, Limpiar la Puerta de la Oscuridad, Limpiar la Torre Carmesí de Llamas Aulladoras en cualquier modo, Limpiar la Oscuridad Interminable en cualquier modo, Limpiar la Cuna Carmesí de Llamas en cualquier modo.",
-                            "El propósito de hacer todas las mazmorras es obtener la recompensa 16/16, la Llama del Juicio. (Introducida más adelante)"
-                        ],
-                        kr: [
-                            "바르니미르는 5개의 던전과 3개의 레이드 던전으로 구성된 지역입니다(일반적으로 로소 레이드로 알려져 있음). 여기서 당신의 임무는 처음 4개의 던전을 클리어하여 Dr. Pho의 두 번째 가이드, 레슨 3과 4를 완료하는 것입니다. 이는 주로 다음을 포함합니다: 파괴의 미궁 클리어, 수호자의 숲 클리어, 다크 엘프의 전초기지 클리어, 버려진 영혼의 수용소 클리어, 어둠의 문 클리어, 울부짖는 불꽃의 진홍빛 탑 어떤 모드에서든 클리어, 끝없는 어둠 어떤 모드에서든 클리어, 불꽃의 진홍빛 요람 어떤 모드에서든 클리어.",
-                            "모든 던전을 클리어하는 목적은 16/16 보상인 심판의 불꽃을 얻기 위함입니다. (추후 소개)"
-                        ],
-                        jp: [
-                            "ヴァルニミルは5つのダンジョンと3つのレイドダンジョンで構成される地域です(一般的にロッソレイドとして知られています)。ここでのあなたの任務は最初の4つのダンジョンをクリアしてDr. Phoの第2ガイド、レッスン3と4を完了することです。これには主に以下が含まれます: 廃墟の迷宮クリア、守護者の森クリア、ダークエルフの前哨基地クリア、見捨てられた魂の収容所クリア、闇の門クリア、吠える炎の深紅の塔を任意のモードでクリア、終わりのない闇を任意のモードでクリア、炎の深紅の揺りかごを任意のモードでクリア。",
-                            "すべてのダンジョンをクリアする目的は16/16報酬である審判の炎を獲得するためです。(後述)"
-                        ],
-                        br: [
-                            "Varnimyr é uma região composta por 5 masmorras e 3 masmorras de raide (conhecidas como Raide Rosso), aqui, sua tarefa será limpar as primeiras 4 masmorras para completar o Guia 2 do Dr. Pho, Lição 3 e Lição 4. Isto consiste principalmente em Limpar o Labirinto da Ruína, Limpar a Floresta do Guardião, Limpar o Posto Avançado dos Elfos Negros, Limpar o Asilo dos Espíritos Abandonados, Limpar o Portão da Escuridão, Limpar a Torre Carmesim das Chamas Uivantes em Qualquer Modo, Limpar a Escuridão Sem Fim em Qualquer Modo, Limpar o Berço Carmesim das Chamas em Qualquer Modo.",
-                            "O propósito de fazer todas as masmorras é obter a recompensa 16/16, a Chama do Julgamento. (Apresentado posteriormente)"
-                        ]
-                    }
-                },
-                rosso_raid_intro: {
-                    title: {
-                        en: "Introduction to Rosso Raid",
-                        es: "Introducción a la Incursión Rosso",
-                        kr: "로소 레이드 소개",
-                        jp: "ロッソレイド紹介",
-                        br: "Introdução à Raide Rosso"
-                    },
-                    content: {
-                        en: [
-                            "This is the first raid of the game, raid parties consist of a maximum amount of 6 Players, and, contrary to normal dungeons, you require a party to enter.",
-                            "All Raids have Mechanics (or Mechs for short), that are essential for clearing, even though this raid is old and all mechs can be neglected if you have a dps that deals enough damage, its still important to know the mechs if you ever find yourself in a party where you can't neglect them."
-                        ],
-                        es: [
-                            "Esta es la primera incursión del juego, los grupos de incursión constan de un máximo de 6 jugadores, y, a diferencia de las mazmorras normales, necesitas un grupo para entrar.",
-                            "Todas las incursiones tienen mecánicas (o 'mechs' para abreviar), que son esenciales para completarlas, aunque esta incursión es antigua y todas las mecánicas pueden ignorarse si tienes un dps que haga suficiente daño, todavía es importante conocer las mecánicas si alguna vez te encuentras en un grupo donde no puedes ignorarlas."
-                        ],
-                        kr: [
-                            "이것은 게임의 첫 번째 레이드입니다. 레이드 파티는 최대 6명의 플레이어로 구성되며 일반 던전과 달리 입장하려면 파티가 필요합니다.",
-                            "모든 레이드에는 클리어에 필수적인 메커니즘(줄여서 메크)이 있습니다. 이 레이드는 오래되었고 충분한 데미지를 주는 DPS가 있다면 모든 메크를 무시할 수 있지만, 메크를 무시할 수 없는 파티에 속하게 될 경우를 대비해 메크를 아는 것이 중요합니다."
-                        ],
-                        jp: [
-                            "これはゲーム最初のレイドです。レイドパーティーは最大6人のプレイヤーで構成され、通常のダンジョンとは異なり、入場するにはパーティーが必要です。",
-                            "すべてのレイドにはクリアに不可欠なメカニズム(略してメック)があります。このレイドは古く、十分なダメージを与えるDPSがいればすべてのメックを無視できますが、メックを無視できないパーティーに参加した場合に備えてメックを知っておくことは重要です。"
-                        ],
-                        br: [
-                            "Esta é a primeira raide do jogo, os grupos de raide consistem em um máximo de 6 jogadores, e, ao contrário das masmorras normais, você precisa de um grupo para entrar.",
-                            "Todas as raides têm mecânicas (ou 'mechs' para abreviar), que são essenciais para limpar, embora esta raide seja antiga e todas as mecânicas possam ser negligenciadas se você tiver um dps que cause dano suficiente, ainda é importante conhecer as mecânicas se você estiver em um grupo onde não pode negligenciá-las."
-                        ]
+                        es: [],
+                        kr: [],
+                        jp: [],
+                        br: []
                     }
                 },
                 foj: {
-                    title: {
-                        en: "New Weapon: Flame of Judgement",
-                        es: "Nueva Arma: Llama del Juicio",
-                        kr: "신규 무기: 심판의 불꽃",
-                        jp: "新武器: 審判の炎",
-                        br: "Nova Arma: Chama do Julgamento"
-                    },
                     content: {
                         en: [
-                            "Clearing each phase of the Rosso raid will make you able to get pity percentage to get a new weapon, the clear information is refreshed on week reset (Wednesday at 00:00 PST), or via Reset Tickets, exchangable for marks (given for helping people who haven't cleared the raid in this week, while being 100%).",
+                            "Clearing each phase of the Rosso Raid will make you able to get pity percentage to get a new weapon, the clear information is refreshed on week reset (Wednesday at 00:00 PST), or via Reset Tickets, exchangable for marks (given for helping people who haven't cleared the raid in this week, while being 100%).",
                             "The higher your pity bar, the higher the chances you have to drop the weapon. Every time a player in the party drops weapon, every member will be rewarded with 1 crystal (can only get 1 even if 2 people drop), accumulate them, since you can exchange them for Raid Accessories (5 crystals each), or Weapon (20 crystals).",
                             "You could farm this raid until you get all 3 accessories, but if you're fast enough, the 30d temporary set Dr. Pho's Guide gives you should be enough, since a later raid gives replacements for these.",
-                            "Flame of Judgement Weapon is also given at +10 enhancement level in the Dr. Pho's guide, which also comes pre-socketed on both sockets and mystic enhancement (system which will be explained now), although the stats pre socketed aren't perfect, they are good enough to get you through the next raid, and you can always farm varnimyr dungeons for a better rolls on mystic enhancement."
+                            "Flame of Judgement Weapon is also given at +10 enhancement level in the Dr. Pho's guide, which also comes pre-socketed on both Sockets and Mystic Enhancement, although the stats pre-socketed aren't perfect, they are good enough to get you through the next raid, and you can always farm varnimyr dungeons for better rolls."
                         ],
                         es: [
                             "Pasar cada fase de la incursión de Rosso te permitirá obtener un porcentaje de pena para obtener una nueva arma, la información de limpieza se actualiza en el reinicio semanal (miércoles a las 00:00 PST), o a través de Tickets de Reinicio, intercambiables por marcas (dadas por ayudar a personas que no han limpiado la incursión esta semana, mientras estás al 100%).",
@@ -769,83 +660,117 @@ export const data = {
                         ]
                     }
                 },
+                // MYSTIC ENHANCEMENT SYSTEM EXPLANATION START
                 mystic: {
                     title: {
-                        en: "System Explanation: Mystic Enhancement",
-                        es: "Explicación del Sistema: Mejora Mística",
-                        kr: "시스템 설명: 신비한 강화",
-                        jp: "システム説明: 神秘の強化",
-                        br: "Explicação do Sistema: Aprimoramento Místico"
+                        en: "Mystic Enhancement",
+                        es: "Mejora Mística",
+                        kr: "신비한 강화",
+                        jp: "神秘の強化",
+                        br: "Aprimoramento Místico"
                     },
-                    intro: {
-                        en: [
-                            "Each time you clear varnimyr dungeons for the first time on a day, clear rosso raid while being below 100%, or exchange with crystals, you can get Shining Colored Mystical Stones, divided into Red, Blue, Yellow and Giant.",
-                            "Weapons (except Void Weapon) have 9 red mystic slots, 9 blue mystic slots, 9 yellow mystic slots and 3 giant mystic slots with different RNG values."
-                        ],
-                        es: [
-                            "Cada vez que limpias mazmorras de Varnimyr por primera vez en un día, limpias la incursión Rosso estando por debajo del 100%, o intercambias con cristales, puedes obtener Piedras Místicas de Colores Brillantes, divididas en Rojo, Azul, Amarillo y Gigante.",
-                            "Las armas (excepto el Arma del Vacío) tienen 9 ranuras místicas rojas, 9 ranuras místicas azules, 9 ranuras místicas amarillas y 3 ranuras místicas gigantes con diferentes valores de RNG."
-                        ],
-                        kr: [
-                            "하루에 바르니미르 던전을 처음 클리어하거나, 100% 미만 상태에서 로소 레이드를 클리어하거나, 크리스탈로 교환할 때마다 빛나는 색상의 신비한 돌을 얻을 수 있습니다. 이 돌은 빨강, 파랑, 노랑, 거대로 나뉩니다.",
-                            "무기(보이드 무기 제외)는 각기 다른 RNG 값을 가진 빨강 신비 슬롯 9개, 파랑 신비 슬롯 9개, 노랑 신비 슬롯 9개, 거대 신비 슬롯 3개를 가지고 있습니다."
-                        ],
-                        jp: [
-                            "1日にヴァルニミルダンジョンを初クリアするたび、100%未満の状態でロッソレイドをクリアするたび、またはクリスタルと交換するたびに、輝く色の神秘の石を入手できます。これらの石は赤、青、黄、巨大に分類されます。",
-                            "武器（ヴォイド武器を除く）は、それぞれ異なるRNG値を持つ赤神秘スロット9個、青神秘スロット9個、黄神秘スロット9個、巨大神秘スロット3個を持っています。"
-                        ],
-                        br: [
-                            "Cada vez que você limpa masmorras de Varnimyr pela primeira vez em um dia, limpa a raide Rosso estando abaixo de 100%, ou troca com cristais, você pode obter Pedras Místicas Coloridas Brilhantes, divididas em Vermelho, Azul, Amarelo e Gigante.",
-                            "Armas (exceto Arma do Vazio) têm 9 slots místicos vermelhos, 9 slots místicos azuis, 9 slots místicos amarelos e 3 slots místicos gigantes com diferentes valores de RNG."
-                        ]
-                    },
-                    table_intro: {
-                        en: "These are the possible stats you can get from Mystic Enhancement:",
-                        es: "Estas são as estatísticas possíveis que você pode obter de la Mejora Mística:",
-                        kr: "신비한 강화로 얻을 수 있는 가능한 스탯은 다음과 같습니다:",
-                        jp: "神秘の強化で得られる可能性のあるステータスは以下の通りです:",
-                        br: "Estes são os status possíveis que você pode obter com o Aprimoramento Místico:"
-                    },
-                    conclusion: {
-                        en: [
-                            "Essentially, you want to socket Physical / Magical Attack Power, since it straight up increases your weapon's attack power, LV+ increases the item scalling (raw stat), and % increases percentually your final damage.",
-                            "For Farm, you can build a different weapon fully socketed with EXP, it's gonna come handy whenever you farm ERP.",
-                            "And, in case of being a support, since you're usually not asked to do damage, even if its little, you can use a HP weapon to boost your survivability.",
-                            "Your weapon should end up having Attack Level on Red slots, Attack % on Blue and Yellow Slots, and 2 Attack % and 1 Attack Lv, or 2 Attack Lv and 1 Attack % on Giant Slot."
-                        ],
-                        es: [
-                            "Esencialmente, deseas enchufar Poder de Ataque Físico / Mágico, ya que aumenta directamente el poder de ataque de tu arma, LV+ aumenta la escala del objeto (estadística bruta) y % aumenta porcentualmente tu daño final.",
-                            "Para Farmear, puedes construir un arma diferente completamente incrustada con EXP, será útil cada vez que farmees ERP.",
-                            "Y, en caso de ser soporte, como generalmente no se te pide que hagas daño, incluso si es poco, puedes usar un arma de HP para aumentar tu supervivencia.",
-                            "Tu arma debería terminar teniendo Nivel de Ataque en las ranuras Rojas, % de Ataque en las ranuras Azules y Amarillas, y 2 % de Ataque y 1 Lv de Ataque, o 2 Lv de Ataque y 1 % de Ataque en la Ranura Gigante."
-                        ],
-                        kr: [
-                            "근본적으로, 물리/마법 공격력을 소켓에 장착하고 싶을 것입니다. 이는 무기의 공격력을 직접적으로 증가시키기 때문입니다. LV+는 아이템 스케일링(원시 스탯)을 증가시키고, %는 최종 데미지를 백분율로 증가시킵니다. 이것이 DPS 관점에서 최선의 선택인 이유입니다. 이들은 많은 양의 CP를 제공하지만, 노랑 라인에서는 치명타 피해가 더 많은 CP를 제공할 수 있습니다. 그러나 DPS에는 권장되지 않습니다. 더 많은 CP를 제공하더라도 데미지를 감소시키기 때문입니다.",
-                            "파밍을 위해서는 EXP나 아이템 드롭률로 완전히 소켓 장착된 다른 무기를 제작할 수 있습니다. 액세서리나 아이템 등을 파밍할 때 유용할 것입니다.",
-                            "그리고 지원 역할의 경우, 일반적으로 데미지를 입히도록 요청받지 않으므로, 작은 양이라도 생존력을 높이기 위해 HP 무기를 사용할 수 있습니다.",
-                            "무기는 빨강 슬롯에 공격력 레벨, 파랑과 노랑 슬롯에 공격력 %, 거대 슬롯에 공격력 % 2개와 공격력 레벨 1개, 또는 공격력 레벨 2개와 공격력 % 1개로 끝나야 합니다."
-                        ],
-                        jp: [
-                            "基本的に、物理/魔法攻撃力をソケットに装着したいと考えています。これにより武器の攻撃力が直接向上するためです。LV+はアイテムのスケーリング（生のステータス）を増加させ、%は最終ダメージを百分率で増加させます。これらがDPSの観点で最良の選択肢である理由です。これらは大量のCPを提供しますが、黄ラインではクリティカルダメージがより多くのCPを提供できます。ただし、DPSには推奨されません。より多くのCPを提供してもダメージが減少するためです。",
-                            "ファーミングのためには、EXPやアイテムドロップ率で完全にソケット装着された別の武器を作成できます。アクセサリーやアイテムなどをファームする際に役立つでしょう。",
-                            "また、サポート役の場合、通常ダメージを与えるよう要求されないため、たとえ少量でもHP武器を使用して生存力を高めることができます。",
-                            "武器は最終的に、赤スロットに攻撃力レベル、青と黄スロットに攻撃力％、巨大スロットに攻撃力％2つと攻撃力レベル1つ、または攻撃力レベル2つと攻撃力％1つで終わるはずです。"
-                        ],
-                        br: [
-                            "Essencialmente, você deseja encaixar Poder de Ataque Físico / Mágico, pois aumenta diretamente o poder de ataque de sua arma, LV+ aumenta a escala do item (status bruto) e % aumenta percentualmente seu dano final, é por isso que eles são a melhor opção em termos de DPS, eles dão uma grande quantidade de CP, mas na Linha Amarela, Dano Crítico consegue dar mais, embora não seja recomendado para DPS, pois mesmo dando mais CP, diminui seu dano.",
-                            "Para Farm, você pode construir uma arma diferente totalmente encaixada com EXP ou Taxa de Drop de Itens, pois será útil sempre que você farmear algo, acessório, item, etc.",
-                            "E, no caso de ser suporte, como você geralmente não é solicitado a causar dano, mesmo que seja pouco, você pode usar uma arma de HP para aumentar sua sobrevivência.",
-                            "Sua arma deve acabar tendo Nível de Ataque nos slots Vermelhos, % de Ataque nos slots Azuis e Amarelos, e 2 % de Ataque e 1 Lv de Ataque, ou 2 Lv de Ataque e 1 % de Ataque no Slot Gigante."
-                        ]
+                    content: {
+                        intro: {
+                            en: [
+                                "Each time you clear Varnimyr dungeons for the first time on a day, clear rosso raid while being below 100%, or exchange with crystals, you can get Shining Colored Mystical Stones, divided into Red, Blue, Yellow and Giant.",
+                                "Weapons starting from the Flame of Judgement have 9 red mystic slots, 9 blue mystic slots, 9 yellow mystic slots and 3 giant mystic slots with different RNG values."
+                            ],
+                            es: [],
+                            kr: [],
+                            jp: [],
+                            br: []
+                        },
+                        table_intro: {
+                            en: "These are the possible stats you can get from Mystic Enhancement:",
+                            es: "Estas são as estatísticas possíveis que você pode obter de la Mejora Mística:",
+                            kr: "신비한 강화로 얻을 수 있는 가능한 스탯은 다음과 같습니다:",
+                            jp: "神秘の強化で得られる可能性のあるステータスは以下の通りです:",
+                            br: "Estes são os status possíveis que você pode obter com o Aprimoramento Místico:"
+                        },
+                        table: {
+                            titleKey: 'stage3.table_headers.mystictitle',
+                            labelColumnKey: 'stat',
+                            columns: [
+                                { key: 'stat',    labelKey: 'stage3.table_headers.stat' },
+                                { key: 'red',     labelKey: 'stage3.table_headers.red' },
+                                { key: 'blue',    labelKey: 'stage3.table_headers.blue' },
+                                { key: 'yellow',  labelKey: 'stage3.table_headers.yellow' },
+                                { key: 'giant',   labelKey: 'stage3.table_headers.giant' }
+                            ],
+                            rows: [
+                                { labelKey: 'stage3.stats.physical_attack_percent', red: '+1%', blue: '+1.5%', yellow: '+1%', giant: '+5%', goodStat: true },
+                                { labelKey: 'stage3.stats.physical_attack_level', red: '+1.5', blue: '+1', yellow: '+1', giant: '+6', goodStat: true },
+                                { labelKey: 'stage3.stats.physical_attack', red: '+105 ~ 150', blue: '+35 ~ 50', yellow: '+35 ~ 50', giant: '+500' },
+                                { labelKey: 'stage3.stats.physical_defense_percent', red: '+1%', blue: '+1.5%', yellow: '+1%', giant: '+5%' },
+                                { labelKey: 'stage3.stats.physical_defense_level', red: '+1.5', blue: '+1', yellow: '+1', giant: '+6' },
+                                { labelKey: 'stage3.stats.physical_defense', red: '+35 ~ 50', blue: '+35 ~ 50', yellow: '+35 ~ 50', giant: '+500' },
+                                { labelKey: 'stage3.stats.mag_atk_perc', red: '+1%', blue: '+1.5%', yellow: '+1%', giant: '+5%', goodStat: true },
+                                { labelKey: 'stage3.stats.mag_atk_lv', red: '+1.5', blue: '+1', yellow: '+1', giant: '+6', goodStat: true },
+                                { labelKey: 'stage3.stats.mag_atk', red: '+105 ~ 150', blue: '+35 ~ 50', yellow: '+35 ~ 50', giant: '+500' },
+                                { labelKey: 'stage3.stats.mag_def_perc', red: '+1.5%', blue: '+1%', yellow: '+1%', giant: '+5%' },
+                                { labelKey: 'stage3.stats.mag_def_lv', red: '+1.5', blue: '+1', yellow: '+1', giant: '+6' },
+                                { labelKey: 'stage3.stats.mag_def', red: '+35 ~ 50', blue: '+35 ~ 50', yellow: '+35 ~ 50', giant: '+500' },
+                                { labelKey: 'stage3.stats.hp_increase', red: '+5.1% ~ 6%', blue: '+1.7% ~ 2%', yellow: '+1.7% ~ 2%', giant: '+15%' },
+                                { labelKey: 'stage3.stats.awk_charge', red: '+1.7 ~ 2%', blue: '+1.7 ~ 2%', yellow: '+2.7 ~ 3%', giant: '+10%' },
+                                { labelKey: 'stage3.stats.awk_duration', red: '+1.7 ~ 2%', blue: '+1.7 ~ 2%', yellow: '+2.7 ~ 3%', giant: '+10%' },
+                                { labelKey: 'stage3.stats.skill_cdr', red: '-1%', blue: '-1.5%', yellow: '-1%', giant: '-5%' },
+                                { labelKey: 'stage3.stats.critical', red: '+1.7 ~ 2%', blue: '+1.7 ~ 2%', yellow: '+2.7 ~ 3%', giant: '+10%' },
+                                { labelKey: 'stage3.stats.maximize', red: '+1.7 ~ 2%', blue: '+1.7 ~ 2%', yellow: '+2.7 ~ 3%', giant: '+10%' },
+                                { labelKey: 'stage3.stats.crit_dmg', red: '+1%', blue: '+1%', yellow: '+1.5%', giant: '+5%', hidden: true },
+                                { labelKey: 'stage3.stats.dmg_boss', red: '+1%', blue: '+1.5%', yellow: '+1%', giant: '+5%' },
+                                { labelKey: 'stage3.stats.idr', red: '+1.7 ~ 2%', blue: '+2.7 ~ 3%', yellow: '+1.7 ~ 2%', giant: '+10%', hidden: true },
+                                { labelKey: 'stage3.stats.exp_gain', red: '+2.4 ~ 3%', blue: '+8.5 ~ 10%', yellow: '+2.4 ~ 3%', giant: '+30%', hidden: true },
+                                { labelKey: 'stage3.stats.add_dmg', red: '+1.7 ~ 2%', blue: '+1.7 ~ 2%', yellow: '+2.7 ~ 3%', giant: '+10%' },
+                                { labelKey: 'stage3.stats.dmg_red', red: '+1.7 ~ 2%', blue: '+1.7 ~ 2%', yellow: '+2.7 ~ 3%', giant: '+10%', hidden: true },
+                                { labelKey: 'stage3.stats.elemental_act_chance', red: '+1%', blue: '+1.5%', yellow: '+1%', giant: '+5%' },
+                                { labelKey: 'stage3.stats.double_attack', red: '+1.7 ~ 2%', blue: '+2.7 ~ 3%', yellow: '+1.7 ~ 2%', giant: '+5%' },
+                                { labelKey: 'stage3.stats.all_skill_dmg', red: '+1%', blue: '+1.5%', yellow: '+1%', giant: '+5%', hidden: true },
+                                { labelKey: 'stage3.stats.max_mp', red: '+3', blue: '+3', yellow: '+6', giant: '+20' },
+                                { labelKey: 'stage3.stats.action_speed', red: '+1.7 ~ 2%', blue: '+1.7 ~ 2%', yellow: '+2.7 ~ 3%', giant: '+10%' }
+                            ]
+                        },
+                        conclusion: {
+                            en: [
+                                "Essentially, you want to socket Physical / Magical Attack Power, since it straight up increases your weapon's attack power, LV+ increases the item scalling (raw stat), and % increases percentually your final damage.",
+                                "For Farm, you can build a different weapon fully socketed with EXP, it's gonna come handy whenever you farm ERP.",
+                                "And, in case of being a support, since you're usually not asked to do damage, even if its little, you can use a HP weapon to boost your survivability.",
+                                "Your weapon should end up having Attack Level on Red slots, Attack % on Blue and Yellow Slots, and 2 Attack % and 1 Attack Lv, or 2 Attack Lv and 1 Attack % on Giant Slot."
+                            ],
+                            es: [
+                                "Esencialmente, deseas enchufar Poder de Ataque Físico / Mágico, ya que aumenta directamente el poder de ataque de tu arma, LV+ aumenta la escala del objeto (estadística bruta) y % aumenta porcentualmente tu daño final.",
+                                "Para Farmear, puedes construir un arma diferente completamente incrustada con EXP, será útil cada vez que farmees ERP.",
+                                "Y, en caso de ser soporte, como generalmente no se te pide que hagas daño, incluso si es poco, puedes usar un arma de HP para aumentar tu supervivencia.",
+                                "Tu arma debería terminar teniendo Nivel de Ataque en las ranuras Rojas, % de Ataque en las ranuras Azules y Amarillas, y 2 % de Ataque y 1 Lv de Ataque, o 2 Lv de Ataque y 1 % de Ataque en la Ranura Gigante."
+                            ],
+                            kr: [
+                                "근본적으로, 물리/마법 공격력을 소켓에 장착하고 싶을 것입니다. 이는 무기의 공격력을 직접적으로 증가시키기 때문입니다. LV+는 아이템 스케일링(원시 스탯)을 증가시키고, %는 최종 데미지를 백분율로 증가시킵니다. 이것이 DPS 관점에서 최선의 선택인 이유입니다. 이들은 많은 양의 CP를 제공하지만, 노랑 라인에서는 치명타 피해가 더 많은 CP를 제공할 수 있습니다. 그러나 DPS에는 권장되지 않습니다. 더 많은 CP를 제공하더라도 데미지를 감소시키기 때문입니다.",
+                                "파밍을 위해서는 EXP나 아이템 드롭률로 완전히 소켓 장착된 다른 무기를 제작할 수 있습니다. 액세서리나 아이템 등을 파밍할 때 유용할 것입니다.",
+                                "그리고 지원 역할의 경우, 일반적으로 데미지를 입히도록 요청받지 않으므로, 작은 양이라도 생존력을 높이기 위해 HP 무기를 사용할 수 있습니다.",
+                                "무기는 빨강 슬롯에 공격력 레벨, 파랑과 노랑 슬롯에 공격력 %, 거대 슬롯에 공격력 % 2개와 공격력 레벨 1개, 또는 공격력 레벨 2개와 공격력 % 1개로 끝나야 합니다."
+                            ],
+                            jp: [
+                                "基本的に、物理/魔法攻撃力をソケットに装着したいと考えています。これにより武器の攻撃力が直接向上するためです。LV+はアイテムのスケーリング（生のステータス）を増加させ、%は最終ダメージを百分率で増加させます。これらがDPSの観点で最良の選択肢である理由です。これらは大量のCPを提供しますが、黄ラインではクリティカルダメージがより多くのCPを提供できます。ただし、DPSには推奨されません。より多くのCPを提供してもダメージが減少するためです。",
+                                "ファーミングのためには、EXPやアイテムドロップ率で完全にソケット装着された別の武器を作成できます。アクセサリーやアイテムなどをファームする際に役立つでしょう。",
+                                "また、サポート役の場合、通常ダメージを与えるよう要求されないため、たとえ少量でもHP武器を使用して生存力を高めることができます。",
+                                "武器は最終的に、赤スロットに攻撃力レベル、青と黄スロットに攻撃力％、巨大スロットに攻撃力％2つと攻撃力レベル1つ、または攻撃力レベル2つと攻撃力％1つで終わるはずです。"
+                            ],
+                            br: [
+                                "Essencialmente, você deseja encaixar Poder de Ataque Físico / Mágico, pois aumenta diretamente o poder de ataque de sua arma, LV+ aumenta a escala do item (status bruto) e % aumenta percentualmente seu dano final, é por isso que eles são a melhor opção em termos de DPS, eles dão uma grande quantidade de CP, mas na Linha Amarela, Dano Crítico consegue dar mais, embora não seja recomendado para DPS, pois mesmo dando mais CP, diminui seu dano.",
+                                "Para Farm, você pode construir uma arma diferente totalmente encaixada com EXP ou Taxa de Drop de Itens, pois será útil sempre que você farmear algo, acessório, item, etc.",
+                                "E, no caso de ser suporte, como você geralmente não é solicitado a causar dano, mesmo que seja pouco, você pode usar uma arma de HP para aumentar sua sobrevivência.",
+                                "Sua arma deve acabar tendo Nível de Ataque nos slots Vermelhos, % de Ataque nos slots Azuis e Amarelos, e 2 % de Ataque e 1 Lv de Ataque, ou 2 Lv de Ataque e 1 % de Ataque no Slot Gigante."
+                            ]
+                        }
                     }
                 },
+                // MYSTIC ENHANCEMENT SYSTEM EXPLANATION END
                 rigomor: {
                     title: {
-                        en: "New Region: Rigomor",
-                        es: "Nueva Región: Rigomor",
-                        kr: "신규 지역: 리고모르",
-                        jp: "新地域: リゴモア",
-                        br: "Nova Região: Rigomor"
+                        en: "Master Class (Rigomor + Master Road)",
+                        es: "",
+                        kr: "",
+                        jp: "",
+                        br: ""
                     },
                     intro: {
                         en: [
@@ -866,7 +791,7 @@ export const data = {
                     },
                     content: {
                         en: [
-                            "the current task would, of course, to spam quests till you complete your 2nd quest. If you manage to find a party to go through those dungeons, the fastest rigomor dungeon is Trosh's Nest if you have a party or enough damage to oneshot all enemies, otherwise your second option would be Abandoned Icerite Plant, and your third option would be Sea of Ruin.","After finishing the 2/5 quest you'll be ready to start doing Master Road."
+                            "the current task would be to spam quests till you complete your 2nd quest. If you manage to find a party to go through those dungeons, the fastest rigomor dungeon is Trosh's Nest if you have a party or enough damage to oneshot all enemies, otherwise your second option would be Abandoned Icerite Plant, and your third option would be Sea of Ruin.","After finishing the 2/5 quest you'll be ready to start doing Master Road."
                         ],
                         es: [
                             ""
@@ -884,15 +809,15 @@ export const data = {
                 },
                 master_road: {
                     title: {
-                        en: "New Region: Master Road",
-                        es: "Nueva Región: ",
-                        kr: "신규 지역: ",
-                        jp: "新地域: ",
-                        br: "Nova Região: "
+                        en: "Master Road",
+                        es: "",
+                        kr: "",
+                        jp: "",
+                        br: ""
                     },
                     intro: {
                         en: [
-                            "This region consists of multiple boss spars, divided by both normal mode and hell mode; you won't stay long in this region, as you'll only need it to complete Master Class Quest, all enemies are boss type, so use of Head Hunter is recommended. The fastest dungeon of the region would be Shrine of the Two-Headed Serpent, since its adapted for solo play, you'll need to do this 16 times on normal mode, although it's recommended to do 1 hell mode to complete the Dr. Pho's Master Road Assignment, but you can do that later since it's harder when you lack gear."
+                            "Master Road consists of multiple boss spars, divided by both normal mode and hell mode; you won't stay long in this region, as you'll only need it to complete Master Class Quest, all enemies are boss type, so use of Head Hunter is recommended. The fastest dungeon of the region would be Shrine of the Two-Headed Serpent, since its adapted for solo play, you'll need to do this 16 times on normal mode, although it's recommended to do 1 hell mode to complete the Dr. Pho's Master Road Assignment, but you can do that later since it's harder when you lack gear."
                         ],
                         es: [
                             ""
@@ -925,9 +850,10 @@ export const data = {
                         ]
                     }
                 },
+                // MASTER ARTIFACT SYSTEM EXPLANATION START
                 artifact_system: {
                     title: {
-                        en: "System Explanation: Master Artifact",
+                        en: "Master Artifact",
                         es: "",
                         kr: "",
                         jp: "",
@@ -1020,6 +946,48 @@ export const data = {
                             br: [
                                 ""
                             ]
+                        },
+                        table: {
+                            titleKey: 'stage3.table_headers.arti_equip_headers.add_effect',
+                            labelColumnKey: 'stat',
+                            columns: [
+                                { key: 'stat',    labelKey: 'stage3.table_headers.arti_equip_headers.circlet' },
+                                { key: 'value',   labelKey: 'Value' }
+                            ],
+                            rowHeaders: [
+                                { rowKey: 'circlet', labelKey: 'stage3.table_headers.arti_equip_headers.circlet', rowspan: 7 },
+                                { rowKey: 'armor', labelKey: 'stage3.table_headers.arti_equip_headers.armor', rowspan: 7 },
+                                { rowKey: 'necklace', labelKey: 'stage3.table_headers.arti_equip_headers.necklace', rowspan: 7 },
+                                { rowKey: 'ring', labelKey: 'stage3.table_headers.arti_equip_headers.ring', rowspan: 9 }
+                            ],
+                            rows: [
+                                { labelKey: 'stage3.stats.artifact_s1ms', value: '3% - 8%' },
+                                { labelKey: 'stage3.stats.artifact_s2ms', value: '3% - 8%' },
+                                { labelKey: 'stage3.stats.artifact_amsd', value: '[2 x Growth Stage]%' },
+                                { labelKey: 'stage3.stats.artifact_hasd', value: '5% - 10%' },
+                                { labelKey: 'stage3.stats.artifact_crit', value: '8% - 12%', goodStat: true },
+                                { labelKey: 'stage3.stats.artifact_maxi', value: '8% - 12%', goodStat: true },
+                                { labelKey: 'stage3.stats.artifact_s2ms', value: '3% - 8%' },
+                                { labelKey: 'stage3.stats.artifact_s3ms', value: '3% - 8%' },
+                                { labelKey: 'stage3.stats.artifact_amsd', value: '[2 x Growth Stage]%' },
+                                { labelKey: 'stage3.stats.artifact_hasd', value: '5% - 10%' },
+                                { labelKey: 'stage3.stats.artifact_maxhp', value: '8% - 12%', goodStat: true },
+                                { labelKey: 'stage3.stats.dmg_red', value: '8% - 12%', goodStat: true },
+                                { labelKey: 'stage3.stats.artifact_s3ms', value: '3% - 8%' },
+                                { labelKey: 'stage3.stats.artifact_s4ms', value: '3% - 8%' },
+                                { labelKey: 'stage3.stats.artifact_amsd', value: '[2 x Growth Stage]%' },
+                                { labelKey: 'stage3.stats.artifact_hasd', value: '5% - 10%' },
+                                { labelKey: 'stage3.stats.artifact_cmscdr', value: '3% - 8%' },
+                                { labelKey: 'stage3.stats.artifact_cmsmpr', value: '3% - 8%' },
+                                { labelKey: 'stage3.stats.artifact_s1ms', value: '1% - 4%' },
+                                { labelKey: 'stage3.stats.artifact_s2ms', value: '1% - 4%' },
+                                { labelKey: 'stage3.stats.artifact_s3ms', value: '1% - 4%' },
+                                { labelKey: 'stage3.stats.artifact_s4ms', value: '1% - 4%' },
+                                { labelKey: 'stage3.stats.artifact_amsdefign', value: '2% - 5%' },
+                                { labelKey: 'stage3.stats.artifact_cdmg', value: '2% - 5%', goodStat: true },
+                                { labelKey: 'stage3.stats.artifact_elementres', value: '30 / 35 / 40 / 45 / 50' },
+                                { labelKey: 'stage3.stats.artifact_adapt', value: '1%', hidden: true }
+                            ]
                         }
                     },
                     hiddenpower: {
@@ -1056,6 +1024,35 @@ export const data = {
                             br: [
                                 ""
                             ]
+                        },
+                        table: {
+                            titleKey: 'stage3.table_headers.hp_headers.hptitle',
+                            labelColumnKey: 'stat',
+                            columns: [
+                                { key: 'stat',    labelKey: 'stage3.table_headers.hp_headers.row1' },
+                                { key: 'value',   labelKey: 'Value' }
+                            ],
+                            rowHeaders: [
+                                { rowKey: 'row1', labelKey: 'stage3.table_headers.hp_headers.row1', rowspan: 3 },
+                                { rowKey: 'row2', labelKey: 'stage3.table_headers.hp_headers.row2', rowspan: 5 },
+                                { rowKey: 'row3', labelKey: 'stage3.table_headers.hp_headers.row3', rowspan: 9 }
+                            ],
+                            rows: [
+                                { labelKey: 'stage3.stats.artifact_amsd', value: '5% - 15%', goodStat: true },
+                                { labelKey: 'stage3.stats.artifact_cmsd', value: '5% - 15%' },
+                                { labelKey: 'stage3.stats.artifact_amscdr', value: '6% / 8% / 10% / 12% / 14% / 16% / 18% / 20%', goodStat: true },
+                                { labelKey: 'stage3.stats.artifact_cmscdr', value: '6% / 8% / 10% / 12% / 14% / 16% / 18% / 20%' },
+                                { labelKey: 'stage3.stats.artifact_ams_size', value: '6% / 8% / 10% / 12% / 14% / 16% / 18% / 20%' },
+                                { labelKey: 'stage3.stats.artifact_cms_size', value: '6% / 8% / 10% / 12% / 14% / 16% / 18% / 20%' },
+                                { labelKey: 'stage3.stats.artifact_phys', value: '100 / 200 / 300 / 400 / 500 / 600' },
+                                { labelKey: 'stage3.stats.artifact_mag', value: '100 / 200 / 300 / 400 / 500 / 600' },
+                                { labelKey: 'stage3.stats.artifact_cdmg', value: '1% - 5%' },
+                                { labelKey: 'stage3.stats.artifact_bdmg', value: '1% - 15%', goodStat: true },
+                                { labelKey: 'stage3.stats.artifact_adapt', value: '1% - 3%' },
+                                { labelKey: 'stage3.stats.artifact_aspd', value: '1% - 8%' },
+                                { labelKey: 'stage3.stats.artifact_mspd', value: '1% - 12%' },
+                                { labelKey: 'stage3.stats.artifact_ma_exp', value: '10% / 12% / 14% / 16% / 18% / 20% / 22% / 24% / 26% / 28% / 30%' }
+                            ]
                         }
                     },
                     spiritstones: {
@@ -1077,12 +1074,50 @@ export const data = {
                             ]
                         }
                     },
-                    spirittable_intro: {
-                        en: "These are the possible stats you can get from Spirit Stone Assembly:",
-                        es: "",
-                        kr: "",
-                        jp: "",
-                        br: ""
+                    spirittable: {
+                        intro: {
+                            en: "These are the possible stats you can get from Spirit Stone Assembly:",
+                            es: "",
+                            kr: "",
+                            jp: "",
+                            br: ""
+                        },
+                        table: {
+                            titleKey: 'stage3.table_headers.arti_equip_headers.spiritstoneassembly',
+                            labelColumnKey: 'stat',
+                            columns: [
+                                { key: 'stat',    labelKey: 'stage3.table_headers.arti_equip_headers.circlet' },
+                                { key: 'value',   labelKey: 'Value' }
+                            ],
+                            rowHeaders: [
+                                { rowKey: 'circlet', labelKey: 'stage3.table_headers.arti_equip_headers.circlet', rowspan: 6 },
+                                { rowKey: 'armor', labelKey: 'stage3.table_headers.arti_equip_headers.armor', rowspan: 6 },
+                                { rowKey: 'necklace', labelKey: 'stage3.table_headers.arti_equip_headers.necklace', rowspan: 6 },
+                                { rowKey: 'ring', labelKey: 'stage3.table_headers.arti_equip_headers.ring', rowspan: 6 }
+                            ],
+                            rows: [
+                                { labelKey: 'stage3.stats.artifact_ascdr', value: '0.5% / 1% / 1.5% / 2% / 2.5% / 3% / 3.5% / 4% / 4.5% / 5%', goodStat: true },
+                                { labelKey: 'stage3.stats.artifact_smpcost', value: '0.5% / 1% / 1.5% / 2% / 2.5% / 3% / 3.5% / 4% / 4.5% / 5%' },
+                                { labelKey: 'stage3.stats.artifact_aspd', value: '3.5% / 4% / 4.5% / 5% / 5.5% / 6% / 6.5% / 7% / 7.5% / 8%' },
+                                { labelKey: 'stage3.stats.artifact_maxi', value: '3.5% / 4% / 4.5% / 5% / 5.5% / 6% / 6.5% / 7% / 7.5% / 8%' },
+                                { labelKey: 'stage3.stats.artifact_crit', value: '3.5% / 4% / 4.5% / 5% / 5.5% / 6% / 6.5% / 7% / 7.5% / 8%' },
+                                { labelKey: 'stage3.stats.artifact_maxhp', value: '3.5% / 4% / 4.5% / 5% / 5.5% / 6% / 6.5% / 7% / 7.5% / 8%' },
+                                { labelKey: 'stage3.stats.dmg_red', value: '3.5% / 4% / 4.5% / 5% / 5.5% / 6% / 6.5% / 7% / 7.5% / 8%', goodStat: true },
+                                { labelKey: 'stage3.stats.artifact_phys_mag_def', value: '3.5% / 4% / 4.5% / 5% / 5.5% / 6% / 6.5% / 7% / 7.5% / 8%' },
+                                { labelKey: 'stage3.stats.artifact_dfb', value: '3.5% / 4% / 4.5% / 5% / 5.5% / 6% / 6.5% / 7% / 7.5% / 8%', hidden: true },
+                                { labelKey: 'stage3.stats.artifact_elementres', value: '5 / 10 / 15 / 20 / 25 / 30 / 35 / 40 / 45 / 50' },
+                                { labelKey: 'stage3.stats.artifact_cmd_act_sd', value: '0.5% / 1% / 1.5% / 2% / 2.5% / 3% / 3.5% / 4% / 4.5% / 5%' },
+                                { labelKey: 'stage3.stats.artifact_tsd', value: '0.5% / 1% / 1.5% / 2% / 2.5% / 3% / 3.5% / 4% / 4.5% / 5%' },
+                                { labelKey: 'stage3.stats.artifact_ssd', value: '0.5% / 1% / 1.5% / 2% / 2.5% / 3% / 3.5% / 4% / 4.5% / 5%', hidden: true },
+                                { labelKey: 'stage3.stats.artifact_bsd', value: '0.5% / 1% / 1.5% / 2% / 2.5% / 3% / 3.5% / 4% / 4.5% / 5%', goodStat: true },
+                                { labelKey: 'stage3.stats.artifact_ha_ms_sd', value: '0.5% / 1% / 1.5% / 2% / 2.5% / 3% / 3.5% / 4% / 4.5% / 5%' },
+                                { labelKey: 'stage3.stats.artifact_phys_mag_atk', value: '0.2% / 0.4% / 0.6% / 0.8% / 1% / 1.2% / 1.4% / 1.6% / 1.8% / 2%', hidden: true },
+                                { labelKey: 'stage3.stats.artifact_igndef', value: '0.2% / 0.4% / 0.6% / 0.8% / 1% / 1.2% / 1.4% / 1.6% / 1.8% / 2%', hidden: true },
+                                { labelKey: 'stage3.stats.artifact_cdmg', value: '0.2% / 0.4% / 0.6% / 0.8% / 1% / 1.2% / 1.4% / 1.6% / 1.8% / 2%' },
+                                { labelKey: 'stage3.stats.artifact_asd', value: '0.2% / 0.4% / 0.6% / 0.8% / 1% / 1.2% / 1.4% / 1.6% / 1.8% / 2%' },
+                                { labelKey: 'stage3.stats.artifact_pola', value: '0.2% / 0.4% / 0.6% / 0.8% / 1% / 1.2% / 1.4% / 1.6% / 1.8% / 2%', goodStat: true }
+                            ]
+                        }
                     },
                     artifact_seteffect: {
                         content: {
@@ -1100,6 +1135,23 @@ export const data = {
                             ],
                             br: [
                                 ""
+                            ]
+                        },
+                        table: {
+                            titleKey: 'stage3.table_headers.arti_seteffect_headers.ase',
+                            labelColumnKey: 'pieces',
+                            columns: [
+                                { key: 'pieces', labelKey: 'stage3.table_headers.arti_seteffect_headers.empty' },
+                                { key: 'blue',   labelKey: 'stage3.table_headers.arti_seteffect_headers.blue' },
+                                { key: 'yellow', labelKey: 'stage3.table_headers.arti_seteffect_headers.yellow' },
+                                { key: 'green',  labelKey: 'stage3.table_headers.arti_seteffect_headers.green' },
+                                { key: 'orange', labelKey: 'stage3.table_headers.arti_seteffect_headers.orange' },
+                                { key: 'red',    labelKey: 'stage3.table_headers.arti_seteffect_headers.red' }
+                            ],
+                            rows: [
+                                { labelKey: 'stage3.table_headers.arti_seteffect_headers.pc2', blue: 'stage3.stats.artifact_seteffect_2pcvalues.blue', yellow: 'stage3.stats.artifact_seteffect_2pcvalues.yellow', green: 'stage3.stats.artifact_seteffect_2pcvalues.green', orange: 'stage3.stats.artifact_seteffect_2pcvalues.orange', red: 'stage3.stats.artifact_seteffect_2pcvalues.red' },
+                                { labelKey: 'stage3.table_headers.arti_seteffect_headers.pc4', blue: 'stage3.stats.artifact_seteffect_4pcvalues.blue', yellow: 'stage3.stats.artifact_seteffect_4pcvalues.yellow', green: 'stage3.stats.artifact_seteffect_4pcvalues.green', orange: 'stage3.stats.artifact_seteffect_4pcvalues.orange', red: 'stage3.stats.artifact_seteffect_4pcvalues.red' },
+                                { labelKey: 'stage3.table_headers.arti_seteffect_headers.pc5', blue: 'stage3.stats.artifact_seteffect_5pcvalues.blue', yellow: 'stage3.stats.artifact_seteffect_5pcvalues.yellow', green: 'stage3.stats.artifact_seteffect_5pcvalues.green', orange: 'stage3.stats.artifact_seteffect_5pcvalues.orange', red: 'stage3.stats.artifact_seteffect_5pcvalues.red' }
                             ]
                         },
                         conclusion: {
@@ -1121,7 +1173,43 @@ export const data = {
                         }
                     }
                 },
+                // MASTER ARTIFACT SYSTEM EXPLANATION END
+                // ROSSO RAID START
+                rosso_raid_intro: {
+                    title: {
+                        en: "Introduction to Rosso Raid",
+                        es: "Introducción a la Incursión Rosso",
+                        kr: "로소 레이드 소개",
+                        jp: "ロッソレイド紹介",
+                        br: "Introdução à Raide Rosso"
+                    },
+                    content: {
+                        en: [
+                            "This is the first raid of the game, raid parties consist of a maximum amount of 6 Players, and, contrary to normal dungeons, you require a party to enter.",
+                            "All Raids have Mechanics (or Mechs for short), that are essential for clearing, even though this raid is old and all mechs can be neglected if you have a dps that deals enough damage, its still important to know the mechs if you ever find yourself in a party where you can't neglect them."
+                        ],
+                        es: [
+                            "Esta es la primera incursión del juego, los grupos de incursión constan de un máximo de 6 jugadores, y, a diferencia de las mazmorras normales, necesitas un grupo para entrar.",
+                            "Todas las incursiones tienen mecánicas (o 'mechs' para abreviar), que son esenciales para completarlas, aunque esta incursión es antigua y todas las mecánicas pueden ignorarse si tienes un dps que haga suficiente daño, todavía es importante conocer las mecánicas si alguna vez te encuentras en un grupo donde no puedes ignorarlas."
+                        ],
+                        kr: [
+                            "이것은 게임의 첫 번째 레이드입니다. 레이드 파티는 최대 6명의 플레이어로 구성되며 일반 던전과 달리 입장하려면 파티가 필요합니다.",
+                            "모든 레이드에는 클리어에 필수적인 메커니즘(줄여서 메크)이 있습니다. 이 레이드는 오래되었고 충분한 데미지를 주는 DPS가 있다면 모든 메크를 무시할 수 있지만, 메크를 무시할 수 없는 파티에 속하게 될 경우를 대비해 메크를 아는 것이 중요합니다."
+                        ],
+                        jp: [
+                            "これはゲーム最初のレイドです。レイドパーティーは最大6人のプレイヤーで構成され、通常のダンジョンとは異なり、入場するにはパーティーが必要です。",
+                            "すべてのレイドにはクリアに不可欠なメカニズム(略してメック)があります。このレイドは古く、十分なダメージを与えるDPSがいればすべてのメックを無視できますが、メックを無視できないパーティーに参加した場合に備えてメックを知っておくことは重要です。"
+                        ],
+                        br: [
+                            "Esta é a primeira raide do jogo, os grupos de raide consistem em um máximo de 6 jogadores, e, ao contrário das masmorras normais, você precisa de um grupo para entrar.",
+                            "Todas as raides têm mecânicas (ou 'mechs' para abreviar), que são essenciais para limpar, embora esta raide seja antiga e todas as mecânicas possam ser negligenciadas se você tiver um dps que cause dano suficiente, ainda é importante conhecer as mecânicas se você estiver em um grupo onde não pode negligenciá-las."
+                        ]
+                    }
+                },
                 ctohf: {
+                    titlekey: {
+                        en: "Crimson Tower of Howling Flames", es: "Torre Carmín de los Lamentos", kr: "울부짖는 불꽃의 붉은 탑", jp: "叫ぶ炎の紅い塔", br: "Torre Carmim dos Uivos",
+                    },
                     num: { en: "1st Dungeon", es: "1ra Mazmorra", kr: "첫 번째 던전", jp: "最初のダンジョン", br: "1ª Masmorra" },
                     name: { en: "- Crimson Tower of Howling Flames -", es: "- Torre Carmín de los Lamentos -", kr: "- 울부짖는 불꽃의 붉은 탑 -", jp: "- 叫ぶ炎の紅い塔 -", br: "- Torre Carmim dos Uivos -"},
                     content: {
@@ -1222,7 +1310,11 @@ export const data = {
                         }
                     }
                 },
+                // ROSSO RAID 2nd DUNGEON
                 ned: {
+                    titlekey: {
+                        en: "Never-Ending Darkness", es: "Oscuridad Infinita", kr: "끝없는 어둠", jp: "終わらない闇", br: "Escuridão Infinita"
+                    },
                     num: { en: "2nd Dungeon", es: "2da Mazmorra", kr: "두 번째 던전", jp: "2番目のダンジョン", br: "2ª Masmorra" },
                     name: { en: "- Never-Ending Darkness -", es: "- Oscuridad Infinita -", kr: "- 끝없는 어둠 -", jp: "- 終わらない闇 -", br: "- Escuridão Infinita -"},
                     content: {
@@ -1319,7 +1411,11 @@ export const data = {
                         }
                     }
                 },
+                // ROSSO RAID 3rd DUNGEON
                 ccof: {
+                    titlekey: {
+                        en: "Crimson Cradle of Flames", es: "Cuna Carmín de Llamas", kr: "진홍빛 불꽃의 요람", jp: "紅い炎の芽", br: "Berço Escarlate de Chamas"
+                    },
                     num: { en: "3rd Dungeon", es: "3ra Mazmorra", kr: "세 번째 던전", jp: "3番目のダンジョン", br: "3ª Masmorra" },
                     name: { en: "- Crimson Cradle of Flames -", es: "- Cuna Carmín de Llamas -", kr: "- 진홍빛 불꽃의 요람 -", jp: "- 紅い炎の芽 -", br: "- Berço Escarlate de Chamas -"},
                     content: {
@@ -1422,6 +1518,7 @@ export const data = {
                         }
                     }
                 },
+                // ROSSO RAID END
             },
             notices: {
                 raid_party: {
@@ -1461,6 +1558,7 @@ export const data = {
                 }
             },
             table_headers: {
+                // MYSTIC ENHANCEMENT SYSTEM EXPLANATION TABLE HEADERS
                 mystictitle: {
                     en: "Mystic Enhancement",
                     es: "",
@@ -1503,6 +1601,7 @@ export const data = {
                     jp: "巨大の値",
                     br: "Valor Gigante"
                 },
+                // MASTER ARTIFACT SYSTEM EXPLANATION TABLE HEADERS
                 hp_headers: {
                     hptitle: {
                         en: "Hidden Power",
@@ -1591,6 +1690,13 @@ export const data = {
                         kr: "", 
                         jp: "",
                         br: ""
+                    },
+                    empty: {
+                        en: " ",
+                        es: " ",
+                        kr: " ", 
+                        jp: " ",
+                        br: " "
                     },
                     yellow: {
                         en: "Yellow",
@@ -2473,95 +2579,1371 @@ export const data = {
                 br: "Este status não é recomendado para DPS ideal, mas pode ser mantido como um bom espaço reservado quando você não tiver recursos suficientes para aperfeiçoar seus rolls"
             }
         },
-
         stage4: {
-            title: { en: "Stage 4", es: "Etapa 4", kr: "4단계", jp: "ステージ4", br: "Estágio 4" },
-            stage4_title: { en: "Pruinaum to Tirnog", es: "Pruinaum a Tirnog", kr: "프루이나움에서 티르노그까지", jp: "プルイナウムからティルノグへ", br: "Pruinaum a Tirnog" },
-            content_pruinaum: { en: "New Region: Pruinaum", es: "Nueva Región: Pruinaum", kr: "신규 지역: 프루이나움", jp: "新地域: プルイナウム", br: "Nova Região: Pruinaum" },
-            content_berthe: { en: "Introduction to Berthe Raid", es: "Introducción a la Incursión Berthe", kr: "베르테 레이드 소개", jp: "ベルテレイド紹介", br: "Introdução à Raide Berthe" },
-            content_vos: { en: "New Weapon: Vestige of Soul", es: "Nueva Arma: Vestigio del Alma", kr: "신규 무기: 영혼의 흔적", jp: "新武器: 魂の痕跡", br: "Nova Arma: Vestígio da Alma" },
-            content_imprint: { en: "System Explanation: Imprint", es: "Explicación del Sistema: Impronta", kr: "시스템 설명: 각인", jp: "システム説明: インプリント", br: "Explicação do Sistema: Impressão" },
-            content_tenebrous: { en: "Equipment Guide: Tenebrous Armor", es: "Guía de Equipamiento: Armadura Tenebrosa", kr: "장비 가이드: 텐브러스 아머", jp: "装備ガイド: テネブラスアーマー", br: "Guia de Equipamento: Armadura Tenebrosa" },
             sections: {
+                swgc: {
+                    titlekey: {
+                        en: "Savage White-Ghost Castle",
+                        es: "",
+                        kr: "",
+                        jp: "",
+                        br: ""
+                    },
+                    num: {
+                        en: "",
+                        es: "",
+                        kr: "",
+                        jp: "",
+                        br: ""
+                    },
+                    name: {
+                        en: "- Savage White-Ghost Castle -",
+                        es: "",
+                        kr: "",
+                        jp: "",
+                        br: ""
+                    },
+                    content: {
+                        phase1: {
+                            phasenum: {
+                                en: "Phase 1",
+                                es: "Fase 1",
+                                kr: "1단계",
+                                jp: "フェーズ1",
+                                br: "Fase 1"
+                            },
+                            phasebname: {
+                                en: "Hadron's Copies",
+                                es: "",
+                                kr: "",
+                                jp: "",
+                                br: ""
+                            },
+                            concepts: {
+                                leftrightarenas: {
+                                    name: {
+                                        en: "Split Arenas (Left & Right)",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    description: {
+                                        en: [
+                                            "Phase is divided into 2 different arenas, left and right. Each one has a Copy of Hadron: the left copy (red) is called Hadron (Warrior), and the right copy (blue) is called Hadron (Magician). Bosses cannot perform Normal Patterns when the player isn't on their arena, but they can still do mechanics."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                }
+                            },
+                            np: {
+                                manabomb: {
+                                    name: {
+                                        en: "Mana Bomb",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    description: {
+                                        en: [
+                                            "Hadron (Magician) will cast mana bombs at the player's location. Where they will explode is indicated by the glow it produces on the floor. Bombs will explode after a short period."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                },
+                                manaexplosion: {
+                                    name: {
+                                        en: "Mana Explosion",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    description: {
+                                        en: [
+                                            "Hadron (Magician) will start charging, and after a short period, will release the energy."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                },
+                                shockwavecutter: {
+                                    name: {
+                                        en: "Shock Wave - Cutter",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    description: {
+                                        en: [
+                                            "Hadron (Warrior) fires a huge red sword forward. This attack gives strong knockback and multiple hits of high damage, so if you can't avoid it, you have a high chance of melting. Fortunately, it can be evaded with skill invincibility. It is also the only pattern that can be evaded without skill invincibility among the 1st phase patterns."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                }
+                            },
+                            mechs: {
+                                soullink: {
+                                    name: {
+                                        en: "Soul Link",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    description: {
+                                        en: [
+                                            "Hadron (Magician) highlights the player with an orange aura. Quickly roam around the magician's arena to find an orange floating orb and get close to it; when close enough, it will turn blue and link to the player. Once it disappears, you're safe. Otherwise, if the player is not near after the orb timer expires, an explosion that wipes will be triggered (resurrection effects can survive this)."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                },
+                                huntersmark: {
+                                    name: {
+                                        en: "Hunter's Mark",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    description: {
+                                        en: [
+                                            "Red Text will appear as a warning when Hadron (Warrior) teleports the player to his arena. Afterwards, he will thrust towards the player. To avoid this, just use the teleport pad on the right side to go back to the magician's arena before the thrust reaches the player, as it deals lethal damage. It can also be avoided by jumping over the boss."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                },
+                                shadowlessslash: {
+                                    name: {
+                                        en: "Shadowless Slash",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    description: {
+                                        en: [
+                                            "Red Text will appear as a warning when Hadron (Warrior) starts charging. Get in front of him quickly. After he finishes charging, he will perform an invisible slash that kills the player in any location if not in front of him."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                },
+                                concentratedmanaexplosion: {
+                                    name: {
+                                        en: "Concentrated Mana Explosion",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    description: {
+                                        en: [
+                                            "Red text will appear as a warning when Hadron (Magician) teleports and starts charging an explosion. A safe zone will appear on a random platform. Rush to the safe spot quickly. After some seconds, an explosion will trigger and kill the player in any location if not in the safe zone."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                }
+                            }
+                        },
+                        phase2: {
+                            phasenum: {
+                                en: "Phase 2",
+                                es: "Fase 2",
+                                kr: "2단계",
+                                jp: "フェーズ2",
+                                br: "Fase 2"
+                            },
+                            phasebname: {
+                                en: "Hadron",
+                                es: "",
+                                kr: "",
+                                jp: "",
+                                br: ""
+                            },
+                            np: {
+                                fistvortex: {
+                                    name: {
+                                        en: "Fist Vortex",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    description: {
+                                        en: [
+                                            "Hadron's punch creates a bubble-like attack that prevents players from casting skills whenever they're inside it."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                },
+                                knockbackfist: {
+                                    name: {
+                                        en: "Knockback Fist (Enabled @ 240x)",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    description: {
+                                        en: [
+                                            "Hadron will do a coil-like attack that pushes people instead of Fist Vortex."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                },
+                                takedown: {
+                                    name: {
+                                        en: "Takedown",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    description: {
+                                        en: [
+                                            "Hadron will jump up at random times, and after some seconds drops to the ground violently, causing damage if the player stays near the attack range."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                },
+                                spherethrow: {
+                                    name: {
+                                        en: "Sphere Throw (After 151x)",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    description: {
+                                        en: [
+                                            "Hadron will periodically cast an orb-like attack that will push the player off the arena if not in i-frame / Super Armor."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                }
+                            },
+                            mechs: {
+                                afterimagedash: {
+                                    name: {
+                                        en: "Afterimage Dash",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    description: {
+                                        en: [
+                                            "Hadron will jump upwards, and after a short period, certain parts of the map will be marked, indicating the boss will dash through that zone briefly. If hit by any of the dashes, the player will become unable to run for some time; this inflicts moderate damage."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                },
+                                aircombat: {
+                                    name: {
+                                        en: "Air Combat (Forced @ 151x)",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    description: {
+                                        en: [
+                                            "Hadron jumps upward and after a period of time, will dash across the entire arena. Before that, orange orbs appear in random parts of the arena. Touch one in order to get pushed upwards and avoid dying. If Super Armor effect is on, the orb won't be able to push you upwards."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                },
+                                windfeathers: {
+                                    name: {
+                                        en: "Wind Feathers",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    description: {
+                                        en: [
+                                            "Hadron teleports to a random edge of the upper arena several times and starts casting multiple slashes towards the middle of the arena. The player can dodge them or tank them."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                },
+                                whirlwind: {
+                                    name: {
+                                        en: "Whirlwind",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    description: {
+                                        en: [
+                                            "Following Wind Barrage, after a long period of time, Hadron will teleport to the middle of the arena, covering himself in a tornado that pushes the player away slowly while also casting wind slashes towards the edges of the arena. Getting too close to the tornado will inflict knock up and inflict moderate damage."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                }
+                            }
+                        },
+                        phase3: {
+                            phasenum: {
+                                en: "Phase 3",
+                                es: "Fase 3",
+                                kr: "3단계",
+                                jp: "フェーズ3",
+                                br: "Fase 3"
+                            },
+                            phasebname: {
+                                en: "Haivan",
+                                es: "",
+                                kr: "",
+                                jp: "",
+                                br: ""
+                            },
+                            concepts: {
+                                demonmachinery: {
+                                    name: {
+                                        en: "Demonic Machinery",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    description: {
+                                        en: [
+                                            "Haivan summons drones that follow the player and will constantly drop landmines near, fire a laser, or set a bomb that sets consumables on cooldown after exploding. All these will knock up or stun the player if it doesn't have Super Armor."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                }
+                            },
+                            np: {
+                                missilebarrage: {
+                                    name: {
+                                        en: "Missile Barrage",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    description: {
+                                        en: [
+                                            "Haivan will periodically target and mark the player. After some time, his machine will launch a barrage of missiles in the direction of the player. The missiles can't point higher than Haivan's machine height. So, to avoid this pattern the easiest way is to play on the ground all the time, and after being marked, go upwards so that the missiles can't hit."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                }
+                            },
+                            mechs: {
+                                laser: {
+                                    name: {
+                                        en: "Laser",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    description: {
+                                        en: [
+                                            "Haivan will go slightly off bounds of the left edge of the arena. Afterwards, he will cast lasers at each platform from bottom to top, 1 at a time. (Can be tanked and Haivan can be hit during this pattern.) Haivan will repeat this another time, this time going to the right edge and will go from top to bottom."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                },
+                                saturationbombing: {
+                                    name: {
+                                        en: "Saturation Bombing",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    description: {
+                                        en: [
+                                            "Immediately after the Laser pattern, Haivan will fly off and mark zones covering all the map except 1 platform multiple times. After some time, missiles will explode in the marked zones, one shotting if the player is outside of the safe platform."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                }
+                            }
+                        },
+                        altarofinvocation: {
+                            phasenum: {
+                                en: "Altar of Invocation (Berthe)",
+                                es: "",
+                                kr: "",
+                                jp: "",
+                                br: ""
+                            },
+                            phasebname: {
+                                en: "Berthe",
+                                es: "",
+                                kr: "",
+                                jp: "",
+                                br: ""
+                            },
+                            mechs: {
+                                coloredhowling: {
+                                    name: {
+                                        en: "Colored Howling",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    description: {
+                                        en: [
+                                            "Berthe bans tiers of skills indicated by the beads that appear on top of him: Blue = Tenacity, Purple = Strength, Orange = Bravery. Using a sealed skill triggers the Howling, inflicting lethal damage and also applies a 5-second Silence debuff. Ban expires after 20 seconds, indicated by Berthe losing the blue aura that surrounds him."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                }
+                            },
+                            np: {
+                                doubleswipe: {
+                                    name: {
+                                        en: "Double Swipe",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    description: {
+                                        en: [
+                                            "Berthe swipes twice in front. It ignores invincibility frames and deals higher damage compared to the basic attack. No change other than increased damage. This pattern often chains into the Ice Pillar pattern but can also appear alone."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                },
+                                icepillar: {
+                                    name: {
+                                        en: "Ice Pillar",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    description: {
+                                        en: [
+                                            "Berthe slams the ground, creating ice pillars below the player. These knock up without Super Armor effect."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                },
+                                iceblast: {
+                                    name: {
+                                        en: "Ice Blast",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    description: {
+                                        en: [
+                                            "Berd charges energy in its mouth and fires a powerful freezing beam forward. The beam deals multi-hit damage, inflicts a 5-second Freeze, and sweeps from low to high angle."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                },
+                                fastchainswipe: {
+                                    name: {
+                                        en: "Fast Chain Swipe",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    description: {
+                                        en: [
+                                            "An infrequently used pattern where Berd quickly swipes twice and then slams the ground to summon 1 ice pillar. Being hit by the pillar inflicts Frostbite. Damage is like the basic swipe and ice pillar, ignores iframes."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                },
+                                rollingswipe: {
+                                    name: {
+                                        en: "Rolling Swipe",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    description: {
+                                        en: [
+                                            "An infrequently used pattern where Berd quickly dashes, rolls once, and swipes. Ignores iframes; damage is not high."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                }
+                            }
+                        },
+                        phase2: {
+                            phasenum: {
+                                en: "Phase 2",
+                                es: "",
+                                kr: "",
+                                jp: "",
+                                br: ""
+                            },
+                            phasebname: {
+                                en: "Berserk Berthe",
+                                es: "",
+                                kr: "",
+                                jp: "",
+                                br: ""
+                            },
+                            mechs: {
+                                coloredhowling: {
+                                    name: {
+                                        en: "Colored Howling",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    description: {
+                                        en: [
+                                            "The colored Howling from first phase is carried over to this phase. This time, the ban is indicated by a howling, and the banned tiers will be shown on the UI on the top of the screen."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                },
+                                orblaser: {
+                                    name: {
+                                        en: "Orb Laser",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    description: {
+                                        en: [
+                                            "Berthe charges energy in the orbs around its head and fires a laser. By watching which orb charges up, you can move to the opposite side to avoid it."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                },
+                                blackwhiteboundary: {
+                                    name: {
+                                        en: "Black/White Boundary",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    description: {
+                                        en: [
+                                            "This pattern always follows the Orb Laser pattern. Based on the center of the map, two different debuffs are applied to each side. If either debuff reaches 10x, it inflicts lethal damage that ignores invincibility (this damage also affects nearby party members). The strategy is to switch sides when one debuff reaches 4-5 stacks. Debuffs accumulate continuously (ignoring iframes); standing in the center stacks both debuffs simultaneously. Movement speed and jump power decrease as stacks increase."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                }
+                            },
+                            np: {
+                                doubleswipe: {
+                                    name: {
+                                        en: "Double Swipe",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    description: {
+                                        en: [
+                                            "Berthe swipes inward from outside, then swipes outward again. Avoid by moving to the opposite side of the swiping hand. This pattern ignores iframes."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                },
+                                largeswipe: {
+                                    name: {
+                                        en: "Large Swipe",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    description: {
+                                        en: [
+                                            "Berthe shows a trajectory line, then quickly swipes once along that line. Ignores iframes and deals significant damage."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                },
+                                icepillar: {
+                                    name: {
+                                        en: "Ice Pillar",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    description: {
+                                        en: [
+                                            "Same as the previous phase, but the pillar is bigger."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                }
+                            }
+                        },
+                        phase3: {
+                            phasenum: {
+                                en: "Phase 3",
+                                es: "",
+                                kr: "",
+                                jp: "",
+                                br: ""
+                            },
+                            phasebname: {
+                                en: "Annihilator",
+                                es: "",
+                                kr: "",
+                                jp: "",
+                                br: ""
+                            },
+                            np: {
+                                homingsoulorbs: {
+                                    name: {
+                                        en: "Homing Soul Orbs",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    description: {
+                                        en: [
+                                            "The Annihilating One extends its hand forward and summons 3 small yellow homing orbs. Being hit applies the [Suppressing Flame] debuff. These homing orbs do not disappear, so someone will inevitably get hit. Typically, a party member with lower DPS should take the hits. No significant changes besides increased damage and percentage-based damage."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                },
+                                instantlaser: {
+                                    name: {
+                                        en: "Instant Laser",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    description: {
+                                        en: [
+                                            "The Annihilating One raises both arms, and a horizontal or vertical trajectory line for a laser appears on the map. Shortly after, a laser fires twice along that trajectory. The laser is single-hit but deals very high damage and ignores invincibility. There are small safe spots between the laser lines. There are single-line (horizontal or vertical) and double-line (simultaneous cross) versions. The damage is low, so just DPS."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                },
+                                icepillar: {
+                                    name: {
+                                        en: "Ice Pillar",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    description: {
+                                        en: [
+                                            "The exact same as phase 1 Ice Pillar."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                },
+                                orbsofressentment: {
+                                    name: {
+                                        en: "Orbs of Resentment / Orb of Suppressing Flame",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    description: {
+                                        en: [
+                                            "Annihilator crouches then stretches its body, summoning white and black orbs. These orbs deal low damage but when attacked by multiple, they can do lethal damage; they also ignore iframes."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                }
+                            },
+                            mechs: {
+                                blackorbfall: {
+                                    name: {
+                                        en: "Black Orb Fall",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    description: {
+                                        en: [
+                                            "Annihilator raises both hands, causing yellow sigils to appear, followed by a black zone appearing at a random location on the map. A black orb falls in the black zone. Getting hit by the black orb inflicts Entangle. If at least one player is entangled, it prevents the boss from healing."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                },
+                                blackandwhiteshield: {
+                                    name: {
+                                        en: "Black and White - Shield",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    description: {
+                                        en: [
+                                            "Annihilator does Black Orb Fall simultaneously with this pattern, and moves to the back of the map, charging wailing flames. During this, receiving Entangle..."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
                 intro: { en: ["After succesfully getting Master Class (even if below stage 4), your next goal lays here:"], es: ["Después de obtener con éxito la Clase Maestra (incluso si estás por debajo de la etapa 4), tu próximo objetivo se encuentra aquí:"], kr: ["마스터 클래스를 성공적으로 획득한 후(4단계 이하인 경우에도) 다음 목표는 여기 있습니다:"], jp: ["マスタークラスを無事に取得した後（ステージ4以下でも）、次の目標はここにあります:"], br: ["Após conseguir com sucesso a Classe Mestre (mesmo que abaixo do estágio 4), seu próximo objetivo está aqui:"] },
                 pruinaum: {
-                    title: { en: "New Region: Pruinaum", es: "Nueva Región: Pruinaum", kr: "신규 지역: 프루이나움", jp: "新地域: プルイナウム", br: "Nova Região: Pruinaum" },
-                    content: { en: ["Pruinaum is the next major region after Rigomor, house to the 2nd raid in the game, and useful rewards that can increase your power by quite a bit; you won't really do too much here in comparison to other regions, you'll only need to do 3 things:", "(Daily) 1x Sanctuary of the Soul for Baryon's Ornament Fur", "(Daily) 1x Capital-Bound Train for Engine Cooling System", "(Weekly) Berthe Raid for Accessories and Crystals for future usage."],
-                        es: ["Pruinaum es la siguiente región principal después de Rigomor, hogar de la segunda incursión en el juego y recompensas útiles que pueden aumentar tu poder considerablemente; realmente no harás mucho aquí en comparación con otras regiones, solo necesitarás hacer 3 cosas:", "(Diario) 1x Santuario del Alma para la Piel del Adorno de Baryon", "(Diario) 1x Tren con Destino a la Capital para el Sistema de Enfriamiento del Motor", "(Semanal) Incursión Berthe para Accesorios y Cristales para uso futuro."],
-                        kr: ["프루이나움은 리고모르 다음의 주요 지역으로, 게임에서 두 번째 레이드가 있으며, 상당한 힘을 증가시킬 수 있는 유용한 보상이 있습니다. 다른 지역에 비해 여기서 할 일이 많지 않으며, 다음 세 가지를 해야 합니다:", "(일일) 바리온의 장식 털을 위한 1x 영혼의 성소", "(일일) 엔진 냉각 시스템을 위한 1x 수도행 열차", "(주간) 향후 사용을 위한 액세서리 및 크리스탈을 위한 베르테 레이드."],
-                        jp: ["プルイナウムはリゴモアの次の主要な地域で、ゲーム内で2番目のレイドがあり、あなたの力をかなり増加させることができる有用な報酬があります。他の地域と比較してここでやることはあまり多くなく、次の3つのことを行う必要があります:", "(毎日) バリオンの装飾用毛皮のための1x 魂の聖域", "(毎日) エンジン冷却システムのための1x 首都行き列車", "(毎週) 将来の使用のためのアクセサリーとクリスタルのためのベルテレイド。"],
-                        br: ["Pruinaum é a próxima região principal após Rigomor, casa da segunda raide do jogo e recompensas úteis que podem aumentar seu poder consideravelmente; você realmente não fará muito aqui em comparação com outras regiões, você só precisará fazer 3 coisas:", "(Diário) 1x Santuário da Alma para a Pele do Adorno de Baryon", "(Diário) 1x Trem com Destino à Capital para o Sistema de Resfriamento do Motor", "(Semanal) Raide Berthe para Acessórios e Cristais para uso futuro." ]
+                    title: { en: "Pruinaum / Pruinaum Outskirts", es: "Pruinaum", kr: "프루이나움", jp: "プルイナウム", br: "Pruinaum" },
+                    content: { en: ["Pruinaum is the next major region after Rigomor, house to the 2nd raid in the game, and useful rewards that can increase your power by quite a bit; you won't really do too much here in comparison to the previous 2 regions, you'll only need to do 3 things: Sanctuary of the Soul 1 time per day until you get Baryon's Ornament Fur, Capital-Bound Train 1 time per day until you get Engine Cooling System and Berthe Raid 1 time per week for Accessories and Crystals planned for future usage. Although you can work on those objectives while you progress.","Those 3 will also drop Imprint Stones, which are new materials that allow you to socket imprints into your weapons. All weapons come imprinted when recieved, but their stats are not perfect so you want to get Imprint Stones to perfect the values sooner or later.","The only mandatory task of this region is to get the 7th Reward of Dr. Pho's Pruinaum Guide by Clearing Savage White-Ghost Castle and Altar of Invocation to get the Vestige of Soul."],
+                        es: [],
+                        kr: [],
+                        jp: [],
+                        br: []
                      }
                 },
-                berthe_raid_intro: {
-                    title: { en: "Introduction to Berthe Raid", es: "Introducción a la Incursión Berthe", kr: "베르테 레이드 소개", jp: "ベルテレイド紹介", br: "Introdução à Raide Berthe"},
-                    en: ["As mentioned before, Pruinaum is house to the next raid in the game, Berthe Raid is fairly harder than rosso, but still pretty simple to learn; in this introduction you will learn the basics of the raid, and some tips to make your life easier while doing it."],
-                    es: ["Como se mencionó antes, Pruinaum es el hogar de la siguiente incursión en el juego, la Incursión Berthe es bastante más difícil que Rosso, pero aún así es bastante simple de aprender; en esta introducción aprenderás los conceptos básicos de la incursión y algunos consejos para facilitarte la vida mientras la haces."],
-                    kr: ["앞서 언급했듯이 프루이나움은 게임에서 다음 레이드인 베르테 레이드의 집입니다. 베르테 레이드는 로소보다 상당히 어렵지만 여전히 배우기 매우 간단합니다. 이 소개에서는 레이드의 기본 사항과 레이드를 수행하는 동안 삶을 더 쉽게 만드는 몇 가지 팁을 배웁니다."],
-                    jp: ["前述のように、プルイナウムはゲーム内で次のレイドであるベルテレイドの家です。ベルテレイドはロッソよりもかなり難しいですが、それでも学ぶのは非常に簡単です。この紹介では、レイドの基本と、レイドを行う際に生活を楽にするためのいくつかのヒントを学びます。"],
-                    br: ["Como mencionado antes, Pruinaum é a casa da próxima raide no jogo, a Raide Berthe é bastante mais difícil que Rosso, mas ainda assim é bastante simples de aprender; nesta introdução você aprenderá o básico da raide e algumas dicas para facilitar sua vida enquanto a faz."]
-                },
-                savage_castle: {
-                    num: { en: "1st Dungeon", es: "1ra Mazmorra", kr: "첫 번째 던전", jp: "最初のダンジョン", br: "1ª Masmorra" },
-                    name: { en: "- Savage White-Ghost Castle -", es: "- Castillo Fantasma Salvaje -", kr: "- 야성 백귀성 -", jp: "- 野性の白幽城 -", br: "- Castelo Fantasma Selvagem -"},
-                    phase1: {
-                        title: { en: "Phase 1 | Boss Size: Small", es: "Fase 1 | Tamaño del Jefe: Pequeño", kr: "1단계 | 보스 크기: 작음", jp: "フェーズ1 | ボスサイズ: 小", br: "Fase 1 | Tamanho do Chefe: Pequeno" },
-                        content: { en: ["2 Bosses will appear, 1 in the left arena, and another in the right arena, Players need to go to the right arena, since that boss is easier to deal with.", "In this phase, you need to be cautious of the red texts that appear on screen since they can lead to wipe.*", "When the player gets highlighted by a orange aura, quickly roam around the right arena to find an orange floating orb and get close to it; if close enough, it will turn blue and link to the player, once it disappears you're safe, otherwise, if the player doesn't link after some time, it will trigger an explosion that wipes. (Seal of Time or Res. Title can survive this)", "Boss will spam 2 attacks, 1 will put bombs in your location that will explode over time and other that will trigger a big explosion, none deal fatal damage, but both knock up so using Super Armor is recommended.", "Red Text will appear and the boss on the left side will Teleport the player to the left side; after some seconds, boss will thrust towards the player. To avoid this, just use the Teleporter to go back to the right arena before the boss thrusts.", "Red Text will appear and the boss on the left side will start charging an attack, get in front of the boss quickly. After some time, it will trigger an attack that kills the player in any location if not in front of the boss.", "Red text will appear and the boss on the right side will start charging an attack, a safe zone spot will appear. Rush to the safe spot quickly. After some seconds boss will trigger an explosion that kills the player in any location if not in the safe zone."],
-                            
-                        }
-                    },
-                    phase2: {
-                        title: { en: "Phase 2 | Boss Size: Small", es: "Fase 2 | Tamaño del Jefe: Pequeño", kr: "2단계 | 보스 크기: 작음", jp: "フェーズ2 | ボスサイズ: 小", br: "Fase 2 | Tamanho do Chefe: Pequeno" },
-                        content: { en: ["Boss will periodically cast a bubble-like attack that prevents players from casting skills. | After 240x, boss will change this attack and instead will become a coil-like attack that pushes people, Super Armor is recommended during this section.", "After some time, boss will jump out of the Player's Field of View, after some seconds, certain parts of the map will be marked, indicating the boss will dash through that zone after some seconds; if hit by any of the dashes, the player will become unable to run for some time.", "After 150x boss will dash out of Player's Field of View; certain amount of orbs will be summoned in the arena, the player needs to touch one in order to get pushed towards the higher arena. After some seconds boss will dash on all the lower arena, causing players who didn't go up to die. (Note: if you have Super Armor, the orb won't be able to push you upwards.", "Boss will periodically cast an Orb-like attack that will push the player off the arena if not in i-frame / Super Armor.", "After some time, boss will teleport to an edge of the arena several times and start casting wind slashes towards the middle of the arena, player can dodge them or tank them. | Following this pattern, after some time, boss will teleport to the middle of the arena, cover himself in a tornado and cast wind slashes towards the edges of the arena. If the player gets too close to the tornado it will lower a great portion of its health, and will knock him down."],
-                        
-                        }
-                    },
-                    phase3: {
-                        title: { en: "Phase 3 | Boss Size: Small", es: "Fase 3 | Tamaño del Jefe: Pequeño", kr: "3단계 | 보스 크기: 작음", jp: "フェーズ3 | ボスサイズ: 小", br: "Fase 3 | Tamanho do Chefe: Pequeno" },
-                        content: { en: ["Boss' turrets will constantly drop bombs in locations close to the player, these will knock up the player if it doesn't have Super Armor.","Boss will periodically target and mark the player, after some time, the boss will launch a barrage of misiles on direction to the player (the misiles can't point higher than boss' height. so just go to high ground.","After some time, boss will go slightly off bounds to 1 of the 2 edges of the arena, and cast a arena-wide laser (Can be tanked, Boss can be hit during this pattern.) | After this pattern, boss will fly off bounds, become untargetable and mark the whole map except 1 safe zone multiple times, after some time, missiles will explode in the marked zones, one shotting players outside of the safe zones."],
-                        
-                        }
-                    }
-                },
-                altar_invocation: {
-                    num: { en: "2nd Dungeon", es: "2da Mazmorra", kr: "두 번째 던전", jp: "2番目のダンジョン", br: "2ª Masmorra" },
-                    name: { en: "- Altar of Invocation -", es: "- Altar de Invocación -", kr: "- 소환의 제단 -", jp: "- 召喚の祭壇 -", br: "- Altar de Invocação -"},
-                    phase1: {
-                        title: { en: "Phase 1 | Boss Size: Medium", es: "Fase 1 | Tamaño del Jefe: Mediano", kr: "1단계 | 보스 크기: 중간", jp: "フェーズ1 | ボスサイズ: 中", br: "Fase 1 | Tamanho do Chefe: Médio" },
-                        content: { en: [""] }
-                    },
-                    phase2: {
-                        title: { en: "Phase 2 | Boss Size: Big", es: "Fase 2 | Tamaño del Jefe: Grande", kr: "2단계 | 보스 크기: 큼", jp: "フェーズ2 | ボスサイズ: 大", br: "Fase 2 | Tamanho do Chefe: Grande" },
-                        content: { en: [""] }
-                    },
-                    phase3: {
-                        title: { en: "Phase 3 | Boss Size: Small", es: "Fase 3 | Tamaño del Jefe: Pequeño", kr: "3단계 | 보스 크기: 작음", jp: "フェーズ3 | ボスサイズ: 小", br: "Fase 3 | Tamanho do Chefe: Pequeno" },
-                        content: { en: ["opo"] }
-                    }
-                },
-                berthe_farm: {
-                    title: { en: "Berthe Farm" }
-                },
                 vos: {
-                    title: { en: "New Weapon: Vestige of Soul", es: "Nueva Arma: Vestigio del Alma", kr: "신규 무기: 영혼의 흔적", jp: "新武器: 魂の痕跡", br: "Nova Arma: Vestígio da Alma" },
-                    content: { en: ["Vestige of Soul is the next weapon progression after Flame of Judgement. Farm Berthe Raid and related content to obtain and enhance it."], es: ["Vestigio del Alma es la siguiente progresión de arma después de Llama del Juicio. Participa en la Incursión Berthe y contenido relacionado para obtenerla y mejorarla."], kr: ["영혼의 흔적은 심판의 불꽃 다음의 무기 진화입니다. 베르테 레이드 및 관련 콘텐츠를 농사하여 획득하고 강화하세요."], jp: ["魂の痕跡は、審判の炎の次の武器進化です。ベルテレイドおよび関連コンテンツを農業して取得および強化します。"], br: ["Vestígio da Alma é a próxima progressão de arma após Chama do Julgamento. Participe da Raide Berthe e conteúdo relacionado para obtê-la e aprimorá-la."] }
+                    content: { en: ["The Vestige of Soul is the next weapon in progression after Flame of Judgement, this weapon comes with imprints upon recieving it, and a new system called Weapon Advancement."], es: [""], kr: [""], jp: [""], br: [""] }
                 },
                 imprint: {
-                    title: { en: "System Explanation: Imprint" },
-                    content: { en: ["Imprint allows you to further customize your equipment with powerful stats. Access it via Asella (Camp: Aurora) or Vasili/Chief Betty (Magmelia). Each change costs ED and materials. You can preview rolls before applying."] },
-                    table_intro: { en: "These are the possible stats you can get from Imprint:" }
+                    title: { en: "Imprint" },
+                    content: { en: ["Imprint allows you to further customize your equipment with powerful stats. Access it via Asella (Camp: Aurora) or Vasili/Chief Betty (Magmelia). Each change costs ED and materials. You can preview rolls before applying.","The system utilizes a new type of item, the Imprint Stones. These items can drop randomly from Pruinaum dungeons. These stones can come in three different types: red, indigo and gold; and two different grades: Refined (elite), and Shining (unique). Crimson determines the action that will cause the effect to trigger, Indigo determine the probability of the effect activating. Gold determine the actual effect."] },
+                    table_intro: { en: "These are the possible stats you can get from Imprint:" },
+                    table1: {
+                        title: 'Crimson Imprint Stone',
+                        labelColumnKey: 'condition',
+                        columns: [
+                            { key: 'condition', labelKey: 'Condition' },
+                            { key: 'elite',     labelKey: 'Elite' },
+                            { key: 'unique',    labelKey: 'Unique' }
+                        ],
+                        rows: [
+                            { label: 'After attacking with commands/actives 𝑥 times', elite: '10', unique: 'x' },
+                            { label: 'When attacking with commands/actives', elite: 'Unavailable', unique: '' },
+                            { label: 'When using a Flexibility Skill', elite: '', unique: 'Unavailable' },
+                            { label: 'When using a Tenacity skill', elite: '', unique: 'Unavailable' },
+                            { label: 'When using a Strength skill', elite: '', unique: 'Unavailable' },
+                            { label: 'When using a Bravery skill', elite: '', unique: 'Unavailable' },
+                            { label: 'When using a Special Active skill', elite: 'Unavailable', unique: '' },
+                            { label: 'When using a Hyper Active skill', elite: '', unique: '' },
+                            { label: 'When using 3rd Stage Master skill', elite: '', unique: 'Unavailable' },
+                            { label: 'When using 4th Stage Master skill', elite: '', unique: 'Unavailable' },
+                            { label: 'When using 1st, 2nd Stage Master skill', elite: 'Unavailable', unique: '' },
+                            { label: 'When using 3rd, 4th Stage Master skill', elite: '', unique: '' },
+                            { label: 'When using Master skill', elite: '', unique: '' },
+                            { label: 'When attacking a target with over x% HP', elite: '60% / 50% / 40%', unique: '30% / 20% / 10%' },
+                            { label: 'When defeating a monster', elite: '', unique: '' },
+                            { label: 'When attacked', elite: '', unique: '' },
+                            { label: 'When attacked by a boss', elite: '', unique: 'Unavailable' },
+                            { label: 'Every 𝑥 seconds outside of combat', elite: '10', unique: '5' },
+                            { label: 'Every 𝑥 seconds', elite: '20 / 15', unique: '15 / 10' },
+                            { label: 'When dashing', elite: 'Unavailable', unique: '' },
+                            { label: 'When jumping', elite: '', unique: '' },
+                            { label: 'When pressing the awakening key', elite: 'Unavailable', unique: '' },
+                            { label: 'When Transcendence buff activates', elite: '', unique: '' },
+                            { label: 'When HP drops below 𝑥%', elite: '30% / 40%', unique: '50% / 60%' },
+                            { label: 'When MP drops below 𝑥%', elite: '30% / 40%', unique: '50% / 60%' },
+                            { label: 'When recovering 𝑥% HP', elite: '70% / 60%', unique: '50% / 40%' },
+                            { label: 'When recovering 𝑥% MP', elite: '70% / 60%', unique: '50% / 40%' },
+                            { label: 'When using a consumable', elite: 'Unavailable', unique: '' },
+                            { label: 'When gaining ED', elite: 'Unavailable', unique: '' }
+                        ]
+                    },
+                    table2: {
+                        title: 'Indigo Imprint Stone',
+                        labelColumnKey: 'probability',
+                        columns: [
+                            { key: 'probability', labelKey: 'Stone Rarity' },
+                            { key: 'value',       labelKey: 'Value' }
+                        ],
+                        rows: [
+                            { label: 'Elite',  value: '11~20%' },
+                            { label: 'Unique', value: '21~30% / [3*Enhancement Stats]%' }
+                        ]
+                    },
+                    table3: {
+                        title: 'Gold Imprint Stone',
+                        labelColumnKey: 'effect',
+                        columns: [
+                            { key: 'effect',      labelKey: 'Effect' },
+                            { key: 'elite',       labelKey: 'Elite' },
+                            { key: 'unique',      labelKey: 'Unique' }
+                        ],
+                        rows: [
+                            { label: 'Increase Physical Attack by 𝑥%', elite: '2.5% / 3% / 3.5%', unique: '4% / 5% / [0.5*Enhancement Stats]%' },
+                            { label: 'Increase Magical Attack by 𝑥%', elite: '2.5% / 3% / 3.5%', unique: '4% / 5% / [0.5*Enhancement Stats]%' },
+                            { label: 'Increase Critical by 𝑥%', elite: '6% / 7% / 8%', unique: '9% / 10%' },
+                            { label: 'Increase Critical Damage by 𝑥% (Only 40% as effective in PvP)', elite: '2.5% / 3% / 3.5%', unique: '4% / 5% / [0.5*Enhancement Stats]%' },
+                            { label: 'Increase Maximize by 𝑥%', elite: '6% / 7% / 8%', unique: '9% / 10%' },
+                            { label: 'Increase Additional Damage by 𝑥%', elite: '6% / 7% / 8%', unique: '9% / 10%' },
+                            { label: 'Increase Defense Ignore by 𝑥%', elite: '2.5% / 3% / 3.5%', unique: '4% / 5%' },
+                            { label: 'Increase Damage to Bosses by 𝑥%', elite: '2.5% / 3% / 3.5%', unique: '4% / 5%' },
+                            { label: 'Increase Skill Damage by 𝑥% (Only 40% as effective in PvP)', elite: '2.5% / 3% / 3.5%', unique: '4% / 5% / [0.5*Enhancement Stats]%' },
+                            { label: 'Increase Action Speed by 𝑥%', elite: '6% / 7% / 8%', unique: '9% / 10%' },
+                            { label: 'Increase Movement Speed by 𝑥%', elite: '6% / 7% / 8%', unique: '9% / 10%' },
+                            { label: 'Increase Jump Speed by 𝑥%', elite: '6% / 7% / 8%', unique: '9% / 10%' },
+                            { label: 'Increase All Speeds by 𝑥%', elite: '2.5% / 3% / 3.5%', unique: '4% / 5% / [0.5*Enhancement Stats]%' },
+                            { label: 'Decrease MP Cost by 𝑥% (Only 40% as effective in PvP)', elite: '4% / 5% / 6%', unique: '7% / 8%' },
+                            { label: 'Decrease Skill Cooldown by 𝑥% (Only 40% as effective in PvP)', elite: '2.5% / 3% / 3.5%', unique: '4% / 5% / [0.5*Enhancement Stats]%' },
+                            { label: 'Increase HP by 𝑥%', elite: '6% / 7% / 8%', unique: '9% / 10%' },
+                            { label: 'Increase Physical Defense by 𝑥%', elite: '2.5% / 3% / 3.5%', unique: '4% / 5% / [0.5*Enhancement Stats]%' },
+                            { label: 'Increase Magical Defense by 𝑥%', elite: '2.5% / 3% / 3.5%', unique: '4% / 5% / [0.5*Enhancement Stats]%' },
+                            { label: 'Decrease Damage from Bosses by 𝑥%', elite: '2.5% / 3% / 3.5%', unique: '4% / 5%' },
+                            { label: 'Increase Recovery Item Effectiveness by 𝑥%', elite: '7% / 9% / 11%', unique: '13% / 15%' },
+                            { label: 'Decrease Recovery Item Cooldown by 𝑥% (Max 30%)', elite: '6% / 7% / 8%', unique: '9% / 10%' },
+                            { label: 'Increase party\'s Damage Reduction by 𝑥%', elite: '6% / 7% / 8%', unique: '9% / 10% / [1*Enhancement Stats]%' },
+                            { label: 'Recover party\'s HP by 𝑥% per second (Dungeon Only)', elite: '6% / 7% / 8%', unique: '9% / 10%' },
+                            { label: 'Recover party\'s MP by 𝑥% per second (Dungeon Only)', elite: '2.5% / 3% / 3.5%', unique: '4% / 5%' },
+                            { label: 'Decrease nearby enemy\'s element resistance by 𝑥', elite: '30 / 35 / 40', unique: '45 / 55 / [5*Enhancement Stats]' }
+                        ]
+                    }
                 },
                 pruiout: {
-                    title: { en: "New Region: Pruinaum Outskirts" },
-                    content: { en: ["Pruinaum Outskirts unlocks after progressing through Pruinaum. It offers new daily quests and materials for further upgrades."] }
+                    content: { en: ["Pruinaum Outskirts unlocks after progressing through Pruinaum. It's a small filler dungeon that offers new daily quests: Completing Plegas' Gaze / Plegas' Reflection (limited to 1 time per day) gives a material called Artifact Spirit Stone Fragment that serves to further upgrade the Master Artifact by wedging a special socket into it. Plegas' Reflection also serves as an EXP farming dungeon, a better alternative to Trosh's Nest if you have enough power. Theres 2 mandatory tasks in this region: Clear Plegas' Gaze and Plegas' Reflection to clear Quests 1 and 2 of Dr. Pho's Pruinaum Outskirts guide, rewarding you wedges and free stones to socket into your Master Artifact, the stats are near perfect. It's still recommended to do these daily to perfect the socket values."] }
+                },
+                weaponadvancement: {
+                    title: { en: "Weapon Advancement" },
+                    content: { en: "For raid weapons starting from Vestige of Soul - Weapon of Requiem, a small icon will appear above the weapon in the character UI, which grants access to the Weapon Advancement quest. This will task you with certain quests to complete in order to enhance the weapon even further."},
+                    table: {
+                        title: 'Quest List',
+                        tabs: [
+                            {
+                                label: 'Vestige of Soul',
+                                columns: [
+                                    { key: 'stage',   label: 'Evolution Stage' },
+                                    { key: 'quest',   label: 'Quest' },
+                                    { key: 'effects', label: 'Advancement Effect(s)' }
+                                ],
+                                rows: [
+                                    { stage: 'Stage 1', quest: 'Clear Pruinaum dungeons 1 times (Raid excluded)', effects: 'Upon successful attack with Special Active skill, 30% chance to activate Light of the Dead (Cooldown: 50 secs) (Dungeon)' },
+                                    { stage: 'Stage 2', quest: 'Clear Pruinaum dungeons 2 times (Raid excluded)', effects: 'MP Cost Decrease 5%' },
+                                    { stage: 'Stage 3', quest: 'Clear Pruinaum Raid 2 times (Excludes Story Mode)', effects: 'MP Cost Decrease 5% ⟶ 8%\nPhysical/Magical Attack Power +Lv.5' },
+                                    { stage: 'Stage 4', quest: 'Clear Pruinaum Raid 3 times (Excludes Story Mode)', effects: 'Physical/Magical Attack Power +Lv.5 ⟶ +Lv.10' },
+                                    { stage: 'Stage 5', quest: 'Clear Pruinaum Raid 5 times (Excludes Story Mode)', effects: 'Light of the Dead ⟶ Enhanced Light of the Dead\nAll Skill Damage +10%' }
+                                ]
+                            },
+                            {
+                                label: 'Submergence of Abyss',
+                                columns: [
+                                    { key: 'stage',   label: 'Evolution Stage' },
+                                    { key: 'quest',   label: 'Quest' },
+                                    { key: 'effects', label: 'Advancement Effect(s)' }
+                                ],
+                                rows: [
+                                    { stage: 'Stage 1', quest: 'Clear Tirnog dungeons 5 times', effects: 'All Skill Damage +10%\nUpon successful attack, 30% chance to activate Abyssal Grasp (Cooldown: 50 secs) (Dungeon)' },
+                                    { stage: 'Stage 2', quest: 'Clear Shadow Earl\'s Castle 10 times', effects: 'Physical/Magical Attack Power +Lv.10' },
+                                    { stage: 'Stage 3', quest: 'Clear Abyss Raid 5 times (Excludes Story Mode)', effects: 'All Skill Damage +10% ⟶ 15%' },
+                                    { stage: 'Stage 4', quest: 'Collect Heart Core Shard 9 times', effects: 'Physical/Magical Attack Power +Lv.10 ⟶ +Lv.15' },
+                                    { stage: 'Stage 5', quest: 'Collect Heart Core 4 times', effects: 'Abyssal Grasp ⟶ Merciless Abyssal Grasp\nAll Skill Damage +15% ⟶ +20%\nPhysical/Magical Attack Power +Lv.15 ⟶ +Lv.20' }
+                                ]
+                            },
+                            {
+                                label: "Undead Dragon's Will",
+                                columns: [
+                                    { key: 'stage',   label: 'Evolution Stage' },
+                                    { key: 'quest',   label: 'Quest' },
+                                    { key: 'effects', label: 'Advancement Effect(s)' }
+                                ],
+                                rows: [
+                                    { stage: 'Stage 1', quest: 'Clear Cornerstone of Prophecy at Difficulty 2 or higher 10 times', effects: 'All Skill Damage +15%\nUpon successful attack, 30% chance to activate Undead Dragon\'s Breath (Cooldown: 50 secs) (Dungeon)' },
+                                    { stage: 'Stage 2', quest: 'Clear Nightmare: Reset Room at Difficulty 2 or higher 20 times', effects: 'Physical/Magical Attack Power +Lv.15' },
+                                    { stage: 'Stage 3', quest: 'Clear Queen\'s Throne Hall at Difficulty 2 or higher 20 times', effects: 'Physical/Magical Attack Power +Lv.15 ⟶ +Lv.20' },
+                                    { stage: 'Stage 4', quest: 'Clear Wilting Tower: Fall at Difficulty 2 or higher 20 times\nCollect 120 Undead Dragon\'s Heart Fragments', effects: 'All Skill Damage +15% ⟶ 20%' },
+                                    { stage: 'Stage 5', quest: 'Clear Wilting Tower: Fall at Difficulty 3 10 times\nCollect 240 Undead Dragon\'s Heart Fragments', effects: 'Physical/Magical Attack Power +Lv.20 ⟶ +Lv.25' },
+                                    { stage: 'Stage 6', quest: 'Clear Wilting Tower: Flight at Difficulty 3 2 times without any party members dying\nClear Wilting Tower: Fall at Difficulty 3 2 times without any party members dying', effects: 'Undead Dragon\'s Breath ⟶ Undead Dragon\'s Roar' }
+                                ]
+                            }
+                        ]
+                    }
                 },
                 tirnog: {
-                    title: { en: "New Region: Tirnog" },
-                    content: { en: ["This region."] }
+                    title: { en: "Midgame (Tirnog - Monaterra)" },
+                    content: { en: ["Tirnog is unlocked after completing the Epic Quest > Enter Tirnog, completed by clearing 1 Pruinaum Outskirts dungeon. In this region you will get the next armor in progression, called Tenebrous Armor, coming alongside it's own reforge material called Tenebrous Aura, Upon completing Dr. Pho's Tenebrous Guide idk what quest, you will be given a full +10 reforge 18 armor, (update after)"] }
                 },
-                tenebrous: {
-                    title: { en: "Equipment Guide: Tenebrous Armor" },
-                    content: { en: ["Tenebrous Armor is the next armor set after Rigomor. Obtain pieces from Tirnog dungeons and upgrade them for powerful set effects."] }
+                shadoweffect: {
+                    title: { en: "Shadow Effect"},
+                    content: { en: ["Tenebrous Armor can be identified using the Shadow Effect Identification Scroll to grant special Shadow effects. There are 3 lines that can be identified, and once identified, that piece can no longer be identified. Identified Shadow effects can be extracted and stored for later use via Magmelia > Vasili > Effect Storage, allowing you to apply them to the corresponding piece and identification line when desired.","The Following table shows all possible effects.","Note: ◆◇◇, ◆◆◇ and ◆◆◆ refers to the slot the effect uses in each piece of the armor, they're alternatively called line 1, 2 and 3, each armor piece is limited to 1 stat per line."]},
+                    table: {
+                        title: 'Shadow Effect Stats',
+                        labelColumnKey: 'stat',
+                        columns: [
+                            { key: 'type',  labelKey: 'Type' },
+                            { key: 'part',  labelKey: 'Part' },
+                            { key: 'stat',  labelKey: 'Stat' },
+                            { key: 'values', labelKey: 'Possible Values' }
+                        ],
+                        rows: [
+                            { type: '◆◇◇', part: 'Shared', label: 'All Skill Damage Increase +n%', values: '0.15% / 0.3% / 0.45% / 0.6% / 0.75% / 0.9% / 1.05% / 1.2% / 1.35% / 1.5%' },
+                            { type: '◆◇◇', part: 'Shared', label: 'Critical Damage Increase +n%', values: '0.15% / 0.3% / 0.45% / 0.6% / 0.75% / 0.9% / 1.05% / 1.2% / 1.35% / 1.5%' },
+                            { type: '◆◇◇', part: 'Shared', label: 'Critical Chance Increase +n%', values: '0.4% / 0.8% / 1.2% / 1.6% / 2% / 2.4% / 2.8% / 3.2% / 3.6% / 4%' },
+                            { type: '◆◇◇', part: 'Shared', label: 'Maximize Increase +n%', values: '0.4% / 0.8% / 1.2% / 1.6% / 2% / 2.4% / 2.8% / 3.2% / 3.6% / 4%' },
+                            { type: '◆◇◇', part: 'Shared', label: 'All Resistances Increase +n', values: '2 / 4 / 6 / 8 / 10 / 12 / 14 / 16 / 18 / 20' },
+                            { type: '◆◇◇', part: 'Shared', label: 'Damage Reduction Increase +n%', values: '0.4% / 0.8% / 1.2% / 1.6% / 2% / 2.4% / 2.8% / 3.2% / 3.6% / 4%' },
+                            { type: '◆◇◇', part: 'Shared', label: 'Jump Speed Increase +n%', values: '0.4% / 0.8% / 1.2% / 1.6% / 2% / 2.4% / 2.8% / 3.2% / 3.6% / 4%' },
+                            { type: '◆◇◇', part: 'Shared', label: 'Action Speed Increase +n%', values: '0.4% / 0.8% / 1.2% / 1.6% / 2% / 2.4% / 2.8% / 3.2% / 3.6% / 4%' },
+                            { type: '◆◇◇', part: 'Shared', label: 'Max MP Increase +n', values: '2 / 4 / 6 / 8 / 10 / 12 / 14 / 16 / 18 / 20' },
+                            { type: '◆◆◇', part: 'Top Piece', label: 'Ignore Enemy Physical Defense Increase +n% (Max +20%) (Dungeon)', values: '1% / 2% / 3% / 4% / 5% / 6% / 7% / 8% / 9% / 10%' },
+                            { type: '◆◆◇', part: 'Top Piece', label: 'Ignore Enemy Magical Defense Increase +n% (Max +20%) (Dungeon)', values: '1% / 2% / 3% / 4% / 5% / 6% / 7% / 8% / 9% / 10%' },
+                            { type: '◆◆◇', part: 'Top Piece', label: 'Damage Increase to Boss Monsters +n%', values: '1% / 2% / 3% / 4% / 5% / 6% / 7% / 8% / 9% / 10%' },
+                            { type: '◆◆◇', part: 'Top Piece', label: 'Deal n% of Damage as Continuous Damage for 3 sec. (Dungeon)', values: '1% / 2% / 3% / 4% / 5% / 6% / 7% / 8% / 9% / 10%' },
+                            { type: '◆◆◇', part: 'Top Piece', label: 'Damage increase in proportion to HP lost +n% (Dungeon)', values: '1% / 2% / 3% / 4% / 5% / 6% / 7% / 8% / 9% / 10%' },
+                            { type: '◆◆◇', part: 'Top Piece', label: 'Adaptation +n% (Dungeon)', values: '0.5% / 1% / 1.5% / 2% / 2.5% / 3% / 3.5% / 4% / 4.5% / 5%' },
+                            { type: '◆◆◇', part: 'Top Piece', label: 'Buff - Party Critical Damage Increase +n% (Dungeon)', values: '1% / 2% / 3% / 4% / 5% / 6% / 7% / 8% / 9% / 10%' },
+                            { type: '◆◆◇', part: 'Top Piece', label: 'Buff - Party Physical Attack Power Increased by n% per 500K CP (Max 10%) (Dungeon)', values: '0.1% / 0.2% / 0.3% / 0.4% / 0.5% / 0.6% / 0.7% / 0.8% / 0.9% / 1%' },
+                            { type: '◆◆◇', part: 'Top Piece', label: 'Buff - Party Magical Attack Power Increased by n% per 500K CP (Max 10%) (Dungeon)', values: '0.1% / 0.2% / 0.3% / 0.4% / 0.5% / 0.6% / 0.7% / 0.8% / 0.9% / 1%' },
+                            { type: '◆◆◇', part: 'Bottom Piece', label: 'Physical Defense Increase +n%', values: '1% / 2% / 3% / 4% / 5% / 6% / 7% / 8% / 9% / 10%' },
+                            { type: '◆◆◇', part: 'Bottom Piece', label: 'Magical Defense Increase +n%', values: '1% / 2% / 3% / 4% / 5% / 6% / 7% / 8% / 9% / 10%' },
+                            { type: '◆◆◇', part: 'Bottom Piece', label: 'Damage Reduction Increase +n%', values: '1% / 2% / 3% / 4% / 5% / 6% / 7% / 8% / 9% / 10%' },
+                            { type: '◆◆◇', part: 'Bottom Piece', label: 'HP Increased +n%', values: '1% / 2% / 3% / 4% / 5% / 6% / 7% / 8% / 9% / 10%' },
+                            { type: '◆◆◇', part: 'Bottom Piece', label: 'Damage Decrease from Boss Monsters -n%', values: '1% / 2% / 3% / 4% / 5% / 6% / 7% / 8% / 9% / 10%' },
+                            { type: '◆◆◇', part: 'Bottom Piece', label: 'Damage received when 30% HP or less -n%', values: '1% / 2% / 3% / 4% / 5% / 6% / 7% / 8% / 9% / 10%' },
+                            { type: '◆◆◇', part: 'Bottom Piece', label: 'Buff - Party HP Increased by n% per 500K CP (Max 10%) (Dungeon)', values: '0.1% / 0.2% / 0.3% / 0.4% / 0.5% / 0.6% / 0.7% / 0.8% / 0.9% / 1%' },
+                            { type: '◆◆◇', part: 'Bottom Piece', label: 'Buff - Party Physical/Magical Defense Increased by n% per 500K CP (Max 10%) (Dungeon)', values: '0.1% / 0.2% / 0.3% / 0.4% / 0.5% / 0.6% / 0.7% / 0.8% / 0.9% / 1%' },
+                            { type: '◆◆◇', part: 'Bottom Piece', label: 'Buff - Party Damage Reduction Increase +n% (Dungeon)', values: '1% / 2% / 3% / 4% / 5% / 6% / 7% / 8% / 9% / 10%' },
+                            { type: '◆◆◇', part: 'Gloves', label: 'Command Attack Damage Increase +n%', values: '1% / 2% / 3% / 4% / 5% / 6% / 7% / 8% / 9% / 10%' },
+                            { type: '◆◆◇', part: 'Gloves', label: 'Active Skill Damage Increase +n%', values: '1% / 2% / 3% / 4% / 5% / 6% / 7% / 8% / 9% / 10%' },
+                            { type: '◆◆◇', part: 'Gloves', label: 'Tenacity Skill Damage Increase +n%', values: '1% / 2% / 3% / 4% / 5% / 6% / 7% / 8% / 9% / 10%' },
+                            { type: '◆◆◇', part: 'Gloves', label: 'Strength Skill Damage Increase +n%', values: '1% / 2% / 3% / 4% / 5% / 6% / 7% / 8% / 9% / 10%' },
+                            { type: '◆◆◇', part: 'Gloves', label: 'Bravery Skill Damage Increase +n%', values: '1% / 2% / 3% / 4% / 5% / 6% / 7% / 8% / 9% / 10%' },
+                            { type: '◆◆◇', part: 'Gloves', label: 'Hyperactive Skill Damage Increase +n%', values: '2% / 4% / 6% / 8% / 10% / 12% / 14% / 16% / 18% / 20%' },
+                            { type: '◆◆◇', part: 'Gloves', label: 'All Master Skill Damage Increase +n%', values: '1% / 2% / 3% / 4% / 5% / 6% / 7% / 8% / 9% / 10%' },
+                            { type: '◆◆◇', part: 'Gloves', label: 'Damage upon attacking an enemy with 50% HP or higher +n%', values: '1% / 2% / 3% / 4% / 5% / 6% / 7% / 8% / 9% / 10%' },
+                            { type: '◆◆◇', part: 'Gloves', label: 'Damage upon attacking an enemy with 50% HP or less +n%', values: '1% / 2% / 3% / 4% / 5% / 6% / 7% / 8% / 9% / 10%' },
+                            { type: '◆◆◇', part: 'Gloves', label: 'Buff - Party All Skill Damage Increased by n% (Dungeon)', values: '1% / 2% / 3% / 4% / 5% / 6% / 7% / 8% / 9% / 10%' },
+                            { type: '◆◆◇', part: 'Shoes', label: 'Skill MP Cost Decrease -n% (Dungeon)', values: '1% / 2% / 3% / 4% / 5% / 6% / 7% / 8% / 9% / 10%' },
+                            { type: '◆◆◇', part: 'Shoes', label: 'Awakening Charge Speed Increase / DP Gain +n%', values: '1% / 2% / 3% / 4% / 5% / 6% / 7% / 8% / 9% / 10%' },
+                            { type: '◆◆◇', part: 'Shoes', label: 'Action Speed Increased +n%', values: '1% / 2% / 3% / 4% / 5% / 6% / 7% / 8% / 9% / 10%' },
+                            { type: '◆◆◇', part: 'Shoes', label: 'Recovery Item Cooldown Decrease -n%', values: '1% / 2% / 3% / 4% / 5% / 6% / 7% / 8% / 9% / 10%' },
+                            { type: '◆◆◇', part: 'Shoes', label: 'Debuff Effect Duration Decrease -n%', values: '1% / 2% / 3% / 4% / 5% / 6% / 7% / 8% / 9% / 10%' },
+                            { type: '◆◆◇', part: 'Shoes', label: 'All Master Skill Cooldown Decrease -n%', values: '1% / 2% / 3% / 4% / 5% / 6% / 7% / 8% / 9% / 10%' },
+                            { type: '◆◆◇', part: 'Shoes', label: 'Critical Chance Increase +n%', values: '1% / 2% / 3% / 4% / 5% / 6% / 7% / 8% / 9% / 10%' },
+                            { type: '◆◆◇', part: 'Shoes', label: 'Maximize Increase +n%', values: '1% / 2% / 3% / 4% / 5% / 6% / 7% / 8% / 9% / 10%' },
+                            { type: '◆◆◇', part: 'Shoes', label: 'Buff - Party Action Speed Increased by n% (Dungeon)', values: '1% / 2% / 3% / 4% / 5% / 6% / 7% / 8% / 9% / 10%' },
+                            { type: '◆◆◇', part: 'Shoes', label: 'Buff - Party Movement Speed Increased by n% (Dungeon)', values: '1% / 2% / 3% / 4% / 5% / 6% / 7% / 8% / 9% / 10%' },
+                            { type: '◆◆◆', part: 'Shared', label: 'Damage Increased by n% when attacking enemies with HP n% or lower (When same socket is applied, HP condition and Damage Increase stat stacks)', values: '0.2% / 0.4% / 0.6% / 0.8% / 1% / 1.2% / 1.4% / 1.6% / 1.8% / 2%\n2% / 4% / 6% / 8% / 10% / 12% / 14% / 16% / 18% / 20%' },
+                            { type: '◆◆◆', part: 'Shared', label: 'When using force skills n% chance of resetting the force skill\'s cooldown (Chance increases when applying the same effects)', values: '0.3% / 0.6% / 0.9% / 1.2% / 1.5% / 1.8% / 2.1% / 2.4% / 2.7% / 3%' },
+                            { type: '◆◆◆', part: 'Shared', label: 'Upon using Skill, n% chance to reset cooldown for the Skill used [Excluding Extreme Heavenly Love, Hyperactives, Active Force Skill] (When same socket is applied, chance stacks)', values: '0.3% / 0.6% / 0.9% / 1.2% / 1.5% / 1.8% / 2.1% / 2.4% / 2.7% / 3%' },
+                            { type: '◆◆◆', part: 'Shared', label: 'Apply n% All Skill Damage Buff that lasts n sec. every 30 sec. (When same socket is applied, buff duration and increase stat stacks)', values: '0.2% / 0.4% / 0.6% / 0.8% / 1% / 1.2% / 1.4% / 1.6% / 1.8% / 2%\n1 / 1 / 2 / 2 / 3 / 3 / 4 / 4 / 5 / 5' },
+                            { type: '◆◆◆', part: 'Shared', label: 'All Skill Damage n% when all resistance combined is more than 1000', values: '0.2% / 0.4% / 0.6% / 0.8% / 1% / 1.2% / 1.4% / 1.6% / 1.8% / 2%' },
+                            { type: '◆◆◆', part: 'Shared', label: 'Upon using Master Skill, Allies\' specific resources (NF/Cannon Ball/Energy/Mutation Point/Combination Gauge/Power Gauge/Sentimental Point/Obsidian) is recovered by n% (Cooldown: 30 sec.) (When same socket is applied, recovery stat stacks)', values: '2.5% / 5% / 7.5% / 10% / 12.5% / 15% / 17.5% / 20% / 22.5% / 25%' },
+                            { type: '◆◆◆', part: 'Shared', label: 'Upon using Force Active Skill, create an Area that reduces damage received by n% for a very short duration (Cooldown: 5 sec.) (When same socket is applied, damage reduction stat stacks)', values: '2% / 4% / 6% / 8% / 10% / 12% / 14% / 16% / 18% / 20%' },
+                            { type: '◆◆◆', part: 'Shared', label: 'Upon awakening, create a barrier with n% of Max HP. Recover HP/MP by n% every 3 sec. when the barrier is up (Cooldown: 20 sec.) (When same socket is applied, barrier HP and recovery stat stacks)', values: '1% / 2% / 3% / 4% / 5% / 6% / 7% / 8% / 9% / 10%\n1% / 2% / 3% / 4% / 5% / 6% / 7% / 8% / 9% / 10%' },
+                            { type: '◆◆◆', part: 'Shared', label: 'Transcendence Skill Slot Enhance effect increase by n% and buff duration increase by n sec. (When same socket is applied, duration and damage stacks)', values: '0.2% / 0.4% / 0.6% / 0.8% / 1% / 1.2% / 1.4% / 1.6% / 1.8% / 2%\n0.3 / 0.6 / 0.9 / 1.2 / 1.5 / 1.8 / 2.1 / 2.4 / 2.7 / 3' },
+                            { type: '◆◆◆', part: 'Shared', label: 'Upon using Hyperactive skill, gain buff that increases skill cooldown acceleration by n times for n sec. (When same socket is applied, buff duration and skill acceleration stat stacks)', values: '1.5 / 3 / 4.5 / 6 / 7.5 / 9 / 10.5 / 12 / 13.5 / 15\n1.005 / 1.01 / 1.015 / 1.02 / 1.025 / 1.03 / 1.035 / 1.04 / 1.045 / 1.05' }
+                        ]
+                    },
+                    content2 :{
+                        en: ["There are 3 Set Effect, when all ◆◆◆ (Line 3) Shadow Effects are set, if they're all stats that share set effect, the tenebrous armor set effect will be activated, otherwise if 1 or more line 3 stats have a different set effect bonus, the set effect won't activate."]
+                    },
+                    table2: {
+                        title: 'Set Effects',
+                        columns: [
+                            { key: 'category', label: 'Set Category' },
+                            { key: 'socket',   label: 'Set Effect' },
+                            { key: 'setEffect', label: 'Shadow Effect' },
+                        ],
+                        rowGroups: [
+                            {
+                                label: 'Attack',
+                                range: '-4 ea\n+5% Physical Attack Power\n+5% Magical Attack Power\nAdaptation +2%',
+                                rows: [
+                                    { label: 'Damage Increase by n% when attacking enemies with HP n% or lower (When same socket is applied, HP condition and Damage Increase stat stacks)' },
+                                    { label: 'Apply +n% All Skill Damage Buff that lasts n sec. every 30 sec. (When same socket is applied, buff duration and increase stat stacks)' },
+                                    { label: 'All Skill Damage +n% when all resistance combined is more than 1000' },
+                                    { label: 'Transcendence Skill Slot Enhance effect increase by n% and buff duration increase by n sec. (When same socket is applied, duration and damage stacks)' }
+                                ]
+                            },
+                            {
+                                label: 'Cooldown',
+                                range: '-4 ea\nAdaptation +2%\nSkill Cooldown Reset Chance +8%',
+                                rows: [
+                                    { label: 'Upon using Force Active Skill, n% chance to reset cooldown for the Force Active Skill used (When same socket is applied, chance stacks)' },
+                                    { label: 'Upon using skill, 8% chance to reset cooldown for the skill used [Bond Skill, Hyperactive, Common Force Excluded] (When same socket is applied, chance stacks)' },
+                                    { label: 'Upon using Skill, n% chance to reset cooldown for the Skill used [Exclude Bond Skill, Hyperactives, Active Force Skill] (When same socket is applied, chance stacks)' },
+                                    { label: 'Upon using Hyperactive skill, gain buff that increases skill cooldown acceleration by n times for n sec. (When same socket is applied, buff duration and skill acceleration stat stacks)' }
+                                ]
+                            },
+                            {
+                                label: 'Protect',
+                                range: '-4 ea\nAll Skill Damage +7%\nAdaptation +2%',
+                                rows: [
+                                    { label: 'Upon awakening, create a barrier with n% of Max HP. Recover HP/MP by n% every 3 sec. when the barrier is up (Cooldown: 20 sec.) (When same socket is applied, barrier HP and recovery stat stacks)' },
+                                    { label: 'Upon using Force Active Skill, create an area that reduces damage received by n% for a very short duration (Cooldown: 5 sec.) (When same socket is applied, damage reduction stat stacks)' },
+                                    { label: 'Upon using Master Skill, Allies\' specific resources (NF/Cannon Ball/Energy/Mutation Point/Combination Gauge/Power Gauge/Sentimental Point/Obsidian) is recovered by n% (Cooldown: 30 sec.) (When same socket is applied, recovery stat stacks)' }
+                                ]
+                            }
+                        ]
+                    },
+                    extraction: {
+                        title: {
+                            en: "Extraction"
+                        },
+                        content: {
+                            en: ["While extracting Tenebrous Armor effects, you may use additional materials to modify the chance of the desired effects being extracted.","You cannot extract Tenebrous Armor effects, if the equipment is +9 or higher enhancement level or has a reforge stage 12 or higher.","The equipment piece after extraction is deleted and cannot be restored.","When selecting the chance of your desired effect, the total sum of the chances must be 100% before you are able to extract anything.","Only the extracted effect without its value will be stored."]
+                        },
+                        table: {
+                            title: 'Operation Cost',
+                            labelColumnKey: 'operation',
+                            columns: [
+                                { key: 'operation',   label: 'Operation' },
+                                { key: 'ed',          label: 'ED' },
+                                { key: 'magicCrystal', label: 'Magic Crystal' },
+                                { key: 'tenebrousAura', label: 'Tenebrous Aura' },
+                                { key: 'tasmaAura',   label: 'Tasma Aura' }
+                            ],
+                            rows: [
+                                { label: 'Base',        ed: '200,000', magicCrystal: '100', tenebrousAura: '10', tasmaAura: '200' },
+                                { label: '-1% or +1%',  ed: '20,000',  magicCrystal: '100', tenebrousAura: '1',  tasmaAura: '20' }
+                            ]
+                        }
+                    },
+                    application: {
+                        title: {
+                            en: "Application"
+                        },
+                        content: {
+                            en: ["The stored Shadow Effects can be applied to Tenebrous Armor pieces. Once the effect is applied to the equipment piece, the effect from the storage will be deleted. When applying the same Shadow Effect, the value will be overwritten by new one."]
+                        }
+                    }
+                },
+                reforge: {
+                    title: {
+                        en: "Reforge"
+                    },
+                    content: {
+                        en: ["Reforge is a System available for Amethystine Prophecy and following armors, it can be done by talking to the Blacksmith in Elrianode or later towns. In this system, you are able to reforge each armor piece for additional effects, including various stats (see below) for a total of up to 21 times. Only specific stages will grant special benefits, while other stages merely raise the equipment piece's base stats slightly, similar to regular enhancement.","The reforge success rate naturally goes down after every stage reached. However, unlike regular equipment enhancing, reforging cannot downgrade nor reset from your current stage, and every time you fail to reforge, a progress bar will fill up that guarantees success once it is filled to 100%, should you not yet have succeeded by that point.","Freshly obtained pieces have 100% reforge durability and the durability decreases by 1% each time you attempt to reforge (Reforge durability can be seen in the item tooltip below item durability). When an armor piece reaches 0% reforge durability, it cannot be reforged anymore. However, you can recover reforge durability by using Chlorite Seed (5%) which can be obtained from dungeon drops, or by using Blessed Chlorite Seed (10%) which can be purchased from Cash Shop."],
+                    },
+                    table: {
+                        title: 'Refinement Stages',
+                        tabs: [
+                            {
+                                label: 'Amethystine Prophecy',
+                                columns: [
+                                    { key: 'stage',        label: 'Stage' },
+                                    { key: 'glaciem',      label: 'Glaciem' },
+                                    { key: 'amethyst',     label: 'Spectral Amethyst' },
+                                    { key: 'crystals',     label: 'Magic Crystals' },
+                                    { key: 'ed',           label: 'ED' },
+                                    { key: 'effects',      label: 'Effects' },
+                                    { key: 'successRate',  label: 'Success Rate' }
+                                ],
+                                rows: [
+                                    { stage: '0 → 1',  glaciem: '2,000', amethyst: '3', crystals: '100', ed: '300,000', effects: '-', successRate: '50%' },
+                                    { stage: '1 → 2',  glaciem: '2,000', amethyst: '3', crystals: '100', ed: '300,000', effects: '-', successRate: '50%' },
+                                    { stage: '2 → 3',  glaciem: '2,000', amethyst: '3', crystals: '100', ed: '300,000', effects: 'Critical Damage +3%', successRate: '50%' },
+                                    { stage: '3 → 4',  glaciem: '2,000', amethyst: '3', crystals: '100', ed: '300,000', effects: '-', successRate: '50%' },
+                                    { stage: '4 → 5',  glaciem: '2,000', amethyst: '3', crystals: '100', ed: '300,000', effects: '-', successRate: '50%' },
+                                    { stage: '5 → 6',  glaciem: '2,000', amethyst: '3', crystals: '100', ed: '300,000', effects: 'Active/Tenacity/Strength/Bravery\nSkill Damage Increase +3%', gauge: '-', successRate: '50%' },
+                                    { stage: '6 → 7',  glaciem: '2,000', amethyst: '3', crystals: '100', ed: '300,000', effects: '-', successRate: '50%' },
+                                    { stage: '7 → 8',  glaciem: '2,000', amethyst: '3', crystals: '100', ed: '300,000', effects: '-', successRate: '50%' },
+                                    { stage: '8 → 9',  glaciem: '2,000', amethyst: '3', crystals: '100', ed: '300,000', effects: 'Critical Damage +3%', successRate: '50%' },
+                                    { stage: '9 → 10', glaciem: '4,000', amethyst: '6', crystals: '200', ed: '900,000', effects: '-', successRate: '50%' },
+                                    { stage: '10 → 11', glaciem: '4,000', amethyst: '6', crystals: '200', ed: '900,000', effects: '-', successRate: '50%' },
+                                    { stage: '11 → 12', glaciem: '4,000', amethyst: '6', crystals: '200', ed: '900,000', effects: 'Active/Tenacity/Strength/Bravery\nSkill Damage Increase +4%', successRate: '50%' },
+                                    { stage: '12 → 13', glaciem: '4,000', amethyst: '6', crystals: '200', ed: '900,000', effects: '-', successRate: '50%' },
+                                    { stage: '13 → 14', glaciem: '4,000', amethyst: '6', crystals: '200', ed: '900,000', effects: '-', gauge: '-', successRate: '50%' },
+                                    { stage: '14 → 15', glaciem: '4,000', amethyst: '6', crystals: '200', ed: '900,000', effects: 'Adaptation +1%', gauge: '-', successRate: '50%' },
+                                    { stage: '15 → 16', glaciem: '6,000', amethyst: '9', crystals: '300', ed: '1,800,000', effects: '-', gauge: '-', successRate: '50%' },
+                                    { stage: '16 → 17', glaciem: '6,000', amethyst: '9', crystals: '300', ed: '1,800,000', effects: '-', gauge: '-', successRate: '14.286%' },
+                                    { stage: '17 → 18', glaciem: '6,000', amethyst: '9', crystals: '300', ed: '1,800,000', effects: 'Critical Damage +3%', gauge: '-', successRate: '11.111%' },
+                                    { stage: '18 → 19', glaciem: '6,000', amethyst: '9', crystals: '300', ed: '1,800,000', effects: '-', gauge: '-', successRate: '9.091%' },
+                                    { stage: '19 → 20', glaciem: '6,000', amethyst: '9', crystals: '300', ed: '1,800,000', effects: '-', gauge: '-', successRate: '7.691%' },
+                                    { stage: '20 → 21', glaciem: '6,000', amethyst: '9', crystals: '300', ed: '1,800,000', effects: '+3% Physical Attack Power\n+3% Magical Attack Power', gauge: '-', successRate: '4%' }
+                                ]
+                            },
+                            {
+                                label: 'Tenebrous',
+                                columns: [
+                                    { key: 'stage',        label: 'Stage' },
+                                    { key: 'tasma',        label: 'Tasma Aura' },
+                                    { key: 'tenebrous',    label: 'Tenebrous Aura' },
+                                    { key: 'crystals',     label: 'Magic Crystals' },
+                                    { key: 'ed',           label: 'ED' },
+                                    { key: 'effects',      label: 'Effects' },
+                                    { key: 'successRate',  label: 'Success Rate' }
+                                ],
+                                rows: [
+                                    { stage: '0 → 1',  tasma: '2,000', tenebrous: '15', crystals: '100', ed: '300,000', effects: '-', gauge: '-', successRate: '50%' },
+                                    { stage: '1 → 2',  tasma: '2,000', tenebrous: '15', crystals: '100', ed: '300,000', effects: '-', gauge: '-', successRate: '33.333%' },
+                                    { stage: '2 → 3',  tasma: '2,000', tenebrous: '15', crystals: '100', ed: '300,000', effects: 'Critical Damage +3%', gauge: '-', successRate: '20%' },
+                                    { stage: '3 → 4',  tasma: '2,000', tenebrous: '15', crystals: '100', ed: '300,000', effects: '-', gauge: '-', successRate: '50%' },
+                                    { stage: '4 → 5',  tasma: '2,000', tenebrous: '15', crystals: '100', ed: '300,000', effects: '-', gauge: '-', successRate: '33.333%' },
+                                    { stage: '5 → 6',  tasma: '2,000', tenebrous: '15', crystals: '100', ed: '300,000', effects: 'Active/Tenacity/Strength/Bravery\nSkill Damage Increase +3%', gauge: '-', successRate: '20%' },
+                                    { stage: '6 → 7',  tasma: '2,000', tenebrous: '15', crystals: '100', ed: '300,000', effects: '-', gauge: '-', successRate: '50%' },
+                                    { stage: '7 → 8',  tasma: '2,000', tenebrous: '15', crystals: '100', ed: '300,000', effects: '-', gauge: '-', successRate: '20%' },
+                                    { stage: '8 → 9',  tasma: '4,000', tenebrous: '15', crystals: '100', ed: '300,000', effects: 'Critical Damage +3%', gauge: '-', successRate: '14.286%' },
+                                    { stage: '9 → 10', tasma: '4,000', tenebrous: '30', crystals: '200', ed: '900,000', effects: '-', gauge: '-', successRate: '33.333%' },
+                                    { stage: '10 → 11', tasma: '4,000', tenebrous: '30', crystals: '200', ed: '900,000', effects: '-', gauge: '-', successRate: '20%' },
+                                    { stage: '11 → 12', tasma: '4,000', tenebrous: '30', crystals: '200', ed: '900,000', effects: 'Active/Tenacity/Strength/Bravery\nSkill Damage Increase +3%', gauge: '-', successRate: '14.286%' },
+                                    { stage: '12 → 13', tasma: '4,000', tenebrous: '30', crystals: '200', ed: '900,000', effects: '-', gauge: '-', successRate: '14.286%' },
+                                    { stage: '13 → 14', tasma: '4,000', tenebrous: '30', crystals: '200', ed: '900,000', effects: '-', gauge: '-', successRate: '10%' },
+                                    { stage: '14 → 15', tasma: '4,000', tenebrous: '30', crystals: '200', ed: '900,000', effects: '+2% Physical Attack Power\n+2% Magical Attack Power', gauge: '-', successRate: '7.692%' },
+                                    { stage: '15 → 16', tasma: '6,000', tenebrous: '45', crystals: '300', ed: '1,800,000', effects: '-', gauge: '-', successRate: '7.692%' },
+                                    { stage: '16 → 17', tasma: '6,000', tenebrous: '45', crystals: '300', ed: '1,800,000', effects: '-', gauge: '-', successRate: '3.704%' },
+                                    { stage: '17 → 18', tasma: '6,000', tenebrous: '45', crystals: '300', ed: '1,800,000', effects: 'Active/Tenacity/Strength/Bravery\nSkill Damage Increase +4%', gauge: '-', successRate: '1.887%' },
+                                    { stage: '18 → 19', tasma: '6,000', tenebrous: '45', crystals: '300', ed: '1,800,000', effects: '-', gauge: '-', successRate: '7.692%' },
+                                    { stage: '19 → 20', tasma: '6,000', tenebrous: '45', crystals: '300', ed: '1,800,000', effects: '-', gauge: '-', successRate: '2.941%' },
+                                    { stage: '20 → 21', tasma: '6,000', tenebrous: '45', crystals: '300', ed: '1,800,000', effects: 'Adaptation +2% (Dungeon)', gauge: '-', successRate: '1.667%' }
+                                ]
+                            },
+                            {
+                                label: 'Exascale',
+                                columns: [
+                                    { key: 'stage',        label: 'Stage' },
+                                    { key: 'zetrium',      label: 'Zetrium Steel' },
+                                    { key: 'exikel',       label: 'Refined Exikel' },
+                                    { key: 'crystals',     label: 'Magic Crystals' },
+                                    { key: 'ed',           label: 'ED' },
+                                    { key: 'effects',      label: 'Effects' },
+                                    { key: 'successRate',  label: 'Success Rate' }
+                                ],
+                                rows: [
+                                    { stage: '0 → 1',  zetrium: '2,000', exikel: '20', crystals: '100', ed: '300,000', effects: '-', gauge: '-', successRate: '20%' },
+                                    { stage: '1 → 2',  zetrium: '2,000', exikel: '20', crystals: '100', ed: '300,000', effects: '-', gauge: '-', successRate: '10%' },
+                                    { stage: '2 → 3',  zetrium: '2,000', exikel: '20', crystals: '100', ed: '300,000', effects: 'Critical Damage +3%', gauge: '-', successRate: '6.667%' },
+                                    { stage: '3 → 4',  zetrium: '2,000', exikel: '20', crystals: '100', ed: '300,000', effects: '-', gauge: '-', successRate: '20%' },
+                                    { stage: '4 → 5',  zetrium: '2,000', exikel: '20', crystals: '100', ed: '300,000', effects: '-', gauge: '-', successRate: '10%' },
+                                    { stage: '5 → 6',  zetrium: '2,000', exikel: '20', crystals: '100', ed: '300,000', effects: 'Active/Tenacity/Strength/Bravery\nSkill Damage Increase +3%', gauge: '-', successRate: '6.667%' },
+                                    { stage: '6 → 7',  zetrium: '2,000', exikel: '20', crystals: '100', ed: '300,000', effects: '-', gauge: '-', successRate: '20%' },
+                                    { stage: '7 → 8',  zetrium: '2,000', exikel: '20', crystals: '100', ed: '300,000', effects: '-', gauge: '-', successRate: '6.667%' },
+                                    { stage: '8 → 9',  zetrium: '2,000', exikel: '20', crystals: '100', ed: '300,000', effects: 'Critical Damage +3%', gauge: '-', successRate: '5%' },
+                                    { stage: '9 → 10', zetrium: '4,000', exikel: '40', crystals: '200', ed: '900,000', effects: '-', gauge: '-', successRate: '10%' },
+                                    { stage: '10 → 11', zetrium: '4,000', exikel: '40', crystals: '200', ed: '900,000', effects: '-', gauge: '-', successRate: '6.667%' },
+                                    { stage: '11 → 12', zetrium: '4,000', exikel: '40', crystals: '200', ed: '900,000', effects: 'Active/Tenacity/Strength/Bravery\nSkill Damage Increase +3%', gauge: '-', successRate: '5%' },
+                                    { stage: '12 → 13', zetrium: '4,000', exikel: '40', crystals: '200', ed: '900,000', effects: '-', gauge: '-', successRate: '5%' },
+                                    { stage: '13 → 14', zetrium: '4,000', exikel: '40', crystals: '200', ed: '900,000', effects: '-', gauge: '-', successRate: '3.333%' },
+                                    { stage: '14 → 15', zetrium: '4,000', exikel: '40', crystals: '200', ed: '900,000', effects: 'Physical Attack Power +2%\nMagical Attack Power +2%', gauge: '-', successRate: '2.5%' },
+                                    { stage: '15 → 16', zetrium: '6,000', exikel: '60', crystals: '300', ed: '1,800,000', effects: '-', gauge: '-', successRate: '2.5%' },
+                                    { stage: '16 → 17', zetrium: '6,000', exikel: '60', crystals: '300', ed: '1,800,000', effects: '-', gauge: '-', successRate: '1.25%' },
+                                    { stage: '17 → 18', zetrium: '6,000', exikel: '60', crystals: '300', ed: '1,800,000', effects: 'Active/Tenacity/Strength/Bravery\nSkill Damage Increase +4%', gauge: '-', successRate: '0.625%' },
+                                    { stage: '18 → 19', zetrium: '6,000', exikel: '60', crystals: '300', ed: '1,800,000', effects: '-', gauge: '-', successRate: '2.5%' },
+                                    { stage: '19 → 20', zetrium: '6,000', exikel: '60', crystals: '300', ed: '1,800,000', effects: '-', gauge: '-', successRate: '0.833%' },
+                                    { stage: '20 → 21', zetrium: '6,000', exikel: '60', crystals: '300', ed: '1,800,000', effects: 'Adaptation +2% (Dungeon)', gauge: '-', successRate: '0.416%' }
+                                ]
+                            },
+                            {
+                                label: 'Metholon (Placeholder)',
+                                columns: [
+                                    { key: 'stage',        label: 'Stage' },
+                                    { key: 'zetrium',      label: 'Zetrium Steel' },
+                                    { key: 'exikel',       label: 'Refined Exikel' },
+                                    { key: 'crystals',     label: 'Magic Crystals' },
+                                    { key: 'ed',           label: 'ED' },
+                                    { key: 'effects',      label: 'Effects' },
+                                    { key: 'successRate',  label: 'Success Rate' }
+                                ],
+                                rows: [
+                                    { stage: '0 → 1',  zetrium: '2,000', exikel: '20', crystals: '100', ed: '300,000', effects: '-', gauge: '-', successRate: '20%' },
+                                    { stage: '1 → 2',  zetrium: '2,000', exikel: '20', crystals: '100', ed: '300,000', effects: '-', gauge: '-', successRate: '10%' },
+                                    { stage: '2 → 3',  zetrium: '2,000', exikel: '20', crystals: '100', ed: '300,000', effects: 'Critical Damage +3%', gauge: '-', successRate: '6.667%' },
+                                    { stage: '3 → 4',  zetrium: '2,000', exikel: '20', crystals: '100', ed: '300,000', effects: '-', gauge: '-', successRate: '20%' },
+                                    { stage: '4 → 5',  zetrium: '2,000', exikel: '20', crystals: '100', ed: '300,000', effects: '-', gauge: '-', successRate: '10%' },
+                                    { stage: '5 → 6',  zetrium: '2,000', exikel: '20', crystals: '100', ed: '300,000', effects: 'Active/Tenacity/Strength/Bravery\nSkill Damage Increase +3%', gauge: '-', successRate: '6.667%' },
+                                    { stage: '6 → 7',  zetrium: '2,000', exikel: '20', crystals: '100', ed: '300,000', effects: '-', gauge: '-', successRate: '20%' },
+                                    { stage: '7 → 8',  zetrium: '2,000', exikel: '20', crystals: '100', ed: '300,000', effects: '-', gauge: '-', successRate: '6.667%' },
+                                    { stage: '8 → 9',  zetrium: '2,000', exikel: '20', crystals: '100', ed: '300,000', effects: 'Critical Damage +3%', gauge: '-', successRate: '5%' },
+                                    { stage: '9 → 10', zetrium: '4,000', exikel: '40', crystals: '200', ed: '900,000', effects: '-', gauge: '-', successRate: '10%' },
+                                    { stage: '10 → 11', zetrium: '4,000', exikel: '40', crystals: '200', ed: '900,000', effects: '-', gauge: '-', successRate: '6.667%' },
+                                    { stage: '11 → 12', zetrium: '4,000', exikel: '40', crystals: '200', ed: '900,000', effects: 'Active/Tenacity/Strength/Bravery\nSkill Damage Increase +3%', gauge: '-', successRate: '5%' },
+                                    { stage: '12 → 13', zetrium: '4,000', exikel: '40', crystals: '200', ed: '900,000', effects: '-', gauge: '-', successRate: '5%' },
+                                    { stage: '13 → 14', zetrium: '4,000', exikel: '40', crystals: '200', ed: '900,000', effects: '-', gauge: '-', successRate: '3.333%' },
+                                    { stage: '14 → 15', zetrium: '4,000', exikel: '40', crystals: '200', ed: '900,000', effects: 'Physical Attack Power +2%\nMagical Attack Power +2%', gauge: '-', successRate: '2.5%' },
+                                    { stage: '15 → 16', zetrium: '6,000', exikel: '60', crystals: '300', ed: '1,800,000', effects: '-', gauge: '-', successRate: '2.5%' },
+                                    { stage: '16 → 17', zetrium: '6,000', exikel: '60', crystals: '300', ed: '1,800,000', effects: '-', gauge: '-', successRate: '1.25%' },
+                                    { stage: '17 → 18', zetrium: '6,000', exikel: '60', crystals: '300', ed: '1,800,000', effects: 'Active/Tenacity/Strength/Bravery\nSkill Damage Increase +4%', gauge: '-', successRate: '0.625%' },
+                                    { stage: '18 → 19', zetrium: '6,000', exikel: '60', crystals: '300', ed: '1,800,000', effects: '-', gauge: '-', successRate: '2.5%' },
+                                    { stage: '19 → 20', zetrium: '6,000', exikel: '60', crystals: '300', ed: '1,800,000', effects: '-', gauge: '-', successRate: '0.833%' },
+                                    { stage: '20 → 21', zetrium: '6,000', exikel: '60', crystals: '300', ed: '1,800,000', effects: 'Adaptation +2% (Dungeon)', gauge: '-', successRate: '0.416%' }
+                                ]
+                            }
+                        ]
+                    },
+                    transfer: {
+                        title: {
+                            en: "Transfer System"
+                        },
+                        content: {
+                            en: ["You are able to transfer the reforge progress for selected armor via Magmelia > Vasili > Reforge Transfer or Camp: Steel Wall > Haivan > Reforge Transfer, to transfer, the base armor piece needs to be at least reforge 18 stage or higher to be eligible for transfer and can only be done on the same armor pieces, but you have to keep some things in mind:","Reforge progress can only be transfered by using either Normal or Special transfer, Reforge progress will be reset on the Armor piece used for the transfer, Enhancement Level of Armor piece used for transfer will not reset and lastly: After using the transfer, Transferred Reforge armor piece reforge stage will decrease by 6 stages. (Example: Tenebrous Reforge level 21 will go down to Exascale Reforge level 15)","The elegible options for transfer are:","Amethystine Prophecy Armor → Tenebrous Armor","Tenebrous Armor → Exascale Armor","Exascale Armor → Metholon Armor"]
+                        },
+                        table: {
+                            title: 'Details',
+                            tabs: [
+                                {
+                                    label: 'Amethystine to Tenebrous',
+                                    columns: [
+                                        { key: 'stage',          label: 'Reforge Stage' },
+                                        { key: 'ed',             label: 'ED' },
+                                        { key: 'crystals',       label: 'Magic Crystal' },
+                                        { key: 'tenebrous',      label: 'Normal Transfer\nTenebrous Aura' },
+                                        { key: 'tasma',          label: 'Normal Transfer\nTasma Aura' },
+                                        { key: 'specialTransfer', label: 'Special Transfer\nRefinement Level Transfer Coupon' }
+                                    ],
+                                    rows: [
+                                        { stage: '18', ed: '10,000,000', crystals: '1250', tenebrous: '1000', tasma: '8000', normalTransfer: '-', specialTransfer: '1' },
+                                        { stage: '19', ed: '12,500,000', crystals: '1250', tenebrous: '1250',   tasma: '16000', normalTransfer: '-', specialTransfer: '2' },
+                                        { stage: '20', ed: '12,500,000', crystals: '1250', tenebrous: '1250',   tasma: '16000', normalTransfer: '-', specialTransfer: '3' },
+                                        { stage: '21', ed: '30,000,000', crystals: '3000', tenebrous: '3000',   tasma: '20000', normalTransfer: '-', specialTransfer: '4' }
+                                    ]
+                                },
+                                {
+                                    label: 'Tenebrous to Exascale',
+                                    columns: [
+                                        { key: 'stage',          label: 'Reforge Stage' },
+                                        { key: 'ed',             label: 'ED' },
+                                        { key: 'crystals',       label: 'Magic Crystal' },
+                                        { key: 'exikel',         label: 'Normal Transfer\nRefined Exikel' },
+                                        { key: 'zetrium',        label: 'Normal Transfer\nZetrium Steel' },
+                                        { key: 'specialTransfer', label: 'Special Transfer\nRefinement Level Transfer Coupon' }
+                                    ],
+                                    rows: [
+                                        { stage: '18', ed: '10,000,000', crystals: '1250', exikel: '1000', zetrium: '8000', normalTransfer: '-', specialTransfer: '1' },
+                                        { stage: '19', ed: '12,500,000', crystals: '1250', exikel: '1250',    zetrium: '16000', normalTransfer: '-', specialTransfer: '2' },
+                                        { stage: '20', ed: '12,500,000', crystals: '1250', exikel: '1250',    zetrium: '16000', normalTransfer: '-', specialTransfer: '3' },
+                                        { stage: '21', ed: '30,000,000', crystals: '3000', exikel: '3000',    zetrium: '20000', normalTransfer: '-', specialTransfer: '4' }
+                                    ]
+                                },
+                                {
+                                    label: 'Exascale to Metholon (Placeholder)',
+                                    columns: [
+                                        { key: 'stage',          label: 'Reforge Stage' },
+                                        { key: 'ed',             label: 'ED' },
+                                        { key: 'crystals',       label: 'Magic Crystal' },
+                                        { key: 'metholon',         label: 'Normal Transfer\nConcentrated Metholon' },
+                                        { key: 'metholin',        label: 'Normal Transfer\nMetholin' },
+                                        { key: 'specialTransfer', label: 'Special Transfer\nRefinement Level Transfer Coupon' }
+                                    ],
+                                    rows: [
+                                        { stage: '18', ed: '10,000,000', crystals: '1250', metholon: '1000', metholin: '8000', normalTransfer: '-', specialTransfer: '1' },
+                                        { stage: '19', ed: '12,500,000', crystals: '1250', metholon: '1250', metholin: '16000', normalTransfer: '-', specialTransfer: '2' },
+                                        { stage: '20', ed: '12,500,000', crystals: '1250', metholon: '1250', metholin: '16000', normalTransfer: '-', specialTransfer: '3' },
+                                        { stage: '21', ed: '30,000,000', crystals: '3000', metholon: '3000', metholin: '20000', normalTransfer: '-', specialTransfer: '4' }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
                 }
             },
             notices: {
@@ -2575,7 +3957,11 @@ export const data = {
             contents: { en: "List of Content", es: "Lista de Contenido", kr: "콘텐츠 목록", jp: "コンテンツ一覧", br: "Lista de Conteúdo" },
             content_sunken: { en: "Sunken Holy Ground", es: "Terreno Sagrado Hundido", kr: "가라앉은 성스러운 땅", jp: "沈んだ聖地", br: "Terreno Sagrado Afundado" },
             sections: {
+                // ABYSS RAID
                 shg: {
+                    titlekey: {
+                        en: "Sunken Holy Ground", es: "Tierra Santa Hundida", kr: "가라앉은 성지", jp: "沈んだ聖地", br: "Terra Santa Afundada"    
+                    },
                     num: { en: "1st Dungeon", es: "1ra Mazmorra", kr: "", jp: "1番目のダンジョン", br: "1ª Masmorra" },
                     name: { en: "- Sunken Holy Ground -", es: "- Tierra Santa Hundida -", kr: "- 가라앉은 성지 -", jp: "- 沈んだ聖地 -", br: "- Terra Santa Afundada -" },
                     content: {
@@ -2676,7 +4062,11 @@ export const data = {
                         }
                     }
                 },
+                // ABYSS RAID 2nd DUNGEON
                 bmf: {
+                    titlekey:{
+                        en: "Blooming Mineral Field", es: "Campo Mineral Floreciente", kr: "개화하는 광물 지대", jp: "開花する鉱物地帯", br: "Campo Mineral Florescente"
+                    },
                     num: { en: "2nd Dungeon", es: "2da Mazmorra", kr: "", jp: "2番目のダンジョン", br: "2ª Masmorra" },
                     name: { en: "- Blooming Mineral Field -", es: "- Campo Mineral Floreciente -", kr: "- 개화하는 광물 지대 -", jp: "- 開花する鉱物地帯 -", br: "- Campo Mineral Florescente -" },
                     content: {
@@ -2778,7 +4168,11 @@ export const data = {
                         }
                     }
                 },
+                // ABYSS RAID 3rd DUNGEON
                 nc: {
+                    titlekey:{
+                        en: "Nightmare's Crib", es: "Cuna de la Pesadilla", kr: "악몽의 요람", jp: "悪夢の揺り籠", br: "Berço do Pesadelo"
+                    },
                     num: { en: "3rd Dungeon (Optional)", es: "3ra Mazmorra (Opcional)", kr: "", jp: "", br: "" },
                     name: { en: "- Nightmare's Crib -", es: "- Cuna de la Pesadilla -", kr: "- 악몽의 요람 -", jp: "- 悪夢の揺り籠 -", br: "- Berço do Pesadelo -" },
                     description: { en: "This dungeon is optional, since it's not required to clear it in order to enter Birth of Origin, you can choose to do this instead of Blooming Mineral Field since clearing any of those 2 grants access to the next dungeon." },
@@ -2877,7 +4271,11 @@ export const data = {
                         }
                     }
                 },
+                // ABYSS RAID 4th DUNGEON
                 boo: {
+                    titlekey: {
+                        en: "Birth of Origin", es: "Nacimiento del Origen", kr: "기원의 탄생", jp: "起源の誕生", br: "Nascimento da Origem"
+                    },
                     num: { en: "4th Dungeon", es: "4ta Mazmorra", kr: "", jp: "4番目のダンジョン", br: "4ª Masmorra" },
                     name: { en: "- Birth of Origin -", es: "- Nacimiento del Origen -", kr: "- 기원의 탄생 -", jp: "- 起源の誕生 -", br: "- Nascimento da Origem -" },
                     content: {
@@ -3053,11 +4451,420 @@ export const data = {
                         }
                     }
                 },
+                // -- ABYSS RAID END
+                monaterra: {
+                    title: {
+                        en: "Monaterra"
+                    },
+                    content: {
+                        
+                    }
+                },
+                harconiumtuning: {
+                    title: {
+                        en: "Harconium Tuning System"
+                    },
+                    content: {
+                        en: ["Clearing Monaterra dungons drop Harconium Tuning Reactors, which are divided into pieces, top, bottom, gloves and shoes. These are used to imbue additional effects into the Tenebrous Armor, into the Modification Slot via Magmelia > Vasili > Equipment Modification.","For the modification effect to be active, all 4 modification slots need to be socketed, similar to Tenebrous Armor Set Effect, except the effects can be different this time.","The table below shows all the possible effects a Reactor can have:","Note: Condition and Effect values are rolled independently."]
+                    },
+                    table: {
+                        title: 'Effect Combinations',
+                        labelColumn: 'effect1',
+                        columns: [
+                            { key: 'effect1',        label: 'Effect 1' },
+                            { key: 'effect1Range',   label: 'Worst / Best' },
+                            { key: 'effect2',        label: 'Effect 2' },
+                            { key: 'effect2Range',   label: 'Worst / Best' }
+                        ],
+                        rowGroups: [
+                            {
+                                label: 'If the sum of Physical and Magical Defense exceeds "n"',
+                                range: '40.000 / 24.000',
+                                rows: [
+                                    { label: 'Increase Attack/Magical Attack by +n%', range: '1% / 3%' },
+                                    { label: 'Increase All Skill Damage by +n%', range: '1% / 3%' },
+                                    { label: 'Increase EXP gain by +n%', range: '1% / 5%' },
+                                    { label: 'Increase Critical Damage by +n%', range: '1% / 3%' },
+                                    { label: 'Critical Chance by +n%', range: '1% / 3%' }
+                                ]
+                            },
+                            {
+                                label: 'If Hyperactive Skill damage exceeds n%',
+                                range: '80% / 20%',
+                                rows: [
+                                    { label: 'Increase Attack/Magical Attack by +n%', range: '1% / 3%' },
+                                    { label: 'Increase All Skill Damage by +n%', range: '1% / 3%' },
+                                    { label: 'Increase EXP gain by +n%', range: '1% / 5%' },
+                                    { label: 'Increase Critical Damage by +n%', range: '1% / 3%' },
+                                    { label: 'Critical Chance by +n%', range: '1% / 3%' }
+                                ]
+                            },
+                            {
+                                label: 'If the Additional Damage stat exceeds n%',
+                                range: '20% / 4%',
+                                rows: [
+                                    { label: 'Increase Attack/Magical Attack by +n%', range: '1% / 3%' },
+                                    { label: 'Increase All Skill Damage by +n%', range: '1% / 3%' },
+                                    { label: 'Increase EXP gain by +n%', range: '1% / 5%' },
+                                    { label: 'Increase Critical Damage by +n%', range: '1% / 3%' },
+                                    { label: 'Critical Chance by +n%', range: '1% / 3%' }
+                                ]
+                            },
+                            {
+                                label: 'If the sum of All Resistences exceeds "n"',
+                                range: '3000 / 1000',
+                                rows: [
+                                    { label: 'Increase Attack/Magical Attack by +n%', range: '1% / 3%' },
+                                    { label: 'Increase All Skill Damage by +n%', range: '1% / 3%' },
+                                    { label: 'Increase EXP gain by +n%', range: '1% / 5%' },
+                                    { label: 'Increase Critical Damage by +n%', range: '1% / 3%' },
+                                    { label: 'Critical Chance by +n%', range: '1% / 3%' }
+                                ]
+                            },
+                            {
+                                label: 'If the EXP gain stat exceeds n%',
+                                range: '100% / 10%',
+                                rows: [
+                                    { label: 'Increase Attack/Magical Attack by +n%', range: '1% / 3%' },
+                                    { label: 'Increase All Skill Damage by +n%', range: '1% / 3%' },
+                                    { label: 'Increase Critical Damage by +n%', range: '1% / 3%' },
+                                    { label: 'Critical Chance by +n%', range: '1% / 3%' }
+                                ]
+                            },
+                            {
+                                label: 'HP Decreased n%',
+                                range: '-5% / -1%',
+                                rows: [
+                                    { label: 'Tenacity Skill Damage Increase +n%', range: '1% / 5%' },
+                                    { label: 'Strength Skill Damage Increase +n%', range: '1% / 5%' },
+                                    { label: 'Bravery Skill Damage Increase +n%', range: '1% / 5%' },
+                                    { label: 'Tenacity Skill Cooldown Decrease -n%', range: '1% / 5%' },
+                                    { label: 'Strength Skill Cooldown Decrease -n%', range: '1% / 5%' },
+                                    { label: 'Bravery Skill Cooldown Decrease -n%', range: '1% / 5%' },
+                                    { label: 'Damage Increase to Boss Monsters +n%', range: '1% / 5%' },
+                                    { label: 'Damage Decrease from Boss Monsters -n%', range: '1% / 5%' },
+                                    { label: 'Action Speed Increase +n%', range: '1% / 5%' },
+                                    { label: 'Movement Speed Increase +n%', range: '2% / 6%' },
+                                    { label: 'Polarize: Attack/Attacked Increase +n% (Dungeon)', range: '1% / 3%' }
+                                ]
+                            },
+                            {
+                                label: 'Tenacity Skill Damage Decrease n%',
+                                range: '-5% / -1%',
+                                rows: [
+                                    { label: 'HP Increased n%', range: '2% / 6%' },
+                                    { label: 'Strength Skill Damage Increase +n%', range: '1% / 5%' },
+                                    { label: 'Bravery Skill Damage Increase +n%', range: '1% / 5%' },
+                                    { label: 'Tenacity Skill Cooldown Decrease -n%', range: '1% / 5%' },
+                                    { label: 'Strength Skill Cooldown Decrease -n%', range: '1% / 5%' },
+                                    { label: 'Bravery Skill Cooldown Decrease -n%', range: '1% / 5%' },
+                                    { label: 'Damage Increase to Boss Monsters +n%', range: '1% / 5%' },
+                                    { label: 'Damage Decrease from Boss Monsters -n%', range: '1% / 5%' },
+                                    { label: 'Action Speed Increase +n%', range: '1% / 5%' },
+                                    { label: 'Movement Speed Increase +n%', range: '2% / 6%' },
+                                    { label: 'Polarize: Attack/Attacked Increase +n% (Dungeon)', range: '1% / 3%' }
+                                ]
+                            },
+                            {
+                                label: 'Strength Skill Damage Decrease n%',
+                                range: '-5% / -1%',
+                                rows: [
+                                    { label: 'HP Increased n%', range: '2% / 6%' },
+                                    { label: 'Tenacity Skill Damage Increase +n%', range: '1% / 5%' },
+                                    { label: 'Bravery Skill Damage Increase +n%', range: '1% / 5%' },
+                                    { label: 'Tenacity Skill Cooldown Decrease -n%', range: '1% / 5%' },
+                                    { label: 'Strength Skill Cooldown Decrease -n%', range: '1% / 5%' },
+                                    { label: 'Bravery Skill Cooldown Decrease -n%', range: '1% / 5%' },
+                                    { label: 'Damage Increase to Boss Monsters +n%', range: '1% / 5%' },
+                                    { label: 'Damage Decrease from Boss Monsters -n%', range: '1% / 5%' },
+                                    { label: 'Action Speed Increase +n%', range: '1% / 5%' },
+                                    { label: 'Movement Speed Increase +n%', range: '2% / 6%' },
+                                    { label: 'Polarize: Attack/Attacked Increase +n% (Dungeon)', range: '1% / 3%' }
+                                ]
+                            },
+                            {
+                                label: 'Bravery Skill Damage Decrease n%',
+                                range: '-5% / -1%',
+                                rows: [
+                                    { label: 'HP Increased n%', range: '2% / 6%' },
+                                    { label: 'Tenacity Skill Damage Increase +n%', range: '1% / 5%' },
+                                    { label: 'Strength Skill Damage Increase +n%', range: '1% / 5%' },
+                                    { label: 'Tenacity Skill Cooldown Decrease -n%', range: '1% / 5%' },
+                                    { label: 'Strength Skill Cooldown Decrease -n%', range: '1% / 5%' },
+                                    { label: 'Bravery Skill Cooldown Decrease -n%', range: '1% / 5%' },
+                                    { label: 'Damage Increase to Boss Monsters +n%', range: '1% / 5%' },
+                                    { label: 'Damage Decrease from Boss Monsters -n%', range: '1% / 5%' },
+                                    { label: 'Action Speed Increase +n%', range: '1% / 5%' },
+                                    { label: 'Movement Speed Increase +n%', range: '2% / 6%' },
+                                    { label: 'Polarize: Attack/Attacked Increase +n% (Dungeon)', range: '1% / 3%' }
+                                ]
+                            },
+                            {
+                                label: 'Tenacity Skill Cooldown Increase n%',
+                                range: '+5% / +1%',
+                                rows: [
+                                    { label: 'HP Increased n%', range: '2% / 6%' },
+                                    { label: 'Tenacity Skill Damage Increase +n%', range: '1% / 5%' },
+                                    { label: 'Strength Skill Damage Increase +n%', range: '1% / 5%' },
+                                    { label: 'Bravery Skill Damage Increase +n%', range: '1% / 5%' },
+                                    { label: 'Strength Skill Cooldown Decrease -n%', range: '1% / 5%' },
+                                    { label: 'Bravery Skill Cooldown Decrease -n%', range: '1% / 5%' },
+                                    { label: 'Damage Increase to Boss Monsters +n%', range: '1% / 5%' },
+                                    { label: 'Damage Decrease from Boss Monsters -n%', range: '1% / 5%' },
+                                    { label: 'Action Speed Increase +n%', range: '1% / 5%' },
+                                    { label: 'Movement Speed Increase +n%', range: '2% / 6%' },
+                                    { label: 'Polarize: Attack/Attacked Increase +n% (Dungeon)', range: '1% / 3%' }
+                                ]
+                            },
+                            {
+                                label: 'Strength Skill Cooldown Increase n%',
+                                range: '+5% / +1%',
+                                rows: [
+                                    { label: 'HP Increased n%', range: '2% / 6%' },
+                                    { label: 'Tenacity Skill Damage Increase +n%', range: '1% / 5%' },
+                                    { label: 'Strength Skill Damage Increase +n%', range: '1% / 5%' },
+                                    { label: 'Bravery Skill Damage Increase +n%', range: '1% / 5%' },
+                                    { label: 'Tenacity Skill Cooldown Decrease -n%', range: '1% / 5%' },
+                                    { label: 'Bravery Skill Cooldown Decrease -n%', range: '1% / 5%' },
+                                    { label: 'Damage Increase to Boss Monsters +n%', range: '1% / 5%' },
+                                    { label: 'Damage Decrease from Boss Monsters -n%', range: '1% / 5%' },
+                                    { label: 'Action Speed Increase +n%', range: '1% / 5%' },
+                                    { label: 'Movement Speed Increase +n%', range: '2% / 6%' },
+                                    { label: 'Polarize: Attack/Attacked Increase +n% (Dungeon)', range: '1% / 3%' }
+                                ]
+                            },
+                            {
+                                label: 'Bravery Skill Cooldown Increase n%',
+                                range: '+5% / +1%',
+                                rows: [
+                                    { label: 'HP Increased n%', range: '2% / 6%' },
+                                    { label: 'Tenacity Skill Damage Increase +n%', range: '1% / 5%' },
+                                    { label: 'Strength Skill Damage Increase +n%', range: '1% / 5%' },
+                                    { label: 'Bravery Skill Damage Increase +n%', range: '1% / 5%' },
+                                    { label: 'Tenacity Skill Cooldown Decrease -n%', range: '1% / 5%' },
+                                    { label: 'Strength Skill Cooldown Decrease -n%', range: '1% / 5%' },
+                                    { label: 'Damage Increase to Boss Monsters +n%', range: '1% / 5%' },
+                                    { label: 'Damage Decrease from Boss Monsters -n%', range: '1% / 5%' },
+                                    { label: 'Action Speed Increase +n%', range: '1% / 5%' },
+                                    { label: 'Movement Speed Increase +n%', range: '2% / 6%' },
+                                    { label: 'Polarize: Attack/Attacked Increase +n% (Dungeon)', range: '1% / 3%' }
+                                ]
+                            },
+                            {
+                                label: 'Damage received from Bossmonsters n%',
+                                range: '+5% / +1%',
+                                rows: [
+                                    { label: 'HP Increased n%', range: '2% / 6%' },
+                                    { label: 'Tenacity Skill Damage Increase +n%', range: '1% / 5%' },
+                                    { label: 'Strength Skill Damage Increase +n%', range: '1% / 5%' },
+                                    { label: 'Bravery Skill Damage Increase +n%', range: '1% / 5%' },
+                                    { label: 'Tenacity Skill Cooldown Decrease -n%', range: '1% / 5%' },
+                                    { label: 'Strength Skill Cooldown Decrease -n%', range: '1% / 5%' },
+                                    { label: 'Bravery Skill Cooldown Decrease -n%', range: '1% / 5%' },
+                                    { label: 'Damage Increase to Boss Monsters +n%', range: '1% / 5%' },
+                                    { label: 'Action Speed Increase +n%', range: '1% / 5%' },
+                                    { label: 'Movement Speed Increase +n%', range: '2% / 6%' },
+                                    { label: 'Polarize: Attack/Attacked Increase +n% (Dungeon)', range: '1% / 3%' }
+                                ]
+                            },
+                            {
+                                label: 'Damage dealt to Bossmonster Decreased n%',
+                                range: '-5% / -1%',
+                                rows: [
+                                    { label: 'HP Increased n%', range: '2% / 6%' },
+                                    { label: 'Tenacity Skill Damage Increase +n%', range: '1% / 5%' },
+                                    { label: 'Strength Skill Damage Increase +n%', range: '1% / 5%' },
+                                    { label: 'Bravery Skill Damage Increase +n%', range: '1% / 5%' },
+                                    { label: 'Tenacity Skill Cooldown Decrease -n%', range: '1% / 5%' },
+                                    { label: 'Strength Skill Cooldown Decrease -n%', range: '1% / 5%' },
+                                    { label: 'Bravery Skill Cooldown Decrease -n%', range: '1% / 5%' },
+                                    { label: 'Damage Decrease from Boss Monsters -n%', range: '1% / 5%' },
+                                    { label: 'Action Speed Increase +n%', range: '1% / 5%' },
+                                    { label: 'Movement Speed Increase +n%', range: '2% / 6%' },
+                                    { label: 'Polarize: Attack/Attacked Increase +n% (Dungeon)', range: '1% / 3%' }
+                                ]
+                            },
+                            {
+                                label: 'Action Speed Decrease n%',
+                                range: '-5% / -1%',
+                                rows: [
+                                    { label: 'HP Increased n%', range: '2% / 6%' },
+                                    { label: 'Tenacity Skill Damage Increase +n%', range: '1% / 5%' },
+                                    { label: 'Strength Skill Damage Increase +n%', range: '1% / 5%' },
+                                    { label: 'Bravery Skill Damage Increase +n%', range: '1% / 5%' },
+                                    { label: 'Tenacity Skill Cooldown Decrease -n%', range: '1% / 5%' },
+                                    { label: 'Strength Skill Cooldown Decrease -n%', range: '1% / 5%' },
+                                    { label: 'Bravery Skill Cooldown Decrease -n%', range: '1% / 5%' },
+                                    { label: 'Damage Increase to Boss Monsters +n%', range: '1% / 5%' },
+                                    { label: 'Damage Decrease from Boss Monsters -n%', range: '1% / 5%' },
+                                    { label: 'Movement Speed Increase +n%', range: '2% / 6%' },
+                                    { label: 'Polarize: Attack/Attacked Increase +n% (Dungeon)', range: '1% / 3%' }
+                                ]
+                            },
+                            {
+                                label: 'Movement Speed Decrease n%',
+                                range: '-5% / -1%',
+                                rows: [
+                                    { label: 'HP Increased n%', range: '2% / 6%' },
+                                    { label: 'Tenacity Skill Damage Increase +n%', range: '1% / 5%' },
+                                    { label: 'Strength Skill Damage Increase +n%', range: '1% / 5%' },
+                                    { label: 'Bravery Skill Damage Increase +n%', range: '1% / 5%' },
+                                    { label: 'Tenacity Skill Cooldown Decrease -n%', range: '1% / 5%' },
+                                    { label: 'Strength Skill Cooldown Decrease -n%', range: '1% / 5%' },
+                                    { label: 'Bravery Skill Cooldown Decrease -n%', range: '1% / 5%' },
+                                    { label: 'Damage Increase to Boss Monsters +n%', range: '1% / 5%' },
+                                    { label: 'Damage Decrease from Boss Monsters -n%', range: '1% / 5%' },
+                                    { label: 'Action Speed Increase +n%', range: '1% / 5%' },
+                                    { label: 'Polarize: Attack/Attacked Increase +n% (Dungeon)', range: '1% / 3%' }
+                                ]
+                            },
+                            {
+                                label: 'Polarize: Attack/Attacked Decrease n% (Dungeon)',
+                                range: '-5% / -1%',
+                                rows: [
+                                    { label: 'HP Increased n%', range: '2% / 6%' },
+                                    { label: 'Tenacity Skill Damage Increase +n%', range: '1% / 5%' },
+                                    { label: 'Strength Skill Damage Increase +n%', range: '1% / 5%' },
+                                    { label: 'Bravery Skill Damage Increase +n%', range: '1% / 5%' },
+                                    { label: 'Tenacity Skill Cooldown Decrease -n%', range: '1% / 5%' },
+                                    { label: 'Strength Skill Cooldown Decrease -n%', range: '1% / 5%' },
+                                    { label: 'Bravery Skill Cooldown Decrease -n%', range: '1% / 5%' },
+                                    { label: 'Damage Increase to Boss Monsters +n%', range: '1% / 5%' },
+                                    { label: 'Damage Decrease from Boss Monsters -n%', range: '1% / 5%' },
+                                    { label: 'Action Speed Increase +n%', range: '1% / 5%' },
+                                    { label: 'Movement Speed Increase +n%', range: '2% / 6%' }
+                                ]
+                            }
+                        ]
+                    }
+                }
             }
         },
         stage6: {
             title: { en: "Stage 6", es: "Etapa 6", kr: "6단계", jp: "ステージ6", br: "Estágio 6" },
             stage6_title: { en: "Serpentium", es: "Serpentium", kr: "서펜티움", jp: "", br: "" },
+            sections: {
+                circhip: {
+                    title: {
+                        en: "Circuits and Chips"
+                    },
+                    content: {
+                        en: ["You can obtain 'Circuit Amplifier' through purchase or Serpentium dungeon play. You can socket them into the Exascale Armor via Camp: Steel Wall > Haivan > Equip Circuit.","Circuits are divided into 3 variants/colors and 3 shapes with different rotations:","Colors: Compute (Red), Cycle (Blue) and Restore (Green).","Shapes: 3 Shapes: T, L and I.","Rotations: T (&top; &vdash; &dashv; &bot;) L (&ulcorner; &llcorner; &lrcorner; &urcorner;), I (I &mdash;).","There are 3 set effects, 1 per circuit color, and each one gives different effects. Usually, Red and Blue are used for DPS, while Green is used for Supporting, the effects of each set are the following:"],
+                    },
+                    table: {
+                        title: 'Set Effects',
+                        columns: [
+                            { key: 'name',   label: 'Set Name' },
+                            { key: 'effect', label: 'Set Effect' }
+                        ],
+                        rows: [
+                            {
+                                name: 'Compute',
+                                effect: 'Adaptation +2%\nBuff - Nearby Party\'s Critical Damage Increase 10% (Does not stack)\nObtain \'Logic\' Effect for 30 sec. every time Active and Special Active Skill is used. (Max 20 stacks).\nWhen \'Logic\' reaches 20 stacks, obtain \'Generate\' effect.\nLogic: Physical/Magical Attack Power 1% increase per stack\nGenerate: Pressing the [Item Special Function] key removes all stacks of \'Logic\' and replaces them with \'Reset\' effect that lasts for 5 sec.\nReset: Master Skill/Hyperactive Skill Damage increases by 500% and Received Potion Recovery Effect decreases by 50%. Logic Effect cannot be obtained.'
+                            },
+                            {
+                                name: 'Cycle',
+                                effect: 'Adaptation +2%\nBuff - Nearby Party\'s Critical Damage Increase 10% (Does not stack)\nObtain \'Flow\' Effect after starting dungeon.\nChange to \'Resist\' effect if the Armor\'s Skill Cooldown Reset Effect activates while holding the \'Flow\' Effect.\nChange to \'Flow\' Effect if the Armor\'s Skill Cooldown Reset Effect activates while holding the \'Resist\' Effect.\nFlow: Skill Cooldown Reset chance +8%, Special Active Skill Cooldown Speed 1.2x.\nResist: Skill Cooldown Reset chance +8%, All Skill Damage 16%.'
+                            },
+                            {
+                                name: 'Restore',
+                                effect: 'Adaptation +2%\nBuff - Nearby Party\'s Physical Attack Power Increase 10% (Does not stack)\nBuff - Nearby Party\'s Magical Attack Power Increase 10% (Does not stack)\nBuff – Nearby Party\'s All Skill Damage +[sum of Active, Tenacity, Strength, Bravery Skill Damage Increase on Gloves Circuit x 0.8] (Does not stack)\nUpon starting the dungeon, obtain \'Repair\' Effect for 60 sec.\nOnce \'Repair\' effect ends, change to \'Bridge\' effect.\nIf [Item Special Function] is pressed while \'Bridge\' effect is active, change to \'Complete\' effect for 10 sec.\nOnce \'Complete\' effect ends, change to \'Repair\' Effect for 60 sec.\nRepair: Damage Received 12% Decrease.\nBridge: Upon obtaining the effect, grants a 1 time shield equal to 30% of Max HP to nearby party members. (Shield Duration 10 sec.)\nComplete: For 10 sec., Action Speed increases by 15%, cooldown for the skill registered in Transcendence Skill Slot will become 0.5 sec. for all nearby party members.\nUsing the skill 5 times will end the effect. (Complete buff will not be reapplied for 60 sec.)'
+                            }
+                        ]
+                    },
+                    shape: {
+                        content: {
+                            en: ["Exascale / Metholon armors have 1 Circuit Board per piece (totaling 4), when all the Circuit Boards are active and are all of the same color, the armor set effect is enabled.","The recommended stats for each circuit board depends on the armor piece and the color that you want to build.","If you build red, the recommended stats are:","Continuous Damage (Top), Polarize (Bottom), Active, Tenacity, Strength, Bravery Skill Damage (Gloves), Damage to Boss (Shoes).","If you build blue, the recommended stats are:","Skill Cooldown Reset Chance (Top), Polarize (Bottom), Active, Tenacity, Strength, Bravery Skill Damage (Gloves), Damage to Boss (Shoes).","For green, the recommended stats are:","Skill Cooldown Reset Chance (Top), Polarize (Bottom), Active, Tenacity, Strength, Bravery Skill Damage (Gloves), Buff - Party's Action Speed (Shoes).","The recommended stats are not mandatory, but they're usually the stats that will give you the most damage output increase, except for a few classes that might be an exception.","","There are 2 stages to building your Circuit Board: the 'Bare-bones' setup and the 'advanced' setup. the bare-bones setup is formed by several L and I low value circuits, while the advanced setup is formed by several T circuits and 3 L circuits acting as corners, the advanced setup have a higher maximum possible stat since they can include 'Replicator' circuits, which basically grab the summary of the stats provided by the adjacent circuits, and divides it by two (example: adjacent circuit's values are 1% 0.8% and 0.9%, the summary is 2.7%, divided by two, means the replicator circuit will give 1.3% stat).","Note: Be wary of where you put your replicator circuits, since if you putting 2 replicators adjacently or in a spot where they only recieve 2 stats will just end in a loss of stats.","Both setups are shown in the images below. Replicator circuit locations are highlighted in the advanced setup image."]
+                        },
+                       title: {
+                            en: "Circuit Board"
+                       },
+                       img: {
+                            primary: [
+                                { src: "/images/circsLI.png", alt: "Bare-bones setup: Example of how the circuits should be built using only I and L circuits" },
+                                { src: "/images/circsLT.png", alt: "Advanced setup: Example of how the circuit board should end after replacing I circuits for T circuits." },
+                            ]   
+                        },
+                        content2: {
+                            en: ["Once a Circuit Board is activated, it's stat information will be displayed in the right part of the UI.","Note: Once you socket a circuit you won't be able to remove it. so be careful with where you put your circuits."]
+                        }
+                    },
+                    chip: {
+                        title: {
+                            en: "Chips"
+                        },
+                        content: {
+                            en: ["Chips are the Harconium equivalent of Exascale/Metholon Armor, You can obtain Chips by playing Serpentium, Doom Aporia or Nebulon Raid, coming with 2 random effects, similarly to Harconium effects, the first effect is a benefit, whilst the second is a punishment, and the effects will only apply once all four chip slots are filled."],
+                        },
+                        tuning: {
+                            title: {
+                                en: "Tuning"
+                            },
+                            content: {
+                                en: ["Tuning System is a new feature accessible via Camp: Steel Wall > Haivan > Chip Tuning.","When Chips are dropped, they come at a base tune of +0/-0 with have 10 tune opportunities.","When tuning a chip in the Chip Tuning System, you're presented with a 'Fail' and 'Success' chance. Failing will increase the punishment effect value, and Successing will increase the benefit effect value, this means that if you fail 5 times and succeed 5 times (consuming the chip's 10 tune opportunities) your chip will end up at tune +5/-5.","After all chip opportunities are consumed, the only way to re-tune the same chip is by using a System Chip Reset Ticket, either dropped from raid of bought from item mall. Each chip has a maximum reset amount of 3, after that, tuning the same chip becomes impossible."],
+                            },
+                            img: {
+                                primary: [
+                                    { src: "/images/chipui.png", alt: "Chip Tuning System User Interface"}
+                                ]
+                            },
+                            table: {
+                                title: 'Success Options',
+                                columns: [
+                                    { key: 'stat',     label: 'Stat' },
+                                    { key: 'starting', label: 'Starting Number' },
+                                    { key: 'maximum',  label: 'Maximum Number' }
+                                ],
+                                rows: [
+                                    { stat: 'Critical Damage', starting: '1%', maximum: '10%' },
+                                    { stat: 'Polarize', starting: '1%', maximum: '10%' },
+                                    { stat: 'All Skill Damage Increase', starting: '1%', maximum: '10%' },
+                                    { stat: 'Deal 𝑥% of Damage as Continuous Damage for 3 sec.', starting: '1%', maximum: '10%' },
+                                    { stat: 'Increased Physical Attack', starting: '1%', maximum: '10%' },
+                                    { stat: 'Increased Magical Attack', starting: '1%', maximum: '10%' },
+                                    { stat: 'Increased damage to Bosses', starting: '2%', maximum: '14%' },
+                                    { stat: 'Reduced Damage from Bosses', starting: '2%', maximum: '14%' },
+                                    { stat: 'Movement Speed', starting: '2%', maximum: '14%' },
+                                    { stat: 'Recovery Item Effect', starting: '2%', maximum: '14%' },
+                                    { stat: 'HP Increase', starting: '2%', maximum: '14%' },
+                                    { stat: 'Tenacity Skill Damage Increase', starting: '2%', maximum: '14%' },
+                                    { stat: 'Strength Skill Damage Increase', starting: '2%', maximum: '14%' },
+                                    { stat: 'Bravery Skill Damage Increase', starting: '2%', maximum: '14%' },
+                                    { stat: 'Hyper Skill Damage Increase', starting: '2%', maximum: '14%' },
+                                    { stat: 'Damage Reduction', starting: '2%', maximum: '14%' },
+                                    { stat: 'Damage when hitting enemy\nWith more than 50% HP', starting: '1%', maximum: '10%' },
+                                    { stat: 'Damage when hitting enemy\nWith less than 50% HP', starting: '1%', maximum: '10%' },
+                                    { stat: 'Critical', starting: '3%', maximum: '16%' },
+                                    { stat: 'Maximize', starting: '3%', maximum: '16%' }
+                                ]
+                            },
+                            table2: {
+                                title: 'Fail Options',
+                                columns: [
+                                    { key: 'stat',     label: 'Stat' },
+                                    { key: 'starting', label: 'Starting Number' },
+                                    { key: 'maximum',  label: 'Maximum Number' }
+                                ],
+                                rows: [
+                                    { stat: 'Critical Damage', starting: '-2%', maximum: '-12%' },
+                                    { stat: 'All Skill Damage Increase', starting: '-2%', maximum: '-12%' },
+                                    { stat: 'Reduced Damage from Bosses', starting: '-2%', maximum: '-12%' },
+                                    { stat: 'Movement Speed', starting: '-2%', maximum: '-12%' },
+                                    { stat: 'HP Increase', starting: '-2%', maximum: '-12%' },
+                                    { stat: 'Polarization', starting: '-2%', maximum: '-12%' },
+                                    { stat: 'MP Consumption', starting: '-2%', maximum: '-12%' },
+                                    { stat: 'Increased Skill Cooldown Time', starting: '-2%', maximum: '-12%' },
+                                    { stat: 'Damage Reduction', starting: '-2%', maximum: '-12%' },
+                                    { stat: 'Max MP', starting: '-10', maximum: '-110' },
+                                    { stat: 'All Attribute Resistance', starting: '-50', maximum: '-150' },
+                                    { stat: 'Critical', starting: '-5%', maximum: '-15%' },
+                                    { stat: 'Maximize', starting: '-5%', maximum: '-15%' }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
         },
         stage7: {
             title: { en: "Stage 7", es: "Etapa 7", kr: "7단계", jp: "ステージ7", br: "Estágio 7" },
@@ -3076,6 +4883,7 @@ export const data = {
                 s1title: { en: "Stage 1"}
             },
             sections: {
+                // DOOM APORIA RAID START
                 cop: {
                     stdiff: {
                         diffs: { 
@@ -3154,20 +4962,20 @@ export const data = {
                             phase2: {phasenum: { en: "Phase 2", es: "Fase 2", kr: "2단계", jp: "フェーズ2", br: "Fase 2" },
                                 concepts: {
                                     chilldebuff: {
-                                       ctitle: { en: "<Chill Debuff>"},
+                                        name: { en: "<Chill Debuff>"},
                                         description: { en: ["Stacks from frost attacks. Once buff reaches 10 stacks, the player gets frozen, freeze debuff doesn’t expire until another player uses command skill in the frozen player."]}
                                     },
                                     specterhands: {
-                                        ctitle: { en: "<Specter's Hands>"},
+                                        name: { en: "<Specter's Hands>"},
                                         description: { en: ["Shadow appears in the ground, after a short period, hands will surge from the shadow and give 2 stacks of <Fear Debuff> to players hit by them.  "]}
                                     },
                                     feardebuff: {
-                                        ctitle: { en: "<Fear Debuff>"},
+                                        name: { en: "<Fear Debuff>"},
                                         description: { en: ["Stacks from necromancy attacks. Reaching 3 stacks cause instant death."]}
                                     },
                                     frostlaser: {
-                                    ctitle: { en: "<Frost Laser>"},
-                                    description: { en: ["a Frozen laser falls from the sky, dealing high damage to anyone hit by it, works similar to Specter's Hands, but it doesnt give debuff stacks."]},
+                                        name: { en: "<Frost Laser>"},
+                                        description: { en: ["a Frozen laser falls from the sky, dealing high damage to anyone hit by it, works similar to Specter's Hands, but it doesnt give debuff stacks."]},
                                     }
                                 },
                                 phasebname: { en: "Barkat" },
@@ -3218,6 +5026,7 @@ export const data = {
                             }
                         }
                     },
+                    // DOOM APORIA 2nd DUNGEON
                 nrr: {
                     stdiff: {
                         diffs: { 
@@ -3238,10 +5047,6 @@ export const data = {
                                 banishment: {
                                     name: { en: "⟨Banishment Debuff⟩"},
                                     description: { en: ["Receiving damage from Bifron, Specters or Specter Swarm gives Banishment stacks. At 10 stacks, the player is moved to another map: a small vertical room. Player is also transformed, and must slowly make his way down the room, in the way down, the player must collect the glowing orb and escape via the portal within 30s. Failing to do so results in death."]}
-                                },
-                                banishmentp2: {
-                                    name: { en: "⟨Banishment Debuff⟩ changes:"},
-                                    description: { en: ["At 10 stacks, players will instead be imprisoned in one of the 3 imprisonment rooms of the upper floor and must be rescued within 55s. Failure results in imprisoned player’s death, and Specter Swarm healing 5% of its total HP."]}
                                 },
                                 area: {
                                     name: { en: "⟨Area Deployment⟩"},
@@ -3342,7 +5147,11 @@ export const data = {
                                 ufl: {
                                     name: { en: "Upper Floor Layout"},
                                     description: { en: ["The top platform of the arena has a portal that teleports players to the middle room of the upper floor, which contains 3 different rooms, each with an imprisonment room accessible via the portal on the top left or top right platform of the rooms, in the middle platform of the imprisonment room is a portal that allows players to go back to the initial arena.","At the edge of the rooms of the upper floor are doors that lead to a vertical hall, on the top part of the hall is a portal that teleports you to the vertical hall of a different room, going down is a door that leads you to the main hall of the room. Imprisonment rooms and the direction of the room you’re at is identified by symbol color: pink is left, green is center and yellow is right.","When in imprisonment room, players can identify the room via the symbol color on top of the chimney, and when in the main hall, players can identify the room via the symbol color in the middle of the room."]}
-                                }
+                                },
+                                banishmentp2: {
+                                    name: { en: "⟨Banishment Debuff⟩ changes:"},
+                                    description: { en: ["At 10 stacks, players will instead be imprisoned in one of the 3 imprisonment rooms of the upper floor and must be rescued within 55s. Failure results in imprisoned player’s death, and Specter Swarm healing 5% of its total HP."]}
+                                },
                             },
                             phasenum: { en: "Phase 2", es: "Fase 2", kr: "2단계", jp: "フェーズ2", br: "Fase 2" },
                             phasebname: { en: "Specter Swarm"},
@@ -3390,6 +5199,7 @@ export const data = {
                             }
                         }
                     },
+                    // DOOM APORIA 3rd DUNGEON
                 qth: {
                     stdiff: {
                         diffs: { 
@@ -3560,6 +5370,7 @@ export const data = {
                         }                        
                     }
                 },
+                // DOOM APORIA 4th DUNGEON
                 wtfl: {
                     stdiff: {
                         diffs: { 
@@ -3573,11 +5384,11 @@ export const data = {
                     },
                     concepts: {
                         magneticfield: {
-                            ctitle: { en: "Magnetic Field"},
+                            name: { en: "Magnetic Field"},
                             description: { en: ["Plus & Minus Charge Magnetic Field: at the beginning of the phase, all players will get an electron charge that will last through the entire phase. 3 random players get blue (positive / +) charge, and the remaining 3 get red (negative / -) charge. Same charges repel and stun players that contact, it’s recommended to be aware of where players with the same charge are, since moving carelessly can be lethal."]}
                         },
                         efz: {
-                            ctitle: { en: "Electric Field Zone"},
+                            name: { en: "Electric Field Zone"},
                             description: { en: ["The Electric Field Zone is the ceiling of the map/arena, touching it equals to instant death. Players can bypass the damage with 'Fully Charged' buff. Inside the Field, there are 4 Lightning rods positioned horizontally that can be shut down if they’re lit (they can only light up during forced mechanics)."]}
                         }
                     },
@@ -3641,11 +5452,11 @@ export const data = {
                         phase2: {
                             concepts: {
                                     chilldebuff: {
-                                       ctitle: { en: "<Chill Debuff>"},
+                                        name: { en: "<Chill Debuff>"},
                                         description: { en: ["Same as the Cornerstone of Prophecy version: Stacks from frost attacks. Once buff reaches 10 stacks, the player gets frozen, freeze debuff doesn’t expire until another player uses command skill in the frozen player."]}
                                     },
                                     feardebuff: {
-                                        ctitle: { en: "<Fear Debuff>"},
+                                        name: { en: "<Fear Debuff>"},
                                         description: { en: ["Same as the Cornerstone of Prophecy version: Stacks from necromancy attacks. Reaching 3 stacks cause instant death."]}
                                     }
                             },
@@ -3722,6 +5533,7 @@ export const data = {
                         }                        
                     }
                 },
+                // DOOM APORIA 5th DUNGEON
                 wtfa: { 
                     stdiff: {
                         diffs: { 
@@ -3739,11 +5551,11 @@ export const data = {
                         phase1: {
                             concepts: {
                                     ecd: {
-                                       ctitle: { en: "<Energy Charging Devices>"},
+                                        name: { en: "<Energy Charging Devices>"},
                                         description: { en: ["On phase start, players will need to destroy 4 devices while dodging the attacks coming from Echoes of Doom. Each destroyed device reduces its HP by 25 bars and decreases its damage reduction by 4.75%. While destroying the devices, the floor will slowly electrify. Players who touch the electrified field will receive lethal multi-hit damage. Failing to destroy all devices before the floor electrifies entirely makes the task way harder, recommended to restart if this happens. After all 4 devices are destroyed all players will fall and enter the real arena and start the fight versus Echoes of Doom."]}
                                     },
                                     manabombs: {
-                                        ctitle: { en: "<Mana Bombs>"},
+                                        name: { en: "<Mana Bombs>"},
                                         description: { en: ["A random player will be given a Mana Bomb, but differently to Wilting Tower: Flight, players hit by the bomb will receive lethal damage. If a Mall, Bomb is placed next to a device, the bomb will reduce 25% of the device’s HP."]}
                                     }
                             },
@@ -3823,6 +5635,7 @@ export const data = {
                         },  
                     }
                 }
+                // DOOM APORIA RAID END
             }
         },
         stage8: {

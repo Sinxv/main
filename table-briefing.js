@@ -2,12 +2,10 @@
 (function() {
     const STORAGE_KEY = 'elhelper-show-full-info';
     
-    // Get the current setting
     function isFullInfoEnabled() {
         return localStorage.getItem(STORAGE_KEY) === 'true';
     }
     
-    // Count effective columns in a table, respecting colspan and rowspan even across hidden rows.
     function getTableColumnCount(table) {
         const rowSpanMap = [];
         let maxCols = 0;
@@ -15,7 +13,6 @@
         for (const row of table.rows) {
             let colIndex = 0;
 
-            // Advance past active row spans from previous rows.
             while (rowSpanMap[colIndex] > 0) {
                 colIndex += 1;
             }
@@ -84,55 +81,116 @@
         });
     }
 
-    function updateTableVisibility() {
+    function applyBriefing(table) {
         const showFull = isFullInfoEnabled();
-        const tables = document.querySelectorAll('table.stat-table[data-brief="true"]');
+        
+        // Only brief tables that have marked rows (good-stat/niche-stat)
+        const allRows = table.querySelectorAll('tr');
+        const hasMarkedRows = Array.from(allRows).some(row => 
+            row.classList.contains('good-stat') || row.classList.contains('niche-stat')
+        );
+
+        if (!hasMarkedRows) {
+            return; // Nothing to brief, all rows are relevant
+        }
+
+        allRows.forEach(row => {
+            const hasGoodStat = row.classList.contains('good-stat');
+            const hasNicheStat = row.classList.contains('niche-stat');
+            const isHeader = row.querySelector('th');
+
+            // Always show header rows
+            if (isHeader) {
+                return;
+            }
+
+            // Always show good-stat and niche-stat rows
+            if (hasGoodStat || hasNicheStat) {
+                return;
+            }
+
+            // Hide neutral rows unless full info is enabled
+            if (!showFull) {
+                row.style.display = 'none';
+            }
+        });
+
+        adjustRowSpans(table);
+
+        const columnCount = getTableColumnCount(table);
+        table.querySelectorAll('th.table-title-collapser').forEach(titleCell => {
+            titleCell.setAttribute('colspan', columnCount);
+        });
+    }
+
+    function setupTableCollapse(table) {
+        const titleCell = table.querySelector('th.table-title-collapser');
+        if (!titleCell) return;
+
+        const isImportant = table.dataset.important === 'true';
+
+        // Set initial collapsed state
+        if (isImportant) {
+            // Important tables start expanded
+            titleCell.classList.remove('collapsed');
+        } else {
+            // Non-important tables start collapsed
+            titleCell.classList.add('collapsed');
+            table.querySelectorAll('tr:not(:first-child)').forEach(row => {
+                row.style.display = 'none';
+            });
+        }
+
+        // Add click handler
+        titleCell.addEventListener('click', function() {
+            const isCollapsing = !this.classList.contains('collapsed');
+            
+            if (isCollapsing) {
+                this.classList.add('collapsed');
+                table.querySelectorAll('tr:not(:first-child)').forEach(row => {
+                    row.style.display = 'none';
+                });
+            } else {
+                this.classList.remove('collapsed');
+                table.querySelectorAll('tr:not(:first-child)').forEach(row => {
+                    row.style.display = '';
+                });
+                // Re-apply briefing if needed
+                applyBriefing(table);
+            }
+        });
+    }
+
+    function updateAllTables(container = document) {
+        const tables = container.querySelectorAll('table.stat-table[data-brief="true"]');
 
         tables.forEach(table => {
-            // Check if this is the Resonance table by looking at header
-            const headerText = table.querySelector('th.table-title-collapser')?.textContent || '';
-            const isResonanceTable = headerText.includes('Resonance') || headerText.includes('El');
-
-            const allRows = table.querySelectorAll('tr');
-            allRows.forEach(row => {
-                if (isResonanceTable) {
-                    row.style.display = '';
-                    return;
-                }
-
-                const hasGoodStat = row.classList.contains('good-stat');
-                const hasNicheStat = row.classList.contains('niche-stat');
-                const isHeader = row.querySelector('th');
-
-                if (isHeader || hasGoodStat || hasNicheStat) {
-                    row.style.display = '';
-                } else {
-                    row.style.display = showFull ? '' : 'none';
-                }
-            });
-
-            adjustRowSpans(table);
-
-            const columnCount = getTableColumnCount(table);
-            table.querySelectorAll('th.table-title-collapser').forEach(titleCell => {
-                titleCell.setAttribute('colspan', columnCount);
-            });
+            // Set up collapse behavior
+            setupTableCollapse(table);
+            
+            // Apply briefing (hiding neutral rows if full info disabled)
+            applyBriefing(table);
         });
     }
 
     // Initialize on page load
     if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', updateTableVisibility);
+        document.addEventListener('DOMContentLoaded', () => updateAllTables());
     } else {
-        updateTableVisibility();
+        updateAllTables();
     }
     
-    // Expose toggle function to window for settings popup
+    // Expose functions to window
     window.toggleFullInfo = function(enabled) {
         localStorage.setItem(STORAGE_KEY, enabled ? 'true' : 'false');
-        updateTableVisibility();
+        // Update all tables on page and in modal
+        updateAllTables();
+        const modal = document.getElementById('guide-modal');
+        if (modal) {
+            updateAllTables(modal);
+        }
     };
     
-    // Get current state for settings popup
     window.isFullInfoEnabled = isFullInfoEnabled;
+    window.updateTableVisibility = updateAllTables;
 })();

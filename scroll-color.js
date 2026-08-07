@@ -7,7 +7,7 @@
     const computed = getComputedStyle(body).getPropertyValue('--primary-color').trim() || '#ffe066';
     const computedLight = getComputedStyle(body).getPropertyValue('--primary-light').trim() || computed;
     const targetHex = '#ff6b6b';
-    const threshold = 600; // px at which blending reaches full
+    const threshold = 1200; // px at which blending reaches full
     let lastY = window.scrollY;
     let locked = false;
 

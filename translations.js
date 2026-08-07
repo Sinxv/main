@@ -16,8 +16,8 @@ class TranslationManager {
         this.setupGlossaryTooltipHandlers();
     }
 
-    applyTranslations() {
-        this.translateElements();
+    applyTranslations(context = document) {
+        this.translateElements(context);
     }
 
     createBackButton() {
@@ -313,7 +313,7 @@ class TranslationManager {
                 const lower = token.toLowerCase();
                 if (['concept', 'np', 'mech', 'forced mech', 'forced', 'forced mech,', 'derivated from', 'derived from'].includes(lower)) {
                     parts.push('');
-                } else if (/^(\/)?(strong|em|b|i|u|br|p|span|div|h[1-6]|ul|ol|li|a)\b/i.test(token)) {
+                } else if (/^(\/)?(strong|em|b|i|u|br|p|span|div|h[1-6]|ul|ol|li|a|img|audio|video|source|table|tbody|thead|tfoot|tr|td|th|caption|colgroup|col|iframe|figure|figcaption)\b/i.test(token)) {
                     parts.push(match);
                 } else {
                     const label = token.replace(/^derivated from\s+/i, '').replace(/^derived from\s+/i, '').trim();
@@ -390,8 +390,8 @@ class TranslationManager {
         return anchors[normalized] || null;
     }
 
-    translateElements() {
-        document.querySelectorAll('[data-translate]:not([data-multiline])').forEach(el => {
+    translateElements(context = document) {
+        context.querySelectorAll('[data-translate]:not([data-multiline])').forEach(el => {
             const key = el.getAttribute('data-translate');
             const translation = this.getTranslation(key);
             if (translation) {
@@ -399,7 +399,7 @@ class TranslationManager {
             }
         });
 
-        document.querySelectorAll('[data-multiline]').forEach(el => {
+        context.querySelectorAll('[data-multiline]').forEach(el => {
             const key = el.getAttribute('data-multiline');
             const lines = this.getTranslation(key, true);
             if (lines && Array.isArray(lines)) {
@@ -407,7 +407,7 @@ class TranslationManager {
             }
         });
 
-        document.querySelectorAll('th[data-translate], td[data-translate]').forEach(el => {
+        context.querySelectorAll('th[data-translate], td[data-translate]').forEach(el => {
             const key = el.getAttribute('data-translate');
             const translation = this.getTranslation(key);
             if (translation) {

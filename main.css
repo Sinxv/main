@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Noto+Sans+JP:wght@400;700&family=Noto+Sans+SC:wght@400;700&family=Raleway:ital,wght@0,400;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
 
-/* ===== SISTEMA DE COLORES ===== */
+
+
+/* ============================================================
+   1. THEME / COLOR SYSTEM
+   ============================================================ */
+
 :root {
     /* Sistema de colores por defecto (amarillo) */
     --primary-color: #ffe066;
@@ -61,7 +66,12 @@ body.color-darkblue {
     --primary-dark: #3b49df;
 }
 
-/* ===== RESET Y ESTILOS BASE ===== */
+
+
+/* ============================================================
+   2. GLOBAL RESET & BASE TYPOGRAPHY
+   ============================================================ */
+
 * {
     margin: 0;
     padding: 0;
@@ -81,7 +91,7 @@ html, body {
 }
 
 body {
-    font-family: 'Raleway', 'Noto Sans KR', 'Noto Sans JP', 'Noto Sans SC', sans-serif;
+    font-family: 'Noto Sans KR', 'Noto Sans JP', 'Noto Sans SC', sans-serif;
     background: var(--bg-color);
     line-height: 1.6;
 }
@@ -96,7 +106,146 @@ a {
     width: fit-content;
 }
 
-/* ===== INDEX ===== */
+
+
+* {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.guidetext, .guidetitle, 
+.guidenotice, .info, .back, 
+.guider, .trueguide, .collapsible-table, footer, .ctitle, .concept p, .guide-generic-section p, .guide-image-caption {
+    font-family: 'Noto Sans KR', 'Noto Sans JP', 'Noto Sans SC', sans-serif !important;
+}
+
+.guide-image-caption {
+    color: var(--text-secondary);
+}
+
+.raid-owner-title {
+    color: var(--text-secondary) !important;
+    font: bold 20px 'Noto Sans KR', 'Noto Sans JP', 'Noto Sans SC', sans-serif !important;
+}
+
+.guide-open-a {
+    color: var(--primary-dark);
+    transition: color 0.3s ease;
+    width: fit-content;
+}
+.guide-open-a:hover {
+    color: var(--primary-light);
+}
+
+.guide-section-title, .raid-owner-title, .guide-section-grid {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.phaseheader, .RAID_DUNG_TITLE, .RAID_DUNG_NUM {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 0;
+    font-style: normal;
+}
+
+.mechnote{
+    color: var(--primary-light) !important;
+    font: italic 14px 'Noto Sans KR', 'Noto Sans JP', 'Noto Sans SC', sans-serif !important;
+}
+
+.mechtable {
+    border: 1px solid;
+    border-color: var(--primary-color);
+    text-align: center;
+}
+.mechtable td {
+    border: 1px dotted;
+    border-color: var(--primary-dark);
+    width: 100px;
+    
+}
+
+.ctitle::before{
+    content: "⟨";
+}
+.ctitle::after{
+    content: "⟩";
+}
+.cforcedat{
+    padding-left: 15px;
+    color: rgb(255, 196, 0);;
+}
+.ctpcfa{
+    display: flex;
+}
+
+
+
+/* ============================================================
+   3. PAGE LAYOUT (SHELL / CONTAINER)
+   ============================================================ */
+.guider,
+.tginfo,
+.collapsibleprog,
+#gridtable {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+.info#g {
+    width: 100%;
+    position: relative;
+}
+
+
+.back {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 100;
+    color: var(--text-color);
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 6px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.back:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--primary-color);
+    transform: translateX(-5px);
+    border-color: var(--primary-color);
+}
+
+.back::before {
+    content: "←";
+    font-size: 18px;
+}
+
+
+
+/* ============================================================
+   4. LANDING / INDEX PAGE
+   ============================================================ */
 
 .hero-banner {
             width: 100%;
@@ -279,20 +428,12 @@ a {
             }
         }
 
-/* ===== CONTENEDOR PRINCIPAL ===== */
-.container {
-    width: 100%;
-    max-width: 100%;
-    min-height: 100vh;
-    position: relative;
-}
 
-.info#g {
-    width: 100%;
-    position: relative;
-}
 
-/* ===== BANNERS ===== */
+/* ============================================================
+   5. BANNERS
+   ============================================================ */
+
 .banner {
     width: 100%;
     height: 200px;
@@ -344,41 +485,60 @@ a {
     background-image: url('images/WiltingTowerBanner.png');
 }
 
-/* ===== BOTÓN BACK ===== */
-.back {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    z-index: 100;
-    color: var(--text-color);
-    font-weight: 500;
-    padding: 10px 20px;
-    border-radius: 6px;
-    background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    cursor: pointer;
-    transition: all 0.3s ease;
-    display: inline-flex;
+
+/* - BANNERS - */
+#c1 { background-image: url('images/RubenBanner.jpg'); }
+#c2 { background-image: url('images/ForgottenElrianSanctumBanner.png'); }
+#c3 { background-image: url('images/CrimsonCradleOfFlamesBanner.png'); }
+#c4 { background-image: url('images/ShrineOfTheTwoHeadedSerpentBanner.jpg'); }
+#c5 { background-image: url('images/AltarOfInvocationBanner.png'); }
+#c6 { background-image: url('images/PlegasLabyrinthBanner.png'); }
+#c7 { background-image: url('images/BloomingMineralFIeldBanner.png'); }
+#c8 { background-image: url('images/BirthOfOriginBanner.png'); }
+#c9 { background-image: url('images/MadameCoraeGardenBanner.png'); }
+#c10 { background-image: url('images/OrchestraHallBanner.png'); }
+#c11 { background-image: url('images/WiltingTowerBanner.png'); }
+
+.titleinfo {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 8px;
-    font-size: 14px;
-    text-decoration: none;
+    width: 90%;
+    position: relative;
+    z-index: 2;
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 20px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.back:hover {
-    background: rgba(255, 255, 255, 0.1);
+.titleinfo .Stage {
+    text-align: left;
+    flex: 1;
     color: var(--primary-color);
-    transform: translateX(-5px);
-    border-color: var(--primary-color);
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
-.back::before {
-    content: "←";
-    font-size: 18px;
+.titleinfo p {
+    text-align: center;
+    flex: 2;
+    font-size: 1.8rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
-/* ===== TÍTULO PRINCIPAL ===== */
+
+
+/* ============================================================
+   6. GUIDE PAGE: TITLE & SIDEBAR LAYOUT
+   ============================================================ */
+
 .guidetitle {
     bottom: 40px;
     left: 0;
@@ -408,7 +568,7 @@ a {
     margin: 0 auto;
 }
 
-/* ===== LAYOUT PRINCIPAL ===== */
+
 .trueguide {
     display: flex;
     max-width: 95vw;
@@ -418,7 +578,12 @@ a {
     position: relative;
 }
 
-/* ===== BARRA LATERAL (GUIDER) ===== */
+
+
+.trueguide {
+    overflow: visible;
+}
+
 .guider {
     flex: 0 0 280px;
     position: sticky;
@@ -474,7 +639,7 @@ a {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* ===== CONTENIDO PRINCIPAL ===== */
+
 .tginfo {
     flex: 1;
     background: var(--card-bg);
@@ -530,7 +695,7 @@ a {
     color: var(--text-color);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
     border: 1px solid rgba(255, 255, 255, 0.12);
-    font-size: 13px;
+    font: 16px 'Noto Sans KR', 'Noto Sans JP', 'Noto Sans SC', sans-serif !important;
     line-height: 1.45;
     pointer-events: none;
     opacity: 0;
@@ -589,53 +754,13 @@ a {
     transform: translateX(-50%) translateY(0);
 }
 
-/* ===== TIPOGRAFÍA ===== */
-.guidetext, .guidetitle, 
-.guidenotice, .info, .back, 
-.guider, .trueguide, .collapsible-table, footer {
-    font-family: 'Noto Sans KR', 'Noto Sans JP', 'Noto Sans SC', sans-serif !important;
-}
 
-.phaseheader, .RAID_DUNG_TITLE, .RAID_DUNG_NUM {
-    font-family: "Pixelify Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 0;
-    font-style: normal;
-}
 
-.mechnote p{
-    color: var(--primary-light) !important;
-    font: italic 14px 'Noto Sans KR', 'Noto Sans JP', 'Noto Sans SC', sans-serif !important;
-}
+/* ============================================================
+   7. GUIDE CONTENT: HEADINGS
+   ============================================================ */
 
-.mechtable {
-    border: 1px solid;
-    border-color: var(--primary-color);
-    text-align: center;
-}
-.mechtable td {
-    border: 1px dotted;
-    border-color: var(--primary-dark);
-    width: 100px;
-    
-}
-
-.ctitle::before{
-    content: "⟨";
-}
-.ctitle::after{
-    content: "⟩";
-}
-.cforcedat{
-    padding-left: 15px;
-    color: rgb(255, 196, 0);;
-}
-.ctpcfa{
-    display: flex;
-}
-
-/* ===== ENCABEZADOS ===== */
-h2, .fmtitle, .mtitle, .nptitle {
+h2, .fmtitle, .mtitle, .nptitle, .mechanic-group-title, .guide-subsection-title {
     color: var(--text-color);
     font-size: 1.8rem;
     font-weight: 700;
@@ -645,7 +770,7 @@ h2, .fmtitle, .mtitle, .nptitle {
     position: relative;
 }
 
-h2::after,.fmtitle::after,.mtitle::after,.nptitle::after {
+h2::after,.fmtitle::after,.mtitle::after,.nptitle::after, .mechanic-group-title::after, .guide-subsection-title::after {
     position: absolute;
     bottom: -3px;
     left: 0;
@@ -653,7 +778,9 @@ h2::after,.fmtitle::after,.mtitle::after,.nptitle::after {
     height: 3px;
     background: linear-gradient(90deg, var(--primary-color), transparent);
 }
-
+.mechanic-group{
+    font-weight: 700;
+}
 h3 {
     color: var(--text-color);
     font-size: 1.4rem;
@@ -682,7 +809,12 @@ h3 {
     transform: skew(25deg);
 }
 
-/* ===== RAID/DUNGEON HEADERS (SIN LÍNEA IZQUIERDA) ===== */
+
+
+/* ============================================================
+   8. GUIDE CONTENT: RAID / DUNGEON HEADERS
+   ============================================================ */
+
 .RAID_DUNG_NUM {
     color: var(--primary-color);
     font-size: 14px;
@@ -721,6 +853,11 @@ h3 {
 
 .mech{
     margin-top: 50px;
+    font: 16px 'Noto Sans KR', 'Noto Sans JP', 'Noto Sans SC', sans-serif !important;
+}
+
+.guide-subsection{
+    font: 16px 'Noto Sans KR', 'Noto Sans JP', 'Noto Sans SC', sans-serif !important;
 }
 
 .RAID_DUNG_TITLE::after {
@@ -734,8 +871,14 @@ h3 {
     background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
 }
 
-/* ===== PHASE HEADERS ===== */
+
+
+/* ============================================================
+   9. GUIDE CONTENT: PHASE HEADERS
+   ============================================================ */
+
 .phaseheader {
+    margin-right: 10px;
     background: linear-gradient(135deg, var(--primary-color), var(--primary-color) 7vw, #55556600 7vw,  #55556600 7.25vw, var(--primary-color) 7.25vw, var(--primary-color) 8vw, #55556600 8vw, #55556600 8.25vw, var(--primary-color) 8.25vw, var(--primary-color) 8.5vw, #55556600 8.5vw);
     padding: 20px;
     display: flex;
@@ -805,13 +948,13 @@ h3 {
     background: url('images/boo3.webp') 5vh / cover no-repeat;
 }
 .IMGPHASEHEADER#cop1 {
-    background: url('images/cop1.png') 5vh / cover no-repeat;
+    background: url('images/cop1.jpg') 5vh / cover no-repeat;
 }
 .IMGPHASEHEADER#cop2 {
     background: url('images/cop2.jpg') 5vh / cover no-repeat;
 }
 .IMGPHASEHEADER#nrr1 {
-    background: url('images/nrr1.png') 5vh / cover no-repeat;
+    background: url('images/nrr1.jpg') 5vh / cover no-repeat;
 }
 .IMGPHASEHEADER#nrr2 {
     background: url('images/nrr2.jpg') 5vh / cover no-repeat;
@@ -828,7 +971,7 @@ h3 {
 .IMGPHASEHEADER#wtfl2 {
     background: url('images/wtfl1.png') 5vh / cover no-repeat;
 }
-.IMGPHASEHEADER#wtfa {
+.IMGPHASEHEADER#wtfa1 {
     background: url('images/wtfa.png') 5vh / cover no-repeat;
 }
 
@@ -853,7 +996,12 @@ h3 {
     flex: 1;
 }
 
-/* ===== DIVISORES ===== */
+
+
+/* ============================================================
+   10. GUIDE CONTENT: DIVIDERS & NOTICES
+   ============================================================ */
+
 .q2q4divider {
     border: none;
     height: 2px;
@@ -868,6 +1016,7 @@ h3 {
 }
 
 .titledivider {
+    margin-right: 10px;
     border: none;
     height: 1px;
     background: linear-gradient(90deg, 
@@ -878,7 +1027,7 @@ h3 {
     margin: 15px 0 25px;
 }
 
-/* ===== NOTAS Y AVISOS ===== */
+
 #guidenotice {
     border-radius: 8px;
     margin: 25px 0;
@@ -898,7 +1047,24 @@ h3 {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* ===== TABLAS ===== */
+.guideref-disclaimer {
+    background-color: rgba(255, 255, 255, 0.02);
+    border: 5px solid rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+}
+.guideref-inner {
+    display: inline-flex;
+}
+.guideref-icon {
+    margin-left: 20px;
+    margin-right: 20px;
+    align-self: center;
+}
+
+/* ============================================================
+   11. STAT TABLES
+   ============================================================ */
+
 #gridtable {
     width: 100%;
     border-collapse: collapse;
@@ -977,7 +1143,12 @@ h3 {
     background: #ffcc66;
 }
 
-/* ========================================================================================================================= GAME PROGRESSION ================================================ */
+
+
+/* ============================================================
+   12. GAME PROGRESSION CARDS
+   ============================================================ */
+
 .collapsibleprog {
     display: flex;
     align-items: center;
@@ -1022,52 +1193,11 @@ h3 {
     opacity: 0.8;
 }
 
-/* - BANNERS - */
-#c1 { background-image: url('images/RubenBanner.jpg'); }
-#c2 { background-image: url('images/ForgottenElrianSanctumBanner.png'); }
-#c3 { background-image: url('images/CrimsonCradleOfFlamesBanner.png'); }
-#c4 { background-image: url('images/ShrineOfTheTwoHeadedSerpentBanner.jpg'); }
-#c5 { background-image: url('images/AltarOfInvocationBanner.png'); }
-#c6 { background-image: url('images/PlegasLabyrinthBanner.png'); }
-#c7 { background-image: url('images/BloomingMineralFIeldBanner.png'); }
-#c8 { background-image: url('images/BirthOfOriginBanner.png'); }
-#c9 { background-image: url('images/MadameCoraeGardenBanner.png'); }
-#c10 { background-image: url('images/OrchestraHallBanner.png'); }
-#c11 { background-image: url('images/WiltingTowerBanner.png'); }
 
-.titleinfo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    position: relative;
-    z-index: 2;
-    color: var(--text-color);
-    font-size: 20px;
-    font-weight: bold;
-    margin: 0 auto;
-    padding: 20px;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-}
 
-.titleinfo .Stage {
-    text-align: left;
-    flex: 1;
-    color: var(--primary-color);
-    font-size: 16px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-.titleinfo p {
-    text-align: center;
-    flex: 2;
-    font-size: 1.8rem;
-    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
+/* ============================================================
+   13. FOOTER
+   ============================================================ */
 
 /* - PIE DE PÁGINA - */
 .lower {
@@ -1116,6 +1246,12 @@ h3 {
     text-decoration: underline;
 }
 
+
+
+/* ============================================================
+   14. SPECIAL INLINE TEXT COLORS
+   ============================================================ */
+
 /* - COLORES ESPECIALES - */
 #HIGHLIGHTEDTEXT {
     color: cyan;
@@ -1154,6 +1290,12 @@ h3 {
     color: #ffd166;
     border-color: #ffd166;
 }
+
+
+
+/* ============================================================
+   15. LIGHT MODE OVERRIDES
+   ============================================================ */
 
 /* - LIGHT MODE - */
 body.light-mode {
@@ -1224,6 +1366,12 @@ body.light-mode .lower .info {
     color: var(--text-secondary);
 }
 
+
+
+/* ============================================================
+   16. SETTINGS: COLOR PICKER & TOGGLE SWITCH
+   ============================================================ */
+
 /* Color Picker */
 .color-picker {
     display: flex;
@@ -1258,6 +1406,723 @@ body.light-mode .lower .info {
 .color-option[data-color="pink"] { background-color: #f783ac; }
 .color-option[data-color="darkblue"] { background-color: #748ffc; }
 
+
+#settings-popup {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    min-width: 240px;
+    max-width: 300px;
+    height: 600px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#settings-popup label {
+    display: block;
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+#settings-popup select,
+#settings-popup input[type="text"] {
+    width: 100%;
+    padding: 8px 12px;
+    background: var(--bg-color);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+#settings-popup select:focus,
+#settings-popup input[type="text"]:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(var(--primary-color-rgb, 255, 224, 102), 0.1);
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--border-color);
+    transition: 0.3s;
+    border-radius: 24px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.3s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: var(--primary-color);
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+
+
+/* ============================================================
+   17. GUIDE MODAL (POPUP)
+   ============================================================ */
+
+.guide-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.72);
+    backdrop-filter: blur(4px);
+    z-index: 1200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+}
+
+.table-title-collapser {
+    cursor: pointer;
+}
+
+.table-title-collapser::after{
+    content: '▼ ';
+    float: right;
+}
+
+.tab-nav {
+    margin-left: 20px;
+    display: flex;
+    gap: 4px;
+    margin-bottom: 0;
+    border-bottom: 2px solid #444;
+}
+
+.tab-button {
+    position: relative;
+    padding: 10px 20px;
+    background: #2a2a2a;
+    color: #888;
+    border: 1px solid #444;
+    border-bottom: none;
+    border-radius: 6px 6px 0 0;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+}
+
+.tab-button:hover {
+    color: #ccc;
+    background: #333;
+}
+
+.tab-button.active {
+    background: #1a1a2e;
+    color: var(--primary-light);
+    border-color: var(--primary-color);
+    box-shadow: 0 -2px 8px rgba(102, 179, 255, 0.15);
+    z-index: 1;
+    overflow-y: hidden;
+}
+
+.tab-button.active::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #1a1a2e;
+}
+
+.tab-table-container #gridtable {
+    margin-top: 0;
+}
+
+.guide-image-group {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 16px 0;
+    align-items: center;
+}
+
+.image-layer {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Primary images - large, full width emphasis */
+.image-layer-primary {
+    width: 100%;
+}
+
+.image-layer-primary .guide-image {
+    max-width: 100%;
+    width: auto;
+    max-height: 400px;
+    object-fit: contain;
+}
+
+/* Secondary images - medium, can fit 2 side by side */
+.image-layer-secondary {
+    width: 100%;
+}
+
+.image-layer-secondary .guide-image {
+    max-width: calc(50% - 6px);
+    width: auto;
+    max-height: 300px;
+    object-fit: contain;
+}
+
+/* Tertiary images - small, inline flex row */
+.image-layer-tertiary {
+    width: 100%;
+}
+
+.image-layer-tertiary .guide-image {
+    max-width: calc(33.333% - 8px);
+    width: auto;
+    max-height: 200px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+/* When there's only 1 tertiary, let it be a bit bigger */
+.image-layer-tertiary .guide-image:only-child {
+    max-width: 50%;
+    max-height: 250px;
+}
+
+/* When there are 2 tertiaries */
+.image-layer-tertiary .guide-image:first-child:nth-last-child(2),
+.image-layer-tertiary .guide-image:first-child:nth-last-child(2) ~ .guide-image {
+    max-width: calc(50% - 6px);
+}
+
+.guide-image {
+    border-radius: 4px;
+    height: auto;
+}
+
+.guide-modal {
+    position: relative;
+    width: min(1200px, 100%);
+    max-height: min(94vh, 1000px);
+    overflow-y: auto;
+    background: var(--card-bg);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    border-radius: 22px;
+    box-shadow: 0 28px 100px rgba(0, 0, 0, 0.44);
+    padding: 32px;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.18) transparent;
+    animation: slideUp 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+.guide-modal-close {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text-color);
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.guide-card-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.guide-modal::-webkit-scrollbar {
+    width: 10px;
+}
+
+.guide-modal::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.guide-modal::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.18);
+    border-radius: 999px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+}
+
+.guide-modal::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.guide-card-title {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.guide-card-subtitle {
+    color: var(--text-muted, #aaa);
+    font-size: 0.95rem;
+}
+
+.guide-open-button,
+button.guide-open-button {
+    padding: 10px 18px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    background: var(--button-bg, #1f2937);
+    color: var(--button-text, #f8fafc);
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+
+/* Make guide modal inherit site typography and ensure raid headers render correctly inside it */
+.guide-modal {
+    font-family: 'Raleway', 'Noto Sans KR', 'Noto Sans JP', 'Noto Sans SC', sans-serif !important;
+}
+.guide-modal .phaseheader,
+.guide-modal .RAID_DUNG_TITLE,
+.guide-modal .RAID_DUNG_NUM {
+    font-family: "Pixelify Sans", sans-serif;
+    color: var(--primary-color);
+}
+
+
+/* Index card interactions and CTA */
+.guide-card {
+    cursor: pointer;
+    border-radius: 16px;
+    padding: 0;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    min-width: 300px;
+    min-height: 100px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    width: 300px;
+    height: 100px;
+    display: inline-block;
+    align-items: center;
+    justify-content: flex-start;
+    transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+}
+.guide-card:hover {
+    background: rgba(255,255,255,0.06);
+    border-color: rgba(255,255,255,0.14);
+    transform: translateY(-2px);
+}
+
+.guide-card-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 16px;
+    gap: 16px;
+}
+
+.guide-card-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.08);
+    flex-shrink: 0;
+}
+
+.guide-card-text {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: calc(100% - 64px);
+}
+
+/* Hide category badge if present elsewhere */
+.guide-card-badge { display: none !important; }
+
+.guide-open-button:hover,
+button.guide-open-button:hover {
+    transform: translateY(-1px);
+    background: var(--button-hover-bg, #111827);
+}
+
+.guide-ref-link {
+    margin: 18px 0;
+}
+
+body.guide-modal-open {
+    overflow: hidden;
+}
+
+/* ============================================================
+   18.2. Image Handling in Modal Pop-up 
+   ============================================================ */
+
+.guide-image-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px 0;
+    align-items: center;
+}
+
+.image-layer {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.guide-image-figure {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 auto;
+}
+
+/* Primary images */
+.image-layer-primary .guide-image-figure {
+    flex: 1 1 100%;
+    max-width: 100%;
+}
+
+.image-layer-primary .guide-image {
+    max-width: 100%;
+    width: auto;
+    max-height: 450px;
+    object-fit: contain;
+    cursor: zoom-in;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-radius: 6px;
+}
+
+.image-layer-primary .guide-image:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 16px rgba(102, 179, 255, 0.3);
+}
+
+/* Secondary images */
+.image-layer-secondary .guide-image-figure {
+    flex: 0 0 calc(50% - 6px);
+}
+
+.image-layer-secondary .guide-image-figure:only-child {
+    flex: 0 0 calc(66% - 4px);
+}
+
+.image-layer-secondary .guide-image-figure:first-child:nth-last-child(3),
+.image-layer-secondary .guide-image-figure:first-child:nth-last-child(3) ~ .guide-image-figure {
+    flex: 0 0 calc(33.333% - 8px);
+}
+
+.image-layer-secondary .guide-image-figure:first-child:nth-last-child(4),
+.image-layer-secondary .guide-image-figure:first-child:nth-last-child(4) ~ .guide-image-figure {
+    flex: 0 0 calc(25% - 9px);
+}
+
+.image-layer-secondary .guide-image {
+    max-width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+    cursor: zoom-in;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-radius: 6px;
+}
+
+.image-layer-secondary .guide-image:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(102, 179, 255, 0.25);
+}
+
+/* Tertiary images */
+.image-layer-tertiary .guide-image-figure {
+    flex: 0 0 calc(33.333% - 8px);
+}
+
+.image-layer-tertiary .guide-image-figure:only-child {
+    flex: 0 0 calc(50% - 6px);
+}
+
+.image-layer-tertiary .guide-image-figure:first-child:nth-last-child(2),
+.image-layer-tertiary .guide-image-figure:first-child:nth-last-child(2) ~ .guide-image-figure {
+    flex: 0 0 calc(50% - 6px);
+}
+
+.image-layer-tertiary .guide-image-figure:first-child:nth-last-child(4),
+.image-layer-tertiary .guide-image-figure:first-child:nth-last-child(4) ~ .guide-image-figure {
+    flex: 0 0 calc(25% - 9px);
+}
+
+.image-layer-tertiary .guide-image-figure:first-child:nth-last-child(5),
+.image-layer-tertiary .guide-image-figure:first-child:nth-last-child(5) ~ .guide-image-figure {
+    flex: 0 0 calc(20% - 10px);
+}
+
+.image-layer-tertiary .guide-image-figure:first-child:nth-last-child(n+6),
+.image-layer-tertiary .guide-image-figure:first-child:nth-last-child(n+6) ~ .guide-image-figure {
+    flex: 0 0 calc(16.666% - 10px);
+}
+
+.image-layer-tertiary .guide-image {
+    max-width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+    cursor: zoom-in;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-radius: 6px;
+}
+
+.image-layer-tertiary .guide-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(102, 179, 255, 0.2);
+}
+
+.guide-image {
+    border-radius: 6px;
+    height: auto;
+    display: block;
+}
+
+.guide-image-caption {
+    margin-top: 6px;
+    font-size: 13px;
+    color: #aaa;
+    text-align: center;
+    max-width: 100%;
+    line-height: 1.4;
+}
+
+/* Lightbox */
+.image-lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    animation: fadeIn 0.2s ease;
+}
+
+.image-lightbox-content {
+    position: relative;
+    max-width: 95vw;
+    max-height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: zoomIn 0.25s ease;
+}
+
+.lightbox-image {
+    max-width: 95vw;
+    max-height: 85vh;
+    object-fit: contain;
+    border-radius: 8px;
+    cursor: default;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 32px;
+    cursor: pointer;
+    padding: 4px 12px;
+    line-height: 1;
+    transition: color 0.2s ease;
+    z-index: 1;
+}
+
+.lightbox-close:hover {
+    color: #66b3ff;
+}
+
+.lightbox-alt-text {
+    color: #ccc;
+    text-align: center;
+    margin-top: 12px;
+    font-size: 14px;
+    max-width: 90vw;
+}
+
+body.lightbox-open {
+    overflow: hidden;
+}
+
+/* ============================================================
+   18. ANIMATIONS
+   ============================================================ */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDownClose {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+}
+
+.animate-close-down {
+  animation: slideDownClose 0.3s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+/* ============================================================
+   19. ACCESSIBILITY & GRACEFUL FALLBACKS
+   ============================================================ */
+
+:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+/* Scroll suave */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+
+/* Ajustes para navegadores que no soportan backdrop-filter */
+@supports not (backdrop-filter: blur(10px)) {
+    .back {
+        background: rgba(0, 0, 0, 0.8);
+    }
+    
+    nav#main-nav-desktop {
+        background: var(--footer-bg);
+    }
+
+}
+
+
+
+/* ============================================================
+   20. MISC UTILITIES
+   ============================================================ */
+
+.subtitle {
+    width: 600px;
+}
+
+.disclaimer {
+    color: var(--warning-color);
+}
+
+@media only screen and (min-width: 2500px) {
+    .title, .subtitle, .disclaimer {
+        font-size: 50px;
+        width: 40%;
+    }
+}
+
+
+
+/* ============================================================
+   21. GLOBAL TRANSITIONS (theme/color-mode switching)
+   ============================================================ */
+
+#gridtable,
+body,
+.guider,
+.tginfo,
+.banner,
+.guidetitle span,
+#gridtable,
+.back,
+.guider a,
+h2, h3,
+.titleinfo p {
+    transition: color 180ms ease, background-color 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+
+
+/* ============================================================
+   22. RESPONSIVE / MEDIA QUERIES
+   ============================================================ */
+
 /* - RESPONSIVE - */
 @media only screen and (max-width: 1024px) {
     .trueguide {
@@ -1271,6 +2136,38 @@ body.light-mode .lower .info {
     
     .tginfo {
         max-width: calc(100% - 280px);
+    }
+}
+
+@media (max-width: 768px) {
+    .image-layer-secondary .guide-image-figure {
+        flex: 0 0 100%;
+    }
+
+    .image-layer-secondary .guide-image {
+        max-height: 250px;
+    }
+
+    .image-layer-tertiary .guide-image-figure {
+        flex: 0 0 calc(50% - 6px);
+    }
+
+    .image-layer-tertiary .guide-image {
+        max-height: 150px;
+    }
+
+    .image-layer-tertiary .guide-image-figure:only-child {
+        flex: 0 0 100%;
+    }
+
+    .image-layer-tertiary .guide-image-figure:only-child .guide-image {
+        max-height: 200px;
+    }
+
+    .lightbox-close {
+        top: -36px;
+        right: 8px;
+        font-size: 28px;
     }
 }
 
@@ -1403,181 +2300,3 @@ body.light-mode .lower .info {
         font-size: 2.2rem;
     }
 }
-
-/* - FIX OVERFLOW - */
-.guider,
-.tginfo,
-.collapsibleprog,
-#gridtable {
-    max-width: 100%;
-    box-sizing: border-box;
-}
-
-.trueguide {
-    overflow: visible;
-}
-
-* {
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-}
-
-/* ===== UTILITIES ===== */
-.subtitle {
-    width: 600px;
-}
-
-.disclaimer {
-    color: var(--warning-color);
-}
-
-@media only screen and (min-width: 2500px) {
-    .title, .subtitle, .disclaimer {
-        font-size: 50px;
-        width: 40%;
-    }
-}
-
-/* ===== ANIMACIONES ===== */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.fade-in {
-    animation: fadeIn 0.6s ease-out forwards;
-}
-
-/* ===== MEJORAS DE ACCESIBILIDAD ===== */
-:focus {
-    outline: 2px solid var(--primary-color);
-    outline-offset: 2px;
-}
-
-/* Scroll suave */
-html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 80px;
-}
-
-/* Ajustes para navegadores que no soportan backdrop-filter */
-@supports not (backdrop-filter: blur(10px)) {
-    .back {
-        background: rgba(0, 0, 0, 0.8);
-    }
-    
-    nav#main-nav-desktop {
-        background: var(--footer-bg);
-    }
-
-}
-
-/* ===== SETTINGS POPUP STYLING ===== */
-#settings-popup {
-    background: var(--card-bg);
-    border: 1px solid var(--border-color);
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
-    z-index: 1000;
-    min-width: 240px;
-    max-width: 300px;
-    height: 300px;
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-#settings-popup label {
-    display: block;
-    color: var(--text-color);
-    font-weight: 500;
-    font-size: 14px;
-    margin-bottom: 5px;
-}
-
-#settings-popup select,
-#settings-popup input[type="text"] {
-    width: 100%;
-    padding: 8px 12px;
-    background: var(--bg-color);
-    color: var(--text-color);
-    border: 1px solid var(--border-color);
-    border-radius: 6px;
-    font-size: 14px;
-}
-
-#settings-popup select:focus,
-#settings-popup input[type="text"]:focus {
-    outline: none;
-    border-color: var(--primary-color);
-    box-shadow: 0 0 0 2px rgba(var(--primary-color-rgb, 255, 224, 102), 0.1);
-}
-
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 50px;
-    height: 24px;
-}
-
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: var(--border-color);
-    transition: 0.3s;
-    border-radius: 24px;
-}
-
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 18px;
-    width: 18px;
-    left: 3px;
-    bottom: 3px;
-    background-color: white;
-    transition: 0.3s;
-    border-radius: 50%;
-}
-
-input:checked + .slider {
-    background-color: var(--primary-color);
-}
-
-input:checked + .slider:before {
-    transform: translateX(26px);
-}
-
-#gridtable,
-body,
-.guider,
-.tginfo,
-.banner,
-.guidetitle span,
-.phaseheader,
-#gridtable,
-.back,
-.guider a,
-h2, h3,
-.titleinfo p {
-    transition: color 180ms ease, background-color 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
-}
-

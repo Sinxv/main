@@ -1,5 +1,39 @@
 import { data } from './EHD.js';
 
+function getCurrentLang() {
+    return window.translationManager?.currentLang || localStorage.getItem('elhelper-lang') || 'en';
+}
+
+function getLocalizedValue(value) {
+    const lang = getCurrentLang();
+
+    if (value === null || value === undefined) {
+        return '';
+    }
+
+    if (Array.isArray(value)) {
+        return value.flatMap(item => {
+            const resolved = getLocalizedValue(item);
+            return Array.isArray(resolved) ? resolved : [resolved];
+        }).join(' ');
+    }
+
+    if (typeof value === 'object') {
+        if (Object.prototype.hasOwnProperty.call(value, lang)) {
+            return getLocalizedValue(value[lang]);
+        }
+        if (Object.prototype.hasOwnProperty.call(value, 'en')) {
+            return getLocalizedValue(value.en);
+        }
+        return Object.values(value).flatMap(item => {
+            const resolved = getLocalizedValue(item);
+            return Array.isArray(resolved) ? resolved : [resolved];
+        }).join(' ');
+    }
+
+    return String(value);
+}
+
 window.infoDatabase = {
     concepts: data.translations.concepts,
     tableNotes: data.translations.tableNotes
@@ -15,22 +49,22 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Initialize concept triggers from data-concept attributes
-function initConceptTriggers() {
-    document.querySelectorAll('[data-concept]').forEach(el => {
+export function initConceptTriggers(context = document) {
+    context.querySelectorAll('[data-concept]').forEach(el => {
         const conceptId = el.getAttribute('data-concept');
         const concept = infoDatabase.concepts[conceptId];
         
         if (concept) {
             el.classList.add('info-trigger');
-            el.dataset.infoTitle = concept.title;
-            el.dataset.infoContent = concept.content;
+            el.dataset.infoTitle = getLocalizedValue(concept.title);
+            el.dataset.infoContent = getLocalizedValue(concept.content);
         }
     });
 }
 
 // Initialize table notes from data-note-type attributes
-function initTableNotes() {
-    document.querySelectorAll('[data-note-type]').forEach(el => {
+export function initTableNotes(context = document) {
+    context.querySelectorAll('[data-note-type]').forEach(el => {
         const noteType = el.getAttribute('data-note-type');
         const note = infoDatabase.tableNotes[noteType];
         
@@ -40,7 +74,7 @@ function initTableNotes() {
             if (cell) {
                 cell.classList.add('has-note');
                 cell.dataset.infoTitle = "Stat Information";
-                cell.dataset.infoContent = note;
+                cell.dataset.infoContent = getLocalizedValue(note);
                 cell.dataset.noteType = noteType;
             }
         }
