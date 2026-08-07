@@ -3027,21 +3027,28 @@ export const data = {
                                     }
                                 }
                             }
-                        },
-                        altarofinvocation: {
+                        }
+                    }
+                },
+                aoi: {
+                    titlekey: {
+                        en: "Altar of Invocation"
+                    },
+                    content: {
+                        phase1:{
                             phasenum: {
-                                en: "Altar of Invocation (Berthe)",
+                                en: "Phase 1",
                                 es: "",
                                 kr: "",
                                 jp: "",
                                 br: ""
                             },
                             phasebname: {
-                                en: "Berthe",
-                                es: "",
-                                kr: "",
-                                jp: "",
-                                br: ""
+                            en: "Berthe",
+                            es: "",
+                            kr: "",
+                            jp: "",
+                            br: ""
                             },
                             mechs: {
                                 coloredhowling: {
@@ -3410,7 +3417,7 @@ export const data = {
                                         br: ""
                                     }
                                 }
-                            }
+                            }               
                         }
                     }
                 },

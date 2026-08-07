@@ -1,6 +1,6 @@
 import { data } from '/EHD.js';
-import '/scroll-color.js';
-import '/table-briefing.js';
+import './scroll-color.js';
+import './table-briefing.js';
 
 window.addEventListener('resize', ajustarAltura);
 
