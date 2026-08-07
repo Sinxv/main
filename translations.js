@@ -1,4 +1,4 @@
-import { data } from './EHD.js';
+import { data } from '/EHD.js';
 
 const translations = data.translations;
 

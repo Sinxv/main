@@ -1,6 +1,6 @@
-import { data } from './EHD.js';
-import { initConceptTriggers, initTableNotes } from './data.js';
-import { guideData } from './guide-data.js';
+import { data } from '/EHD.js';
+import { initConceptTriggers, initTableNotes } from '/data.js';
+import { guideData } from '/guide-data.js';
 
 const GUIDE_OVERLAY_ID = 'guide-modal-overlay';
 const GUIDE_MODAL_ID = 'guide-modal';

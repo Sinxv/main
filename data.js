@@ -1,4 +1,4 @@
-import { data } from './EHD.js';
+import { data } from '/EHD.js';
 
 function getCurrentLang() {
     return window.translationManager?.currentLang || localStorage.getItem('elhelper-lang') || 'en';
