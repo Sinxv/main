@@ -111,6 +111,20 @@ export const guideData = [
         raidKeys: ['stage5.sections.boo']
     },
     {
+        id: 'st',
+        category: 'raid',
+        belongsto: 'Serpentium',
+        titleKey: 'stage6.sections.st.titlekey',
+        raidKeys: ['stage6.sections.st']
+    },
+    {
+        id: 'oh',
+        category: 'raid',
+        belongsto: 'Serpentium',
+        titleKey: 'stage6.sections.oh.titlekey',
+        raidKeys: ['stage6.sections.oh']
+    },
+    {
         id: 'cop',
         category: 'raid',
         belongsto: 'Doom Aporia',

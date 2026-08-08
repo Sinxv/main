@@ -4751,6 +4751,1338 @@ export const data = {
             title: { en: "Stage 6", es: "Etapa 6", kr: "6단계", jp: "ステージ6", br: "Estágio 6" },
             stage6_title: { en: "Serpentium", es: "Serpentium", kr: "서펜티움", jp: "", br: "" },
             sections: {
+                st: {
+                    titlekey: {
+                        en: "Serpentium Tower",
+                        es: "",
+                        kr: "",
+                        jp: "",
+                        br: ""
+                    },
+                    num: {
+                        en: "",
+                        es: "",
+                        kr: "",
+                        jp: "",
+                        br: ""
+                    },
+                    name: {
+                        en: "- Serpentium Tower -",
+                        es: "",
+                        kr: "",
+                        jp: "",
+                        br: ""
+                    },
+                    content: {
+                        phase1: {
+                            phasenum: {
+                                en: "Phase 1",
+                                es: "Fase 1",
+                                kr: "1단계",
+                                jp: "フェーズ1",
+                                br: "Fase 1"
+                            },
+                            phasebname: {
+                                en: "Security System Core",
+                                es: "",
+                                kr: "",
+                                jp: "",
+                                br: ""
+                            },
+                            concepts: {
+                                chargingrod: {
+                                    name: {
+                                        en: "Phase Gimmick",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    description: {
+                                        en: [
+                                            "When a player gets hit by any of the boss' attacks, they will receive one stack of Surveillance that lasts for 15 seconds. When any player in the party reaches 30 stacks, that player's stacks will be removed and the boss will instantly cast Activate Annihilation Mode.",
+                                            "Additionally, multiple charging rods will be set up across the arena (4 on the left side, 4 on the right side). These charging rods are initially inactive, but will be activated for certain attacks."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                }
+                            },
+                            np: {
+                                activateannihilationmode: {
+                                    name: {
+                                        en: "Activate Annihilation Mode",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    description: {
+                                        en: [
+                                            "The boss erratically fires off lasers coming from all directions. The location of these lasers is indicated by red warning lines briefly before they are fired.",
+                                            "- The lasers appear to fire randomly with no consistency or pattern.",
+                                            "- The hitbox of the lasers is significantly larger than what the warning lines suggest (reaching about 3 players wide), meaning the safe spots are smaller than one might initially expect.",
+                                            "It is possible to avoid these lasers by using special active skills with long invincibility frames.",
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    variants: {
+                                        diff3: {
+                                            name: {
+                                                en: "Difficulty 3 Variation:",
+                                            },
+                                            description: {
+                                                en: "- Cannot be avoided with invincibility frames.",
+                                            }
+                                        }
+                                    }
+                                },
+                                electromagneticenergyrelease: {
+                                    name: {
+                                        en: "Electromagnetic Energy Release",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    iframe: true,
+                                    description: {
+                                        en: [
+                                            "The boss releases a stream of electric energy around itself, dealing minor damage and inflicting a random debuff on any players hit.",
+                                            "- Amongst the debuffs this attack can inflict, the most common appear to be Confusion, Move Slowdown, and Aging.",
+                                            "All the debuffs can be removed with skills that cleanse debuffs or provides debuff immunity."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    variants: {
+                                        diff3: {
+                                            name: {
+                                                en: "Difficulty 3 Variation:",
+                                            },
+                                            description: {
+                                                en: "- This attack deals multiple hits.",
+                                            }
+                                        }
+                                    }
+                                },
+                                electromagneticenergyring: {
+                                    name: {
+                                        en: "Electromagnetic Energy Ring",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    iframe: true,
+                                    description: {
+                                        en: [
+                                            "The boss releases a ring of electricity around itself, dealing minor continuous damage, and inflicting Stiff Body, decreasing physical and magical attack for 10 seconds.",
+                                            "Unlike Electromagnetic Energy Release, only the ring of electricity has a hitbox. Players can avoid this attack by either standing close to the boss (within the red colored zone), or by standing away from the boss, beyond the reach of the electricity.",
+                                            "The Stiff Body debuff can be removed with skills that cleanse debuffs or provides debuff immunity."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                },
+                                directionalcharge: {
+                                    name: {
+                                        en: "Directional Charge",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    iframe: true,
+                                    description: {
+                                        en: [
+                                            "Charges a short distance in one cardinal direction, leaving behind a pulsing trail of electricity. Players hit by either the charge or the electric trail will be inflicted with Leg Injury for 5 seconds.",
+                                            "Neither parts of this attack deal significant damage. However, due to the multi-hit nature of this attack, it can be easy for a player to unintentionally accumulate Surveillance stacks.",
+                                            "The Stiff Body can be removed with skills that cleanse debuffs or provides debuff immunity."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                },
+                                chargingrodlaser: {
+                                    name: {
+                                        en: "Charging Rod Laser",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    iframe: true,
+                                    description: {
+                                        en: [
+                                            "Activates three pairs of charging rods, which then fire a horizontal laser between each set. Any players hit will be inflicted with Confusion for 7 seconds.",
+                                            "The lasers do not last for long and deal minor damage.",
+                                            "The lasers are capable of very slightly hitting players one platform above, depending on a multitude of factors. This should be kept in mind for Lu/Ciel players in particular, as to avoid unintentionally being hit by a laser."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                },
+                                electricterrain: {
+                                    name: {
+                                        en: "Electric Terrain",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    iframe: true,
+                                    description: {
+                                        en: [
+                                            "Fires a beam of electricity which descends and covers the ground for a short period of time. If a red beam is fired, the electricity will cover the bottom-most platform (ie. the ground floor). If a yellow beam is fired, the electricity will cover the middle platform above the ground.",
+                                            "While the attack does not inflict too much damage due to its multi-hit nature, it can be easy for a player to unintentionally accumulate Surveillance stacks."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                },
+                                designatedbombardment: {
+                                    name: {
+                                        en: "Designated Bombardment",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    iframe: true,
+                                    description: {
+                                        en: [
+                                            "Targets a random player with a golden crosshair, the crosshair will follow that player for a period of time before locking into place. Fires a large missile at the targeted location that detonates into a large explosion, inflicts heavy damage.",
+                                            "- The explosion radius is roughly half of the screen. It is strongly recommended that the targeted player baits the missile far away from the rest of the party.",
+                                            "- The explosion deals significant damage, enough to kill players without heavy mitigation.",
+                                            "Targeted player is marked with the Target Set debuff."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    variants: {
+                                        diff3: {
+                                            name: {
+                                                en: "Difficulty 3 Variation:",
+                                            },
+                                            description: {
+                                                en: "- The boss will target 2 players.",
+                                            }
+                                        }
+                                    }
+                                },
+                                totalelectricaldischarge: {
+                                    name: {
+                                        en: "Total Electrical Discharge",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    iframe: true,
+                                    description: {
+                                        en: [
+                                            "Releases a large stream of lightning from high above. The lightning will either fire in a single vertical line, a spread of 3 lines, or a spread of 5 lines.",
+                                            "The angle of which the lasers are fired are not only indicated by a brief warning light, but also the Core will call out which lasers it will fire indicated by mention the numbers 1-5."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                }
+                            },
+                            mechs: {
+                                generalinfo: {
+                                    name: {
+                                        en: "Mechanics General Info",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    description: {
+                                        en: [
+                                            "The boss will perform one of these moves approximately every minute, or forcibly at 151x HP bars if one has not been performed already."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                },
+                                chargingoverload: {
+                                    name: {
+                                        en: "Charging Overload",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    iframe: true,
+                                    description: {
+                                        en: [
+                                            "The boss will tether itself to one of the Charging Rods, healing 1% of its max HP every 5 seconds. After 60 seconds, the boss will finish charging and unleash a powerful electric discharge, instantly killing all players. Players must charge it by attacking it, completely charging it after dealing 10% of its total HP in damage. After the core is fully charged, the Charging Rod the boss was tethered to will need to be cooled down via the Dungeon Special Function key (default: F1). Failure to do so will cause the boss to overheat and explode, instantly killing all players.",
+                                            "- Players are able to tether to one of the remaining Charging Rods using the Dungeon Special Function key (default: F1), and are granted the Charging buff that increases their physical/magical attack by 30% for 10 seconds.",
+                                            "The boss is capable of performing other attacks while charging."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    variants: {
+                                        solo: {
+                                            name: {
+                                                en: "Solo Mode Variation:",
+                                            },
+                                            description: {
+                                                en: ["- The boss will not heal, instead automatically entering its fully charged state leading into overheat.","- Players only need to disconnect the boss from its charging rod."]
+                                            }
+                                        }
+                                    }
+                                },
+                                corecharging: {
+                                    name: {
+                                        en: "Core Charging",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    iframe: true,
+                                    unavoidable: true,
+                                    groggy: true,
+                                    description: {
+                                        en: [
+                                            "The boss moves to the center of the map and becomes untargetable. It will activate all the charging rods and begin generating blue energy cores that periodically fall from the top of the screen. If the boss obtains one energy core, it will restore 10% of its HP. If the boss obtains three energy cores, it will deal an explosive attack that instantly kills all players, failing the raid. Players must interact with a charging rod via the Dungeon Special Function key (default: F1) and connect the tether to the boss. Afterwards, players must obtain a blue energy core, allowing them to deactivate one charging rod (also with the Dungeon Special Function key (default: F1)).",
+                                            "- One player can grab and connect multiple tethers at once.",
+                                            "If a player obtains an energy core, there will be a blue light surrounding their character, and they will receive the Charging Energy buff. Both of these will disappear once the player has deactivated a charging rod.",
+                                            "If a player with an energy core obtains a second one, they will instantly die."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    variants: {
+                                        solo: {
+                                            name: {
+                                                en: "Solo Mode Variation:",
+                                            },
+                                            description: {
+                                                en: ["- Only the top 4 charging rods will be activated.","- Players do not have to connect a tether to the boss, going directly to the deactivation phase.",]
+                                            }
+                                        }
+                                    }
+                                },
+                                circuitoverload: {
+                                    name: {
+                                        en: "Circuit Overload",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    iframe: true,
+                                    unavoidable: true,
+                                    groggy: true,
+                                    description: {
+                                        en: [
+                                            "The boss moves to a random location on the right side of the arena and becomes untargetable. At the same time, a charging rod will spawn on the left side of the arena. This charging rod will emit a red stream of electricity. Standing in the red stream will be inflicted with stacks of Charging. Once it reaches 5 stacks, the player will freeze in place and extend the red stream in the direction they're facing. Players must use their bodies to create a relay from the charging rod to the boss.",
+                                            "When a player comes into contact with the red electric stream, they will be immobilized whether on the ground or in midair.",
+                                            "Players who are connected to the charging rod will emit electricity a short distance directly above/below them, as well as horizontally in the direction they are facing.",
+                                            "Players who are connected to another player will only emit electricity horizontally in the direction they are facing."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    variants: {
+                                        diff3: {
+                                            name: {
+                                                en: "Difficulty 3 Variation:",
+                                            },
+                                            description: {
+                                                en: "- The range of the player-released electricity is reduced.",
+                                            }
+                                        },
+                                        solo: {
+                                            name: {
+                                                en: "Solo Mode Variation:",
+                                            },
+                                            description: {
+                                                en: "- A nearly complete path will automatically be generated, only requiring one final connection, players simply need to stand in front of the boss looking toward its direction to complete the chain."
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        phase2: {
+                            phasenum: {
+                                en: "Phase 2",
+                                es: "Fase 2",
+                                kr: "2단계",
+                                jp: "フェーズ2",
+                                br: "Fase 2"
+                            },
+                            phasebname: {
+                                en: "Defense System",
+                                es: "",
+                                kr: "",
+                                jp: "",
+                                br: ""
+                            },
+                            concepts: {
+                                phasegimmick: {
+                                    name: {
+                                        en: "Phase Gimmick",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    description: {
+                                        en: [
+                                            "When a player gets hit by any of the boss' attacks, they will receive one stack of Surveillance that lasts for 15 seconds. When any player in the party reaches 30 stacks, that player's stacks will be removed and the boss will instantly cast Activate Annihilation Mode.",
+                                            "Additionally, the boss will periodically target 1~2 players with a red and teal beam. After a few seconds, the boss will fire a cube traveling along the path of the beam. If the cube hits a player, it will deal a small amount of damage. If the cube hits the boss, it will decrease its damage reduction by 4% per cube. If the boss is hit by 15 of these cubes, it will cease attacking and enter a groggy state for a short period of time. Using 3 hyperactive skills will extend this groggy duration.",
+                                            "In Difficulty 3, each cube will decrease the boss' damage reduction by 3.5%."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                }
+                            },
+                            np: {
+                                activateannihilationmode: {
+                                    name: {
+                                        en: "Activate Annihilation Mode",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    description: {
+                                        en: [
+                                            "The boss erratically fires off lasers coming from all directions. The location of these lasers is indicated by red warning lines briefly before they are fired. These lasers could be horizontal, vertical, or diagonal.",
+                                            "The hitbox of the lasers is significantly larger than what the warning lines suggest (reaching about 3 players wide), meaning the safe spots are smaller than one might initially expect.",
+                                            "It is possible to avoid these lasers by using special active skills with long invincibility frames such as Spriggan, Particle Ray, or certain master skills such as Dignity.",
+                                            "It is not recommended to use your hyperactive skill, due to its long cooldown and its necessity in prolonging groggy phases."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    variants: {
+                                        diff3: {
+                                            name: {
+                                                en: "Difficulty 3 Variation:",
+                                            },
+                                            description: {
+                                                en: ["- The lasers cannot be avoided with invincibility frames.",
+                                                "- The lasers appear to fire randomly with no consistency or pattern."],
+                                            }
+                                        }
+                                    }
+                                },
+                                missileexplosion: {
+                                    name: {
+                                        en: "Missile Explosion",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    iframe: true,
+                                    description: {
+                                        en: [
+                                            "Targets a random player with a red, square-shaped reticle and the Target Set debuff. After ~2 seconds, the boss fires a missile which will track down the player, exploding in a large area upon contact with said player or after a certain period of time.",
+                                            "The missile explosion deals heavy damage.",
+                                            "It is recommended for the targeted player to lure the missile away from the rest of the party.",
+                                            "The reticle may be difficult to notice due to it blending in with the colors of the environment and the boss' other attacks. It is recommended to ensure that players have a resurrection effect or title active when the reticle spawns."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                },
+                                lasersweep: {
+                                    name: {
+                                        en: "Laser Sweep",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    iframe: true,
+                                    description: {
+                                        en: [
+                                            "The boss moves upwards and fires a vertical laser downwards while moving left or right.",
+                                            "The boss will never sweep the edges of the map, always stopping before or sweeping the other direction."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                },
+                                stationarylaser: {
+                                    name: {
+                                        en: "Stationary Laser",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    description: {
+                                        en: [
+                                            "Fires a stationary vertical or diagonal laser that deals moderate damage and inflicts Confusion for ?? seconds.",
+                                            "The boss can fire multiple stationary lasers at the same time.",
+                                            "The Confusion can be removed with skills that cleanse debuffs or provides debuff immunity."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                },
+                                targetedlaser: {
+                                    name: {
+                                        en: "Targeted Laser",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    iframe: true,
+                                    description: {
+                                        en: [
+                                            "Targets a random player and fires a large laser, dealing heavy damage."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                },
+                                activateannihilationmodehorizontal: {
+                                    name: {
+                                        en: "Activate Annihilation Mode - Horizontal",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    description: {
+                                        en: [
+                                            "The boss targets a random player with a horizontal laser. After a brief moment, the laser's position will be locked and the laser fired.",
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    variants: {
+                                        diff3: {
+                                            name: {
+                                                en: "Difficulty 3 Variation:",
+                                            },
+                                            description: {
+                                                en: "- Cannot be avoided with invincibility frames.",
+                                            }
+                                        }
+                                    }
+                                },
+                                activateannihilationmodevertical: {
+                                    name: {
+                                        en: "Activate Annihilation Mode - Vertical",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    description: {
+                                        en: [
+                                            "The boss targets a random player with a vertical laser. After a brief moment, the laser's position will be locked and the laser fired.",
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    variants: {
+                                        diff3: {
+                                            name: {
+                                                en: "Difficulty 3 Variation:",
+                                            },
+                                            description: {
+                                                en: "- Cannot be avoided with invincibility frames.",
+                                            }
+                                        }
+                                    }
+                                },
+                                activateannihilationmodecross: {
+                                    name: {
+                                        en: "Activate Annihilation Mode - Cross",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    description: {
+                                        en: [
+                                            "The boss targets a random player with an X-shaped laser. After a few seconds, the laser's position will be locked and the lasers fired. This is always performed in tandem with a Targeted Laser.",
+                                            "It is recommended for the targeted player to bait this laser away from the rest of the party.",
+                                            "The boss will often use Activate Annihilation Mode - Horizontal at the same time as this attack."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    variants: {
+                                        diff3: {
+                                            name: {
+                                                en: "Difficulty 3 Variation:",
+                                            },
+                                            description: {
+                                                en: "- Cannot be avoided with invincibility frames.",
+                                            }
+                                        }
+                                    }
+                                },
+                                minefield: {
+                                    name: {
+                                        en: "Minefield",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    iframe: true,
+                                    description: {
+                                        en: [
+                                            "Disperses 12 mines - 6 on each side - which explode after a short period of time. Both the initial hit and the explosion deal moderate damage and inflict Confusion for ?? seconds.",
+                                            "The Confusion can be removed with skills that cleanse debuffs or provides debuff immunity."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                },
+                                electromagneticdischarge: {
+                                    name: {
+                                        en: "Electromagnetic Discharge",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    iframe: true,
+                                    description: {
+                                        en: [
+                                            "The boss turns to face the camera and spins around while releasing electricity. The boss will heal 5x HP bars per player hit. Additionally, any players hit will have all their Active and Special Active Skills set on cooldown for 2 seconds per hit.",
+                                            "Due to the quick multi-hit nature of this attack, it is easy for your skills to end up on a 20s+ cooldown."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                }
+                            },
+                            mechs: {
+                                generalinfo: {
+                                    name: {
+                                        en: "Mechanics General Info",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    description: {
+                                        en: [
+                                            "The boss will perform one of these moves approximately every minute, or forcibly at 151x HP bars if one has not been performed already."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                },
+                                securitykeyscan: {
+                                    name: {
+                                        en: "Security Key Scan",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    iframe: true,
+                                    unavoidable: true,
+                                    description: {
+                                        en: [
+                                            "Assigns every living player a security key, indicated by the mark above their character's head and the respective Pass Obtained buff. After a certain amount of time, the boss will scan the arena from left to right. If it detects any players, at the end of the scan it will release a fatal attack, killing everyone and failing the raid. Players must find and activate a barrier matching their security key and hide inside it during the scan. Each barrier requires two adjacent levers to be activated with the Dungeon Special Function key (default: F1).",
+                                            "You will be inflicted with Unavoidable Death, rending revival abilities useless.",
+                                            "One player is able to activate both levers.",
+                                            "The barrier will deactivate after a certain amount of time. Players should take caution to not activate the barrier too early."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                },
+                                consecutivescan: {
+                                    name: {
+                                        en: "Consecutive Scan",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    iframe: true,
+                                    unavoidable: true,
+                                    description: {
+                                        en: [
+                                            "Displays three security keys, one after another, and then scans the arena from left to right three times. Players must enter the barrier matching the security keys, in order, to avoid being detected. If the boss detects any players, at the end of the scan it will release a fatal attack, killing everyone and failing the raid.",
+                                            "eg: The boss displays the yellow mark first, then green, then blue. Players must first hide within the yellow barrier while the boss scans the arena. When it is safe to do so, players must then move to the green barrier and wait for the boss to execute the second scan. Finally, players must move to the blue barrier and wait for the boss to execute the third scan.",
+                                            "You will be inflicted with Unavoidable Death, rending revival abilities useless.",
+                                            "The barriers are spawned in random locations around the arena."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                },
+                                targetedconsecutivelasers: {
+                                    name: {
+                                        en: "Targeted Consecutive Lasers",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    iframe: true,
+                                    description: {
+                                        en: [
+                                            "Targets every player with a laser from high above, indicated by a red square reticle. After a few seconds, these lasers lock in place and fire. This repeats a total of three times.",
+                                            "The boss will only use this attack in Difficulty 3."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                oh: {
+                    titlekey: {
+                        en: "Orchestra Hall",
+                        es: "",
+                        kr: "",
+                        jp: "",
+                        br: ""
+                    },
+                    num: {
+                        en: "",
+                        es: "",
+                        kr: "",
+                        jp: "",
+                        br: ""
+                    },
+                    name: {
+                        en: "- Orchestra Hall -",
+                        es: "",
+                        kr: "",
+                        jp: "",
+                        br: ""
+                    },
+                    content: {
+                        phase1: {
+                            phasenum: {
+                                en: "Phase 1",
+                                es: "Fase 1",
+                                kr: "1단계",
+                                jp: "フェーズ1",
+                                br: "Fase 1"
+                            },
+                            phasebname: {
+                                en: "Conductor",
+                                es: "",
+                                kr: "",
+                                jp: "",
+                                br: ""
+                            },
+                            concepts: {
+                                phasegimmick: {
+                                    name: {
+                                        en: "Phase Gimmick",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    description: {
+                                        en: [
+                                            "When a player gets hit by any of the boss' attacks, they will receive one stack of Torment of Inspiration that lasts for the remainder of the fight. Upon reaching five stacks, the debuff will be replaced with Source of Inspiration which also lasts for the remainder of the fight. When a player with the Source of Inspiration debuff is hit by certain attacks, they will 'retain' this attack and can press the Dungeon Special Function key (default: F1) to Release and 'repeat' the attack to remove the Source of Inspiration.",
+                                            "If a player obtains a second stack of Source of Inspiration, they will forcefully Release any attack they are 'retaining'. If a player is hit by another player's Release, they will also gain a stack of Source of Inspiration although without the forced Release.",
+                                            "Finally, when the boss is hit by any Releases, it will restore 5% of its max HP."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                }
+                            },
+                            np: {
+                                teleport: {
+                                    name: {
+                                        en: "Teleport",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    description: {
+                                        en: [
+                                            "Teleport next to a player. He will have hyper armor when doing this, cleansing any debuff he is applied with."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                },
+                                batonswing: {
+                                    name: {
+                                        en: "Baton Swing",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    iframe: true,
+                                    description: {
+                                        en: [
+                                            "Swings his baton twice and finishes with a small musical explosion from the ground in front. Each hit will inflict one stack of Torment of Inspiration.",
+                                            "This is the Conductor's most frequently used attack while players are within range."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                },
+                                violinperformance: {
+                                    name: {
+                                        en: "Violin Performance",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    iframe: true,
+                                    description: {
+                                        en: [
+                                            "Pulls out a violin and plays a short melody. The melody resonates as a line AoE that covers the entire platform Conductor is standing on. The violin melody will continuously damage any players in range and apply a Torment of Inspiration stack per hit. Any players hit will additionally be afflicted with a Violin's Melody debuff that decreases all attack for 10 seconds.",
+                                            "When a player with Source of Inspiration is hit by this attack, the Violin Release will change slightly depending on the number of stacks.",
+                                            "- At one stack, the Violin Release will emit a line AoE that covers the entire platform the player is standing on.",
+                                            "- At two stacks, the Violin Release will emit 3 line AoEs - one on the platform the player is standing on, as well as one directly above and below.",
+                                            "- At three stacks, the Violin Release will emit 5 line AoEs, essentially encompassing the entire stage.",
+                                            "The violin melody is capable of hitting slightly above one platform. Players should move two platforms above to ensure they are not hit by the attack.",
+                                            "Players are recommended to Release the violin melody either at the top-most platform or the bottom-most platform, depending on where the boss and the rest of the party are.",
+                                            "Players should take caution Releasing the violin melody at the top-most platform when the boss is about to perform an Ultimate Attack, as he is capable of healing from Releases during this time."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    variants: {
+                                        diff3: {
+                                            name: {
+                                                en: "Difficulty 3 Variation:",
+                                            },
+                                            description: {
+                                                en: "- The Conductor will spawn 2 AoE lines: one on the platform directly above him, and one on the platform directly below him.",
+                                            }
+                                        }
+                                    }
+                                },
+                                celloperformance: {
+                                    name: {
+                                        en: "Cello Performance",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    iframe: true,
+                                    description: {
+                                        en: [
+                                            "Pulls out a cello and plays a short melody, emitting a circular AoE around him. The cello melody will continuously damage any players in range and apply a stack of Torment of Inspiration per hit.",
+                                            "When a player with Source of Inspiration is hit by this attack, the Cello Release will linger for a longer period of time, depending on the number of stacks.",
+                                            "Players are recommended to Release the cello melody in a corner away from the rest of the party.",
+                                            "Players should take caution Releasing the cello melody in the top left corner when the boss is about to perform an Ultimate Attack, as he is capable of healing from Releases during this time."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    variants: {
+                                        diff3: {
+                                            name: {
+                                                en: "Difficulty 3 Variation:",
+                                            },
+                                            description: {
+                                                en: "- After this attack ends, the Conductor will spawn 4 clones of himself that repeat the performance, the four clones will either be directly above, below, and to his sides, or at each diagonal position.",
+                                            }
+                                        }
+                                    }
+                                },
+                                fluteperformance: {
+                                    name: {
+                                        en: "Flute Performance",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    iframe: true,
+                                    description: {
+                                        en: [
+                                            "Pulls out a flute and plays a melody, emitting a circular AoE around him. While the wavelength of the melody is red, the AoE size will gradually increase and attacking Conductor will cause the AoE size to decrease. While the wavelength of the melody is blue, the AoE size will gradually decrease and attacking Conductor will cause the AoE size to increase. After playing through both color wavelengths, the AoE will explode, dealing lethal damage and inflicting one stack of Torment of Inspiration.",
+                                            "When a player with Source of Inspiration is hit by this attack, the Flute Release will appear as a yellow wavelength around the player. This wavelength will continuously grow in size until the player Releases it.",
+                                            "Difficulty 3 Variation:",
+                                            "- The Conductor will spawn a clone that simultaneously plays the flute.",
+                                            "Players should take caution Releasing the flute melody in the top left corner when the boss is about to perform an Ultimate Attack, as he is capable of healing from Releases during this time."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    variants: {
+                                        diff3: {
+                                            name: {
+                                                en: "Difficulty 3 Variation:",
+                                            },
+                                            description: {
+                                                en: "- The Conductor will spawn a clone that simultaneously plays the flute.",
+                                            }
+                                        }
+                                    }
+
+                                }
+                            },
+                            mechs: {
+                                generalinfo: {
+                                    name: {
+                                        en: "Mechanics General Info",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    description: {
+                                        en: [
+                                            "Conductor will become untargetable and will randomly use the following attacks at certain HP intervals.",
+                                            "250x / 151x / 100x"
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                },
+                                skilledperformance: {
+                                    name: {
+                                        en: "Skilled Performance",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    iframe: true,
+                                    unavoidable: true,
+                                    groggy: true,
+                                    description: {
+                                        en: [
+                                            "The conductor will teleport to the top left of the arena and become intangible. Music notes will appear across the map color coded: blue Crotchet, purple Quaver, and red Semiquaver. A bar will move from the left side of the arena to the right. Players must use a Special Active when the bar passes by the note, the type of Special Active will correspond to the color: Tenacity for blue, Strength for purple, and Bravery for red. Depending on how successful your team is at the performance, varying outcomes can occur.",
+                                            "A perfect performance will put the boss in a staggered state and increase team damage.",
+                                            "If one note is not successfully played, the boss will deal massive damage to the party.",
+                                            "If two or more notes are missed, the entire party will be killed."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                },
+                                tuningperformance: {
+                                    name: {
+                                        en: "Tuning Performance",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    iframe: true,
+                                    unavoidable: true,
+                                    groggy: true,
+                                    description: {
+                                        en: [
+                                            "The conductor will teleport to the top left of the arena and become intangible. A red bar will appear on the left side of the area and a constant pushing force will pull you toward the left side. A string of 10 notes will appear beneath the boss's health bar. Music notes will begin to travel from the right side of the map to the left, make the correct sequence of notes hit the red bar. Change or destroy the note by either attacking them with commands, or using the Dungeon Special Function key (default: F1). Depending on how successful your team is at the performance, varying outcomes can occur.",
+                                            "You will be inflicted with Unavoidable Death, rending revival abilities useless.",
+                                            "While the notes that appear can start in different stages, they will progress: Crotchet → Quaver → Semiquaver → destroyed.",
+                                            "A perfect performance will put the boss in a staggered state and increase team damage.",
+                                            "If one note is not successfully played, the boss will deal massive damage to the party.",
+                                            "If two or more notes are missed, the entire party will be killed."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    variants: {
+                                        diff3: {
+                                            name: {en: "Difficulty 3 Variation:"},
+                                            description: {en: [" - The music sheet may include a Repeat Sign, causing certain sequences to repeat.",]}
+                                        }
+                                    }
+                                },
+                                conductorcheck: {
+                                    name: {
+                                        en: "Conductor Check",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    iframe: true,
+                                    unavoidable: true,
+                                    groggy: true,
+                                    description: {
+                                        en: [
+                                            "Many blue orbs will appear across the map. Each will appear in columns of 4 of the same music note. A music sheet will appear beneath the boss's health bar. Each player will be assigned a number 1 up to 6 (depending on party size) indicative of the order the boss will check on them. Based on the type of note and what staff they're placed on in the music sheet, a player must stand on the blue orb representing that note. The boss will cycle through all available team members and will cycle back to the player marked with 1 and so on till the full performance is complete. Depending on how successful your team is at the performance, varying outcomes can occur.",
+                                            "You will be inflicted with Unavoidable Death, rending revival abilities useless.",
+                                            "The four staffs of the music sheet line up with the platform layers and column of 4 notes.",
+                                            "While there are three columns of Crotchets, and two columns of Quavers and Semiquavers, the existence of repeating columns is just there for visual clarity, which one you use doesn't matter so long as it is the right note.",
+                                            "A perfect performance will put the boss in a staggered state and increase team damage.",
+                                            "If one note is not successfully played, the boss will not retaliate, but will not be staggered.",
+                                            "If two or more notes are missed, the entire party will be killed."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    variants: {
+                                        solo: {
+                                            name: {en: "Solo Mode Variation:"},
+                                            description: {en: ["- The player will be marked with a random number 1-6, all the other positions will be automatically filled by robots.",]}
+                                        },
+                                        diff3: {
+                                            name: {en: "Difficulty 3 Variation:"},
+                                            description: {en: [" - The music sheet may include a Repeat Sign, causing certain sequences to repeat, the order which Conductor checks on player still remains the same.",]}
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        phase2: {
+                            phasenum: {
+                                en: "Phase 2",
+                                es: "Fase 2",
+                                kr: "2단계",
+                                jp: "フェーズ2",
+                                br: "Fase 2"
+                            },
+                            phasebname: {
+                                en: "Maestro",
+                                es: "",
+                                kr: "",
+                                jp: "",
+                                br: ""
+                            },
+                            concepts: {
+                                phasegimmick: {
+                                    name: {
+                                        en: "Phase Gimmick",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    description: {
+                                        en: [
+                                            "The boss will have a circular music meter above their HP bar, this meter will fill up whenever you are hit by the boss's Sound Beam attacks. When the meter reaches 100%, a random skill or consumable slot will be marked with a music note, banning their use."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                }
+                            },
+                            np: {
+                                soundbeam: {
+                                    name: {
+                                        en: "Sound Beam",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    description: {
+                                        en: [
+                                            "Marks either a horizontal or vertical area with a blue light, which then is swept with a beam of music energy.",
+                                            "After the 2nd tempo shift, two additional beams will generate to the sides of the first one.",
+                                            "The beams themselves do not ignore invincibility frames, however will still build up the Music Meter."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                },
+                                choirsummon: {
+                                    name: {
+                                        en: "Choir Summon",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    description: {
+                                        en: [
+                                            "After the first Tempo Shift, Maestro will periodically summon Choir Members. They will drop down from the sky, dealing damage upon hitting the ground."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                },
+                                balldrop: {
+                                    name: {
+                                        en: "Ball Drop",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    iframe: true,
+                                    description: {
+                                        en: [
+                                            "Five yellow or blue orbs will fall from the sky. The blue orbs do minor damage while the yellow orbs will do significantly more damage, but will unlock a banned slot if the player has one. Any missed orbs will result in a Choir Member drone being summoned.",
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    variants: {
+                                        solo: {
+                                            name: {en: "Solo Mode Variation:"},
+                                            description: {
+                                                en: ["- Only two orbs will drop, one yellow and one blue."]
+                                            }
+                                        },
+                                    }
+                                },
+                                soundbeammayhem: {
+                                    name: {
+                                        en: "Sound Beam Mayhem",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    iframe: true,
+                                    description: {
+                                        en: [
+                                            "Conduct an intense performance and cause a continuous flurry of sound beams to appear one after the other based on the position of the players.",
+                                            "At low HP, another version of this attack can occur where Choir Members will be summoned.",
+                                            "This attack will build up the Music Meter."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                },
+                                instrumenttransformation: {
+                                    name: {
+                                        en: "Instrument Transformation",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    description: {
+                                        en: [
+                                            "Transform a player into an instrument. The player will play a short rhythm game where they must press Z, X, or C as indicated by the bar. Missed inputs will increase their music meter, successful performances will decrease the meter."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                },
+                                temposhift: {
+                                    name: {
+                                        en: "Tempo Shift",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    description: {
+                                        en: [
+                                            "At certain HP thresholds the boss will switch up the music and increase the speed of battle."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                }
+                            },
+                            mechs: {
+                                generalinfo: {
+                                    name: {
+                                        en: "Mechanics General Info",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    description: {
+                                        en: [
+                                            "Maestro will become untargetable and will randomly use the following attacks at certain HP intervals: 250x / 151x / 100x",
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                },
+                                grandpiano: {
+                                    name: {
+                                        en: "Grand Piano",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    iframe: true,
+                                    unavoidable: true,
+                                    groggy: true,
+                                    timed: "1:40",
+                                    description: {
+                                        en: [
+                                            "Teleport the players away, one player will be taken to a set of piano keys while the rest will be teleported to the interior, met with the string of the piano. The player by the keys will be given the order in which the players must play the strings and must communicate it to their team. An incorrect input will result in the sequence resetting.",
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    variants: {
+                                        solo: {
+                                            name: {
+                                                en: "Solo Mode Variation:"
+                                            },
+                                            description: {
+                                                en: ["- You will always be teleported to the string side and the Conductor will give you the answer.",
+                                                "You will be inflicted with Unavoidable Death, rending revival abilities useless.",
+                                                "In Solo Mode, Conductor will use \"C!\" to denote C-sharp."]
+                                            }
+                                        }
+                                    }
+                                },
+                                bigbandperformance: {
+                                    name: {
+                                        en: "Big Band Performance",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    unavoidable: true,
+                                    groggy: true,
+                                    timed: true,
+                                    heal: true,
+                                    description: {
+                                        en: [
+                                            "Transform up to 4 players into various instruments. The camera will pan to instruments in the background which will play a string of 4 notes, comprising of blue Crotchets, purple Quavers, and red Semiquavers which correspond to the Z, X, and C keys. Each player must match the sequence played by their corresponding instrument. This will happen 4 times, once for each instrument in the background. Successfully performing this will stun the boss. Taking too long will result in death and the boss healing a portion of their HP.",
+                                            "You will be inflicted with Unavoidable Death, rending revival abilities useless.",
+                                            "The instrument you are will be indicated with a pink spotlight, while all others will be blue.",
+                                            "When it is time for an instrument to play, the spotlight above them will turn yellow.",
+                                            "You will not be penalized for any actions you do while it is not your turn.",
+                                            "Playing the wrong note will not immediately fail you, but will reset the sequence of notes you have to play."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                },
+                                finalperformance: {
+                                    name: {
+                                        en: "Final Performance",
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    },
+                                    iframe: true,
+                                    description: {
+                                        en: [
+                                            "After hitting 1 HP, a cutscene will play and he will regain 45x bars of HP and perform a more intense version of his Sound Beam Mayhem. After completing it, he will be left in a staggered state for a prolonged period of time."
+                                        ],
+                                        es: "",
+                                        kr: "",
+                                        jp: "",
+                                        br: ""
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
                 circhip: {
                     title: {
                         en: "Circuits and Chips"

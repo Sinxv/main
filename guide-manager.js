@@ -154,17 +154,33 @@ function isLangLeaf(value) {
 function renderMechanicEntry(item) {
     const wrapper = createElement('div', { class: 'mech' }, []);
 
+    // Name with status icons
     const nameText = getLocalizedValue(item.name);
     if (nameText) {
-        wrapper.appendChild(createElement('div', { class: 'mechname' }, [nameText]));
+        const nameWrapper = createElement('div', { class: 'mechname-wrapper' }, []);
+        const nameEl = createElement('div', { class: 'mechname' }, [nameText]);
+        nameWrapper.appendChild(nameEl);
+        
+        // Add status icons right after the name
+        const statusIcons = renderStatusIcons(item, true);
+        statusIcons.forEach(icon => nameWrapper.appendChild(icon));
+        
+        wrapper.appendChild(nameWrapper);
     }
 
     if (item.forcedat) {
         wrapper.appendChild(createElement('div', { class: 'mechforcedat' }, [getLocalizedValue(item.forcedat)]));
     }
 
+    // Main description (non-variant content)
     if (item.description) {
         renderParagraphElements(item.description).forEach(el => wrapper.appendChild(el));
+    }
+
+    // Variants section
+    if (item.variants) {
+        const variantsSection = renderVariantsSection(item.variants);
+        if (variantsSection) wrapper.appendChild(variantsSection);
     }
 
     if (item.note) {
@@ -182,6 +198,10 @@ function renderMechanicEntry(item) {
             }
             if (concept.description) {
                 renderParagraphElements(concept.description).forEach(el => wrapper.appendChild(el));
+            }
+            if (concept.variants) {
+                const variantsSection = renderVariantsSection(concept.variants);
+                if (variantsSection) wrapper.appendChild(variantsSection);
             }
         });
     }
@@ -202,15 +222,13 @@ function renderMechanicEntry(item) {
         });
     }
 
-    // Bare nested sub-entries (e.g. abyssgate.bluegate, findthespace.firstvariation)
-    // that aren't wrapped in derivated_mechs/alt but sit directly as sibling keys.
     Object.entries(item).forEach(([key, value]) => {
-        if (MECH_KNOWN_KEYS.has(key) || !value || typeof value !== 'object') {
+        // Skip known keys, variants, and status keys
+        if (MECH_KNOWN_KEYS.has(key) || key === 'variants' || MECH_STATUS_CONFIG[key] || !value || typeof value !== 'object') {
             return;
         }
 
         if (isLangLeaf(value)) {
-            // Plain multiline text field (like additionalinfo), not a sub-entry.
             renderParagraphElements(value).forEach(el => wrapper.appendChild(el));
         } else {
             const derivedWrapper = createElement('div', { class: 'concept' }, []);
@@ -234,10 +252,14 @@ function renderConceptEntry(concept) {
         renderParagraphElements(concept.description).forEach(el => wrapper.appendChild(el));
     }
 
-    // Bare nested sub-concepts (e.g. altars.altaroffear, altars.altarofdespair)
-    // sit directly as sibling keys rather than under a wrapper key.
+    // Variants inside concepts
+    if (concept.variants) {
+        const variantsSection = renderVariantsSection(concept.variants);
+        if (variantsSection) wrapper.appendChild(variantsSection);
+    }
+
     Object.entries(concept).forEach(([key, value]) => {
-        if (CONCEPT_KNOWN_KEYS.has(key) || !value || typeof value !== 'object') {
+        if (CONCEPT_KNOWN_KEYS.has(key) || key === 'variants' || !value || typeof value !== 'object') {
             return;
         }
 
@@ -878,16 +900,136 @@ function renderGuideContent(entry) {
     return contentWrapper;
 }
 
+// ============================================================
+// VARIANT CONFIG - defines what variants exist and their display properties
+// ============================================================
+const VARIANT_CONFIG = {
+    diff3: {
+        id: 'toggle-diff3',
+        label: 'Hide D3 Variants',
+        labelHidden: 'Show D3 Variants',
+        cssClass: 'variant-block-diff3',
+        headerClass: 'variant-header-diff3',
+        defaultName: 'Difficulty 3 Variation'
+    },
+    solo: {
+        id: 'toggle-solo',
+        label: 'Hide Solo Variants',
+        labelHidden: 'Show Solo Variants',
+        cssClass: 'variant-block-solo',
+        headerClass: 'variant-header-solo',
+        defaultName: 'Solo Mode Variation'
+    }
+};
+
+// ============================================================
+// RENDER VARIANT BLOCKS
+// ============================================================
+function renderVariantBlock(variantData, variantKey) {
+    const config = VARIANT_CONFIG[variantKey];
+    if (!config || !variantData) return null;
+    
+    const wrapper = createElement('div', { class: `variant-block ${config.cssClass}` }, []);
+    
+    // Variant header
+    const headerText = getLocalizedValue(variantData.name) || config.defaultName;
+    const header = createElement('div', { class: `variant-header ${config.headerClass}` }, [headerText]);
+    wrapper.appendChild(header);
+    
+    // Variant description
+    if (variantData.description) {
+        renderParagraphElements(variantData.description).forEach(el => {
+            el.classList.add('variant-content');
+            wrapper.appendChild(el);
+        });
+    }
+    
+    return wrapper;
+}
+
+function renderVariantsSection(variants) {
+    if (!variants || typeof variants !== 'object') return null;
+    
+    const activeVariants = Object.keys(variants).filter(key => VARIANT_CONFIG[key]);
+    if (activeVariants.length === 0) return null;
+    
+    const wrapper = createElement('div', { class: 'variants-container' }, []);
+    
+    activeVariants.forEach(key => {
+        const variantBlock = renderVariantBlock(variants[key], key);
+        if (variantBlock) wrapper.appendChild(variantBlock);
+    });
+    
+    return wrapper;
+}
+
+// ============================================================
+// CONTROL PANEL
+// ============================================================
+function createControlPanel(scrollContent) {
+    // Check which variants actually exist in the content
+    const activeVariants = Object.keys(VARIANT_CONFIG).filter(key => {
+        return scrollContent.querySelector(`.${VARIANT_CONFIG[key].cssClass}`);
+    });
+
+    if (activeVariants.length === 0) return null;
+
+    const panel = createElement('div', { class: 'guide-control-panel' }, []);
+    
+    activeVariants.forEach(key => {
+        const config = VARIANT_CONFIG[key];
+        const btn = createElement('button', {
+            type: 'button',
+            class: 'guide-control-btn',
+            id: config.id,
+            dataset: { active: 'true', variant: key }
+        }, [config.label]);
+        panel.appendChild(btn);
+    });
+
+    return panel;
+}
+
+function setupControlPanelListeners(panel, modal) {
+    const scrollContent = modal.querySelector('.guide-modal-scroll');
+    if (!scrollContent) return;
+
+    panel.querySelectorAll('.guide-control-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const variantKey = btn.dataset.variant;
+            const config = VARIANT_CONFIG[variantKey];
+            if (!config) return;
+            
+            const isActive = btn.dataset.active === 'true';
+            const blocks = scrollContent.querySelectorAll(`.${config.cssClass}`);
+            
+            blocks.forEach(block => {
+                block.style.display = isActive ? 'none' : '';
+            });
+            
+            btn.dataset.active = isActive ? 'false' : 'true';
+            btn.textContent = isActive ? config.labelHidden : config.label;
+        });
+    });
+}
+
 function createGuideModal(entry) {
     const overlay = createElement('div', { id: GUIDE_OVERLAY_ID, class: 'guide-modal-overlay' }, []);
     const modal = createElement('div', { id: GUIDE_MODAL_ID, class: 'guide-modal' }, []);
-    const closeButton = createElement('button', { type: 'button', class: 'guide-modal-close', 'aria-label': 'Close guide' }, ['×']);
-
+    
+    const closeButton = createElement('button', { 
+        type: 'button', 
+        class: 'guide-modal-close', 
+        'aria-label': 'Close guide' 
+    }, ['×']);
     closeButton.addEventListener('click', closeGuide);
     modal.appendChild(closeButton);
 
+    const scrollContent = createElement('div', { class: 'guide-modal-scroll' }, []);
     const content = renderGuideContent(entry);
-    modal.appendChild(content);
+    scrollContent.appendChild(content);
+    modal.appendChild(scrollContent);
+    
     overlay.appendChild(modal);
 
     overlay.addEventListener('click', (event) => {
@@ -896,7 +1038,125 @@ function createGuideModal(entry) {
         }
     });
 
+    // Debug: Check if variant blocks exist in scrollContent
+    console.log('Variant blocks in scrollContent:');
+    console.log('  diff3:', scrollContent.querySelector('.variant-block-diff3'));
+    console.log('  solo:', scrollContent.querySelector('.variant-block-solo'));
+    console.log('  any variant-block:', scrollContent.querySelectorAll('.variant-block').length);
+    console.log('  variants-container:', scrollContent.querySelector('.variants-container'));
+
+    // Use a small delay to ensure DOM is ready
+    setTimeout(() => {
+        console.log('After timeout - variant blocks:', scrollContent.querySelectorAll('.variant-block').length);
+        const controlPanel = createControlPanel(scrollContent);
+        console.log('Control panel created:', controlPanel);
+        if (controlPanel) {
+            modal.appendChild(controlPanel);
+            setupControlPanelListeners(controlPanel, modal);
+        }
+    }, 50);
+
     return overlay;
+}
+
+// ============================================================
+// MECH STATUS ICONS CONFIG
+// ============================================================
+const MECH_STATUS_CONFIG = {
+    unavoidable: {
+        icon: 'images/unavoidable.png',
+        info: 'Resurrection titles do not work during this mechanic.',
+        class: 'mech-status-unavoidable'
+    },
+    iframe: {
+        icon: 'images/iframe.png',
+        info: 'This mechanic bypasses invincibility frames.',
+        class: 'mech-status-iframe'
+    },
+    groggy: {
+        icon: 'images/groggy.png',
+        info: 'After mechanic is completed successfully, the boss enters groggy state.',
+        class: 'mech-status-groggy'
+    },
+    heal: {
+        icon: 'images/heal.png',
+        info: 'Failing to meet the condition results in boss healing.',
+        class: 'mech-status-heal'
+    },
+    timed: {
+        icon: 'images/timed.png',
+        info: 'This mechanic has a time limit before failure.',
+        class: 'mech-status-timed'
+    }
+};
+
+function createStatusIcon(statusKey, customLabel, showText = false) {
+    const config = MECH_STATUS_CONFIG[statusKey];
+    if (!config) return null;
+    
+    // Only use customLabel if provided, otherwise use config.label
+    // If showText is true but no label exists, don't show any text
+    const labelText = customLabel || config.label || null;
+    const tooltipText = config.info || '';
+    
+    const icon = createElement('span', {
+        class: `mech-status-icon ${config.class}`,
+        dataset: { tooltip: tooltipText }
+    }, []);
+    
+    const img = createElement('img', {
+        src: config.icon,
+        alt: statusKey,
+        loading: 'lazy'
+    }, []);
+    icon.appendChild(img);
+    
+    // Only add label if showText is true AND we have text to show
+    if (showText && labelText) {
+        const label = createElement('span', { class: 'mech-status-label' }, [labelText]);
+        icon.appendChild(label);
+    }
+    
+    // Tooltip on hover
+    icon.addEventListener('mouseenter', (e) => {
+        const tooltip = createElement('div', { class: 'mech-status-tooltip' }, [tooltipText]);
+        tooltip.style.position = 'fixed';
+        document.body.appendChild(tooltip);
+        
+        const rect = icon.getBoundingClientRect();
+        tooltip.style.left = rect.left + 'px';
+        tooltip.style.top = (rect.bottom + 6) + 'px';
+        
+        icon._tooltip = tooltip;
+    });
+    
+    icon.addEventListener('mouseleave', () => {
+        if (icon._tooltip) {
+            icon._tooltip.remove();
+            icon._tooltip = null;
+        }
+    });
+    
+    return icon;
+}
+
+function renderStatusIcons(item, showText = false) {
+    if (!item || typeof item !== 'object') return [];
+    
+    const icons = [];
+    Object.keys(MECH_STATUS_CONFIG).forEach(statusKey => {
+        if (item[statusKey] !== undefined && item[statusKey] !== false) {
+            const value = item[statusKey];
+            // If value is a string, use it as custom label
+            // If true, use default label from config
+            const customLabel = typeof value === 'string' ? value : null;
+            
+            const icon = createStatusIcon(statusKey, customLabel, showText);
+            if (icon) icons.push(icon);
+        }
+    });
+    
+    return icons;
 }
 
 function openGuide(guideId) {
@@ -910,15 +1170,19 @@ function openGuide(guideId) {
 
     const overlay = createGuideModal(entry);
     document.body.appendChild(overlay);
-    initConceptTriggers(overlay);
-    initTableNotes(overlay);
-    if (window.translationManager?.applyTranslations) {
-        window.translationManager.applyTranslations(overlay);
-    }
-    // Apply table collapse/briefing to modal tables
-    if (window.updateTableVisibility) {
-        window.updateTableVisibility(overlay);
-    }
+    
+    // Use requestAnimationFrame to ensure DOM is ready
+    requestAnimationFrame(() => {
+        initConceptTriggers(overlay);
+        initTableNotes(overlay);
+        if (window.translationManager?.applyTranslations) {
+            window.translationManager.applyTranslations(overlay);
+        }
+        if (window.updateTableVisibility) {
+            window.updateTableVisibility(overlay);
+        }
+    });
+    
     document.body.classList.add('guide-modal-open');
 }
 
